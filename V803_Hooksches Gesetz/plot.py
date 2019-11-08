@@ -1,21 +1,30 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
-x = np.linspace(0, 10, 1000)
-y = x ** np.sin(x)
+plt.rcParams['figure.figsize'] = (10, 8)
+plt.rcParams['font.size'] = 16
 
-plt.subplot(1, 2, 1)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+# load data
+x, y = np.genfromtxt('Daten.txt', unpack=True)
 
-plt.subplot(1, 2, 2)
-plt.plot(x, y, label='Kurve')
-plt.xlabel(r'$\alpha \:/\: \si{\ohm}$')
-plt.ylabel(r'$y \:/\: \si{\micro\joule}$')
-plt.legend(loc='best')
+params, covariance_matrix = np.polyfit(x, y, deg=1, cov=True)
 
-# in matplotlibrc leider (noch) nicht möglich
-plt.tight_layout(pad=0, h_pad=1.08, w_pad=1.08)
-plt.savefig('build/plot.pdf')
+errors = np.sqrt(np.diag(covariance_matrix))
+
+for name, value, error in zip('ab', params, errors):
+    print(f'{name} = {value:.3f} ± {error:.3f}')
+
+    x_plot = np.linspace(0, 60)
+
+plt.plot(x, y, 'x', color='b', label="Messwerte")
+plt.plot(
+    x_plot,
+    params[0] * x_plot + params[1],
+    label='Lineare Regression',
+    linewidth=1,
+    color='g'
+)
+plt.legend(loc="best")
+
+plt.plot(x, y, 'k.', label="Messung der Federauslenkung")
+plt.savefig('Plot.pdf')
