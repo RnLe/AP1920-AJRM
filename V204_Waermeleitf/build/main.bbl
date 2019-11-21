@@ -16,5 +16,75 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{formelsammlung}{book}{}
+      \name{author}{2}{}{%
+        {{hash=fb6d48a1965926d6525f53b07efc3fd7}{%
+           family={Dorn},
+           familyi={D\bibinitperiod},
+           given={Hans-Jerg},
+           giveni={H\bibinithyphendelim J\bibinitperiod}}}%
+        {{hash=3941d9bd80cd77b5a75f4cd00dad7675}{%
+           family={Fischer},
+           familyi={F\bibinitperiod},
+           given={Tilo},
+           giveni={T\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Klett}%
+      }
+      \strng{namehash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \strng{fullhash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \strng{bibnamehash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \strng{authorbibnamehash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \strng{authornamehash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \strng{authorfullhash}{547e3e83f91e0e9f3d9cfaa11025226b}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{1}
+      \field{title}{Formeln und Daten zur Physik}
+      \field{year}{2009}
+    \endentry
+    \entry{taschenbuch}{book}{}
+      \name{author}{3}{}{%
+        {{hash=29be8b370d75b426ff18a2557da6b5da}{%
+           family={Hering},
+           familyi={H\bibinitperiod},
+           given={Ekbert},
+           giveni={E\bibinitperiod}}}%
+        {{hash=24dac3d99d573948e9497fd2125dce8d}{%
+           family={Martin},
+           familyi={M\bibinitperiod},
+           given={Rolf},
+           giveni={R\bibinitperiod}}}%
+        {{hash=db3047a5882586aee27860a863517662}{%
+           family={Stohrer},
+           familyi={S\bibinitperiod},
+           given={Martin},
+           giveni={M\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Vieweg}%
+      }
+      \strng{namehash}{5be12ce6fb5ecc7551fab1e299540399}
+      \strng{fullhash}{5be12ce6fb5ecc7551fab1e299540399}
+      \strng{bibnamehash}{5be12ce6fb5ecc7551fab1e299540399}
+      \strng{authorbibnamehash}{5be12ce6fb5ecc7551fab1e299540399}
+      \strng{authornamehash}{5be12ce6fb5ecc7551fab1e299540399}
+      \strng{authorfullhash}{5be12ce6fb5ecc7551fab1e299540399}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{6}
+      \field{title}{Taschenbuch der Mathematik und Physik}
+      \field{year}{2017}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 

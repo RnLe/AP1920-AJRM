@@ -83,7 +83,6 @@
     <requires type="editable">
       <file>lit.bib</file>
       <file>programme.bib</file>
-      <file>content/quellen.bib</file>
     </requires>
   </external>
 </requests>

@@ -6,8 +6,8 @@ ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt("Messung_1(statisch).txt",
 fig1, ax1 = plt.subplots()
 for y in (t1, t2, t3, t4, t5, t6, t7, t8):
     ax1.plot(t, y)
-ax1.set_xlabel('$Zeit_s$')
-ax1.set_ylabel('$Temperatur_°C$')
+ax1.set_xlabel(r'Zeit $t / \si{\second}$')
+ax1.set_ylabel(r'Temperatur $T / si{\celsius}$')
 
 ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt("Messung_2(dynamisch).txt", unpack=True)
 fig2, ax2 = plt.subplots()
