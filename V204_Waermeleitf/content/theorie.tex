@@ -1,2 +1,39 @@
 \section{Theorie}
 \label{sec:Theorie}
+Insgesamt sind drei verschiedene Arten des Wärmetransports zu nennen: Konvektion, Wärmeleitung und Wärmestrahlung. 
+Konvektion ist stets mit dem Transport von Materie verbunden, die die entsprechende thermische Energie mitführt. 
+Dementsprechend findet Konvektion hauptsächlich in Flüssigkeiten und Gasen statt.
+Bei Wärmestrahlung hingegen ist der Träger der Energie nicht die Materie, sondern elektromagnetische Strahlung. 
+Auf diese Weise kann Wärme auch im Vakuum übertragen werden. \\
+Fokus dieses Experiments ist die Wärmeleitung, die materiegebunden ist. 
+Durch Schwingungen benachbarter Moleküle und Atome -- gemeinhin ebenso unter sogenannten Phononen, also
+Gitterschwingungen, bekannt -- wird die thermische Energie durch mikroskopische Bewegungen umverteilt.
+Besonders im Vorteil sind hierbei elektrisch leitfähige Stoffe, folglich vor allem Metalle: Die frei beweglichen Elektronen 
+können viel besser die thermische Energie in Form von kinetischer Energie mikroskopischer Teilchen durch 
+Stöße untereinander weitergeben als die, von infinitesimalen Schwingungen abgesehen, ortsfesten Atome und Moleküle. 
+Diese Korrelation bestätigt sich in der Tatsache, dass Metalle im Allgemeinen die besseren Wärmeleiter sind. 
+Die im Vergleich dazu wenig Ausschlag gebenden Gitterschwingungen sind deshalb hier vernachlässigbar.
+Unter Berücksichtigung des zweiten Hauptsatzes der Thermodynamik wird die Richtung des Wärmefluss in Richtung des 
+kälteren Wärmereservoirs definiert. 
+Dies spiegelt sich in der Vorzeichenregelung der Formel 
+\begin{equation}
+\symup{d}Q = - \kappa A \frac{\partial T}{\partial x} \symup{d}t 
+\end{equation}
+wider, die das Maß der Wärmemenge $\symup{d}Q$ angibt, die durch einen Metallstab der Querschnittsfläche $A$ in der Zeit 
+$\symup{d}t$ fließt. 
+$\kappa$ bezeichnet hierbei die materialbhängige, konstante Wärmeleitfähigkeit. 
+$\frac{\partial T}{\partial x}$ indiziert das für die Wärmeleitung obligate, angelegte Temperaturgefälle.
+Aufgrund der Stabgeometrie werden hier ausschließlich die eindimensionalen Gleichungen betrachtet.
+Durch eine entsprechende Definition einer Wärmestromdichte $j_w$
+\begin{equation}
+j_w = - \kappa \frac{\partial T}{\partial x}
+\end{equation}
+lässt sich durch Verwendung der Kontinuitätsgleichung der Thermodynamik eine Beziehung zwischen örtlicher und zeitlicher 
+Temperaturverteilung herstellen. 
+Sie findet Ausdruck in der sogenannten Wärmeleitungsgleichung 
+\begin{equation}
+\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial^2 x} ,
+\end{equation}
+die den linearen Zusammenhang zwischen diesen beiden Größen darstellt. 
+Die invariable Temperaturleitfähigkeit $\sigma_T = \frac{\kappa}{\rho c}$ setzt sich aus der Wärmeleitfähigkeit $\kappa$, 
+der Dichte $\rho$ und der spezifischen Wärmekapazität $c$ des verwendeten Materials zusammen.
