@@ -2130,10 +2130,13 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">taschenbuch</bcf:citekey>
-    <bcf:citekey order="2">formelsammlung</bcf:citekey>
-    <bcf:citekey order="3">taschenbuch</bcf:citekey>
+    <bcf:citekey order="1">demtroeder</bcf:citekey>
+    <bcf:citekey order="2">anleitung204</bcf:citekey>
+    <bcf:citekey order="3">gerthsen</bcf:citekey>
     <bcf:citekey order="4">taschenbuch</bcf:citekey>
+    <bcf:citekey order="5">formelsammlung</bcf:citekey>
+    <bcf:citekey order="6">taschenbuch</bcf:citekey>
+    <bcf:citekey order="7">taschenbuch</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

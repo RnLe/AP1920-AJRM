@@ -1,39 +1,61 @@
-\section{Theorie}
+\section{Theorie\footnote{Unter Verwendung der Quellen \cite{demtroeder}, \cite{anleitung204}, \cite{gerthsen}.}}
 \label{sec:Theorie}
 Insgesamt sind drei verschiedene Arten des Wärmetransports zu nennen: Konvektion, Wärmeleitung und Wärmestrahlung. 
 Konvektion ist stets mit dem Transport von Materie verbunden, die die entsprechende thermische Energie mitführt. 
 Dementsprechend findet Konvektion hauptsächlich in Flüssigkeiten und Gasen statt.
 Bei Wärmestrahlung hingegen ist der Träger der Energie nicht die Materie, sondern elektromagnetische Strahlung. 
-Auf diese Weise kann Wärme auch im Vakuum übertragen werden. \\
+Auf diese Weise kann Wärme auch im Vakuum übertragen werden. 
+
 Fokus dieses Experiments ist die Wärmeleitung, die materiegebunden ist. 
-Durch Schwingungen benachbarter Moleküle und Atome -- gemeinhin ebenso unter sogenannten Phononen, also
+Durch Schwingungen benachbarter Moleküle und Atome -- gemeinhin unter sogenannten Phononen, also
 Gitterschwingungen, bekannt -- wird die thermische Energie durch mikroskopische Bewegungen umverteilt.
 Besonders im Vorteil sind hierbei elektrisch leitfähige Stoffe, folglich vor allem Metalle: Die frei beweglichen Elektronen 
-können viel besser die thermische Energie in Form von kinetischer Energie mikroskopischer Teilchen durch 
+können viel besser die thermische Energie in Form von kinetischer Energie durch 
 Stöße untereinander weitergeben als die, von infinitesimalen Schwingungen abgesehen, ortsfesten Atome und Moleküle. 
 Diese Korrelation bestätigt sich in der Tatsache, dass Metalle im Allgemeinen die besseren Wärmeleiter sind. 
-Die im Vergleich dazu wenig Ausschlag gebenden Gitterschwingungen sind deshalb hier vernachlässigbar.
+Die im Vergleich dazu wenig Ausschlag gebenden Gitterschwingungen sind dort deshalb vernachlässigbar.
+
 Unter Berücksichtigung des zweiten Hauptsatzes der Thermodynamik wird die Richtung des Wärmefluss in Richtung des 
 kälteren Wärmereservoirs definiert. 
 Dies spiegelt sich in der Vorzeichenregelung der Formel 
 \begin{equation}
-\symup{d}Q = - \kappa A \frac{\partial T}{\partial x} \symup{d}t 
+    \symup{d}Q = - \kappa \, A \, \frac{\partial T}{\partial x} \, \symup{d}t 
 \end{equation}
 wider, die das Maß der Wärmemenge $\symup{d}Q$ angibt, die durch einen Metallstab der Querschnittsfläche $A$ in der Zeit 
 $\symup{d}t$ fließt. 
 $\kappa$ bezeichnet hierbei die materialbhängige, konstante Wärmeleitfähigkeit. 
 $\frac{\partial T}{\partial x}$ indiziert das für die Wärmeleitung obligate, angelegte Temperaturgefälle.
 Aufgrund der Stabgeometrie werden hier ausschließlich die eindimensionalen Gleichungen betrachtet.
-Durch eine entsprechende Definition einer Wärmestromdichte $j_w$
+Durch eine entsprechende Definition der Wärmestromdichte $j_w$
 \begin{equation}
-j_w = - \kappa \frac{\partial T}{\partial x}
+    j_w = - \kappa \, \frac{\partial T}{\partial x}
 \end{equation}
 lässt sich durch Verwendung der Kontinuitätsgleichung der Thermodynamik eine Beziehung zwischen örtlicher und zeitlicher 
 Temperaturverteilung herstellen. 
 Sie findet Ausdruck in der sogenannten Wärmeleitungsgleichung 
 \begin{equation}
-\frac{\partial T}{\partial t} = \frac{\kappa}{\rho c} \frac{\partial^2 T}{\partial^2 x} ,
+    \frac{\partial T}{\partial t} = \frac{\kappa}{\rho \, c} \, \frac{\partial^2 T}{\partial^2 x} \, ,
 \end{equation}
 die den linearen Zusammenhang zwischen diesen beiden Größen darstellt. 
-Die invariable Temperaturleitfähigkeit $\sigma_T = \frac{\kappa}{\rho c}$ setzt sich aus der Wärmeleitfähigkeit $\kappa$, 
-der Dichte $\rho$ und der spezifischen Wärmekapazität $c$ des verwendeten Materials zusammen.
+$\frac{\kappa}{\rho \, c}$ mit der Wärmeleitfähigkeit $\kappa$, der Dichte $\rho$ und der spezifischen Wärmekapazität $c$ 
+des verwendeten Metalls wird hierbei oft zu der invariablen Temperaturleitfähigkeit $\sigma_T$ zusammengesetzt. 
+
+Eine Temperaturwelle kann konstruiert werden, indem ein Ende eines Metallstabs periodisch erwärmt und gekühlt wird. 
+Die Temperatur einer solchen Welle am Ort $x$ zur Zeit $t$ wird durch
+\begin{equation}
+    T(x,t) = T_{max} \, \symup{e}^{- \sqrt{\frac{\omega}{2 \, \sigma_T}} \, x} \, \cos(\omega \, t \, - \, \sqrt{\frac{\omega}{2 \, \sigma_T}} \, x )
+\end{equation}
+angegeben, unter Verwendung der Wellenzahl $k = \sqrt{\frac{\omega}{2 \, \sigma_T}}$. 
+Die Phasengeschwindigkeit ergibt sich entsprechend aus 
+\begin{equation}
+    v = \frac{\omega}{k} = \sqrt{\frac{2 \, \kappa \, \omega}{\rho \, c}} \, .
+\end{equation}
+Um aus solch einer Temperaturwelle die Wärmeleitfähigkeit $\kappa$ zu ermitteln, bestimmt man die Amplitude 
+$A_{nah}$ und $A_{fern}$ an zwei verschiedenen Orten $x_{nah}$ und $x_{fern}$, die sich im Abstand $\increment x$ 
+voneinander befinden. Zusätzlich bezeichne $\increment t$ die Zeitdifferenz, die sich aus der Phasendifferenz 
+an den beiden Messpunkten ergibt. 
+Werden nun die Werte in die Formel 
+\begin{equation}
+    \kappa = \frac{\rho \, c \, (\increment x)^2}{2 \, \increment t \, \ln(A_{nah} / A_{fern})}
+\end{equation}
+eingesetzt, erhält man die Wärmeleitfähigkeit $\kappa$ des verwendeten Metalls. 

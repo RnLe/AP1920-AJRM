@@ -19,6 +19,32 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{demtroeder}{book}{}
+      \name{author}{1}{}{%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{%
+           family={Demtröder},
+           familyi={D\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{fullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{bibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorbibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authornamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorfullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{4}
+      \field{subtitle}{Mechanik und Wärme}
+      \field{title}{Experimentalphysik 1}
+      \field{year}{2006}
+    \endentry
     \entry{formelsammlung}{book}{}
       \name{author}{2}{}{%
         {{hash=fb6d48a1965926d6525f53b07efc3fd7}{%
@@ -48,6 +74,26 @@
       \field{edition}{1}
       \field{title}{Formeln und Daten zur Physik}
       \field{year}{2009}
+    \endentry
+    \entry{anleitung204}{manual}{}
+      \name{author}{1}{}{%
+        {{hash=2821a70f99517ac7757c95300d43e95c}{%
+           family={Dortmund},
+           familyi={D\bibinitperiod},
+           given={TU},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{fullhash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{bibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorbibnamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authornamehash}{2821a70f99517ac7757c95300d43e95c}
+      \strng{authorfullhash}{2821a70f99517ac7757c95300d43e95c}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{V204: Wärmeleitung von Metallen}
     \endentry
     \entry{taschenbuch}{book}{}
       \name{author}{3}{}{%
@@ -83,6 +129,31 @@
       \field{edition}{6}
       \field{title}{Taschenbuch der Mathematik und Physik}
       \field{year}{2017}
+    \endentry
+    \entry{gerthsen}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8fe294dd7320c681ff6f5a57199d37d2}{%
+           family={Meschede},
+           familyi={M\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer}%
+      }
+      \strng{namehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{fullhash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{bibnamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authorbibnamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authornamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authorfullhash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{23}
+      \field{title}{Gerthsen Physik}
+      \field{year}{2006}
     \endentry
   \enddatalist
 \endrefsection
