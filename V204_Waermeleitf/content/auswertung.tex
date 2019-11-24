@@ -40,22 +40,49 @@ $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\
 
 \begin{table}
     \centering
-    \caption{Temperatur 5 verschiedener Messzeiten}
+    \caption{Temperatur 5 verschiedener Messzeiten in $\si{\celsius}$}
     \label{tab:temp_5_messwerte}
-    \begin{tabular}{S[table-format=3.1, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
+    \begin{tabular}{S[table-format=3, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
         \toprule
-        {$t$} & {Messing(b)} & {Messing(s)} & {Aluminium} & {Edelstahl} \\
+        & \multicolumn{2}{c}{Messing(breit)} & \multicolumn{2}{c}{Messing(schmal)} & \multicolumn{2}{c}{Aluminium} & \multicolumn{2}{c}{Edelstahl} \\
+        \cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+        {$t[\si{\s}]$} & {$T_{1, \text{fern}}$} & {$T_{2, \text{nah}}$} & {$T_{3, \text{nah}}$} & {$T_{4, \text{fern}}$} & {$T_{5, \text{fern}}$} & {$T_{6, \text{nah}}$} & {$T_{7, \text{nah}}$} & {$T_{8, \text{fern}}$} \\
         \midrule
-        690.0 & 46.36 &	44.53 &	50.04 &	35.64  \\
+        60  & 27.45 &	31.68 &	32.57 &	27.94 &  31.50 & 34.49 & 29.59 & 24.03 \\
+        150 & 32.77 &	36.49 &	36.83 &	32.97 &  38.00 & 40.03 & 34.40 & 26.11 \\
+        295 & 38.24 &	41.41 &	40.97 &	37.54 &  42.83 & 44.47 & 38.19 & 29.27 \\
+        475 & 42.69 &	45.63 &	44.63 &	41.26 &  46.73 & 48.27 & 41.70 & 32.46 \\
+        640 & 45.61 &	48.52 &	47.26 &	43.85 &  49.33 & 50.89 & 44.27 & 34.95 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 \begin{table}
     \centering
+    \caption{Temperaturunterschied nah zu fern in $\si{\celsius}$}
+    \label{tab:tempdiff_5_messwerte}
+    \begin{tabular}{S[table-format=3, round-mode=places, round-precision=1] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2]}
+        \toprule
+        {$t[\si{\s}]$} & {$\increment T_{Messing(breit)}$} & {$\increment T_{Messing(schmal)}$} & {$\increment T_{Aluminium}$} & {$\increment T_{Edelstahl}$} \\
+        \midrule
+        60  & 4.23   & 4.6299 & 2.99 &	5.559 \\
+        150 & 3.7199 & 3.8599 & 2.03 &	8.29 \\
+        295 & 3.1699 & 3.4299 & 1.64 &	8.91 \\
+        475 & 2.94   & 3.370  & 1.54 &	9.24 \\
+        640 & 2.91   & 3.4099 & 1.56 &	9.32 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{equation}
+    \frac{\increment \symup{Q}}{\increment \symup{t}} = -\kappa A \frac{\increment \symup{T}}{\increment \symup{x}}
+\end{equation}
+
+\begin{table}
+    \centering
     \caption{Wärmestromdichte}
     \label{tab:Warmestrom}
-    \begin{tabular}{l | S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=14 S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4]}
+    \begin{tabular}{l | S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4]}
         \toprule
         {Stoff} & {$\SI{60}{\s}$} & {$\SI{150}{\s}$} & {$\SI{295}{\s}$} & {$\SI{475}{\s}$} & {$\SI{640}{\s}$} \\
         \midrule
