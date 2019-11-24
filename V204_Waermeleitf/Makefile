@@ -1,11 +1,11 @@
 all: build/main.pdf
 
 # hier Python-Skripte:
-build/plot_t1_t4.pdf build/plot_t5_t8.pdf build/plot_tempDiff_t7t8.pdf build/plot_tempDiff_t2t1.pdf: plot.py matplotlibrc header-matplotlib.tex Messung_1(statisch).txt Messung_2(dynamisch).txt Messung_3(dynamisch).txt | build
+build/plot_t1_t4.pdf: plot.py matplotlibrc header-matplotlib.tex Messung_1(statisch).txt Messung_2(dynamisch).txt Messung_3(dynamisch).txt | build
 	TEXINPUTS=$$(pwd): python plot.py
 
 # hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-build/main.pdf: build/plot_t1_t4.pdf build/plot_t5_t8.pdf build/plot_tempDiff_t7t8.pdf build/plot_tempDiff_t2t1.pdf
+build/main.pdf: build/plot_t1_t4.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \
