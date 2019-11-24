@@ -2,6 +2,7 @@
 \label{sec:Auswertung}
 Aufgrund der zahlreichen Messwerte kann man die zeitlichen Temperaturverläufe sehr genau darstellen.
 In den beiden folgenden Abbildungen sind die Temperaturunterschiede der äußeren Sensoren von Messing(breit)[T1], Messing(schmal)[T4] sowie Aluminium[T5] und Edelstahl[T8] gegenübergestellt.
+% side-by-side Gegenüberstellung der ersten beiden plots
 \begin{figure}
     \centering
     \begin{minipage}{.5\textwidth}
@@ -19,6 +20,71 @@ In den beiden folgenden Abbildungen sind die Temperaturunterschiede der äußere
     \caption{Zeitliche Temperaturverläufe außen}
     \label{fig:tempDiff_t1t4t5t8}
 \end{figure}
+
+\begin{table}
+    \centering
+    \caption{Temperatur außen nach 690 Sekunden in $\SI{}{\celsius}$}
+    \label{tab:temp_aussen}
+    \begin{tabular}{S[table-format=3.1, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
+        \toprule
+        {$t$} & {Messing(b)} & {Messing(s)} & {Aluminium} & {Edelstahl} \\
+        \midrule
+        690.0 & 46.36 &	44.53 &	50.04 &	35.64  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+$\symup{A}_{breit} = \SI{1.2}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.48}{\square\centi\m}$
+
+$\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\square\centi\m}$ 
+
+\begin{table}
+    \centering
+    \caption{Temperatur 5 verschiedener Messzeiten}
+    \label{tab:temp_5_messwerte}
+    \begin{tabular}{S[table-format=3.1, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
+        \toprule
+        {$t$} & {Messing(b)} & {Messing(s)} & {Aluminium} & {Edelstahl} \\
+        \midrule
+        690.0 & 46.36 &	44.53 &	50.04 &	35.64  \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Wärmestromdichte}
+    \label{tab:Warmestrom}
+    \begin{tabular}{l | S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=14 S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4]}
+        \toprule
+        {Stoff} & {$\SI{60}{\s}$} & {$\SI{150}{\s}$} & {$\SI{295}{\s}$} & {$\SI{475}{\s}$} & {$\SI{640}{\s}$} \\
+        \midrule
+        Messing(breit)      & 0.6768  & 0.375 & 112 \\
+        Messing(schmal)     & 0.432133  & 0.375 & 112 \\
+        Aluminium           & 0.4784 & 0.920 & 221 \\
+        Edelstahl           & 0.88959 & 0.460 & 46 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Messreihe 2 - Dynamische Methode}
+    \label{tab:data2}
+    \begin{tabular}{S[table-format=3.1, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
+        \toprule
+        & \multicolumn{2}{c}{Messing(breit)} & \multicolumn{2}{c}{Messing(schmal)} & \multicolumn{2}{c}{Aluminium} & \multicolumn{2}{c}{Edelstahl} \\
+        \cmidrule(lr){2-3}\cmidrule(lr){4-5}\cmidrule(lr){6-7}\cmidrule(lr){8-9}
+        {$t$} & {$T_{1, \text{fern}}$} & {$T_{2, \text{nah}}$} & {$T_{3, \text{nah}}$} & {$T_{4, \text{fern}}$} & {$T_{5, \text{fern}}$} & {$T_{6, \text{nah}}$} & {$T_{7, \text{nah}}$} & {$T_{8, \text{fern}}$} \\
+        \midrule
+        0.000 & 33.08 &	36.21 &	36.46 &	32.47 &	34.62 &	37.16 &	33.62 &	29.54 \\
+        0.500 & 33.10 &	36.25 &	36.48 &	32.50 &	34.66 &	37.19 &	33.65 &	29.55 \\
+        1.000 & 33.12 &	36.27 &	36.51 &	32.52 &	34.69 &	37.25 &	33.68 &	29.54 \\
+        $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ & $\vdots$ \\
+        882.00 & 65.16 & 65.67 & 62.65 & 61.61 & 67.34 & 65.75 & 62.62 & 50.17 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
 \begin{figure}
     \centering
