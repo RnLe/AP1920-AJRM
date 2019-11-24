@@ -51,20 +51,25 @@ while i < len(t_selected):
 print(f"diff 1: {delta_T_brass_wide}\n diff 1: {delta_T_brass_narrow}\n diff 1: {delta_T_aluminum}\n diff 1: {delta_T_stainless_steel}\n")
 
 # units in cm²
-A_narrow = 0.28
-A_normal = 0.48
+A_narrow = 0.000028
+A_normal = 0.000048
 
 # unit in cm
-delta_x = 3
+delta_x = 0.03
+
+# kappa
+k_brass = 112
+k_aluminum = 221
+k_edelstahl = 46
 
 dQ_per_dt = [[], [], [], [], []]
 
 i = 0
 while i < len(t_selected):
-    dQ_per_dt[i].append(A_normal/delta_x*delta_T_brass_wide[i])
-    dQ_per_dt[i].append(A_narrow/delta_x*delta_T_brass_narrow[i])
-    dQ_per_dt[i].append(A_normal/delta_x*delta_T_aluminum[i])
-    dQ_per_dt[i].append(A_normal/delta_x*delta_T_stainless_steel[i])
+    dQ_per_dt[i].append(A_normal/delta_x*delta_T_brass_wide[i]*k_brass)
+    dQ_per_dt[i].append(A_narrow/delta_x*delta_T_brass_narrow[i]*k_brass)
+    dQ_per_dt[i].append(A_normal/delta_x*delta_T_aluminum[i]*k_aluminum)
+    dQ_per_dt[i].append(A_normal/delta_x*delta_T_stainless_steel[i]*k_edelstahl)
     i += 1
 
 print(dQ_per_dt)
