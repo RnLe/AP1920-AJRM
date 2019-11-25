@@ -1,29 +1,41 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 Aufgrund der zahlreichen Messwerte kann man die zeitlichen Temperaturverläufe sehr genau darstellen.
-In den beiden folgenden Abbildungen sind die Temperaturunterschiede der äußeren Sensoren von Messing(breit)[T1], Messing(schmal)[T4] sowie Aluminium[T5] und Edelstahl[T8] gegenübergestellt.
+In den beiden folgenden Abbildungen sind die Temperaturen der äußeren Sensoren von 
+Messing(breit)[T1], Messing(schmal)[T4] sowie Aluminium[T5] und Edelstahl[T8] gegenübergestellt, die bei der 
+statischen Methode aufgenommen worden sind.
 % side-by-side Gegenüberstellung der ersten beiden plots
 \begin{figure}
     \centering
-    \begin{minipage}{.5\textwidth}
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[max width=1.1\linewidth]{plots/plot_t1_t4.pdf}
-        \caption{T1, T4}
+        \caption{T1, T4.}
         \label{fig:plot_t1_t4}
-    \end{minipage}%
-    \begin{minipage}{.5\textwidth}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[max width=1.1\linewidth]{plots/plot_t5_t8.pdf}
         \caption{T5, T8}
         \label{fig:plot_t5_t8}
-    \end{minipage}
-    \caption{Zeitliche Temperaturverläufe außen}
+    \end{subfigure}
+    \caption{Zeitliche Temperaturverläufe an den äußeren Sensoren}
     \label{fig:tempDiff_t1t4t5t8}
 \end{figure}
+Sowohl beide Messingproben als auch Aluminium weisen einen ähnlichen Funktionsgraphen auf, der augenscheinlich nur 
+in horizontaler und vertikaler Skalierung variiert. 
+In den etwa ersten 180 Sekunden steigt die Temperatur des schmalen Messingstabs minimal schneller an als der breite Stab. 
+Danach hat der Graph des breiteren Stabs eine größere Steigung und beide Graphen steigen in gleichem Maße, um einen 
+stetig wachsenden Temperaturunterschied versetzt, bis zur Endzeit.
+Aluminium erreicht insgesamt die höchste Endtemperatur mit etwa $\SI{50}{\celsius}$. 
+Im Gegensatz dazu steht Edelstahl: Nach einer kurzen anfänglichen Phase, in der die Temperatur kaum steigt, wächst der 
+Graph nahezu linear an, was sich merklich von den Graphen unterscheidet. 
+Diese besitzen vielmehr die geschwungene Form einer Wurzel- oder Logarithmus-Funktion. 
 
+Um die Wärmeleitung besser zu untersuchen, sind hier die Endtemperaturen nach annähernd $\SI{700}{\second}$ aufgeführt:
 \begin{table}
     \centering
-    \caption{Temperatur außen nach 690 Sekunden in $\SI{}{\celsius}$}
+    \caption{Äußere Temperatur nach $\SI{690}{\second}$ in $\SI{}{\celsius}$.}
     \label{tab:temp_aussen}
     \begin{tabular}{S[table-format=3.1, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
         \toprule
@@ -33,14 +45,25 @@ In den beiden folgenden Abbildungen sind die Temperaturunterschiede der äußere
         \bottomrule
     \end{tabular}
 \end{table}
+Wie bereits erähnt hat Aluminium die höchste Endtemperatur erreicht, danach folgen der breite, der schmale Messingstab 
+und Edelstahl in ebendieser Reihenfolge. 
+Dementsprechend staffelt sich ebenfalls das zugehörige Maß der Wärmeleitung der einzelnen Proben. 
 
-$\symup{A}_{breit} = \SI{1.2}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.48}{\square\centi\m}$
-
+Nun soll für fünf verschiedene Messzeiten der Wärmestrom bestimmt werden, die sich über die Formel 
+\begin{equation}
+    \frac{\increment \symup{Q}}{\increment \symup{t}} = -\kappa A \frac{\increment \symup{T}}{\increment \symup{x}}
+\end{equation}
+berechnen lässt (vgl. dazu die Gleichung \eqref{eqn:waermemenge}). 
+Hierbei gelten für Aluminium und Edelstahl ebenso die Maße der breiten Querschnittsfläche 
+$\symup{A}_{breit} = \SI{1.2}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.48}{\square\centi\m}$,
+wohingegen der schmale Messingstab die Maße
 $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\square\centi\m}$ 
-
+erfüllt.
+Bewusste Messwerte zu fünf verschiedenen Messzeiten und die sich daraus ergebenden Temperaturdifferenzen 
+sind in Tabelle \ref{tab:temp_5_messwerte} und \ref{tab:tempdiff_5_messwerte} dargestellt. 
 \begin{table}
     \centering
-    \caption{Temperatur 5 verschiedener Messzeiten in $\si{\celsius}$}
+    \caption{Temperatur fünf verschiedener Messzeiten in $\si{\celsius}$.}
     \label{tab:temp_5_messwerte}
     \begin{tabular}{S[table-format=3, round-mode=places, round-precision=1] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2] S[table-format=2.2]}
         \toprule
@@ -59,7 +82,7 @@ $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\
 
 \begin{table}
     \centering
-    \caption{Temperaturunterschied nah zu fern in $\si{\celsius}$}
+    \caption{Temperaturunterschied nah zu fern in $\si{\kelvin}$.}
     \label{tab:tempdiff_5_messwerte}
     \begin{tabular}{S[table-format=3, round-mode=places, round-precision=1] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2] S[table-format=1.2, round-mode=places, round-precision=2]}
         \toprule
@@ -74,13 +97,13 @@ $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\
     \end{tabular}
 \end{table}
 
-\begin{equation}
-    \frac{\increment \symup{Q}}{\increment \symup{t}} = -\kappa A \frac{\increment \symup{T}}{\increment \symup{x}}
-\end{equation}
-
+Die Werte für die materialabhängige Wärmeleitfähigkeit werden der Tabelle \ref{tab:Literaturwerte} mit den im Vorraus 
+recherchierten Literaturwerten entnommen, 
+der Abstand zweier Temperatursensoren ist gemäß der Messung $\increment x = \SI{3.0}{\centi\meter}$. 
+Daraus ergeben sich die in Tabelle \ref{tab:Warmestrom} dargestellten Zahlenwerte für den Wärmestrom.
 \begin{table}
     \centering
-    \caption{Wärmestrom $\frac{\increment \symup{Q}}{\increment \symup{t}}$}
+    \caption{Wärmestrom $\frac{\increment \symup{Q}}{\increment \symup{t}}$ in $\si{\joule\per\second}$.}
     \label{tab:Warmestrom}
     \begin{tabular}{l | S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4] S[round-mode=places, round-precision=4]}
         \toprule
@@ -93,6 +116,29 @@ $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\
         \bottomrule
     \end{tabular}
 \end{table}
+
+Des Weiteren sollen die an den Sensoren T7 und T8 beziehungsweise T2 und T1 gemessenen Temperaturdifferenzen in einem 
+Diagramm der Zeit $t$ aufgetragen werden, also die Temperaturunterschiede an zwei verschiedenen Orten desselben Stabs, 
+hier Edelstahl und Messing. 
+\begin{figure}
+    \centering
+    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_t7t8.pdf}
+    \caption{Temperaturdifferenz $T7 - T8$ (Edelstahl).}
+    \label{fig:plot_tempDiff_t7t8}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_t2t1.pdf}
+    \caption{Temperaturdifferenz $T2 - T1$ (Messing).}
+    \label{fig:plot_tempDiff_t2t1}
+\end{figure}
+Beide Graphen haben anfänglich einen starken Anstieg, bei dem Edelstahl einen etwa doppelt so großen Wert erreicht wie Messing. 
+Danach flacht die Differenz des Messings exponentiell ab, wohingegen die des Edelstahls sich asymptotisch einem Maximalwert nähert. 
+Das zu Beginn starke Ansteigen indiziert das Anlegen einer dem Metall gegenüber höheren Temperatur, die zuerst am nahen 
+Sensor registriert wird und erst mit einiger Zeitverzögerung an der weiter entfernten Messstelle. 
+Die Temperaturdifferenz des Edelstahls steigt weiter an, das Temperaturgefälle nimmt also zu.
+Dahingegen findet beim Messing ein schleichender Ausgleich der hohen Differenz statt, die Wärme verteilt sich gleichmäßiger auf dem Stab.  
 
 \begin{table}
     \centering
@@ -112,20 +158,6 @@ $\symup{A}_{schmal} = \SI{0.7}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.28}{\
         \bottomrule
     \end{tabular}
 \end{table}
-
-\begin{figure}
-    \centering
-    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_t7t8.pdf}
-    \caption{Erste Messung, statisch.}
-    \label{fig:plot_tempDiff_t7t8}
-\end{figure}
-
-\begin{figure}
-    \centering
-    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_t2t1.pdf}
-    \caption{Erste Messung, statisch.}
-    \label{fig:plot_tempDiff_t2t1}
-\end{figure}
 
 % \begin{figure}
 %     \centering
