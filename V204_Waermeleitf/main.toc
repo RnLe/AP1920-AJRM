@@ -7,4 +7,4 @@
 \contentsline {subsection}{\numberline {3.2}Durchführung}{5}{subsection.3.2}% 
 \contentsline {section}{\numberline {4}Messdaten}{6}{section.4}% 
 \contentsline {section}{\numberline {5}Auswertung}{7}{section.5}% 
-\contentsline {section}{\numberline {6}Diskussion}{10}{section.6}% 
+\contentsline {section}{\numberline {6}Diskussion}{11}{section.6}% 
