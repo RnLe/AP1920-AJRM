@@ -93,7 +93,7 @@ def plot_and_write(x_values, y_values, material, function):
         plt.plot((maxima[0][i], maxima[0][i]), (log_like_func(maxima[0][i], params[0], params[1], params[2]), maxima[1][i]), color='k')
     plt.legend(['Ausgleichskurve', 'Minima', 'Messkurve', 'Maxima', 'Amplituden'])
     plt.savefig(f'{make_string}plots/amplitudes_{material}.pdf')
-    print('amplitudes_{material}.pdf created.')
+    print(f'amplitudes_{material}.pdf created.')
     fig.show()
 
     # write the data to a file
