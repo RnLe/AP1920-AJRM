@@ -2,6 +2,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import optimize
 import sys
+import math
+from uncertainties import ufloat, umath
+import uncertainties.unumpy as unp
 
 make_string = "../"
 if len(sys.argv) != 1 and sys.argv[1] == "-up":
@@ -75,8 +78,6 @@ def plot_and_write(x_values, y_values, material, function):
     x = minima[0]
     y = minima[1]
 
-    amps = []
-
     # curve fit!
     params, params_covariance = optimize.curve_fit(function, x, y, p0=[0, 1, 1])
 
@@ -84,12 +85,11 @@ def plot_and_write(x_values, y_values, material, function):
     fig = plt.figure(count)
     plt.plot(x_even, function(x_even, params[0], params[1], params[2]))
     plt.plot(x, y, 'r+')
-    plt.xlabel(r'Zeit $t / \si{\second}$')
-    plt.ylabel(r'Temperatur $T / \si{\celsius}$')
+    plt.xlabel('Zeit')
+    plt.ylabel('Temperatur')
     plt.plot(x_values, y_values)
     plt.plot(maxima[0], maxima[1], 'g+')
     for i in range(len(maxima[0])):
-        amps.append(maxima[1][i] - log_like_func(maxima[0][i], params[0], params[1], params[2]))
         plt.plot((maxima[0][i], maxima[0][i]), (log_like_func(maxima[0][i], params[0], params[1], params[2]), maxima[1][i]), color='k')
     plt.legend(['Ausgleichskurve', 'Minima', 'Messkurve', 'Maxima', 'Amplituden'])
     plt.savefig(f'{make_string}plots/amplitudes_{material}.pdf')
@@ -107,69 +107,169 @@ def plot_and_write(x_values, y_values, material, function):
         f.write("t\t\t°C\n")
         for i in range(len(maxima[0])):
             f.write(f"{maxima[0][i]}\t\t{maxima[1][i]}\n")
-    print('amplitudes_{material}.txt created.')    
+    print('amplitudes_{material}.txt created.')  
+
+    # standard deviation
+    # ------------------
+    sum_ = 0
+    for i in range(len(x)):
+        sum_ += (y[i] - log_like_func(x[i], *params))**2
+    variance_min = math.sqrt(sum_/len(x))
+
+
+    x = maxima[0]
+    y = maxima[1]
+
+    # curve fit!
+    params_max, params_max_covariance = optimize.curve_fit(function, x, y, p0=[0, 1, 1])
+
+    sum_ = 0
+    for i in range(len(x)):
+        sum_ += (y[i] - log_like_func(x[i], *params_max))**2
+    variance_max = math.sqrt(sum_/len(x))
+
+    log_min = []
+    log_max = []
+    for i in range(len(x)):
+        log_min.append(log_like_func(maxima[0][i], *params))
+        log_max.append(log_like_func(maxima[0][i], *params_max))
+
+    ulog_min = unp.uarray(log_min, variance_min)
+    ulog_max = unp.uarray(log_max, variance_max)
+
+    uamps = []
+    for i in range(len(ulog_min)):
+        uamps.append(ulog_max[i] - ulog_min[i])
     count += 1
-    return maxima, amps
+    return minima, maxima, uamps, variance_min, variance_max
 
 # in this case the minima/maxima lie on a log-like function
 def log_like_func(x, a, b, c):
     return (c*np.log(x-a) + b)
 
-maxima_1, amps_1 = plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
-maxima_2, amps_2 = plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
-maxima_5, amps_5 = plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
-maxima_6, amps_6 = plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
-maxima_7, amps_7 = plot_and_write(t_, t7_, "steel_close(t7)", log_like_func)
-maxima_8, amps_8 = plot_and_write(t_, t8_, "steel_far(t8)", log_like_func)
+minima_1, maxima_1, amps_1, variance_min_1, variance_max_1 = plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
+minima_2, maxima_2, amps_2, variance_min_2, variance_max_2 = plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
+minima_5, maxima_5, amps_5, variance_min_5, variance_max_5 = plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
+minima_6, maxima_6, amps_6, variance_min_6, variance_max_6 = plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
+minima_7, maxima_7, amps_7, variance_min_7, variance_max_7 = plot_and_write(t_, t7_, "steel_close(t7)", log_like_func)
+minima_8, maxima_8, amps_8, variance_min_8, variance_max_8 = plot_and_write(t_, t8_, "steel_far(t8)", log_like_func)
 
+    
+density = dict(brass=8600, aluminum=2700, steel=7840)
+specific_heat_capacity = dict(brass=375, aluminum=920, steel=460)
+delta_x = 0.03
+
+# thermal conductivity
+# brass
+thermal_conductivity_brass = []
+numerator = density["brass"]*specific_heat_capacity["brass"]*(delta_x)**2
+for i in range(len(amps_1)):
+    thermal_conductivity_brass.append(numerator/(2*umath.log(amps_2[i]/amps_1[i])*(maxima_1[0][i]-maxima_2[0][i])))
+
+# mean value of the thermal conductivity
+mean_brass = unp.nominal_values(thermal_conductivity_brass).sum()/len(thermal_conductivity_brass)
+sum_ = 0
+for i in range(len(thermal_conductivity_brass)):
+    sum_ += (thermal_conductivity_brass[i] - mean_brass)**2
+variance_thermal_con_brass = umath.sqrt(sum_/len(thermal_conductivity_brass))
+
+uthermal_conductivity_brass = ufloat(unp.nominal_values(mean_brass), unp.nominal_values(variance_thermal_con_brass))
+
+# aluminum
+thermal_conductivity_aluminum = []
+numerator = density["aluminum"]*specific_heat_capacity["aluminum"]*(delta_x)**2
+for i in range(len(amps_5)):
+    thermal_conductivity_aluminum.append(numerator/(2*umath.log(amps_6[i]/amps_5[i])*(maxima_5[0][i]-maxima_6[0][i])))
+
+# mean value of the thermal conductivity
+mean_aluminum = unp.nominal_values(thermal_conductivity_aluminum).sum()/len(thermal_conductivity_aluminum)
+sum_ = 0
+for i in range(len(thermal_conductivity_aluminum)):
+    sum_ += (thermal_conductivity_aluminum[i] - mean_aluminum)**2
+variance_thermal_con_aluminum = umath.sqrt(sum_/len(thermal_conductivity_aluminum))
+
+uthermal_conductivity_aluminum = ufloat(unp.nominal_values(mean_aluminum), unp.nominal_values(variance_thermal_con_aluminum))
+
+# steel
+thermal_conductivity_steel = []
+numerator = density["steel"]*specific_heat_capacity["steel"]*(delta_x)**2
+for i in range(len(amps_8)):
+    thermal_conductivity_steel.append(numerator/(2*umath.log(amps_7[i]/amps_8[i])*(maxima_8[0][i]-maxima_7[0][i])))
+
+# mean value of the thermal conductivity
+mean_steel = unp.nominal_values(thermal_conductivity_steel).sum()/len(thermal_conductivity_steel)
+sum_ = 0
+for i in range(len(thermal_conductivity_steel)):
+    sum_ += (thermal_conductivity_steel[i] - mean_steel)**2
+variance_thermal_con_steel = umath.sqrt(sum_/len(thermal_conductivity_steel))
+
+uthermal_conductivity_steel = ufloat(unp.nominal_values(mean_steel), unp.nominal_values(variance_thermal_con_steel))
+
+# WRITE DATA TO FILE
+# --------------------------------------
 # get the phase difference and amplitude
 # brass
-with open(f'{make_string}data/phase_amplitudes_brass_wide.txt', 'w') as f:
+with open(f'{make_string}data/phase_amps_tc_variances_brass_wide.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
-    for i in range(len(maxima_1[0])-1):
+    for i in range(len(maxima_1[0])):
         f.write(f"{maxima_2[0][i]}\t\t{maxima_1[0][i]}\t\t{abs(round(maxima_1[0][i]-maxima_2[0][i],4))}\n")
+    f.write("\n\tvariance minima\t\tvariance maxima\n")
+    f.write(f"FAR\t{variance_min_1}\t{variance_max_1}\n")
+    f.write(f"CLOSE\t{variance_min_2}\t{variance_max_2}\n")
     f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
     f.write("brass wide FAR (A1_brass)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_1[0])-1):
-        f.write(f"{maxima_1[0][i]}\t{round(amps_1[i], 2)}\t\n")
+    for i in range(len(amps_1)):
+        f.write(f"{maxima_1[0][i]}\t{amps_1[i]}\t\n")
     f.write("\nbrass wide CLOSE (A2_brass)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_2[0])-1):
-        f.write(f"{maxima_2[0][i]}\t{round(amps_2[i], 2)}\t\n")
+    for i in range(len(amps_2)):
+        f.write(f"{maxima_2[0][i]}\t{amps_2[i]}\t\n")
+    f.write(f"\nthermal conductivity brass = {uthermal_conductivity_brass}\n")
+    
 
-# alumiun
-with open(f'{make_string}data/phase_amplitudes_aluminum.txt', 'w') as f:
+# aluminum
+with open(f'{make_string}data/phase_amps_tc_variances_aluminum.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
-    for i in range(len(maxima_5[0])-1):
+    for i in range(len(maxima_5[0])):
         f.write(f"{maxima_6[0][i]}\t\t{maxima_5[0][i]}\t\t{abs(round(maxima_5[0][i]-maxima_6[0][i],4))}\n")
+    f.write("\n\tvariance minima\t\tvariance maxima\n")
+    f.write(f"FAR\t{variance_min_5}\t{variance_max_5}\n")
+    f.write(f"CLOSE\t{variance_min_6}\t{variance_max_6}\n")
     f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
     f.write("aluminum wide FAR (A1_aluminum)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_5[0])-1):
-        f.write(f"{maxima_5[0][i]}\t{round(amps_5[i], 2)}\t\n")
+    for i in range(len(amps_5)):
+        f.write(f"{maxima_5[0][i]}\t{amps_5[i]}\t\n")
     f.write("\naluminum wide CLOSE (A2_aluminum)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_6[0])-1):
-        f.write(f"{maxima_6[0][i]}\t{round(amps_6[i], 2)}\t\n")
+    for i in range(len(amps_6)):
+        f.write(f"{maxima_6[0][i]}\t{amps_6[i]}\t\n")
+    f.write(f"\nthermal conductivity aluminum = {uthermal_conductivity_aluminum}\n")
+    
 
 # steel
-with open(f'{make_string}data/phase_amplitudes_steel.txt', 'w') as f:
+with open(f'{make_string}data/phase_amps_tc_variances_steel.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
-    for i in range(len(maxima_8[0])-1):
+    for i in range(len(maxima_8[0])):
         f.write(f"{maxima_7[0][i]}\t\t{maxima_8[0][i]}\t\t{abs(round(maxima_8[0][i]-maxima_7[0][i],4))}\n")
+    f.write("\n\tvariance minima\t\tvariance maxima\n")
+    f.write(f"FAR\t{variance_min_8}\t{variance_max_8}\n")
+    f.write(f"CLOSE\t{variance_min_7}\t{variance_max_7}\n")
     f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
     f.write("steel wide FAR (A1_steel)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_8[0])-1):
-        f.write(f"{maxima_8[0][i]}\t{round(amps_8[i], 2)}\t\n")
+    for i in range(len(amps_8)):
+        f.write(f"{maxima_8[0][i]}\t{amps_8[i]}\t\n")
     f.write("\nsteel wide CLOSE (A2_steel)\n")
     f.write("t\tΔT (amplitude)\n")
-    for i in range(len(maxima_7[0])-1):
-        f.write(f"{maxima_7[0][i]}\t{round(amps_7[i], 2)}\t\n")
+    for i in range(len(amps_7)):
+        f.write(f"{maxima_7[0][i]}\t{amps_7[i]}\t\n")
+    f.write(f"\nthermal conductivity steel = {uthermal_conductivity_steel}\n")
+    
 
 # without input() the plots won't be shown
 # input()

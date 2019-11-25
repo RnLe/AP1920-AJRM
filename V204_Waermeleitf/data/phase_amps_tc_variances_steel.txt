@@ -8,6 +8,10 @@ maxima_close	maxima_far	Δt
 1110.0		1164.0		54.0
 1310.0		1370.0		60.0
 
+	variance minima		variance maxima
+FAR	0.19859956944665352	0.41718506578638376
+CLOSE	0.2503836184445949	0.36939566300004734
+
 amplitudes in Kelvin (from fitted e-function to peak)
 steel wide FAR (A1_steel)
 t	ΔT (amplitude)
@@ -28,3 +32,5 @@ t	ΔT (amplitude)
 910.0	14.6+/-0.4	
 1110.0	14.6+/-0.4	
 1310.0	14.6+/-0.4	
+
+thermal conductivity steel = 11.0+/-1.7

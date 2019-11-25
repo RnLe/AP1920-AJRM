@@ -12,6 +12,10 @@ maxima_close	maxima_far	Δt
 765.0		778.5		13.5
 846.0		858.0		12.0
 
+	variance minima		variance maxima
+FAR	0.13856929872908932	0.1378553795718484
+CLOSE	0.14326994043896513	0.17444731274022598
+
 amplitudes in Kelvin (from fitted e-function to peak)
 brass wide FAR (A1_brass)
 t	ΔT (amplitude)
@@ -40,3 +44,5 @@ t	ΔT (amplitude)
 685.0	9.34+/-0.23	
 765.0	9.32+/-0.23	
 846.0	9.31+/-0.23	
+
+thermal conductivity brass = 75+/-22

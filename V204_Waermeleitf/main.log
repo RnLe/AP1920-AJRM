@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  25 NOV 2019 17:38
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  25 NOV 2019 17:41
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.100 seconds
+luaotfload | main : initialization completed in 0.101 seconds
 (./header.tex
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -2037,12 +2037,6 @@ File: german.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 
 LaTeX Warning: Label `tab:data2' multiply defined.
 
-
-LaTeX Warning: Label `fig:plot_tempDiff_t7t8' multiply defined.
-
-
-LaTeX Warning: Label `fig:plot_tempDiff_t2t1' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -2378,19 +2372,11 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
+Package rerunfilecheck Info: File `main.aux' has not changed.
+(rerunfilecheck)             Checksum: 26A5EA7E5D733DE3C280155399FB41D0;11260.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 4992E93BFD4B6283580F50E9AFA6EE23;809.
 
-
-Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: 7B3192420226EEC34AEB41B70F2A7285;11631
-(rerunfilecheck)             After:  26A5EA7E5D733DE3C280155399FB41D0;11260.
-
-Package rerunfilecheck Warning: File `main.toc' has changed. Rerun.
-
-Package rerunfilecheck Info: Checksums for `main.toc':
-(rerunfilecheck)             Before: D4F2B24E16104846D043A2FD016B6CAC;809
-(rerunfilecheck)             After:  4992E93BFD4B6283580F50E9AFA6EE23;809.
 
 LaTeX Warning: There were undefined references.
 
@@ -2416,7 +2402,7 @@ ue_spec, 25 attribute_list, 2 write nodes
    avail lists: 1:8,2:6672,3:737,4:81,5:526,6:31,7:5838,8:51,9:1590,10:24,11:428
 
  55773 multiletter control sequences out of 65536+600000
- 240 fonts using 90274071 bytes
+ 240 fonts using 90272895 bytes
  88i,22n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'

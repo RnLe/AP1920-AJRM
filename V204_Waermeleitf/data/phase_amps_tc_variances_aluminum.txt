@@ -12,6 +12,10 @@ maxima_close	maxima_far	Δt
 763.5		770.0		6.5
 843.5		851.0		7.5
 
+	variance minima		variance maxima
+FAR	0.12500489971342835	0.1716055961957705
+CLOSE	0.13598950539324078	0.19550037782213875
+
 amplitudes in Kelvin (from fitted e-function to peak)
 aluminum wide FAR (A1_aluminum)
 t	ΔT (amplitude)
@@ -40,3 +44,5 @@ t	ΔT (amplitude)
 683.0	13.20+/-0.24	
 763.5	13.14+/-0.24	
 843.5	13.09+/-0.24	
+
+thermal conductivity aluminum = 206+/-33
