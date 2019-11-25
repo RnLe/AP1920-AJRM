@@ -10,6 +10,7 @@ if len(sys.argv) != 1 and sys.argv[1] == "-up":
 # depending on the folder you're in (1. /Hilfsmittel, 2. /V204_Waermeleitf)
 # ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt("../V204_Waermeleitf/Messung_2(dynamisch).txt", unpack=True)
 ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt(f"{make_string}data/Messung_2(dynamisch).txt", unpack=True)
+ID_, t1_, t2_, t3_, t4_, t5_, t6_, t7_, t8_, t_ = np.genfromtxt(f"{make_string}data/Messung_3(dynamisch).txt", unpack=True)
 count = 1
 
 # function to extract the amplitudes of a sine-like function
@@ -38,7 +39,7 @@ def getAmplitudes(y, x, AType):
 def plot_and_write(x_values, y_values, material, function):
     # create evenly spaced x values in the given range for maximized accuracy
     global count
-    x_even = np.linspace(t[1], t[len(t)-1], 1000)
+    x_even = np.linspace(x_values[1], x_values[len(x_values)-1], 1000)
 
     # ---------------------------
     # curve fitting, amplitudes, Δt
@@ -46,6 +47,30 @@ def plot_and_write(x_values, y_values, material, function):
     # get the amplitudes
     maxima = getAmplitudes(y_values, x_values, 'max')
     minima = getAmplitudes(y_values, x_values, 'min')
+
+    if material == "steel_far(t8)":
+        minima[0].pop(0)
+        minima[1].pop(0)
+        minima[0].pop(0)
+        minima[1].pop(0)
+        minima[0].pop(5)
+        minima[1].pop(5)
+        maxima[0].pop(0)
+        maxima[1].pop(0)
+        maxima[0].pop(0)
+        maxima[1].pop(0)
+        maxima[0].pop(6)
+        maxima[1].pop(6)
+    if material == "steel_close(t7)":
+        minima[0].pop(0)
+        minima[1].pop(0)
+        maxima[0].pop(0)
+        maxima[1].pop(0)
+    if material == "brass_wide_far(t1)":
+        minima[0].pop(0)
+        minima[1].pop(0)
+        maxima[0].pop(0)
+        maxima[1].pop(0)
 
     x = minima[0]
     y = minima[1]
@@ -57,11 +82,13 @@ def plot_and_write(x_values, y_values, material, function):
     fig = plt.figure(count)
     plt.plot(x_even, function(x_even, params[0], params[1], params[2]))
     plt.plot(x, y, 'r+')
+    plt.xlabel(r'Zeit $t / \si{\second}$')
+    plt.ylabel(r'Temperatur $T / \si{\celsius}$')
     plt.plot(x_values, y_values)
     plt.plot(maxima[0], maxima[1], 'g+')
     for i in range(len(maxima[0])):
         plt.plot((maxima[0][i], maxima[0][i]), (log_like_func(maxima[0][i], params[0], params[1], params[2]), maxima[1][i]), color='k')
-    plt.legend(['Ausgleichskurve Minima', 'Minima', 'Messkurve', 'Maxima', 'Amplituden'])
+    plt.legend(['Ausgleichskurve', 'Minima', 'Messkurve', 'Maxima', 'Amplituden'])
     plt.title(material)
     plt.savefig(f'{make_string}plots/amplitudes_{material}.pdf')
     print('amplitudes_{material}.pdf created.')
@@ -78,23 +105,39 @@ def plot_and_write(x_values, y_values, material, function):
         f.write("t\t\t°C\n")
         for i in range(len(maxima[0])):
             f.write(f"{maxima[0][i]}\t\t{maxima[1][i]}\n")
-        f.write("\nphase difference Δt\n")
-        f.write("maxima\tminima\t\tΔt\n")
-        # important!: there are less minima than maxima
-        for i in range(len(minima[0])):
-            f.write(f"{maxima[0][i]}\t{minima[0][i]}\t\t{round(abs(minima[1][i]-maxima[1][i]), 4)}\n")
     print('amplitudes_{material}.txt created.')    
     count += 1
+    return maxima
 
 # in this case the minima/maxima lie on a log-like function
 def log_like_func(x, a, b, c):
     return (c*np.log(x-a) + b)
 
-plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
-plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
-plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
-plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
-plot_and_write(t, t7, "steel_close(t7)", log_like_func)
+maxima_1 = plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
+maxima_2 = plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
+maxima_5 = plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
+maxima_6 = plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
+maxima_7 = plot_and_write(t_, t7_, "steel_close(t7)", log_like_func)
+maxima_8 = plot_and_write(t_, t8_, "steel_far(t8)", log_like_func)
+
+# get the phase difference
+with open(f'{make_string}data/phase_brass_wide.txt', 'w') as f:
+    f.write("phase difference Δt\n")
+    f.write("maxima_close\tmaxima_far\tΔt\n")
+    for i in range(len(maxima_1[0])-1):
+        f.write(f"{maxima_2[0][i]}\t\t{maxima_1[0][i]}\t\t{abs(round(maxima_1[0][i]-maxima_2[0][i],4))}\n")
+
+with open(f'{make_string}data/phase_aluminum.txt', 'w') as f:
+    f.write("phase difference Δt\n")
+    f.write("maxima_close\tmaxima_far\tΔt\n")
+    for i in range(len(maxima_5[0])-1):
+        f.write(f"{maxima_6[0][i]}\t\t{maxima_5[0][i]}\t\t{abs(round(maxima_5[0][i]-maxima_6[0][i],4))}\n")
+
+with open(f'{make_string}data/phase_steel.txt', 'w') as f:
+    f.write("phase difference Δt\n")
+    f.write("maxima_close\tmaxima_far\tΔt\n")
+    for i in range(len(maxima_8[0])-1):
+        f.write(f"{maxima_7[0][i]}\t\t{maxima_8[0][i]}\t\t{abs(round(maxima_8[0][i]-maxima_7[0][i],4))}\n")
 
 # without input() the plots won't be shown
 # input()
