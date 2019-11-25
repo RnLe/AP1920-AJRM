@@ -75,6 +75,8 @@ def plot_and_write(x_values, y_values, material, function):
     x = minima[0]
     y = minima[1]
 
+    amps = []
+
     # curve fit!
     params, params_covariance = optimize.curve_fit(function, x, y, p0=[0, 1, 1])
 
@@ -87,6 +89,7 @@ def plot_and_write(x_values, y_values, material, function):
     plt.plot(x_values, y_values)
     plt.plot(maxima[0], maxima[1], 'g+')
     for i in range(len(maxima[0])):
+        amps.append(maxima[1][i] - log_like_func(maxima[0][i], params[0], params[1], params[2]))
         plt.plot((maxima[0][i], maxima[0][i]), (log_like_func(maxima[0][i], params[0], params[1], params[2]), maxima[1][i]), color='k')
     plt.legend(['Ausgleichskurve', 'Minima', 'Messkurve', 'Maxima', 'Amplituden'])
     plt.title(material)
@@ -107,37 +110,67 @@ def plot_and_write(x_values, y_values, material, function):
             f.write(f"{maxima[0][i]}\t\t{maxima[1][i]}\n")
     print('amplitudes_{material}.txt created.')    
     count += 1
-    return maxima
+    return maxima, amps
 
 # in this case the minima/maxima lie on a log-like function
 def log_like_func(x, a, b, c):
     return (c*np.log(x-a) + b)
 
-maxima_1 = plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
-maxima_2 = plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
-maxima_5 = plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
-maxima_6 = plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
-maxima_7 = plot_and_write(t_, t7_, "steel_close(t7)", log_like_func)
-maxima_8 = plot_and_write(t_, t8_, "steel_far(t8)", log_like_func)
+maxima_1, amps_1 = plot_and_write(t, t1, "brass_wide_far(t1)", log_like_func)
+maxima_2, amps_2 = plot_and_write(t, t2, "brass_wide_close(t2)", log_like_func)
+maxima_5, amps_5 = plot_and_write(t, t5, "aluminum_far(t5)", log_like_func)
+maxima_6, amps_6 = plot_and_write(t, t6, "aluminum_close(t6)", log_like_func)
+maxima_7, amps_7 = plot_and_write(t_, t7_, "steel_close(t7)", log_like_func)
+maxima_8, amps_8 = plot_and_write(t_, t8_, "steel_far(t8)", log_like_func)
 
-# get the phase difference
-with open(f'{make_string}data/phase_brass_wide.txt', 'w') as f:
+# get the phase difference and amplitude
+# brass
+with open(f'{make_string}data/phase_amplitudes_brass_wide.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
     for i in range(len(maxima_1[0])-1):
         f.write(f"{maxima_2[0][i]}\t\t{maxima_1[0][i]}\t\t{abs(round(maxima_1[0][i]-maxima_2[0][i],4))}\n")
+    f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
+    f.write("brass wide FAR (A1_brass)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_1[0])-1):
+        f.write(f"{maxima_1[0][i]}\t{round(amps_1[i], 2)}\t\n")
+    f.write("\nbrass wide CLOSE (A2_brass)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_2[0])-1):
+        f.write(f"{maxima_2[0][i]}\t{round(amps_2[i], 2)}\t\n")
 
-with open(f'{make_string}data/phase_aluminum.txt', 'w') as f:
+# alumiun
+with open(f'{make_string}data/phase_amplitudes_aluminum.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
     for i in range(len(maxima_5[0])-1):
         f.write(f"{maxima_6[0][i]}\t\t{maxima_5[0][i]}\t\t{abs(round(maxima_5[0][i]-maxima_6[0][i],4))}\n")
+    f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
+    f.write("aluminum wide FAR (A1_aluminum)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_5[0])-1):
+        f.write(f"{maxima_5[0][i]}\t{round(amps_5[i], 2)}\t\n")
+    f.write("\naluminum wide CLOSE (A2_aluminum)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_6[0])-1):
+        f.write(f"{maxima_6[0][i]}\t{round(amps_6[i], 2)}\t\n")
 
-with open(f'{make_string}data/phase_steel.txt', 'w') as f:
+# steel
+with open(f'{make_string}data/phase_amplitudes_steel.txt', 'w') as f:
     f.write("phase difference Δt\n")
     f.write("maxima_close\tmaxima_far\tΔt\n")
     for i in range(len(maxima_8[0])-1):
         f.write(f"{maxima_7[0][i]}\t\t{maxima_8[0][i]}\t\t{abs(round(maxima_8[0][i]-maxima_7[0][i],4))}\n")
+    f.write("\namplitudes in Kelvin (from fitted e-function to peak)\n")
+    f.write("steel wide FAR (A1_steel)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_8[0])-1):
+        f.write(f"{maxima_8[0][i]}\t{round(amps_8[i], 2)}\t\n")
+    f.write("\nsteel wide CLOSE (A2_steel)\n")
+    f.write("t\tΔT (amplitude)\n")
+    for i in range(len(maxima_7[0])-1):
+        f.write(f"{maxima_7[0][i]}\t{round(amps_7[i], 2)}\t\n")
 
 # without input() the plots won't be shown
 # input()
