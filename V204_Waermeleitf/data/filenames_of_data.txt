@@ -1,0 +1,1 @@
+amplitudes_steel_close(t7).txt Messung_3(dynamisch).txt amplitudes_aluminum_far(t5).txt filenames_for_make.txt amplitudes_aluminum_close(t6).txt Messung_1(statisch).txt amplitudes_brass_wide_far(t1).txt alt_Messung_1(statisch)_zuVieleMesswerte.txt filenames_of_data.txt amplitudes_brass_wide_close(t2).txt Messung_2(dynamisch).txt 
