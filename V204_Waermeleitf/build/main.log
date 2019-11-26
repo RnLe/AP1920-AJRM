@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  26 NOV 2019 02:13
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  26 NOV 2019 02:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.108 seconds
+luaotfload | main : initialization completed in 0.113 seconds
 (./header.tex (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -2028,48 +2028,43 @@ Overfull \hbox (83.64984pt too wide) in paragraph at lines 284--284
 [] [] 
  []
 
-
-Overfull \hbox (88.81926pt too wide) in paragraph at lines 272--318
-\TU/LatinModernMath(1)/m/n/10.95 ([−5.43820767, 14.36801819, 7.66920384])$ \TU/lmr/m/n/10.95 T6, Mi-ni-ma: $\TU/LatinModernMath(1)/m/n/10.95 (a, b, c) = ([−43.92552164, 10.56412431, 8.04223001])$ 
- []
-
 <plots/amplitudes_steel_far(t8).pdf, id=272, 417.7206pt x 258.0049pt>
 File: plots/amplitudes_steel_far(t8).pdf Graphic file (type pdf)
 <use plots/amplitudes_steel_far(t8).pdf>
-Package luatex.def Info: plots/amplitudes_steel_far(t8).pdf  used on input line 360.
+Package luatex.def Info: plots/amplitudes_steel_far(t8).pdf  used on input line 361.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
 
-Overfull \hbox (20.91246pt too wide) in paragraph at lines 360--361
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 361--362
  [][] 
  []
 
 <plots/amplitudes_steel_close(t7).pdf, id=273, 417.7206pt x 258.0049pt>
 File: plots/amplitudes_steel_close(t7).pdf Graphic file (type pdf)
 <use plots/amplitudes_steel_close(t7).pdf>
-Package luatex.def Info: plots/amplitudes_steel_close(t7).pdf  used on input line 366.
+Package luatex.def Info: plots/amplitudes_steel_close(t7).pdf  used on input line 367.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
 
-Overfull \hbox (20.91246pt too wide) in paragraph at lines 366--367
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 367--368
  [][] 
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 388
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 388
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 389
  
  []
 
 
 Overfull \hbox (5.475pt too wide) detected at line 389
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 390
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 390
  
  []
 
@@ -2104,17 +2099,17 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
 Here is how much of LuaTeX's memory you used:
  53341 strings out of 494291
- 125007,1977958 words of node,token memory allocated
+ 125002,1977958 words of node,token memory allocated
  788 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 50 attribute, 83 glue_spec, 27 attribute_list, 2 write nodes
-   avail lists: 1:8,2:10580,3:1084,4:84,5:613,6:45,7:6655,8:58,9:2705,10:24,11:422
+   avail lists: 1:9,2:11067,3:1084,4:87,5:612,6:45,7:6882,8:58,9:2802,10:24,11:422
  55836 multiletter control sequences out of 65536+600000
  240 fonts using 90272895 bytes
  88i,22n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 </home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (14 pages, 366808 bytes).
+Output written on main.pdf (14 pages, 366994 bytes).
 
 PDF statistics: 487 PDF objects out of 1000 (max. 8388607)
  341 compressed objects within 4 object streams
