@@ -50,9 +50,9 @@ und Edelstahl in ebendieser Reihenfolge.
 Dementsprechend staffelt sich ebenfalls das zugehörige Maß der Wärmeleitung der einzelnen Proben. 
 
 Nun soll für fünf verschiedene Messzeiten der Wärmestrom bestimmt werden, die sich über die Formel 
-\begin{equation}
+\begin{equation*}
     \frac{\increment \symup{Q}}{\increment \symup{t}} = -\kappa A \frac{\increment \symup{T}}{\increment \symup{x}}
-\end{equation}
+\end{equation*}
 berechnen lässt (vgl. dazu die Gleichung \eqref{eqn:waermestrom}). 
 Hierbei gelten für Aluminium und Edelstahl ebenso die Maße der breiten Querschnittsfläche 
 \begin{align*}
@@ -223,9 +223,10 @@ Dasselbe wird nun für die Maxima gemacht.
 Die Differenz der abgelesenen Werte und der an der entsprechenden Stelle ausgewerteten Funktion wird berechnet. 
 Mittels dieser Differenzen werden die Varianz $V(X)$ und somit die Standardabweichung $\sigma_x$ ermittelt (bei N Messwerten). 
 \begin{equation*}
-V(X)= \frac{1}{N} \sum_{i=0}^N \increment x_i ^2 
-
-\sigma_x = \sqrt{V(X)} 
+    V(X)= \frac{1}{N} \sum_{i=0}^N \increment x_i ^2
+\end{equation*}
+\begin{equation*}
+    \sigma_x = \sqrt{V(X)} 
 \end{equation*}
 Nun wird nach Gleichung \eqref{eqn:kappa} die Wärmeleitfähigkeit berechnet. 
 % \begin{table}
@@ -263,10 +264,10 @@ Nun wird nach Gleichung \eqref{eqn:kappa} die Wärmeleitfähigkeit berechnet.
 %     \end{tabular}
 % \end{table}
 Der Mittelwert der verschiedenen Werte für $\kappa$ berechnet sich durch 
-\begin{equation}
+\begin{equation*}
 \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i .
 \label{eqn:average}
-\end{equation}
+\end{equation*}
 Für die Messgröße $x$ erhält man dann $x = \bar{x} \pm \sigma_x$.
 Für die Wärmeleitfähigkeit des Messings ergibt sich an dieser Stelle somit $\kappa = \SI{75 \pm 22}{\watt\per\meter\per\kelvin} $.
 
