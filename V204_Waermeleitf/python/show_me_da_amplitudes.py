@@ -107,7 +107,7 @@ def plot_and_write(x_values, y_values, material, function):
         f.write("t\t\t°C\n")
         for i in range(len(maxima[0])):
             f.write(f"{maxima[0][i]}\t\t{maxima[1][i]}\n")
-    print('amplitudes_{material}.txt created.')  
+    print(f'amplitudes_{material}.txt created.')  
 
     # standard deviation
     # ------------------

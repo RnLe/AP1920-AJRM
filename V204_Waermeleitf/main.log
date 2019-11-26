@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  25 NOV 2019 17:41
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  26 NOV 2019 01:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.101 seconds
+luaotfload | main : initialization completed in 0.120 seconds
 (./header.tex
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -2035,6 +2035,9 @@ File: german.lbx 2019/08/31 v3.13a biblatex localization (PK/MW)
 ))
 (./main.aux
 
+LaTeX Warning: Label `fig:tempDiff_t1t4t5t8' multiply defined.
+
+
 LaTeX Warning: Label `tab:data2' multiply defined.
 
 )
@@ -2275,12 +2278,7 @@ File: content/platine_photo.pdf Graphic file (type pdf)
 Package luatex.def Info: content/platine_photo.pdf  used on input line 7.
 (luatex.def)             Requested size: 418.25555pt x 254.94374pt.
  [4]) (./content/messdaten.tex [5<./content/platine_photo.pdf>]
-Overfull \hbox (69.63354pt too wide) in paragraph at lines 7--20
- [][] 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (10.95001pt too wide) detected at line 55
  
  []
 
@@ -2306,76 +2304,505 @@ Overfull \hbox (20.91246pt too wide) in paragraph at lines 18--19
  []
 
 [7]
-
-LaTeX Warning: Reference `eqn:waermemenge' on page 8 undefined on input line 56.
-
-
-<plots/plot_tempDiff_steel.pdf, id=93, 417.7206pt x 258.0049pt>
+<plots/plot_tempDiff_steel.pdf, id=94, 417.7206pt x 258.0049pt>
 File: plots/plot_tempDiff_steel.pdf Graphic file (type pdf)
 <use plots/plot_tempDiff_steel.pdf>
-Package luatex.def Info: plots/plot_tempDiff_steel.pdf  used on input line 125.
+Package luatex.def Info: plots/plot_tempDiff_steel.pdf  used on input line 131.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
-[8<./plots/plot_t1_t4.pdf><./plots/plot_t5_t8.pdf>]
-<plots/plot_tempDiff_brass_wide.pdf, id=153, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 131--132
+ [][] 
+ []
+
+<plots/plot_tempDiff_brass_wide.pdf, id=95, 417.7206pt x 258.0049pt>
 File: plots/plot_tempDiff_brass_wide.pdf Graphic file (type pdf)
 <use plots/plot_tempDiff_brass_wide.pdf>
 Package luatex.def Info: plots/plot_tempDiff_brass_wide.pdf  used on input line 
-132.
+136.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
-) (./content/diskussion.tex
-[9] [10<./plots/plot_tempDiff_steel.pdf><./plots/plot_tempDiff_brass_wide.pdf>]
-<plots/amplitudes_brass_wide_far(t1).pdf, id=214, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 136--137
+[][] 
+ []
+
+[8<./plots/plot_t1_t4.pdf><./plots/plot_t5_t8.pdf>] [9<./plots/plot_tempDiff_ste
+el.pdf><./plots/plot_tempDiff_brass_wide.pdf>]
+<plots/amplitudes_brass_wide_far(t1).pdf, id=210, 417.7206pt x 258.0049pt>
 File: plots/amplitudes_brass_wide_far(t1).pdf Graphic file (type pdf)
 <use plots/amplitudes_brass_wide_far(t1).pdf>
 Package luatex.def Info: plots/amplitudes_brass_wide_far(t1).pdf  used on input 
-line 7.
+line 178.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
 
-Overfull \hbox (20.91246pt too wide) in paragraph at lines 7--8
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 178--179
  [][] 
  []
 
 
-Overfull \hbox (83.64984pt too wide) in paragraph at lines 8--8
+Overfull \hbox (83.64984pt too wide) in paragraph at lines 179--179
 [] [] 
  []
 
-<plots/amplitudes_brass_wide_close(t2).pdf, id=215, 417.7206pt x 258.0049pt>
+<plots/amplitudes_brass_wide_close(t2).pdf, id=211, 417.7206pt x 258.0049pt>
 File: plots/amplitudes_brass_wide_close(t2).pdf Graphic file (type pdf)
 <use plots/amplitudes_brass_wide_close(t2).pdf>
 Package luatex.def Info: plots/amplitudes_brass_wide_close(t2).pdf  used on inpu
-t line 13.
+t line 184.
 (luatex.def)             Requested size: 417.71957pt x 258.00426pt.
 
-Overfull \hbox (20.91246pt too wide) in paragraph at lines 13--14
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 184--185
  [][] 
  []
 
 
-Overfull \hbox (83.64984pt too wide) in paragraph at lines 14--14
+Overfull \hbox (83.64984pt too wide) in paragraph at lines 185--185
 [] [] 
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 40
+Overfull \hbox (27.98822pt too wide) detected at line 201
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 201
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 202
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 202
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 203
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 203
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 204
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 204
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 205
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 205
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 206
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 206
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 207
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 207
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 208
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 208
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 209
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 209
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 210
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 210
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 211
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.23 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 211
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.20 
+ []
+
+[10<./plots/amplitudes_brass_wide_far(t1).pdf><./plots/amplitudes_brass_wide_clo
+se(t2).pdf>]
+<plots/amplitudes_aluminum_far(t5).pdf, id=255, 417.7206pt x 258.0049pt>
+File: plots/amplitudes_aluminum_far(t5).pdf Graphic file (type pdf)
+<use plots/amplitudes_aluminum_far(t5).pdf>
+Package luatex.def Info: plots/amplitudes_aluminum_far(t5).pdf  used on input li
+ne 277.
+(luatex.def)             Requested size: 417.71957pt x 258.00426pt.
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 277--278
+ [][] 
+ []
+
+
+Overfull \hbox (83.64984pt too wide) in paragraph at lines 278--278
+[] [] 
+ []
+
+<plots/amplitudes_aluminum_close(t6).pdf, id=256, 417.7206pt x 258.0049pt>
+File: plots/amplitudes_aluminum_close(t6).pdf Graphic file (type pdf)
+<use plots/amplitudes_aluminum_close(t6).pdf>
+Package luatex.def Info: plots/amplitudes_aluminum_close(t6).pdf  used on input 
+line 283.
+(luatex.def)             Requested size: 417.71957pt x 258.00426pt.
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 283--284
+ [][] 
+ []
+
+
+Overfull \hbox (83.64984pt too wide) in paragraph at lines 284--284
+[] [] 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 300
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 300
  
  []
 
-)
+
+Overfull \hbox (27.98822pt too wide) detected at line 300
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 301
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 301
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 301
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 302
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 302
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 302
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 303
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 303
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 303
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 304
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 304
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 304
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 305
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 305
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 305
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 306
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 306
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 306
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 307
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 307
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 307
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 308
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 308
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 308
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 309
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 309
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 309
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 310
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.24 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 310
+ 
+ []
+
+
+Overfull \hbox (27.98822pt too wide) detected at line 310
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.21 
+ []
+
+
+Overfull \hbox (88.81926pt too wide) in paragraph at lines 272--318
+\TU/LatinModernMath(1)/m/n/10.95 ([−5.43820767, 14.36801819, 7.66920384])$ \T
+U/lmr/m/n/10.95 T6, Mi-ni-ma: $\TU/LatinModernMath(1)/m/n/10.95 (a, b, c) = ([
+−43.92552164, 10.56412431, 8.04223001])$ 
+ []
+
+<plots/amplitudes_steel_far(t8).pdf, id=257, 417.7206pt x 258.0049pt>
+File: plots/amplitudes_steel_far(t8).pdf Graphic file (type pdf)
+<use plots/amplitudes_steel_far(t8).pdf>
+Package luatex.def Info: plots/amplitudes_steel_far(t8).pdf  used on input line 
+360.
+(luatex.def)             Requested size: 417.71957pt x 258.00426pt.
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 360--361
+ [][] 
+ []
+
+<plots/amplitudes_steel_close(t7).pdf, id=258, 417.7206pt x 258.0049pt>
+File: plots/amplitudes_steel_close(t7).pdf Graphic file (type pdf)
+<use plots/amplitudes_steel_close(t7).pdf>
+Package luatex.def Info: plots/amplitudes_steel_close(t7).pdf  used on input lin
+e 366.
+(luatex.def)             Requested size: 417.71957pt x 258.00426pt.
+
+Overfull \hbox (20.91246pt too wide) in paragraph at lines 366--367
+ [][] 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 383
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 383
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 384
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 384
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 385
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 385
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 386
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 386
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 387
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 387
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 388
+ 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 388
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 388
+ 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 388
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 389
+ 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 389
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.4 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 389
+ 
+ []
+
+
+Overfull \hbox (22.51321pt too wide) detected at line 389
+$\TU/LatinModernMath(1)/m/n/10.95 ±$\TU/lmr/m/n/10.95 0.5 
+ []
+
+) (./content/diskussion.tex [11] [12<./plots/amplitudes_aluminum_far(t5).pdf><./
+plots/amplitudes_aluminum_close(t6).pdf>])
 
 LaTeX Warning: Empty bibliography on input line 27.
 
-[11<./plots/amplitudes_brass_wide_far(t1).pdf><./plots/amplitudes_brass_wide_clo
-se(t2).pdf>]
+[13<./plots/amplitudes_steel_far(t8).pdf><./plots/amplitudes_steel_close(t7).pdf
+>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 26A5EA7E5D733DE3C280155399FB41D0;11260.
+(rerunfilecheck)             Checksum: 5E1573056D5844E8C6468A3C89728271;13518.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 4992E93BFD4B6283580F50E9AFA6EE23;809.
+(rerunfilecheck)             Checksum: C1687C6161D1D3BB4F40E88BDC343967;809.
 
 
 LaTeX Warning: There were undefined references.
@@ -2394,14 +2821,14 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53248 strings out of 494291
+ 53295 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 776 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 3 glue, 4 kern, 1 glyph, 46 attribute, 82 gl
-ue_spec, 25 attribute_list, 2 write nodes
-   avail lists: 1:8,2:6672,3:737,4:81,5:526,6:31,7:5838,8:51,9:1590,10:24,11:428
+ 789 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 52 attribute, 82 glue_spec
+, 28 attribute_list, 2 write nodes
+   avail lists: 1:8,2:7806,3:968,4:81,5:522,6:41,7:5826,8:58,9:1979,10:24,11:428
 
- 55773 multiletter control sequences out of 65536+600000
+ 55802 multiletter control sequences out of 65536+600000
  240 fonts using 90272895 bytes
  88i,22n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
@@ -2421,10 +2848,10 @@ mroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/p
 ublic/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/
 opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/
 fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 304839 bytes).
+Output written on main.pdf (13 pages, 358507 bytes).
 
-PDF statistics: 382 PDF objects out of 1000 (max. 8388607)
- 265 compressed objects within 3 object streams
- 44 named destinations out of 1000 (max. 131072)
+PDF statistics: 458 PDF objects out of 1000 (max. 8388607)
+ 316 compressed objects within 4 object streams
+ 50 named destinations out of 1000 (max. 131072)
  80 words of extra memory for PDF output out of 10000 (max. 100000000)
 

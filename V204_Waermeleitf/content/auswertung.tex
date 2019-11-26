@@ -53,7 +53,7 @@ Nun soll für fünf verschiedene Messzeiten der Wärmestrom bestimmt werden, die
 \begin{equation}
     \frac{\increment \symup{Q}}{\increment \symup{t}} = -\kappa A \frac{\increment \symup{T}}{\increment \symup{x}}
 \end{equation}
-berechnen lässt (vgl. dazu die Gleichung \eqref{eqn:waermemenge}). 
+berechnen lässt (vgl. dazu die Gleichung \eqref{eqn:waermestrom}). 
 Hierbei gelten für Aluminium und Edelstahl ebenso die Maße der breiten Querschnittsfläche 
 \begin{align*}
 \symup{A}_{breit} = \SI{1.2}{\centi\m} \times \SI{0.4}{\centi\m} = \SI{0.48}{\square\centi\m},
@@ -123,20 +123,24 @@ Daraus ergeben sich die in Tabelle \ref{tab:Warmestrom} dargestellten Zahlenwert
 
 Des Weiteren sollen die an den Sensoren T7 und T8 beziehungsweise T2 und T1 gemessenen Temperaturdifferenzen in einem 
 Diagramm der Zeit $t$ aufgetragen werden, also die Temperaturunterschiede an zwei verschiedenen Orten desselben Stabs, 
-hier Edelstahl und Messing. 
+hier Edelstahl und Messing.
 \begin{figure}
     \centering
-    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_steel.pdf}
-    \caption{Temperaturdifferenz $T7 - T8$ (Edelstahl).}
-    \label{fig:plot_tempDiff_t7t8}
+    \begin{subfigure}{.5\textwidth}
+        \centering
+        \includegraphics[max width=1.1\linewidth]{plots/plot_tempDiff_steel.pdf}
+        \caption{$T7 - T8$ (Edelstahl).}
+        \label{fig:plot_tempDiff_t7t8}
+    \end{subfigure}%
+    \begin{subfigure}{.5\textwidth}
+        \includegraphics[max width=1.1\linewidth]{plots/plot_tempDiff_brass_wide.pdf}
+        \caption{$T2 - T1$ (Messing).}
+        \label{fig:plot_tempDiff_t2t1}
+    \end{subfigure}
+    \caption{Temperaturdifferenzen}
+    \label{fig:tempDiff_t1t4t5t8}
 \end{figure}
 
-\begin{figure}
-    \centering
-    \includegraphics[max width=\linewidth]{plots/plot_tempDiff_brass_wide.pdf}
-    \caption{Temperaturdifferenz $T2 - T1$ (Messing).}
-    \label{fig:plot_tempDiff_t2t1}
-\end{figure}
 Beide Graphen haben anfänglich einen starken Anstieg, bei dem Edelstahl einen etwa doppelt so großen Wert erreicht wie Messing. 
 Danach flacht die Differenz des Messings exponentiell ab, wohingegen die des Edelstahls sich asymptotisch einem Maximalwert nähert. 
 Das zu Beginn starke Ansteigen indiziert das Anlegen einer dem Metall gegenüber höheren Temperatur, die zuerst am nahen 
@@ -188,22 +192,23 @@ der Ausgleichskurve berechnet (vgl. Tabelle \ref{tab:amps_brass}).
     \centering
     \caption{Amplituden von Messing, nah und fern, in $\si{\kelvin}$.}
     \label{tab:amps_brass}
-    \begin{tabular}{S[table-format=2.1] | S[table-format=3.1] S[table-format=1.2] | S[table-format=3.1] S[table-format=1.2]}
+    \begin{tabular}{S[table-format=2.1] | S[table-format=3.1] S[table-format=4.6] | S[table-format=3.1] S[table-format=4.6]}
         \toprule
          & \multicolumn{2}{c}{$\symup{Messing}_\text{nah}$} & \multicolumn{2}{c}{$\symup{Messing}_\text{fern}$} \\
         \cmidrule(lr){2-3}\cmidrule(lr){4-5}
         {$\increment t[\si{\second}]$} &{$t[\si{\second}]$} & {$\increment T[{\si{\kelvin}]}$} & {$t[\si{\s}]$} & {$\increment T[{\si{\kelvin}]}$} \\
         \midrule
-        34.0   &  46.5 &	9.70 &    80.5 & 0.91 \\	
-        19.5   & 126.0 &	9.47 &   145.5 & 2.11 \\		
-        17.0   & 205.5 &	9.36 &   222.5 & 2.39 \\		
-        14.5   & 285.5 &	9.38 &   300.0 & 2.63 \\		
-        14.5   & 365.5 &	9.43 &   380.0 & 2.72 \\		
-        13.5   & 445.5 &	9.46 &   459.0 & 2.78 \\		
-        13.5   & 525.5 &	9.53 &   539.0 & 2.81 \\		
-        13.5   & 605.0 &	9.57 &   618.5 & 2.84 \\		
-        12.0   & 685.0 &	9.47 &   697.0 & 2.78 \\		
-        13.5   & 765.0 &	9.40 &   778.5 & 2.65 \\
+        34.0   &  46.5 &	9.64$\pm$0.23 &    80.5 & 0.89$\pm$0.20 \\	
+        19.5   & 126.0 &	9.54$\pm$0.23 &   145.5 & 2.13$\pm$0.20 \\		
+        17.0   & 205.5 &	9.49$\pm$0.23 &   222.5 & 2.53$\pm$0.20 \\		
+        14.5   & 285.5 &	9.45$\pm$0.23 &   300.0 & 2.67$\pm$0.20 \\		
+        14.5   & 365.5 &	9.42$\pm$0.23 &   380.0 & 2.71$\pm$0.20 \\		
+        13.5   & 445.5 &	9.39$\pm$0.23 &   459.0 & 2.71$\pm$0.20 \\		
+        13.5   & 525.5 &	9.37$\pm$0.23 &   539.0 & 2.70$\pm$0.20 \\		
+        13.5   & 605.0 &	9.35$\pm$0.23 &   618.5 & 2.68$\pm$0.20 \\		
+        12.0   & 685.0 &	9.34$\pm$0.23 &   697.0 & 2.65$\pm$0.20 \\		
+        13.5   & 765.0 &	9.32$\pm$0.23 &   778.5 & 2.62$\pm$0.20 \\ 
+        12.0   & 846.0 &	9.31$\pm$0.23 &   858.0 & 2.59$\pm$0.20	\\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -214,11 +219,7 @@ Mithilfe der numerischen Methode der kleinsten Quadrate, die durch ein entsprech
 werden diese Parameter dann bestimmt. 
 So ergibt sich für die Paramter von T1 $\symup{(a,b,c)}=(-14.69279466, -2.94742813, 9.93498876)$ und für T2 
 $\symup{(a,b,c)}=(-50.49563487, -1.97913302, 9.86737879)$.
-Dasselbe wird nun für die Maxima gemacht:
-\begin{equation*}
-\symup{T1: (a,b,c)} = ( , , ), %hier Parameter Maxima Amplituden einfügen
-\symup{T2: (a,b,c)} = ( , , ).%ebenfalls einfügen
-\end{equation*}
+Dasselbe wird nun für die Maxima gemacht.
 Die Differenz der abgelesenen Werte und der an der entsprechenden Stelle ausgewerteten Funktion wird berechnet. 
 Mittels dieser Differenzen werden die Varianz $V(X)$ und somit die Standardabweichung $\sigma_x$ ermittelt (bei N Messwerten). 
 \begin{equation*}
@@ -226,61 +227,60 @@ V(X)= \frac{1}{N} \sum_{i=0}^N \increment x_i ^2
 \sigma_x = \sqrt{V(X)} 
 \end{equation*}
 Nun wird nach Gleichung \eqref{eqn:kappa} die Wärmeleitfähigkeit berechnet. 
-Alle verwendeten Werte werden in Tabelle \ref{tab:unc_brass} dargestellt.
-\begin{table}
-    \centering
-    \caption{Messing.}
-    \label{tab:unc_brass}
-    \begin{tabular}{S S S S S S S S | S S S S S S S S}
-        \toprule
-        \multicolumn{8}{c}{$\symup{Messing}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Messing}_\text{fern}$} \\
-        \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T2} & {$\symup{f_t2(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T2} & {\symup{f_t2(t_max)}} & {$\increment T_max$} & 
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T1} & {$\symup{f_t1(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T1} & {\symup{f_t1(t_max)}} & {$\increment T_max$}\\
-        \midrule
-        %hier entsprechende Zwischenwerte einfügen
-        \bottomrule
-    \end{tabular}
-\end{table}
-\begin{table}
-    \centering
-    \caption{Aus der jeweiligen Messdatenzeile berechnete Wärmeleitfähigkeit $\kappa$.}
-    \label{tab:kappa_brass}
-    \begin{tabular}{S S}
-        \toprule
-        {$i$} & {$\kappa_i$} \\
-        \midrule
-        1 &    \\  %hier berechnete werte für kappa einfügen
-        2 &    \\ 
-        3 &    \\ 
-        4 &    \\ 
-        5 &    \\ 
-        6 &    \\ 
-        7 &    \\ 
-        8 &    \\ 
-          &    \\ 
-    \end{tabular}
-\end{table}
+% \begin{table}
+%     \centering
+%     \caption{Messing.}
+%     \label{tab:unc_brass}
+%     \begin{tabular}{S S S S S S | S S S S S S}
+%         \toprule
+%         \multicolumn{8}{c}{$\symup{Messing}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Messing}_\text{fern}$} \\
+%         \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
+%         {$\increment t_{min} [\si{\second}]$} & {T2 min} & {$\increment T_{min}$} & {$\increment t_{max} [\si{\second}]$} & {T2 max} & {$\increment T_{max}$} & 
+%         {$\increment t_{min} [\si{\second}]$} & {T1 min} & {$\increment T_{min}$} & {$\increment t_{max} [\si{\second}]$} & {T1 max} & {$\increment T_{max}$}\\
+%         \midrule
+%         %hier entsprechende Zwischenwerte einfügen
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+% \begin{table}
+%     \centering
+%     \caption{Wärmeleitfähigkeit $\kappa$ für Messing pro Amplitude.}
+%     \label{tab:kappa_brass}
+%     \begin{tabular}{S S}
+%         \toprule
+%         {$i$} & {$\kappa_i$} \\
+%         \midrule
+%         1 &    \\  %hier berechnete werte für kappa einfügen
+%         2 &    \\ 
+%         3 &    \\ 
+%         4 &    \\ 
+%         5 &    \\ 
+%         6 &    \\ 
+%         7 &    \\ 
+%         8 &    \\ 
+%           &    \\ 
+%     \end{tabular}
+% \end{table}
 Der Mittelwert der verschiedenen Werte für $\kappa$ berechnet sich durch 
 \begin{equation}
 \bar{x} = \frac{1}{N} \sum_{i=1}^N x_i .
 \label{eqn:average}
 \end{equation}
 Für die Messgröße $x$ erhält man dann $x = \bar{x} \pm \sigma_x$.
-Für die Wärmeleitfähigkeit des Messings ergibt sich an dieser Stelle somit $\kappa = \pm $ %hier kappa für messing einfügen inkl sigma
+Für die Wärmeleitfähigkeit des Messings ergibt sich an dieser Stelle somit $\kappa = 75\pm22 $
 
 Dasselbe Vorgehen soll bei Aluminium durchgeführt werden:
 \begin{figure}
     \centering
     \begin{minipage}{.5\textwidth}
         \centering
-        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_brass_wide_far(t1).pdf} %HIER Datei für Aluminium einfügen!
+        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_aluminum_far(t5).pdf}
         \caption{T5, fern.}
         \label{fig:plot_amps_t5}
     \end{minipage}%
     \begin{minipage}{.5\textwidth}
         \centering
-        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_brass_wide_close(t2).pdf} %HIER Datei Aluminium einfügen
+        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_aluminum_close(t6).pdf}
         \caption{T6, nah.}
         \label{fig:plot_amps_t6}
     \end{minipage}
@@ -291,78 +291,79 @@ Dasselbe Vorgehen soll bei Aluminium durchgeführt werden:
     \centering
     \caption{Amplituden von Aluminium, nah und fern, in $\si{\kelvin}$.}
     \label{tab:amps_alu}
-    \begin{tabular}{S[table-format=2.1] | S[table-format=3.1] S[table-format=1.2] | S[table-format=3.1] S[table-format=1.2]}
+    \begin{tabular}{S[table-format=2.1] | S[table-format=4.6] S[table-format=1.2] | S[table-format=3.1] S[table-format=4.6]}
         \toprule
          & \multicolumn{2}{c}{$\symup{Aluminium}_\text{nah}$} & \multicolumn{2}{c}{$\symup{Aluminium}_\text{fern}$} \\
         \cmidrule(lr){2-3}\cmidrule(lr){4-5}
         {$\increment t[\si{\second}]$} &{$t[\si{\second}]$} & {$\increment T[{\si{\kelvin}]}$} & {$t[\si{\s}]$} & {$\increment T[{\si{\kelvin}]}$} \\
         \midrule
-        34.0   &  46.5 &	9.70 &    80.5 & 0.91 \\	%hier die Messwerte für Aluminium einfügen (dies sind die von Messing)
-        19.5   & 126.0 &	9.47 &   145.5 & 2.11 \\		
-        17.0   & 205.5 &	9.36 &   222.5 & 2.39 \\		
-        14.5   & 285.5 &	9.38 &   300.0 & 2.63 \\		
-        14.5   & 365.5 &	9.43 &   380.0 & 2.72 \\		
-        13.5   & 445.5 &	9.46 &   459.0 & 2.78 \\		
-        13.5   & 525.5 &	9.53 &   539.0 & 2.81 \\		
-        13.5   & 605.0 &	9.57 &   618.5 & 2.84 \\		
-        12.0   & 685.0 &	9.47 &   697.0 & 2.78 \\		
-        13.5   & 765.0 &	9.40 &   778.5 & 2.65 \\
+        12.0  &  44.0 &	12.68$\pm$0.24 &    56.0 &	5.50$\pm$0.21 \\
+        8.0   & 123.5 &	13.44$\pm$0.24 &   131.5 &	6.41$\pm$0.21 \\		
+        7.0   & 203.5 &	13.54$\pm$0.24 &   210.5 &	6.53$\pm$0.21 \\		
+        7.0   & 283.5 &	13.51$\pm$0.24 &   290.5 &	6.53$\pm$0.21 \\		
+        7.0   & 363.5 &	13.46$\pm$0.24 &   370.5 &	6.50$\pm$0.21 \\		
+        7.0   & 443.0 &	13.39$\pm$0.24 &   450.0 &	6.45$\pm$0.21 \\		
+        7.0   & 524.0 &	13.32$\pm$0.24 &   531.0 &	6.41$\pm$0.21 \\		
+        6.5   & 603.5 &	13.26$\pm$0.24 &   610.0 &	6.37$\pm$0.21 \\		
+        7.5   & 683.0 &	13.20$\pm$0.24 &   690.5 &	6.33$\pm$0.21 \\		
+        6.5   & 763.5 &	13.14$\pm$0.24 &   770.0 &	6.29$\pm$0.21 \\
+        7.5   & 843.5 &	13.09$\pm$0.24 &   851.0 &	6.25$\pm$0.21 \\
         \bottomrule
     \end{tabular}
 \end{table}
-T5, Minima: $\symup{(a,b,c)}=()$ %Parameter für T5 und T6 einfügen
-T6, Minima: $\symup{(a,b,c)}=()$
-T5, Maxima: $\symup{(a,b,c)}=()$ %Parameter für T5 und T6 einfügen
-T6, Maxima: $\symup{(a,b,c)}=()$
+T5, Minima: $\symup{(a,b,c)}=([-5.43820767, 14.36801819, 7.66920384])$
+T6, Minima: $\symup{(a,b,c)}=([-43.92552164, 10.56412431, 8.04223001])$
+% T5, Maxima: $\symup{(a,b,c)}=()$ %Parameter für T5 und T6 einfügen
+% T6, Maxima: $\symup{(a,b,c)}=()$
 
-\begin{table}
-    \centering
-    \caption{Aluminium.}
-    \label{tab:unc_alu}
-    \begin{tabular}{S S S S S S S S | S S S S S S S S}
-        \toprule
-        \multicolumn{8}{c}{$\symup{Messing}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Messing}_\text{fern}$} \\
-        \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T6} & {$\symup{f_t6(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T6} & {\symup{f_t6(t_max)}} & {$\increment T_max$} & 
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T5} & {$\symup{f_t5(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T5} & {\symup{f_t5(t_max)}} & {$\increment T_max$}\\
-        \midrule
-        %hier entsprechende Zwischenwerte einfügen
-        \bottomrule
-    \end{tabular}
-\end{table}
-\begin{table}
-    \centering
-    \caption{Aus der jeweiligen Messdatenzeile berechnete Wärmeleitfähigkeit $\kappa$.}
-    \label{tab:kappa_alu}
-    \begin{tabular}{S S}
-        \toprule
-        {$i$} & {$\kappa_i$} \\
-        \midrule
-        1 &   \\%hier berechnete werte für kappa einfügen
-        2 &   \\
-        3 &   \\
-        4 &   \\
-        5 &   \\
-        6 &   \\
-        7 &   \\
-        8 &   \\
-          &   \\
-    \end{tabular}
-\end{table}
-Für die Wärmeleitfähigkeit des Aluminiums ergibt sich an dieser Stelle somit $\kappa = \pm $ %hier kappa für aluminium einfügen inkl sigma
+% \begin{table}
+%     \centering
+%     \caption{Aluminium.}
+%     \label{tab:unc_alu}
+%     \begin{tabular}{S S S S S S S S | S S S S S S S S}
+%         \toprule
+%         \multicolumn{8}{c}{$\symup{Messing}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Messing}_\text{fern}$} \\
+%         \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
+%         {$\increment t_min [\si{\second}]$} & {abgelesene Minima T6} & {$\symup{f_t6(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T6} & {$\symup{f_t6(t_max)}$} & {$\increment T_max$} & 
+%         {$\increment t_min [\si{\second}]$} & {abgelesene Minima T5} & {$\symup{f_t5(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T5} & {$\symup{f_t5(t_max)}$} & {$\increment T_max$}\\
+%         \midrule
+%         %hier entsprechende Zwischenwerte einfügen
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+% \begin{table}
+%     \centering
+%     \caption{Wärmeleitfähigkeit $\kappa$ für Aluminium pro Amplitude.}
+%     \label{tab:kappa_alu}
+%     \begin{tabular}{S S}
+%         \toprule
+%         {$i$} & {$\kappa_i$} \\
+%         \midrule
+%         1 &   \\%hier berechnete werte für kappa einfügen
+%         2 &   \\
+%         3 &   \\
+%         4 &   \\
+%         5 &   \\
+%         6 &   \\
+%         7 &   \\
+%         8 &   \\
+%           &   \\
+%     \end{tabular}
+% \end{table}
+Für die Wärmeleitfähigkeit des Aluminiums ergibt sich an dieser Stelle somit $\kappa = 206\pm33 $
 
 Für die letzte Messreihe soll dieses Verfahren nochmal für Edelstahl durchgeführt werden:
 \begin{figure}
     \centering
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_brass_wide_far(t1).pdf} %HIER Datei für edelstahl einfügen!
+        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_steel_far(t8).pdf}
         \caption{T8, fern.}
         \label{fig:plot_amps_t8}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
         \centering
-        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_brass_wide_close(t2).pdf} %HIER Datei edelstahl einfügen
+        \includegraphics[max width=1.1\linewidth]{plots/amplitudes_steel_close(t7).pdf}
         \caption{T7, nah.}
         \label{fig:plot_amps_t7}
     \end{subfigure}
@@ -373,62 +374,57 @@ Für die letzte Messreihe soll dieses Verfahren nochmal für Edelstahl durchgef�
     \centering
     \caption{Amplituden von Edelstahl, nah und fern, in $\si{\kelvin}$.}
     \label{tab:amps_steel}
-    \begin{tabular}{S[table-format=2.1] | S[table-format=3.1] S[table-format=1.2] | S[table-format=3.1] S[table-format=1.2]}
+    \begin{tabular}{S[table-format=2.1] | S[table-format=3.1] S[table-format=3.5] | S[table-format=3.1] S[table-format=3.5]}
         \toprule
          & \multicolumn{2}{c}{$\symup{Edelstahl}_\text{nah}$} & \multicolumn{2}{c}{$\symup{Edelstahl}_\text{fern}$} \\
         \cmidrule(lr){2-3}\cmidrule(lr){4-5}
         {$\increment t[\si{\second}]$} &{$t[\si{\second}]$} & {$\increment T[{\si{\kelvin}]}$} & {$t[\si{\s}]$} & {$\increment T[{\si{\kelvin}]}$} \\
         \midrule
-        34.0   &  46.5 &	9.70 &    80.5 & 0.91 \\	%hier die Messwerte für edelstahl einfügen (dies sind die von Messing)
-        19.5   & 126.0 &	9.47 &   145.5 & 2.11 \\		
-        17.0   & 205.5 &	9.36 &   222.5 & 2.39 \\		
-        14.5   & 285.5 &	9.38 &   300.0 & 2.63 \\		
-        14.5   & 365.5 &	9.43 &   380.0 & 2.72 \\		
-        13.5   & 445.5 &	9.46 &   459.0 & 2.78 \\		
-        13.5   & 525.5 &	9.53 &   539.0 & 2.81 \\		
-        13.5   & 605.0 &	9.57 &   618.5 & 2.84 \\		
-        12.0   & 685.0 &	9.47 &   697.0 & 2.78 \\		
-        13.5   & 765.0 &	9.40 &   778.5 & 2.65 \\
+        66.0   & 110.0	& 17.1$\pm$0.4 &   176.0  &	2.1$\pm$0.5 \\
+        84.0   & 310.0	& 15.2$\pm$0.4 &   394.0  &	1.6$\pm$0.5 \\		
+        78.0   & 510.0	& 14.8$\pm$0.4 &   588.0  &	1.4$\pm$0.5 \\		
+        64.0   & 714.0	& 14.6$\pm$0.4 &   778.0  &	1.4$\pm$0.5 \\		
+        64.0   & 910.0	& 14.6$\pm$0.4 &   974.0  &	1.5$\pm$0.5 \\		
+        54.0   & 1110.0	& 14.6$\pm$0.4 &   1164.0 &	1.6$\pm$0.5 \\		
+        60.0   & 1310.0	& 14.6$\pm$0.4 &   1370.0 &	1.7$\pm$0.5 \\		
         \bottomrule
     \end{tabular}
 \end{table}
-T7, Minima: $\symup{(a,b,c)}=()$ %Parameter für T7 und T8 einfügen
-T8, Minima: $\symup{(a,b,c)}=()$
-T7, Maxima: $\symup{(a,b,c)}=()$ %Parameter für T7 und T8 einfügen
-T8, Maxima: $\symup{(a,b,c)}=()$
+T7, Minima: $\symup{(a,b,c)}=([-78.40062517, -52.64024484, 14.83964357])$
+T8, Minima: $\symup{(a,b,c)}=([-547.28040531, -111.97054179, 21.30691517])$
 
-\begin{table}
-    \centering
-    \caption{Edelstahl.}
-    \label{tab:unc_steel}
-    \begin{tabular}{S S S S S S S S | S S S S S S S S}
-        \toprule
-        \multicolumn{8}{c}{$\symup{Edelstahl}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Edelstahl}_\text{fern}$} \\
-        \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T7} & {$\symup{f_t7(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T7} & {\symup{f_t7(t_max)}} & {$\increment T_max$} & 
-        {$\increment t_min [\si{\second}]$} & {abgelesene Minima T8} & {$\symup{f_t8(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T8} & {\symup{f_t8(t_max)}} & {$\increment T_max$}\\
-        \midrule
-        %hier entsprechende Zwischenwerte einfügen
-        \bottomrule
-    \end{tabular}
-\end{table}
-\begin{table}
-    \centering
-    \caption{Aus der jeweiligen Messdatenzeile berechnete Wärmeleitfähigkeit $\kappa$.}
-    \label{tab:kappa_steel}
-    \begin{tabular}{S S}
-        \toprule
-        {$i$} & {$\kappa_i$} \\
-        \midrule
-        1 &   \\%hier berechnete werte für kappa einfügen
-        2 &   \\
-        3 &   \\
-        4 &   \\
-        5 &   \\
-        6 &   \\
-        7 &   \\
-        8 &   \\
-          &   \\
-    \end{tabular}
-\end{table}
-Für die Wärmeleitfähigkeit des Edelstahls ergibt sich an dieser Stelle somit $\kappa = \pm $ %hier kappa für edelstahl einfügen inkl sigma
+% \begin{table}
+%     \centering
+%     \caption{Edelstahl.}
+%     \label{tab:unc_steel}
+%     \begin{tabular}{S S S S S S S S | S S S S S S S S}
+%         \toprule
+%         \multicolumn{8}{c}{$\symup{Edelstahl}_\text{nah}$} & \multicolumn{8}{c}{$\symup{Edelstahl}_\text{fern}$} \\
+%         \cmidrule(lr){1-4}\cmidrule(lr){5-8}\cmidrule(lr){9-12}\cmidrule(lr){13-16}
+%         {$\increment t_min [\si{\second}]$} & {abgelesene Minima T7} & {$\symup{f_t7(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T7} & {$\symup{f_t7(t_max)}$} & {$\increment T_max$} & 
+%         {$\increment t_min [\si{\second}]$} & {abgelesene Minima T8} & {$\symup{f_t8(t_min)}$} & {$\increment T_min$} & {$\increment t_max [\si{\second}]$} & {abgelesene Maxima T8} & {$\symup{f_t8(t_max)}$} & {$\increment T_max$}\\
+%         \midrule
+%         %hier entsprechende Zwischenwerte einfügen
+%         \bottomrule
+%     \end{tabular}
+% \end{table}
+% \begin{table}
+%     \centering
+%     \caption{Wärmeleitfähigkeit $\kappa$ für Edelstahl pro Amplitude.}
+%     \label{tab:kappa_steel}
+%     \begin{tabular}{S S}
+%         \toprule
+%         {$i$} & {$\kappa_i$} \\
+%         \midrule
+%         1 &   \\%hier berechnete werte für kappa einfügen
+%         2 &   \\
+%         3 &   \\
+%         4 &   \\
+%         5 &   \\
+%         6 &   \\
+%         7 &   \\
+%         8 &   \\
+%           &   \\
+%     \end{tabular}
+% \end{table}
+Für die Wärmeleitfähigkeit des Edelstahls ergibt sich an dieser Stelle somit $\kappa = 11.0\pm1.7$
