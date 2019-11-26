@@ -1,0 +1,11 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Theorie\FN@sf@gobble@opt {Unter Verwendung der Quellen \cite {demtroeder}, \cite {anleitung204}, \cite {gerthsen}.}}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Vorbereitungsaufgaben}{4}{section.2}% 
+\contentsline {section}{\numberline {3}Durchführung}{4}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Versuchsaufbau}{5}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Durchführung}{5}{subsection.3.2}% 
+\contentsline {section}{\numberline {4}Messdaten}{6}{section.4}% 
+\contentsline {section}{\numberline {5}Auswertung}{7}{section.5}% 
+\contentsline {section}{\numberline {6}Diskussion}{13}{section.6}% 
+\contentsline {section}{\nonumberline Literatur}{14}{section*.20}% 
