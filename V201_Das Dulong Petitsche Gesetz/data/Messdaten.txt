@@ -1,0 +1,20 @@
+Messungen zu V201
+
+Gewichtsmessungen in g
+----------------------
+Zinn =                  203.00
+Aluminium =             153.00
+Kupfer =                237.00
+Kleines Becherglas =    146.18
+Großes Becherglas =     203.48
+Dewar-Gefäß =           850.99
+
+Messwerttabelle WTWTWTTWTTWTTWTTW
+k   Material    m_k     T_k     m_w     T_W     T'_m
+1a  Zinn        203.00  83.3    642.76  21.8    22.9
+b                       83.1    645.94  21.6    22.7
+c                       75.8    659.46  21.3    22.3
+2a  Aluminium   153.00  87.2    654.63  21.0    24.0
+b                       82.8    649.87  21.3    23.7
+c                       75.1    669.27  21.0    23.5
+3a  Kupfer      237.00  89.2    654.82  20.9    22.9

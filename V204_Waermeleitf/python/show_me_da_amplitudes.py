@@ -10,6 +10,7 @@ make_string = "../"
 if len(sys.argv) != 1 and sys.argv[1] == "-up":
     make_string = ""
 
+
 # depending on the folder you're in (1. /Hilfsmittel, 2. /V204_Waermeleitf)
 # ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt("../V204_Waermeleitf/Messung_2(dynamisch).txt", unpack=True)
 ID, t1, t2, t3, t4, t5, t6, t7, t8, t = np.genfromtxt(f"{make_string}data/Messung_2(dynamisch).txt", unpack=True)

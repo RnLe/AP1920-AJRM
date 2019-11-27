@@ -8,5 +8,6 @@ if len(sys.argv) == 1:
 with open(f"../data/filenames_of_{sys.argv[1]}.txt", 'w') as f:
     for file in listdir(f"../{sys.argv[1]}/"):
         f.write(f'{sys.argv[1]}/{file} ')
+    f.write('\n\n')
     for file in listdir(f"../{sys.argv[1]}/"):
         f.write(f'{sys.argv[1]}/{file}\n')
