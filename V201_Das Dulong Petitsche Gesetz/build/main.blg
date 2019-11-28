@@ -1,5 +1,9 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
 [0] Config.pm:307> INFO - Logfile is 'build/main.blg'
-[24] biber:315> INFO - === Thu Nov 28, 2019, 17:43:00
-[39] Utils.pm:316> ERROR - build/main.bcf is malformed, last biblatex run probably failed. Deleted build/main.bbl
-[40] Biber.pm:114> INFO - ERRORS: 1
+[24] biber:315> INFO - === Thu Nov 28, 2019, 23:06:28
+[39] Biber.pm:375> INFO - Reading 'build/main.bcf'
+[98] Biber.pm:905> INFO - Found 0 citekeys in bib section 0
+[103] Utils.pm:300> WARN - The file 'build/main.bcf' does not contain any citations!
+[110] bbl.pm:648> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[110] bbl.pm:751> INFO - Output to build/main.bbl
+[110] Biber.pm:110> INFO - WARNINGS: 1
