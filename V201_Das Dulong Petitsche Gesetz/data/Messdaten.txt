@@ -10,7 +10,7 @@ Großes Becherglas =     203.48
 Dewar-Gefäß =           850.99
 
 Messwerttabelle WTWTWTTWTTWTTWTTW
-k   Material    m_k     T_k     m_w     T_W     T'_m
+k   Material    m_k     T_k     m_w     T_W     T'_m	T_x
 1a  Zinn        203.00  83.3    642.76  21.8    22.9
 b                       83.1    645.94  21.6    22.7
 c                       75.8    659.46  21.3    22.3
@@ -18,3 +18,7 @@ c                       75.8    659.46  21.3    22.3
 b                       82.8    649.87  21.3    23.7
 c                       75.1    669.27  21.0    23.5
 3a  Kupfer      237.00  89.2    654.82  20.9    22.9
+
+Bestimmung von c_g  
+                    m_x     m_y     T_x     T_y     T'_m
+Wasser			    293.26  300.16  22.0	74.5    46.4
