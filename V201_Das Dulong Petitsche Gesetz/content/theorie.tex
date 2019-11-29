@@ -1,4 +1,4 @@
-\section{Theorie}
+\section{Theorie}%\footnote{Unter Verwendung der Quellen \cite{demtroeder}, \cite{Versuchsanleitung}, \cite{gerthsen}.}}
 \label{sec:Theorie}
 \subsection{Zielsetzung}
     Ziel des Experiments ist es, zu untersuchen, inwiefern der klassische Ansatz der Physik genügt, Oszillationen von 
@@ -9,11 +9,78 @@
 \subsection{Ansatz der klassischen Physik}
     Die Molwärme $C$, auch bekannt unter der Atomwärme oder der molekularen Wärmekapazität, ist die auf die 
     Stoffmenge bezogene Wärmekapazität. 
-    Sie ist 
     Sie gibt demnach die benötigte Wärmemenge $\increment Q$ an, um ein Mol eines Stoffes um ein $\SI{1}{\kelvin}$ zu erwärmen.
-    Zu unterscheiden sind hierbei die Werte, die bei konstantem Volumen $V$ oder bei konstant gehaltenem Druck $p$ gemessen 
-    werden. Dies wird stets durch einen entsprechenden Index kenntlich gemacht: 
+    Diese hängt davon ab, ob die Erwärmung bei konstantem Volumen $V$ oder bei konstant gehaltenem Druck $p$ durchgeführt 
+    wird. An der Formelzeichen der Größe wird das durch einen entsprechenden Index kenntlich gemacht: 
     \begin{align*}
         C_{\text{p}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{p}} &
         C_{\text{V}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} \\
     \end{align*}
+
+    Das aus der klassischen Physik abgeleitete Dulong--Petitsche Gesetz besagt nun, dass die spezifische Wärmekapazität bei 
+    konstantem Volumen $C_\text{V}$ jeden Materials konstant $3 \symup{R}$ beträgt, mit $\symup{R}$ als der Allgemeinen Gaskonstante. 
+    Die über einen langen Zeitraum gemittelte innere Energie $\bigl< u \bigr>$ eines Atoms im Festkörper setzt 
+    sich aus der gemittelten potentiellen $\bigl< E_\text{pot} \bigr>$ und der gemittelten kinetischen Energie $\bigl< E_\text{kin} \bigr>$ zusammen. 
+    Durch Berechnung der Gitter- und Trägheitskräfte, die das Atom beziehungsweise das Molekül in einer Gleichgewichtslage 
+    halten, und der zugehörigen verrichteten Arbeit lässt sich die Beziehung 
+    \begin{equation}
+        \bigl< E_\text{pot} \bigr> = \bigl< E_\text{kin} \bigr>
+    \end{equation} 
+    herleiten. 
+    Mit $\bigl< E_\text{kin} \bigr> = \sfrac{f}{2} \, \symup{k} T$ wird eine weitere Beziehung des 
+    Gleichverteilungssatz -- auch unter dem Äquipartitionstheorem bekannt -- gegeben. 
+    Er besagt, dass jedes Molekül im thermischen Gleichgewicht pro Freiheitsgrad $f$ genannte konstante mittlere Bewegungsenergie innehat.
+    Hierbei bezeichnet $\symup{k} = 1.3806505 \cdot 10^{-23} \, \si{\joule\per\kelvin} $ die Boltzmann-Konstante.
+    Im Festkörper besitzt jedes Teilchen $3$ Freiheitsgrade. 
+    Daraus geht
+    \begin{equation}
+        \bigl< u \bigr> = \bigl< E_\text{kin} \bigr> + \bigl< E_\text{pot} \bigr> = 2 \, \bigl< E_\text{kin} \bigr> = 3 \, \symup{k} T
+    \end{equation}
+    hervor. 
+    In einem Mol eines Stoffes sind $\symup{N_\text{A}} = 6.0221415 \cdot 10^{23} \, \si{\mol\tothe{-1}}$ Teilchen enthalten, 
+    weshalb für die Gesamtenergie eines Mols 
+    \begin{equation}
+        \bigl< U \bigr> = 3 \, \symup{N_\text{A}} \, \symup{k} \, T = 3 \, \symup{R} \, T
+        \label{eq:formel}
+    \end{equation}
+    gilt. 
+    Wird nun der Erste Hauptsatz der Thermodymanik auf die Eräwrmung bei konstantem Volumen angewendet, erhält man
+    \begin{equation}
+        \mathrm{d} U = \mathrm{d} Q +  \mathrm{d} W
+    \end{equation}
+    mit
+    \begin{align*} 
+        U &\text{: innere Energie,} & Q &\text{: Wärmemenge,} & W &\text{: mechanische Arbeit,} \rho &\text{: Dichte.}
+    \end{align*}
+    \begin{align}
+         &  &\mathrm{d} W &= - \, \rho \mathrm{V} \, &\stackrel{V = \text{const}}{=} 0 &    &
+        \Rightarrow &   &\mathrm{d} U &= \mathrm{d} Q &    \\
+        \Rightarrow &   &C_{\text{V}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} &\stackrel{\eqref{eq:formel}}{=} 3 \symup{R}
+        &   &   &   &   &   &
+    \end{align}
+    
+    Dieser sich eindeutig aus dem klassischen Ansatz abgeleitete Wert ist jedoch nicht mit der experimentellen Realität in 
+    dieser Absolutheit vereinbar: Festkörper bei hoher Temperatur erreichen in etwa diesen Wert, bei niedrigeren Temperaturen 
+    gibt es starke Abweichungen. 
+    Die Molwärme wird bei diesen Temperaturen oft beliebig klein. 
+    Die Quantentheorie zeigt hier einen anderen Ansatz auf, der dies erklären könnte.
+\subsection{Ansatz der Quantenmechanik}
+    Grundannahme ist hier, dass die Energie nicht beliebig aufgenommen werden kann, sondern nur in festen, diskreten Quanten. 
+    Daraus ergibt sich die Boltzmann-Verteilung, die die Wahrscheinlichkeit angibt, dass ein Teilchen eine Energie zwischen 
+    $E$ und $(E + \mathrm{d}E)$ aufweist. 
+    Integriert man nun die diskreten Energieanteile multipliziert mit ihrer Wahrscheinlichkeit und addiert diese, lässt 
+    sich daraus auf eine bei weitem komplexere Formel -- also nicht einfach ein konstanter Wert -- für die innere Energie 
+    eines Mols schließen:
+    \begin{equation}
+        \bigl< U_{\text{Qu}} \bigr> = \frac{3 \, \symup{N_{\text{A}}} \, \symup{\hbar} \, \omega}{\exp(\frac{\symup{\hbar} \omega}{\symup{k} T}) - 1}
+    \end{equation}
+    Diese Funktion geht für $T \to 0$ gegen Null und für große Temperaturen gegen den durch das Dulong--Petitsche Gesetz 
+    vorbestimmten Wert von $3 \, \symup{R} T$, genauer gesagt, wenn $\symup{k} \, T \gg \symup{\hbar} \, \omega$ gültig ist. 
+    Zu beachten sei hierbei noch die Proportionalität $\omega \propto \sfrac{1}{\sqrt{m}}$.
+    Demnach sind nur bei hohen Temperaturen das Dulong-Petitsche Gesetz und die Quantenmechanik konform miteinander. 
+
+    Angemerkt sei noch, dass bei dieser Art der Berechnung der inneren Energie die verkomplizierende Modellaussage vernachlässigt wurde, 
+    dass die Frequenzen $\omega$ ebenfalls nicht für alle Teilchen gleich sind, sondern eine Darstellung durch eine 
+    kontinuierliche Verteilung besitzen. 
+    Dies sollte für dieses Experiment jedoch nicht von Relevanz sein, da dieser Aspekt ausschließlich bei niedrigen 
+    Temperaturen in ausschlaggebende Änderungen resultiert.
