@@ -2,7 +2,7 @@
 \label{sec:Theorie}
 \subsection{Zielsetzung}
     Ziel des Experiments ist es, zu untersuchen, inwiefern der klassische Ansatz der Physik genügt, Oszillationen von 
-    Atomen und Molekülen im Festkörper zu untersuchen und beschreiben. 
+    Atomen und Molekülen im Festkörper zu untersuchen und zu beschreiben. 
     Eine davon abweichende, alternative Perspektive bietet die Quantenmechanik. 
     Um diesem näher auf den Grund zu gehen, wird im Folgenden die Molwärme $C$ einiger Metalle experimentell bestimmt und 
     mit den Werten jeweils aus der klassischen und quantenmechanischen Physik verglichen. 
@@ -10,15 +10,15 @@
     Die Molwärme $C$, auch bekannt unter der Atomwärme oder der molekularen Wärmekapazität, ist die auf die 
     Stoffmenge bezogene Wärmekapazität. 
     Sie gibt demnach die benötigte Wärmemenge $\increment Q$ an, um ein Mol eines Stoffes um ein $\SI{1}{\kelvin}$ zu erwärmen.
-    Diese hängt davon ab, ob die Erwärmung bei konstantem Volumen $V$ oder bei konstant gehaltenem Druck $p$ durchgeführt 
-    wird. An der Formelzeichen der Größe wird das durch einen entsprechenden Index kenntlich gemacht: 
+    Jene hängt davon ab, ob die Erwärmung bei konstantem Volumen $V$ oder bei konstant gehaltenem Druck $p$ durchgeführt 
+    wird. An dem Formelzeichen der Größe wird das durch einen entsprechenden Index kenntlich gemacht: 
     \begin{align*}
-        C_{\text{p}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{p}} &
-        C_{\text{V}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} \\
+        C_{p} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{p}} &
+        C_{V} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} \\
     \end{align*}
 
     Das aus der klassischen Physik abgeleitete Dulong--Petitsche Gesetz besagt nun, dass die spezifische Wärmekapazität bei 
-    konstantem Volumen $C_\text{V}$ jeden Materials konstant $3 \symup{R}$ beträgt, mit $\symup{R}$ als der Allgemeinen Gaskonstante. 
+    konstantem Volumen $C_\text{V}$ jeden Materials konstant $3 \, \symup{R}$ beträgt, mit $\symup{R}$ als der Allgemeinen Gaskonstante. 
     Die über einen langen Zeitraum gemittelte innere Energie $\bigl< u \bigr>$ eines Atoms im Festkörper setzt 
     sich aus der gemittelten potentiellen $\bigl< E_\text{pot} \bigr>$ und der gemittelten kinetischen Energie $\bigl< E_\text{kin} \bigr>$ zusammen. 
     Durch Berechnung der Gitter- und Trägheitskräfte, die das Atom beziehungsweise das Molekül in einer Gleichgewichtslage 
@@ -27,9 +27,9 @@
         \bigl< E_\text{pot} \bigr> = \bigl< E_\text{kin} \bigr>
     \end{equation} 
     herleiten. 
-    Mit $\bigl< E_\text{kin} \bigr> = \sfrac{f}{2} \, \symup{k} T$ wird eine weitere Beziehung des 
-    Gleichverteilungssatz -- auch unter dem Äquipartitionstheorem bekannt -- gegeben. 
-    Er besagt, dass jedes Molekül im thermischen Gleichgewicht pro Freiheitsgrad $f$ genannte konstante mittlere Bewegungsenergie innehat.
+    Gemäß des Gleichverteilungssatz -- auch unter dem Äquipartitionstheorem bekannt -- $\bigl< E_\text{kin} \bigr> = \sfrac{f}{2} \, \symup{k} T$ 
+    ist ein weiterer Zusammenhang gegeben. 
+    Dieser besagt, dass jedes Molekül im thermischen Gleichgewicht pro Freiheitsgrad $f$ genannte konstante mittlere Bewegungsenergie innehat.
     Hierbei bezeichnet $\symup{k} = 1.3806505 \cdot 10^{-23} \, \si{\joule\per\kelvin} $ die Boltzmann-Konstante.
     Im Festkörper besitzt jedes Teilchen $3$ Freiheitsgrade. 
     Daraus geht
@@ -44,43 +44,45 @@
         \label{eq:formel}
     \end{equation}
     gilt. 
-    Wird nun der Erste Hauptsatz der Thermodymanik auf die Eräwrmung bei konstantem Volumen angewendet, erhält man
+    
+    Wird anschließend noch der Erste Hauptsatz der Thermodymanik auf die Erwärmung bei konstantem Volumen angewendet, erhält man
     \begin{equation}
         \mathrm{d} U = \mathrm{d} Q +  \mathrm{d} W
     \end{equation}
     mit
     \begin{align*} 
-        U &\text{: innere Energie,} & Q &\text{: Wärmemenge,} & W &\text{: mechanische Arbeit,} \rho &\text{: Dichte.}
+        U &\text{: innere Energie,} & Q &\text{: Wärmemenge,} & W &\text{: mechanische Arbeit,} & \rho &\text{: Dichte.}
     \end{align*}
     \begin{align}
-         &  &\mathrm{d} W &= - \, \rho \mathrm{V} \, &\stackrel{V = \text{const}}{=} 0 &    &
+         &  &\mathrm{d} W &= - \, \rho \mathrm{V} \, &\stackrel{V = \text{const}}{=} 0 &    &   &   &
         \Rightarrow &   &\mathrm{d} U &= \mathrm{d} Q &    \\
         \Rightarrow &   &C_{\text{V}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} &\stackrel{\eqref{eq:formel}}{=} 3 \symup{R}
-        &   &   &   &   &   &
+        &   &   &   &   &   &   &   &
     \end{align}
     
-    Dieser sich eindeutig aus dem klassischen Ansatz abgeleitete Wert ist jedoch nicht mit der experimentellen Realität in 
-    dieser Absolutheit vereinbar: Festkörper bei hoher Temperatur erreichen in etwa diesen Wert, bei niedrigeren Temperaturen 
-    gibt es starke Abweichungen. 
-    Die Molwärme wird bei diesen Temperaturen oft beliebig klein. 
-    Die Quantentheorie zeigt hier einen anderen Ansatz auf, der dies erklären könnte.
+    Dieser eindeutig aus dem klassischen Ansatz resultierende Wert ist jedoch nicht mit der experimentellen Realität in 
+    dieser hergeleiteten Absolutheit vereinbar: Festkörper hoher Temperatur erreichen in etwa diesen Wert, bei niedrigeren Temperaturen 
+    gibt es indes starke Abweichungen. 
+    Die Molwärme vieler Stoffe wird bei diesen Temperaturen beliebig klein. 
+    Die Quantentheorie zeigt an dieser Stelle einen abweichenden Ansatz auf, der dies erklären könnte.
 \subsection{Ansatz der Quantenmechanik}
     Grundannahme ist hier, dass die Energie nicht beliebig aufgenommen werden kann, sondern nur in festen, diskreten Quanten. 
-    Daraus ergibt sich die Boltzmann-Verteilung, die die Wahrscheinlichkeit angibt, dass ein Teilchen eine Energie zwischen 
+    Die Boltzmann-Verteilung gibt die Wahrscheinlichkeit an, dass ein Teilchen eine Energie zwischen 
     $E$ und $(E + \mathrm{d}E)$ aufweist. 
-    Integriert man nun die diskreten Energieanteile multipliziert mit ihrer Wahrscheinlichkeit und addiert diese, lässt 
-    sich daraus auf eine bei weitem komplexere Formel -- also nicht einfach ein konstanter Wert -- für die innere Energie 
+    Integriert man nun die möglichen diskreten Energiewerte multipliziert mit ihrer Wahrscheinlichkeit und addiert diese, lässt 
+    sich daraus auf eine bei weitem komplexere Formel und nicht einfach auf einen konstanten Wert für die innere Energie 
     eines Mols schließen:
     \begin{equation}
         \bigl< U_{\text{Qu}} \bigr> = \frac{3 \, \symup{N_{\text{A}}} \, \symup{\hbar} \, \omega}{\exp(\frac{\symup{\hbar} \omega}{\symup{k} T}) - 1}
     \end{equation}
-    Diese Funktion geht für $T \to 0$ gegen Null und für große Temperaturen gegen den durch das Dulong--Petitsche Gesetz 
-    vorbestimmten Wert von $3 \, \symup{R} T$, genauer gesagt, wenn $\symup{k} \, T \gg \symup{\hbar} \, \omega$ gültig ist. 
+    Diese Funktion geht für $T \to 0$ gegen Null und für große Temperaturen gegen den durch das Dulong--Petitsch-Gesetz 
+    vorbestimmten Wert von $3 \, \symup{R} \, T$, genauer gesagt, wenn $\symup{k} \, T \gg \symup{\hbar} \, \omega$ gültig ist. 
     Zu beachten sei hierbei noch die Proportionalität $\omega \propto \sfrac{1}{\sqrt{m}}$.
-    Demnach sind nur bei hohen Temperaturen das Dulong-Petitsche Gesetz und die Quantenmechanik konform miteinander. 
+    
+    Demnach sind nur bei hohen Temperaturen das Dulong-Petitsche Gesetz und die Quantenmechanik konform zueinander. 
 
     Angemerkt sei noch, dass bei dieser Art der Berechnung der inneren Energie die verkomplizierende Modellaussage vernachlässigt wurde, 
-    dass die Frequenzen $\omega$ ebenfalls nicht für alle Teilchen gleich sind, sondern eine Darstellung durch eine 
+    dass die Frequenzen $\omega$ ebenso nicht für alle Teilchen gleich sind, sondern eine Darstellung durch eine 
     kontinuierliche Verteilung besitzen. 
-    Dies sollte für dieses Experiment jedoch nicht von Relevanz sein, da dieser Aspekt ausschließlich bei niedrigen 
-    Temperaturen in ausschlaggebende Änderungen resultiert.
+    Dies sollte für dieses Experiment nicht von Relevanz sein, aufgrund der Tatsache, dass dieser Aspekt ausschließlich 
+    bei niedrigen Temperaturen in ausschlaggebenden Änderungen resultiert.

@@ -6,23 +6,23 @@ Wir bestimmen zunächst die spezifische Wärme $c_gm_g$ des Dewar-Gefäßes, wel
 \begin{equation}
     c_gm_g = \frac{c_wm_y(T_y-T'_m)-c_wm_x(T'_m-T_x)}{T'_m-T_x}
 \end{equation}
-lässt sich mit den aufgenommenen Messdaten der Wert berechnen zu
+lässt sich mit den aufgenommenen Messdaten der Wert zu
 \begin{equation} %Vorschlag: (das mache ich auch manchmal handschriftlich) die einheiten hinter den Bruch schreiben, einmal, dann haben wir faktisch nichts falsches, ohne Einheiten, da stehen, aber es dürfte auch übersichtlich/nicht allzu hässlich sein...  
-    c_gm_g = \frac{4.18\times300.16(74.5-46.4)-4.18\times293.26(46.4-22)}{46.4-22} \, \si{\joule\per\kelvin} \approx \SI{219.1}{\joule\per\kelvin} 
+    c_gm_g = \frac{4.18\times300.16(74.5-46.4)-4.18\times293.26(46.4-22)}{46.4-22} \, \si{\joule\per\kelvin} \approx \SI{219.1}{\joule\per\kelvin} %da war noch eine Masse einheit unter dem Bruchstrich, wo m.E. keine hingehört... passiert ;) 
 \end{equation}
-in $[\si{\joule\per\gram\per\kelvin}]$.
+berechnen.
 % Hier sei für uns einmal gegenübergestellt, wie man die Einheiten mit in die Gleichung beziehen kann.
 % Eine Einheit für jede Zahl finde ich zu unübersichtlich - entsprechend würde ich die Einheit nur zum Ergebnis schreiben.
 % Alles Weitere kann man ja aus den Tabellen ablesen.
 % \begin{equation}
 %     c_gm_g = \frac{4.18[\si{\joule\per\gram\per\kelvin}]\times300.16[\si{\g}](74.5[\si{\kelvin}]-46.4[\si{\kelvin}])-4.18[\si{\joule\per\gram\per\kelvin}]\times293.26[\si{\g}](46.4[\si{\kelvin}]-22[\si{\kelvin}])}{46.4[\si{\kelvin}]-22[\si{\kelvin}]} \approx 219.1[\si{\joule\per\gram\per\kelvin}].
 % \end{equation}
-Für $c_w$ nehmen wir den Wert $\SI{4.18}{\joule\per\g\per\kelvin}$ an.\cite{Versuchsanleitung}
+Für $c_w$ nehmen wir den Wert $\SI{4.18}{\joule\per\g\per\kelvin}$ an\cite{Versuchsanleitung}. %wir
 Die spezifische Wärme der Messkörper errechnet sich durch
 \begin{equation}
     c_k = \frac{(c_wm_w + c_gm_g)(T_m - T_w)}{m_k(T_k - T_m)}.
 \end{equation}
-Da wir alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen haben, können wir $c_k$ für die drei Messkörper berechnen.
+Da wir alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen haben, können wir $c_k$ für die drei Messkörper berechnen. %wir
 \begin{table}
     \centering
     \caption{Spezifische Wärmen der Messkörper.}
@@ -43,5 +43,5 @@ Da wir alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen haben, kö
 \end{table}
 
 \subsection{Vorbereitung zur Diskussion}
-Um den Abgleich mit Literaturwerten und eine Diskussion zu ermöglichen, werten wir die Daten weiter aus.\\
-Allgemeine Gaskonstante $R_m = \SI{8.3145}{\joule\per\mol\per\kelvin}$. \cite{taschenbuch}
+Um den Abgleich mit Literaturwerten und eine Diskussion zu ermöglichen, werten wir die Daten weiter aus.\\ %wir
+Allgemeine Gaskonstante $\symup{R} = \SI{8.3145}{\joule\per\mol\per\kelvin}$ \cite{taschenbuch}. %Konstanten mit symup aufrecht schreiben
