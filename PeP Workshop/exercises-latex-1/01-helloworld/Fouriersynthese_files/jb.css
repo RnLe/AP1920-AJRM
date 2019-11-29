@@ -1,0 +1,71 @@
+*,*::after,*::before { font-family:/*Verdana,*/Arial,sans-serif; }
+h1,h2,h3,h4 { font-weight:bold }
+html        { background-color:#f0f8ff; margin:0px;padding:0px }
+body        { font-size:1.0em; line-height:1.3em; color:#000040; 
+              margin:0px; padding: 3em 1em .5em 30px;
+              background-image: linear-gradient(90deg, #80a0ff 24px, #f0f8ff 26px); }
+p,ul,ol,li,td,th,address,blockquote
+            { font-size: 1.0em; line-height:1.3em; color:#000040; background-color:#f0f8ff }
+.Drag_n_Drop { background-color:#f0f8ff }
+.Drag_Bar    { background-color:#80a0ff }
+input,select,textarea
+            { font-size: 1.0em; line-height:1.3em; color:#000040; background-color:#ffffff }
+a:link      { color:#5050ff }
+a:visited   { color:#4040aa }
+a:active    { color:#5050ff }
+button      { color:#ffffff; background-color:#80a0ff; text-align:center;
+              font-size: 1.0em; /*font-family:"Times New Roman",serif;*/
+              cursor:pointer }
+input       { text-align:center }
+h1          { font-size: 1.4em; padding-top:1em; margin-top:0px }
+h2          { font-size: 1.25em; padding-top:1em; padding-bottom:0; margin-top:0px }
+h3          { font-size: 1.1em; padding-top:0.5em; padding-bottom:0; margin-top:0px }
+h4          { font-size: 1.0em }
+.kleiner    { font-size: 0.8em }
+hr          { height:1px;color:#5050ff }
+.tabelle    { border:1px solid #5050ff; border-spacing:0px; border-collapse:collapse }
+.tabelle td,.tabelle th { border:1px solid #5050ff; border-spacing:0px; border-collapse:collapse; padding:3px }
+.src        { border:1px solid #5050ff; color:#000000; background-color:#e0e0ff;
+              margin-left:10px; margin-right:10px; padding:10px; }
+
+#mainnav { position:fixed; top:0; left:24px; background-color:#80a0ff; z-index:2000; }
+#mainnav:hover { top:0 !Important; }
+#mainnav * { margin:0; padding:0; border:0; list-style:none; box-sizing:border-box; color:white; }
+#mainnav ul { list-style-type:none; padding:0; background-image: linear-gradient(180deg, #80a0ff calc(100% - 2px), #f0f8ff 100%); } 
+#mainnav > ul { padding:1em 0 0 0px; }
+#mainnav a, #mainnav a:link, #mainnav a:visited, #mainnav a:active, #mainnav label
+			{ text-decoration:none; color:white; display:inline-block; width:100%; white-space:nowrap }
+#mainnav li { background-color:#80a0ff; white-space:nowrap }
+#mainnav > ul > li { display:inline-block; margin:0; vertical-align:top; padding:.5em 1em .5em 1em }
+#mainnav > ul > li > ul { display:none; position:absolute; margin-left:-.5em; margin-top: .1em }
+#mainnav > ul > li > ul > li { padding:.5em 1em 0 .5em }
+#mainnav label { cursor:pointer; }
+/*#mainnav input { position: absolute; left:-200% }*/
+#mainnav input { position: absolute !important; clip: rect(1px, 1px, 1px, 1px); padding: 0 !important; border: 0 !important; height: 1px !important; width: 1px !important; overflow: hidden; white-space: nowrap; }
+#mainnav input ~ label::after { content: '  ▼'; font-size:.8em; vertical-align: top; }
+#mainnav input:checked ~ label::after { content: ' ▲'; font-size:.8em; vertical-align: top; }
+#mainnav a:hover, #mainnav label:hover, #mainnav input:focus ~ label { outline:1px dotted white; }
+#mainnav input:checked ~ ul { display:block }
+#mainnav > input, #mainnav > input ~ label { display:none }
+@media screen and (min-width:46em) { 
+	li a { display: inline-block; margin-top:.1em; margin-bottom:.1em; padding-top:.1em; padding-bottom:.1em; /*vertical-align:top;*/ }
+	#mainnav { right:0 } 
+	#mainnav > ul > li > ul > li.current::before { content:'▸'; font-size:1.5em; vertical-align: top; }
+	#mainnav > ul > li.current { border-bottom: 2px solid #000040; }
+	#mainnav > ul > li:hover > ul, #mainnav:hover > ul { display:block }
+}
+@media screen and (max-width:46em) {
+	li a { display: inline-block; margin-top:.2em; margin-bottom:.2em; padding-top:.2em; padding-bottom:.2em; vertical-align:top; }
+	#mainnav li li a { margin-top:.2em; margin-bottom:.2em; }
+	#mainnav { left:0; position:absolute } 
+	#mainnav > ul > li { display:block; }
+	#mainnav > ul { display:none; margin: -3em 0 0 1em; }
+	#mainnav > ul > li > ul { margin-left:7em; margin-top:-2em; }
+	#mainnav { height: 5em }
+	#mainnav > input ~ label { display:block; background-color:#80a0ff; width: 24px; margin:1em 0; -webkit-transform: rotate(-90deg) translate(-2em); -ms-transform: rotate(-90deg) translate(-2em); transform: rotate(-90deg) translate(-2em); }
+	#mainnav > input { display:block; }
+	#mainnav li.current::before { content:'▸'; font-size:1.5em; vertical-align: top; }
+}
+@media screen and (max-width:46em) and (min-height:22em) {
+	#mainnav { position:fixed; }
+}

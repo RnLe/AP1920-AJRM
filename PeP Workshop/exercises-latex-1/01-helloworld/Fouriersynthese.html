@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<!-- saved from url=(0048)https://www.j-berkemeier.de/Fouriersynthese.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+ 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Jürgen Berkemeier">
+<meta name="keywords" content="Fouriersynthese">
+<meta name="description" content="Berechnung und grafische Darstellung der Fouriersynthese.">
+<title>Fouriersynthese</title>
+<link rel="stylesheet" href="./Fouriersynthese_files/jb.css" type="text/css">
+<style>
+	.formel { overflow-x:auto; overflow-y:hidden; max-width:calc(100vw - 60px) }
+	#plot { width:100%;height:300px; margin: 0 }
+	.sliderbox { border:1px solid black; max-width:2em; padding:0; overflow:hidden }
+	.slider { display: inline-block; width:1.6em; height:7.2em; }
+	input[type=range] { width:7em; height:1.6em; margin:0; padding:0; transform: rotate(-90deg) translate(-2.8em,-2.5em) }
+	input[type=number] { width:3em ;margin:0; padding:.1em; border:none; border-top:1px solid black }
+	#all_sliders { overflow-x:auto; overflow-y:hidden; max-width:calc(100vw - 60px) }
+	section { display:inline-block; vertical-align:top }
+	#Signalform label { display:block; margin:0.2em }
+	#Signalform label span { font-weight:bold; display:inline-block; width:6em }
+	footer { border-top:1px solid #5050ff; margin-top:1em }
+</style>
+</head>
+<body>
+<main>
+<h1>Fouriersynthese</h1>
+<p>Nach Fourier lässt sich jede periodische Funktion mit Perio<b>d</b>e T als Summe von harmonischen Schwingungen, also Sinus- oder Cosinusfunktionen, geeigneter Amplitude, Frequenz und Phase schreiben:</p>
+<p class="formel"><img src="./Fouriersynthese_files/Fouriersynthese.gif" alt="Formel der Fourierreihe" title="Formel der Fourierreihe"></p>
+<p>Im Folgenden wird die Synthese für frei wählbare Amplituden und Phasen durchgeführt und das Ergebnis grafisch dargestellt. In den Auswahlmenüs sind einige Spektren und Signalformen vorgegeben.</p>
+<p>Weitere Informationen findet man z.B. in den Wikipediaartikeln <a href="http://de.wikipedia.org/wiki/Fourier-Transformation">Fourier-Transformation</a> und <a href="http://de.wikipedia.org/wiki/Fourieranalyse">Fourieranalyse</a>.</p>
+
+<figure id="plot"><canvas width="1792" height="300" style="position: absolute;"></canvas><div style="position: absolute; width: 1791px; height: 299px;"><div style="position: absolute; left: 0px; top: 0px; width: 10px; height: 10px; z-index: 100; opacity: 0;"><a href="http://www.j-berkemeier.de/" title="Plot 10. 9. 2018">JB</a><button></button></div><div style="position: absolute; left: 40px; top: 0px; width: 1752px; height: 265px;"></div></div></figure>
+
+<section id="all_sliders">
+	<table>
+		<tbody><tr>
+			<th>Frequenzen</th>
+			<th>0</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+			<th>7</th>
+			<th>8</th>
+			<th>9</th>
+			<th>10</th>
+			<th>11</th>
+			<th>12</th>
+			<th>13</th>
+			<th>14</th>
+			<th>15</th>
+			<th>16</th>
+			<th>17</th>
+		</tr>
+		<tr id="Amplituden">
+			<th>Amplituden</th>
+			<td id="a0" class="sliderbox">
+				<div class="slider"><input type="range" min="-1" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a1" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a2" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a3" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a4" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a5" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a6" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a7" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a8" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a9" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a10" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a11" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a12" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a13" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a14" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a15" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a16" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+			<td id="a17" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="1" step="0.01"></div><input type="number" min="-1" max="1" step="any">
+			</td>
+		</tr>
+		<tr id="Phasen">
+			<th>Phasen</th>
+			<td>
+			</td>
+			<td id="p1" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p2" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p3" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p4" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p5" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p6" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p7" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p8" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p9" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p10" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p11" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p12" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p13" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p14" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p15" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p16" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+			<td id="p17" class="sliderbox">
+				<div class="slider"><input type="range" min="0" max="360" step="1"></div><input type="number" min="0" max="360" step="any">
+			</td>
+		</tr>
+	</tbody></table>
+</section>
+<section id="Signalform">
+			<label><span>Signalform:</span>
+				<select size="1">
+					<option>Form wählen</option>
+					<option value="1">Sägezahn</option>
+					<option value="2">Rechteck</option>
+					<option value="3">Dreieck</option>
+					<option value="4">|sin|</option>
+				</select>
+			</label>
+			<label><span>Amplituden:</span>
+				<select size="1">
+					<option>Regler</option>
+					<option value="1">Alle gleich A1</option>
+					<option value="2">1/f</option>
+					<option value="3">1/f ungerade</option>
+					<option value="4">1/f^2 ungerade</option>
+					<option value="5">1/(f-1)(f+1) gerade</option>
+					<option value="6">Gauß</option>
+			</select>
+			</label>
+			<label><span>Phasen:</span>
+				<select size="1">
+					<option>Regler</option>
+					<option value="1">Alle gleich P1</option>
+					<option value="2">0 - 180 -</option>
+					<option value="3">0 - 0 - 180- 180 -</option>
+					<option value="4">Zufall</option>
+					<option value="5">Rampe</option>
+				</select>
+			</label>
+</section>
+
+</main>
+
+<footer>
+	<p>28. 11. 2017 <a href="https://www.j-berkemeier.de/">Jürgen Berkemeier</a></p>
+</footer>
+
+<nav aria-label="navigation" id="mainnav" style="top: 0px;">
+	<input id="smallmenu" type="checkbox" aria-haspopup="true"><label for="smallmenu">Menü</label>
+	<ul>
+		<li><a href="https://www.j-berkemeier.de/">Startseite</a>
+		</li><li><input id="tools" type="checkbox" aria-haspopup="true"><label for="tools">Tools</label>
+			<ul aria-label="submenu">
+				<li><a href="https://www.j-berkemeier.de/Ritzelrechner.html">Ritzelrechner</a></li>
+				<li><a href="https://www.j-berkemeier.de/ShowGPX.html">Show GPX</a></li>
+				<li><a href="https://www.j-berkemeier.de/Wann_und_wo.html">Wann und wo</a></li>
+			</ul>
+		</li><li class="current"><input id="mathe" type="checkbox" aria-haspopup="true"><label for="mathe">Mathematik</label>
+			<ul aria-label="submenu">
+				<li><a href="https://www.j-berkemeier.de/Spiralen.html">Spiralen</a></li>
+				<li><a href="https://www.j-berkemeier.de/LogistischeAbbildung.html">Logistische Abbildung</a></li>
+				<li><a href="https://www.j-berkemeier.de/Mandelbrotmenge.html">Mandelbrotmenge</a></li>
+				<li class="current">Fouriersynthese</li>
+				<li><a href="https://www.j-berkemeier.de/FktPlot.html">Funktionsplot</a></li>
+				<li><a href="https://www.j-berkemeier.de/Buchstabenmixer.html">Buchstabenmixer</a></li>
+			</ul>
+		</li><li><a href="https://www.j-berkemeier.de/Sudoku.html">Sudoku</a>
+		</li><li><a href="https://www.j-berkemeier.de/Touren/">Touren</a>
+		</li><li><input id="scripte" type="checkbox" aria-haspopup="true"><label for="scripte">Scripte</label>
+			<ul aria-label="submenu">
+			<li><a href="https://www.j-berkemeier.de/GPXViewer/">GPX Viewer</a></li>
+			<li><a href="https://www.j-berkemeier.de/TableSort.html">Tabellensortierer</a></li>
+			</ul>
+		</li><li><a href="https://www.j-berkemeier.de/Impressum.html">Impressum</a></li>
+	</ul>
+</nav>
+<script src="./Fouriersynthese_files/menu.js"></script>
+
+<script src="./Fouriersynthese_files/gra_canvas.js"></script>
+<script src="./Fouriersynthese_files/plot.js"></script>
+<script>
+
+if(typeof(JB)=="undefined") JB = {};
+
+var amplituden = document.querySelector("#Amplituden");
+var phasen = document.querySelector("#Phasen");
+var amp_sliders = amplituden.querySelectorAll("input[type=range]");
+var amp_inputs = amplituden.querySelectorAll("input[type=number]");
+var pha_sliders = phasen.querySelectorAll("input[type=range]");
+var pha_inputs = phasen.querySelectorAll("input[type=number]");
+var amp = new Array(18); //[];
+var pha = new Array(18); //[0];
+
+function input_ampl(event) { 
+	if(event.target.type == "number" && event.type == "input") {
+		var nr = event.target.parentNode.id.substr(1);
+		event.target.parentNode.querySelector("input[type=range]").value = event.target.value;	
+		amp[nr] = event.target.value * 1;	
+		selects[0].selectedIndex = 0;
+		selects[1].selectedIndex = 0;
+		plotten();
+	}
+	else if(event.target.type == "range" && event.type == "change") {
+		var nr = event.target.parentNode.parentNode.id.substr(1);
+		event.target.parentNode.parentNode.querySelector("input[type=number]").value = event.target.value;	
+		amp[nr] = event.target.value * 1;	
+		selects[0].selectedIndex = 0;
+		selects[1].selectedIndex = 0;
+		plotten();
+	}
+}
+function input_pha(event) { 
+	if(event.target.type == "number" && event.type == "input") {
+		var nr = event.target.parentNode.id.substr(1);
+		event.target.parentNode.querySelector("input[type=range]").value = event.target.value;	
+		pha[nr] = event.target.value * 1;	
+		selects[0].selectedIndex = 0;
+		selects[2].selectedIndex = 0;
+		plotten();
+	}
+	else if(event.target.type == "range" && event.type == "change") {
+		var nr = event.target.parentNode.parentNode.id.substr(1);
+		event.target.parentNode.parentNode.querySelector("input[type=number]").value = event.target.value;	
+		pha[nr] = event.target.value * 1;	
+		selects[0].selectedIndex = 0;
+		selects[2].selectedIndex = 0;
+		plotten();
+	}
+}
+
+function setAmpl(s,pflag) {
+	switch(s) {
+		case 0: //  Regler
+			break;
+		case 1: //  Alle gleich A1
+			for(var i=2;i<amp.length;i++) {
+				amp[i] = amp[1];
+			}
+			break;
+		case 2: //  1/f
+			amp[0] = 0;
+			for(var i=1;i<amp.length;i++) {
+				amp[i] = 1/i;
+			}
+			break;
+		case 3: //  1/f ungerade
+			amp[0] = 0;
+			for(var i=2;i<amp.length;i+=2) {
+				amp[i] = 0;
+			}
+			for(var i=1;i<amp.length;i+=2) {
+				amp[i] = 1/i;
+			}
+			break;
+		case 4: //  1/f^2 ungerade
+			amp[0] = 0;
+			for(var i=2;i<amp.length;i+=2) {
+				amp[i] = 0;
+			}
+			for(var i=1;i<amp.length;i+=2) {
+				amp[i] = 1/(i*i);
+			}
+			break;
+		case 5: // 1/(f-1)(f+1) gerade
+			amp[0] = 0;
+			for(var i=2;i<amp.length;i+=2) {
+				amp[i] = 1/((i-1)*(i+1));
+			}
+			for(var i=1;i<amp.length;i+=2) {
+				amp[i] = 0;
+			}
+			break;
+		case 6: //  Gauß
+			amp[0] = 0;
+			for(var i=1;i<amp.length;i++) {
+				var m = amp.length/2;
+				var w = Math.exp(-0.1*(i-m)*(i-m))
+				amp[i] = w;
+			}
+			break;
+		default:
+	}
+	for(var i=0;i<amp_sliders.length;i++) {
+		amp_inputs[i].value = amp_sliders[i].value = amp[i];
+	}
+	if(pflag) plotten();
+	selects[0].selectedIndex = 0;
+	selects[1].selectedIndex = s;
+}
+function setPhase(s,pflag) {
+	switch(s) {
+		case 0: //  Regler
+			break;
+		case 1: //  Alle gleich P1
+			var p = pha[1];
+			for(var i=2;i<pha.length;i++) {
+				pha[i] = p;
+			}
+			break;
+		case 2: //  0 - 180 -
+			for(var i=1;i<pha.length;i+=2) {
+				pha[i] = 0;
+			}
+			for(var i=2;i<pha.length;i+=2) {
+				pha[i] = 180;
+			}
+			break;
+		case 3: //  0 - 0 - 180 - 180 -
+			var p=[0,0,180,180];
+			for(var i=0;i<pha.length-1;i++) {
+				pha[i+1] = p[i%p.length];
+			} 
+			break; 
+		case 4: //  Zufall
+			for(var i=1;i<pha.length;i++) {
+				var p = Math.random()*360;
+				pha[i] = p;
+			}
+			break;
+		case 5: // Rampe
+			var p = pha[1];
+			var d = pha[2]-pha[1];
+			for(i=2;i<pha.length;i++) {
+				p += d;
+				if(p>360) p-= 360;
+				else if(p<0) p+= 360;
+				pha[i] = p ;        
+			}
+			break;
+		default:
+	} 
+	for(var i=0;i<pha_sliders.length;i++) {
+		pha_inputs[i].value = pha_sliders[i].value = pha[i+1];
+	}
+	if(pflag) plotten();
+	selects[0].selectedIndex = 0;
+	selects[2].selectedIndex = s;
+}
+function setSignal(s,pflag) {
+	switch(s) {
+		case 0: //  Form wählen
+			break;
+		case 1: //  Sägezahn
+			setAmpl(2,false);
+			setPhase(2,pflag);
+			break;
+		case 2: //  Rechteck
+			setAmpl(3,false);
+			setPhase(2,pflag);
+			break;
+		case 3: //  Dreieck
+			setAmpl(4,false);
+			setPhase(3,pflag);
+			break;
+		case 4: //  |sin|
+			setAmpl(5,false);
+			amp[0] = 0.5;
+			amp_inputs[0].value = amp_sliders[0].value = amp[0];
+			pha[1] = 270;
+			setPhase(1,pflag);
+			break;
+		default:
+	}
+	selects[0].selectedIndex = s;
+}
+
+function plotten() {
+  var npt = 1000;
+  var daten = new Array(npt);
+  var x,xx,y;
+	var fs=0,df=1;
+  for(var i=0;i<npt;i++) {
+    x = 2*i/npt;
+    xx = x*Math.PI*2;
+    y = amp[0];
+    for(var j=1;j<pha.length;j++) y += amp[j]*Math.sin(xx*(fs+j*df)+pha[j]*Math.PI/180) ;
+    daten[i] = {x:x,y:y};
+  }
+  plt.clear(); 
+  plt.scale(daten); 
+  plt.frame(40,35,"t","F(t)"); 
+  plt.plot(daten,"#000040"); 
+}
+
+
+var plt = new JB.plot("plot") ;
+amplituden.addEventListener("input", input_ampl);
+amplituden.addEventListener("change", input_ampl);
+phasen.addEventListener("input", input_pha);
+phasen.addEventListener("change", input_pha);
+
+selects = document.getElementsByTagName("select");
+selects[0].onchange = function() { setSignal(1*this.options[this.options.selectedIndex].value,true); }
+selects[1].onchange = function() { setAmpl(1*this.options[this.options.selectedIndex].value,true); }
+selects[2].onchange = function() { setPhase(1*this.options[this.options.selectedIndex].value,true); }
+selects[0].selectedIndex = 0;
+selects[1].selectedIndex = 6;
+selects[2].selectedIndex = 4;
+setAmpl(6,false);
+setPhase(4,true);
+
+window.onresize = function() {
+  delete plt;
+  document.getElementById("plot").innerHTML = "";
+  plt = new JB.plot("plot") ;
+  plotten() ;
+};
+
+</script>
+
+
+</body></html>

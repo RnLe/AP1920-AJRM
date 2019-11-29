@@ -1,0 +1,84 @@
+\documentclass{scrartcl}
+
+\usepackage[aux]{rerunfilecheck}
+
+\usepackage{fontspec}
+
+\usepackage[main=ngerman]{babel}
+
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{mathtools}
+
+\usepackage[
+  math-style=ISO,
+  bold-style=ISO,
+  sans-style=italic,
+  nabla=upright,
+  partial=upright,
+]{unicode-math}
+
+\usepackage{siunitx}
+
+\usepackage[unicode]{hyperref}
+\usepackage{bookmark}
+
+\begin{document}
+
+\section*{Aufgabe 2}
+
+\subsection*{Ohne Optionen}
+
+\SI{27.23(1)e3}{\meter\per\second}
+\begin{equation}
+  \SI{27.23(1)e3}{\meter\per\second} 
+\end{equation}
+
+\subsection*{Mit \texttt{locale=DE}}
+
+\sisetup{locale=DE}
+\SI{27.23(1)e3}{\meter\per\second}
+\begin{equation}
+  \SI{27.23(1)e3}{\meter\per\second} 
+\end{equation}
+
+\subsection*{Mit \texttt{separate-uncertainty=true}}
+
+\sisetup{separate-uncertainty=true}
+\SI{27.23(1)e3}{\meter\per\second}
+\begin{equation}
+  \SI{27.23(1)e3}{\meter\per\second} 
+\end{equation}
+
+\subsection*{Mit \texttt{per-mode=symbol-or-fraction}}
+
+\sisetup{per-mode=symbol-or-fraction}
+\SI{27.23(1)e3}{\meter\per\second}
+\begin{equation} 
+  \SI{27.23(1)e3}{\meter\per\second} 
+\end{equation}
+
+\section*{Aufgabe 3}
+
+$0,2$ und $\num{0,2}$
+
+$10000$ und $\num{10000}$
+
+$3,1415926$ und $\num{3,1415926}$
+
+\begin{equation}
+  (1{,}234 \pm 0{,}005) \cdot 10^3
+\end{equation}
+
+\section*{Aufgabe 4}
+
+\begin{gather}
+  \SI{511}{\kilo\electronvolt} \\
+  \SI{1e-10}{\metre} \\
+  \SI{1e8}{\metre\per\second} \\
+  \SI{10}{\kilo\gram\metre\per\square\second} \\
+  \SI{9001}{\newton\per\ampere\per\metre} \\
+  \SI{100}{\volt\tothe{4}}
+\end{gather}
+
+\end{document}

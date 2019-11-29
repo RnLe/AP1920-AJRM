@@ -1,0 +1,9 @@
+Aufgabe 1:
+  Setzt in eurem Dokument die Meta-Angaben
+    author
+    title
+    date
+  für euren ersten Praktikumsversuch.
+
+  Erstellt das PDF-Dokument so, dass die Titelangaben (Titel, Autor, Datum, etc.)
+  auf einer eigenen Titelseite ausgeben werden.
