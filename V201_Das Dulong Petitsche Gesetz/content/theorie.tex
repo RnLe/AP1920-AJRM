@@ -1,4 +1,4 @@
-\section{Theorie}%\footnote{Unter Verwendung der Quellen \cite{demtroeder}, \cite{Versuchsanleitung}, \cite{gerthsen}.}}
+\section{Theorie\footnote{Unter Verwendung der Quellen \cite{demtroeder}, \cite{Versuchsanleitung}, \cite{gerthsen}.}}
 \label{sec:Theorie}
 \subsection{Zielsetzung}
     Ziel des Experiments ist es, zu untersuchen, inwiefern der klassische Ansatz der Physik genügt, Oszillationen von 
@@ -13,8 +13,8 @@
     Jene hängt davon ab, ob die Erwärmung bei konstantem Volumen $V$ oder bei konstant gehaltenem Druck $p$ durchgeführt 
     wird. An dem Formelzeichen der Größe wird das durch einen entsprechenden Index kenntlich gemacht: 
     \begin{align*}
-        C_{p} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{p}} &
-        C_{V} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} \\
+        C_{p} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{p} &
+        C_{V} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{V} \\
     \end{align*}
 
     Das aus der klassischen Physik abgeleitete Dulong--Petitsche Gesetz besagt nun, dass die spezifische Wärmekapazität bei 
@@ -34,14 +34,14 @@
     Im Festkörper besitzt jedes Teilchen $3$ Freiheitsgrade. 
     Daraus geht
     \begin{equation}
-        \bigl< u \bigr> = \bigl< E_\text{kin} \bigr> + \bigl< E_\text{pot} \bigr> = 2 \, \bigl< E_\text{kin} \bigr> = 3 \, \symup{k} T
+        \bigl< u \bigr> = \bigl< E_\text{kin} \bigr> + \bigl< E_\text{pot} \bigr> = 2 \bigl< E_\text{kin} \bigr> = 3 \symup{k} T
     \end{equation}
     hervor. 
     In einem Mol eines Stoffes sind $\symup{N_\text{A}} = 6.0221415 \cdot 10^{23} \, \si{\mol\tothe{-1}}$ Teilchen enthalten, 
     weshalb für die Gesamtenergie eines Mols 
     \begin{equation}
-        \bigl< U \bigr> = 3 \, \symup{N_\text{A}} \, \symup{k} \, T = 3 \, \symup{R} \, T
-        \label{eq:formel}
+        \bigl< U \bigr> = 3 \symup{N_\text{A}} \symup{k} T = 3 \symup{R} T
+        \label{eqn:formel}
     \end{equation}
     gilt. 
     
@@ -54,9 +54,9 @@
         U &\text{: innere Energie,} & Q &\text{: Wärmemenge,} & W &\text{: mechanische Arbeit,} & \rho &\text{: Dichte.}
     \end{align*}
     \begin{align}
-         &  &\mathrm{d} W &= - \, \rho \mathrm{V} \, &\stackrel{V = \text{const}}{=} 0 &    &   &   &
+         &  &\mathrm{d} W &= - \rho \mathrm{V} &\stackrel{V = \text{const}}{=} 0 &    &   &   &
         \Rightarrow &   &\mathrm{d} U &= \mathrm{d} Q &    \\
-        \Rightarrow &   &C_{\text{V}} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{\text{V}} &\stackrel{\eqref{eq:formel}}{=} 3 \symup{R}
+        \Rightarrow &   &C_{V} &= \biggl(\frac{\partial Q}{\partial T}\biggr)_{V} &\stackrel{\eqref{eq:formel}}{=} 3 \symup{R}
         &   &   &   &   &   &   &   &
     \end{align}
     
@@ -73,10 +73,10 @@
     sich daraus auf eine bei weitem komplexere Formel und nicht einfach auf einen konstanten Wert für die innere Energie 
     eines Mols schließen:
     \begin{equation}
-        \bigl< U_{\text{Qu}} \bigr> = \frac{3 \, \symup{N_{\text{A}}} \, \symup{\hbar} \, \omega}{\exp(\frac{\symup{\hbar} \omega}{\symup{k} T}) - 1}
+        \bigl< U_{\text{Qu}} \bigr> = \frac{3 \symup{N_{\text{A}}} \symup{\hbar} \omega}{\exp(\frac{\symup{\hbar} \omega}{\symup{k} T}) - 1}
     \end{equation}
     Diese Funktion geht für $T \to 0$ gegen Null und für große Temperaturen gegen den durch das Dulong--Petitsch-Gesetz 
-    vorbestimmten Wert von $3 \, \symup{R} \, T$, genauer gesagt, wenn $\symup{k} \, T \gg \symup{\hbar} \, \omega$ gültig ist. 
+    vorbestimmten Wert von $3 \symup{R} T$, genauer gesagt, wenn $\symup{k} T \gg \symup{\hbar} \omega$ gültig ist. 
     Zu beachten sei hierbei noch die Proportionalität $\omega \propto \sfrac{1}{\sqrt{m}}$.
     
     Demnach sind nur bei hohen Temperaturen das Dulong-Petitsche Gesetz und die Quantenmechanik konform zueinander. 
@@ -86,3 +86,49 @@
     kontinuierliche Verteilung besitzen. 
     Dies sollte für dieses Experiment nicht von Relevanz sein, aufgrund der Tatsache, dass dieser Aspekt ausschließlich 
     bei niedrigen Temperaturen in ausschlaggebenden Änderungen resultiert.
+
+\subsection{Berechnung der spezifischen Wärmekapazität}
+    Wird ein Körper der Masse $m_\text{k}$ auf die Temperatur $T_\text{k}$ erhitzt und im Anschluss daran in ein Dewar-Gefäß, 
+    welches mit Wasser der Masse $m_\text{w}$ und der Temperatur $T_\text{w}$ gefüllt ist, getaucht, so stellt sich 
+    kurz darauf eine Mischtemperatur $T'_\text{m}$ des Wassers, des Gefäßes und des Körpers ein. 
+    Der Körper mit der spezifischen Wärmekapazität $c_\text{k}$ hat bei diesem Vorgang die Wärmemenge 
+    \begin{equation}
+        Q_k = c_\text{k} m_\text{k} (T_\text{k} - T'_\text{m})
+    \end{equation}
+    an seine Umgebung abgegeben -- in dem Fall in der Theorie ausschließlich an das umgebende Wasser und das Gefäß, 
+    da Energieerhaltung gilt. 
+    Hierfür sei vor allem das Dewar-Gefäß durch seine hohe thermische Isolierung ausgezeichnet, die von dem in die 
+    Becherwand integrierten Vakuum und der verspiegelten Innenwand herrührt. 
+    Wasser und Behälter haben entsprechend die Wärme 
+    \begin{equation}
+        Q_k = (c_\text{w} m_\text{w} + c_\text{g} m_\text{g}) (T'_\text{m} - T_\text{w})
+    \end{equation}
+    aufgenommen, wobei die Größen mit Index \textit{g} dem Dewar-Gefäß zugeordnet werden. 
+    Setzt man nun beide Terme gleich, erhält man für die spezifische Wärmekapazität des Körpers 
+    \begin{equation}
+        c_\text{k} = \frac{(c_\text{w} m_\text{w} + c_\text{g}m_\text{g})(T'_\text{m} - T_\text{w})}{m_\text{k}(T_\text{k} - T'_\text{m})}.
+        \label{eqn:c_k}
+    \end{equation}
+
+    Zur Bestimmung der Wärmekapazität des Dewar-Gefäßes $c_\text{g} m_\text{g}$ werden wie in der nachfolgenden Versuchsdurchführung 
+    zwei Wassermengen der Masse $m_\text{x}$ und $m_\text{y}$ und der (unterschiedlichen!) Temperaturen $T_\text{x}$ und 
+    $T_\text{y}$ in das Gefäß gegeben. 
+    Hier gilt ebenfalls die Erhaltung der Wärmemenge nach Einstellung einer einheitlichen Mischtemperatur: 
+    \begin{equation}
+        (c_\text{g} m_\text{g} + c_\text{w} m_\text{x})(T'_\text{m} - T_\text{x}) = c_\text{w} m_\text{y} (T_\text{y} - T'_\text{m})
+    \end{equation}
+    \begin{equation}
+        c_\text{g} m_\text{g} = \frac{c_\text{w} m_\text{y} (T_\text{y} - T'_\text{m}) - c_\text{w} m_\text{x} (T'_\text{m} - T_\text{x})}{T'_\text{m} - T_\text{x}}
+        \label{eqn:dewar}
+    \end{equation}
+
+    Zwischen der molekularen Wärmekapazität $C_V$ bei konstantem Volumen und der $C_p$ bei konstantem Druck 
+    besteht der hier nicht bewiesene Zusammenhang: 
+    \begin{equation}
+        C_p-C_V = 9 \alpha^2 \kappa V_0 T .
+        \label{eqn:molwaerme}
+    \end{equation}
+    $\alpha$ ist der lineare Ausdehnungskoeffizient, $\kappa$ das Kompressionsmodul, $V_0=\sfrac{M}{\rho}$ das Molvolumen,
+    $M$ die molare Masse und $\rho$ die Dichte des jeweiligen Materials. 
+    Gemessen werden in diesem Experiment $c_p$ beziehungsweise $C_p$, da ein Aufrechterhalten des Volumen im Vergleich zu dem 
+    des Drucks enorm aufwendig ist. Näherungsweise konstanten Druck ist bereits im Labor gegeben. 
