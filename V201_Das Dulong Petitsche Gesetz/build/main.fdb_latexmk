@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1575149413 "build/main.bcf" "build/main.bbl" "build/main" 1575149413
-  "build/main.bcf" 1575149311 98089 7690fc4d34cd5e18d118edcf875866a5 "lualatex"
+["biber build/main"] 1575194883 "build/main.bcf" "build/main.bbl" "build/main" 1575194888
+  "build/main.bcf" 1575194183 98250 ae879ce5a1bda191488102feb81b6502 "lualatex"
   (generated)
-  "build/main.blg"
   "build/main.bbl"
-["lualatex"] 1575149415 "main.tex" "build/main.pdf" "main" 1575149415
+  "build/main.blg"
+["lualatex"] 1575194169 "main.tex" "build/main.pdf" "main" 1575194888
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam7.tfm" 1246382020 928 2dc8d444221b7a635bb58038579b861a ""
@@ -252,18 +252,18 @@
   "/home/antoniajb/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1573976496 411900 b493d6df8e92da518dd06240c1fba2f1 ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/tex/generic/config/language.dat" 1569228406 6580 66af14fef6de375d894295c7785a5c41 ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt" 1569228458 1382850 7a44d9fb72b4f2754ca03714fa6979ba ""
-  "build/main.aux" 1575149311 7988 0b7662dd2a546b85f5c2ac4e4976a01f "lualatex"
+  "build/main.aux" 1575194183 9117 a5e7c1dc8b4a1cb3fa31917ef7a96f0c "lualatex"
   "build/main.bbl" 0 -1 0 "biber build/main"
-  "build/main.toc" 1575149305 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
-  "content/auswertung.tex" 1575149061 4530 99bf3453e3421e0fac79c451ec754038 ""
+  "build/main.toc" 1575194176 0 d41d8cd98f00b204e9800998ecf8427e "lualatex"
+  "content/auswertung.tex" 1575189439 5062 b7b423be47c2d667c1f7985939dd71c8 ""
   "content/durchfuehrung.tex" 1575060744 5301 c796beeee239aaebfc40ac16b93bfe62 ""
-  "content/messdaten.tex" 1575043936 1774 34d074ab4d1981ceee29c3b931d33ab4 ""
+  "content/messdaten.tex" 1575184052 1774 dc59f2a876383b078c9526f56b0bc794 ""
   "content/theorie.tex" 1575149407 9329 b7a94fe916c8b4e8f65c73ffce152774 ""
   "header.tex" 1575042357 3994 bc8f63cd91e8343277bd4723c84c9ad0 ""
   "main.tex" 1575033187 491 6506a84363fdf1b8e1213c9852c7c266 ""
   (generated)
-  "build/main.bcf"
-  "build/main.pdf"
-  "build/main.toc"
   "build/main.aux"
+  "build/main.toc"
+  "build/main.pdf"
+  "build/main.bcf"
   "build/main.log"

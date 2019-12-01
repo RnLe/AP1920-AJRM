@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  30 NOV 2019 22:30
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.23)  1 DEC 2019 10:56
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.823 seconds
+luaotfload | main : initialization completed in 0.312 seconds
 (./header.tex (/home/antoniajb/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/antoniajb/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1919,21 +1919,24 @@ LaTeX Warning: Citation 'Versuchsanleitung' on page 8 undefined on input line 17
 
 [8]
 
-LaTeX Warning: Citation 'Versuchsanleitung' on page 9 undefined on input line 39.
+LaTeX Warning: Reference `tab:eigenschaften' on page 9 undefined on input line 23.
+
+
+LaTeX Warning: Citation 'Versuchsanleitung' on page 9 undefined on input line 44.
 
 ! Missing { inserted.
 <to be read again> 
 \c_math_toggle_token 
-l.48 ...m{e-6}\si{\meter\tothe{3}\mol\tothe{-1}}]$ &
+l.53 ...m{e-6}\si{\meter\tothe{3}\mol\tothe{-1}}]$ &
                                                    $\alpha[\num{e-6}\si{\kel...
 
 Here is how much of LuaTeX's memory you used:
- 53361 strings out of 494291
+ 53362 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 13230 words of node memory still in use:
-   218 hlist, 6 vlist, 35 rule, 31 disc, 7 local_par, 7 dir, 58 math, 437 glue, 60 kern, 22 penalty, 3 unset, 1 noad, 2 math_char, 2 margin_kern, 523 glyph, 6 align_record, 748 attribute, 93 glue_spec, 376 attribute_list, 14 temp, 1 align_stack, 4 write, 1 pdf_start_link, 1 pdf_end_link, 2 pdf_dest, 1 pdf_action, 7 pdf_colorstack nodes
-   avail lists: 1:13,2:2306,3:193,4:45,5:240,6:13,7:3619,8:93,9:570,10:13,11:460
- 55842 multiletter control sequences out of 65536+600000
- 352 fonts using 133977119 bytes
+ 16721 words of node memory still in use:
+   246 hlist, 7 vlist, 36 rule, 69 disc, 8 local_par, 7 dir, 67 math, 496 glue, 86 kern, 30 penalty, 3 unset, 1 noad, 2 math_char, 7 margin_kern, 803 glyph, 6 align_record, 802 attribute, 93 glue_spec, 403 attribute_list, 14 temp, 1 align_stack, 4 write, 2 pdf_start_link, 2 pdf_end_link, 3 pdf_dest, 2 pdf_action, 7 pdf_colorstack nodes
+   avail lists: 1:13,2:1496,3:184,4:40,5:214,6:7,7:3271,8:91,9:339,10:13,11:422
+ 55843 multiletter control sequences out of 65536+600000
+ 352 fonts using 133978303 bytes
  88i,22n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 !  ==> Fatal error occurred, no output PDF file produced!
