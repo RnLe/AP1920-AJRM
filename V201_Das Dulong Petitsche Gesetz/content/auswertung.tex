@@ -16,22 +16,27 @@ berechnen.
 % \end{equation}
 Für $c_w$ nehmen wir den Wert $\SI{4.18}{\joule\per\g\per\kelvin}$ an\cite{Versuchsanleitung}. %wir
 Die spezifische Wärme der Messkörper errechnet sich durch Gleichung \eqref{eqn:c_k}.
+Zur Berechnung der molekularen Wärmekapazität bei konstantem Druck muss noch folgende Skalierung vorgenommen werden:
+\begin{equation}
+    C_{k,p}=c_k \cdot \frac{m_k}{n_k}=c_k \cdot M_k 
+\end{equation}
+$n$ bezeichnet an dieser Stelle die Stoffmenge. Die molare Masse $M$ entnehme man aus Tabelle \ref{tab:eigenschaften}. 
 Da wir alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen haben, können wir $c_k$ für die drei Messkörper berechnen. %wir
 \begin{table}
     \centering
-    \caption{Spezifische Wärmen der Messkörper.}
+    \caption{Spezifische Wärme und Wärmekapazität bei konstantem Druck der Messkörper.}
     \label{tab:c_k-Werte}
     \begin{tabular}{c c | S[table-format=4.2] S[table-format=3.1]}
         \toprule
-        Stoff & Messung & $c_k[\si{\joule\per\g\per\kelvin}]$ & $C_{k,p}[\num{e3}\si{\joule\per\kelvin}]$\\
+        Stoff & Messung & $c_k[\si{\joule\per\g\per\kelvin}]$ & $C_{k,p}[\num{e3}\si{\joule\per\mol\per\kelvin}]$\\
         \midrule
-        Zinn        & a) &   951.05 &193.1   \\
-                    & b) &   955.40 &193.9   \\
-                    & c) &   784.22 &159.2   \\
-        Aluminium   & a) &  3662.44 &560.4   \\
-                    & b) &  2721.43 &416.4   \\
-                    & c) &  2543.45 &389.1   \\
-        Kupfer      & a) &  1654.00 &392.0   \\
+        Zinn        & a) &   951.05 & 112.9   \\
+                    & b) &   955.40 & 113.4   \\
+                    & c) &   784.22 & 93.1   \\
+        Aluminium   & a) &  3662.44 & 98.9   \\
+                    & b) &  2721.43 & 73.5   \\
+                    & c) &  2543.45 & 68.7   \\
+        Kupfer      & a) &  1654.00 & 103.0   \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -59,19 +64,22 @@ Der Vollständigkeit halber seien hier ebenfalls die Werte für die hier verwend
     \label{tab:C_k-Werte}
     \begin{tabular}{c c | S[table-format=4.2]}
         \toprule
-        Stoff & Messung & $C_{k,V}[\si{\joule\per\g\per\kelvin}]$ \\
+        Stoff & Messung & $C_{k,V}[\num{e3}\si{\joule\per\mol\per\kelvin}]$ \\
         \midrule
-        Zinn        & a) &  \\
-                    & b) &  \\
-                    & c) &  \\
-        Aluminium   & a) &  \\
-                    & b) &  \\
-                    & c) &  \\
-        Kupfer      & a) &  \\
+        Zinn        & a) & 112.898 \\
+                    & b) & 113.398 \\
+                    & c) &  93.098 \\
+        Aluminium   & a) &  98.899 \\
+                    & b) &  73.499 \\
+                    & c) &  68.699 \\
+        Kupfer      & a) & 102.999 \\
         \bottomrule
     \end{tabular}
 \end{table}
 
 \subsection{Vorbereitung zur Diskussion}
 Um den Abgleich mit Literaturwerten und eine Diskussion zu ermöglichen, werten wir die Daten weiter aus.\\ %wir
-Allgemeine Gaskonstante $\symup{R} = \SI{8.3145}{\joule\per\mol\per\kelvin}$ \cite{taschenbuch}. %Konstanten mit symup aufrecht schreiben
+Allgemeine Gaskonstante $\symup{R} = \SI{8.3145}{\joule\per\mol\per\kelvin}$ \cite{taschenbuch}.\\ %Konstanten mit symup aufrecht schreiben
+\begin{equation*}
+C_V = 3 \symup{R} = \SI{24.9435}{\joule\per\mol\per\kelvin}
+\end{equation*}
