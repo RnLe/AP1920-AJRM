@@ -1,0 +1,18 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Theorie\FN@sf@gobble@opt {Unter Verwendung der Quellen \cite {demtroeder}, \cite {Versuchsanleitung}, \cite {gerthsen}.}}{3}{section.1}% 
+\contentsline {subsection}{\numberline {1.1}Zielsetzung}{3}{subsection.1.1}% 
+\contentsline {subsection}{\numberline {1.2}Ansatz der klassischen Physik}{3}{subsection.1.2}% 
+\contentsline {subsection}{\numberline {1.3}Ansatz der Quantenmechanik}{4}{subsection.1.3}% 
+\contentsline {subsection}{\numberline {1.4}Berechnung der spezifischen Wärmekapazität}{5}{subsection.1.4}% 
+\contentsline {section}{\numberline {2}Durchführung}{6}{section.2}% 
+\contentsline {subsection}{\numberline {2.1}Ziel}{6}{subsection.2.1}% 
+\contentsline {subsection}{\numberline {2.2}Aufbau}{6}{subsection.2.2}% 
+\contentsline {subsection}{\numberline {2.3}Durchführung}{6}{subsection.2.3}% 
+\contentsline {section}{\numberline {3}Messdaten}{8}{section.3}% 
+\contentsline {section}{\numberline {4}Auswertung}{8}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Berechnen der spezifischen Wärme}{8}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Vorbereitung zur Diskussion}{10}{subsection.4.2}% 
+\contentsline {section}{\numberline {5}Diskussion}{10}{section.5}% 
+\contentsline {section}{\numberline {6}Anhang: originale Messdaten}{11}{section.6}% 
+\contentsline {section}{\nonumberline Literatur}{11}{section*.6}% 
