@@ -66,41 +66,6 @@
       \field{title}{Versuchsanleitung V201 - Das Dulong-Petitsche Gesetz}
       \field{year}{2019}
     \endentry
-    \entry{taschenbuch}{book}{}
-      \name{author}{3}{}{%
-        {{hash=29be8b370d75b426ff18a2557da6b5da}{%
-           family={Hering},
-           familyi={H\bibinitperiod},
-           given={Ekbert},
-           giveni={E\bibinitperiod}}}%
-        {{hash=24dac3d99d573948e9497fd2125dce8d}{%
-           family={Martin},
-           familyi={M\bibinitperiod},
-           given={Rolf},
-           giveni={R\bibinitperiod}}}%
-        {{hash=db3047a5882586aee27860a863517662}{%
-           family={Stohrer},
-           familyi={S\bibinitperiod},
-           given={Martin},
-           giveni={M\bibinitperiod}}}%
-      }
-      \list{publisher}{1}{%
-        {Springer Vieweg}%
-      }
-      \strng{namehash}{5be12ce6fb5ecc7551fab1e299540399}
-      \strng{fullhash}{5be12ce6fb5ecc7551fab1e299540399}
-      \strng{bibnamehash}{5be12ce6fb5ecc7551fab1e299540399}
-      \strng{authorbibnamehash}{5be12ce6fb5ecc7551fab1e299540399}
-      \strng{authornamehash}{5be12ce6fb5ecc7551fab1e299540399}
-      \strng{authorfullhash}{5be12ce6fb5ecc7551fab1e299540399}
-      \field{sortinit}{H}
-      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{edition}{6}
-      \field{title}{Taschenbuch der Mathematik und Physik}
-      \field{year}{2017}
-    \endentry
     \entry{gerthsen}{book}{}
       \name{author}{1}{}{%
         {{hash=8fe294dd7320c681ff6f5a57199d37d2}{%

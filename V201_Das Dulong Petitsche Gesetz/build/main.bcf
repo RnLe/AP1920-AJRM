@@ -2135,7 +2135,6 @@
     <bcf:citekey order="3">gerthsen</bcf:citekey>
     <bcf:citekey order="4">Versuchsanleitung</bcf:citekey>
     <bcf:citekey order="5">Versuchsanleitung</bcf:citekey>
-    <bcf:citekey order="6">taschenbuch</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

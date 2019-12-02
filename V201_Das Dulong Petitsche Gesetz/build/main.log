@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  1 DEC 2019 11:25
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  2 DEC 2019 18:59
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.126 seconds
+luaotfload | main : initialization completed in 0.109 seconds
 (./header.tex (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1938,21 +1938,16 @@ Overfull \hbox (5.475pt too wide) detected at line 76
  
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
-
- []
-
-[9]) (./content/diskussion.tex) (./content/anhang.tex [10]) [11]
+) (./content/diskussion.tex [9]) (./content/anhang.tex) [10] [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 27.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 27.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 27.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 27.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 1FFB3B87C43BB247F4AF8B17C868DDFE;12339.
+(rerunfilecheck)             Checksum: A0559C8A1F79EFA8BCD2276357401327;11849.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 2AF4727FCD89EC2A5D94CD599CAE230C;1524.
+(rerunfilecheck)             Checksum: 294C15FC0236D28167023DEC395C46EA;1433.
 
 
 LaTeX Warning: There were undefined references.
@@ -1963,19 +1958,19 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 53455 strings out of 494291
+ 53444 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 833 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 70 attribute, 80 glue_spec, 37 attribute_list, 2 write nodes
-   avail lists: 1:2,2:2774,3:265,4:67,5:321,6:39,7:4633,8:97,9:668,10:14,11:491
- 55890 multiletter control sequences out of 65536+600000
- 351 fonts using 133845951 bytes
+ 827 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 3 glue, 4 kern, 1 glyph, 68 attribute, 80 glue_spec, 36 attribute_list, 2 write nodes
+   avail lists: 1:2,2:2881,3:264,4:63,5:322,6:36,7:4626,8:97,9:703,10:14,11:484
+ 55881 multiletter control sequences out of 65536+600000
+ 351 fonts using 133846543 bytes
  88i,22n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (11 pages, 90032 bytes).
+Output written on main.pdf (11 pages, 89480 bytes).
 
-PDF statistics: 272 PDF objects out of 1000 (max. 8388607)
- 220 compressed objects within 3 object streams
- 53 named destinations out of 1000 (max. 131072)
- 144 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 264 PDF objects out of 1000 (max. 8388607)
+ 212 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 131072)
+ 136 words of extra memory for PDF output out of 10000 (max. 100000000)
 
