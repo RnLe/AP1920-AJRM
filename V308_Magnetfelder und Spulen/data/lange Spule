@@ -1,0 +1,23 @@
+Windungszahl: n = 300
+Mittlerer Spulendurchmesser d = 41 mm
+I = 1.35A
+x_0 entspricht Spulenende + Plastikrand = 6.4cm auf dem Lineal
+Rand: 1.5cm
+
+x in mm     B in mT     y in mm
+0           3.076       -79
+5           3.051       -74
+10          3.020       -69
+15          2.977       -64
+20          2.916       -59
+31          2.671       -48
+39          2.318       -40
+47          1.775       -32
+55          1.174       -24
+64          0.680       -15
+70          0.501       -9
+80          0.317       1
+100         0.177       21
+
+Wenn y unsere Skala sein soll, die bei y=0 den Anfang der Spule trifft, dann gilt: y = x - 6.4 - 1.5 = x - 7.9
+Die negativen y-Werte liegen dann innerhalb der Spule. 
