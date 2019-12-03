@@ -1,3 +1,102 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Helmholtzspule}
+Die $x$-Skala entspricht der an der Apparatur angebrachten Skala bei der Experimentdurchführung. 
+Hierbei war durch $x=0$ die innenliegende Spulenkante der linken Spule gegeben. 
+Zur Vereinfachung der Auswertung wurde folgende Verschiebung der Achse vorgenommen, sodass sich idealerweise die Mitte der 
+beiden Spulen bei $y=0$ befindet:
+\begin{equation*}
+    y=x+\frac{b}{2} -\frac{d}{2}
+\end{equation*}
+Dabei entsprechen $b$ der Spulenbreite und $d$ dem jeweiligen Abstand der Messreihe.
+\begin{table}
+    \centering
+    \caption{Daten der verwendeten Doppelspule und Grundeinstellungen.}
+    \label{tab:HH}
+    \begin{tabular}{c c c c
+        \toprule
+        {Windungszahl je Spule $n$} & {Spulendurchmesser $2R$} & {Spulenbreite $b$} & {Strom $I$}\\
+        \midrule
+        100 &  $\SI{125}{\milli\m}$ & $\SI{33}{\milli\meter}$ & $\SI{3.03}{\ampere}$\\
+        \bottomrule
+    \end{tabular}
+\end{table}
 
+\begin{table}
+    \centering
+    \caption{tab:1. Messreihe mit einem Abstand von $d=R=\SI{62.5}{\milli\meter}$.}
+    \label{tab:HH1} %Helmholtz 1
+    \begin{tabular}{S[table-format=3.1] S[table-format=2.2] S[table-format=1.3]}
+        \toprule
+        {$x\,/\,\si{\milli\m}$} & {$y\,/\,\si{\milli\m}$} & {$B\,/\,\si{\milli\tesla}$} \\
+        \midrule
+        7    & -7.75 & 4.239 \\
+        9    & -5.75 & 4.231 \\
+        10.5 & -4.25 & 4.234 \\
+        12   & -2.75 & 4.260 \\ 
+        13.5 & -1.25 & 4.239 \\
+        68.5 & 53.75 & 3.003 \\
+        69   & 54.25 & 2.960 \\
+        70   & 55.25 & 2.891 \\
+        75   & 60.25 & 2.666 \\
+        80   & 65.25 & 2.445 \\
+        85   & 70.25 & 2.219 \\
+        90   & 75.25 & 2.018 \\
+        95   & 80.25 & 1.839 \\
+        100  & 85.25 & 1.662 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{tab:2. Messreihe mit einem Abstand von $d=\SI{104}{\milli\meter}$.}
+    \label{tab:HH2} %Helmholtz 2
+    \begin{tabular}{S[table-format=3.1] S[table-format=3.2] S[table-format=1.3]}
+        \toprule
+        {$x\,/\,\si{\milli\m}$} & {$y\,/\,\si{\milli\m}$} & {$B\,/\,\si{\milli\tesla}$} \\
+        \midrule
+        7     & -28.5 & 3.091 \\
+        16    & -19.5 & 2.976 \\
+        27    & -8.5  & 2.887 \\
+        33.5  & -2    & 2.882 \\
+        44    & 8.5   & 2.945 \\
+        54.5  & 19    & 3.081 \\
+        108.5 & 73    & 2.639 \\
+        115   & 79.5  & 2.410 \\
+        120   & 84.5  & 2.194 \\
+        125   & 89.5  & 2.031 \\
+        130   & 94.5  & 1.849 \\
+        160   & 124.5 & 1.036 \\
+        190   & 154.5 & 0.615 \\
+        230   & 194.5 & 0.366 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{tab:3. Messreihe mit einem Abstand von $d=\SI{130}{\milli\meter}$.}
+    \label{tab:HH3} %Helmholtz 3
+    \begin{tabular}{S[table-format=3.0] S[table-format=3.2] S[table-format=1.3]}
+        \toprule
+        {$x\,/\,\si{\milli\m}$} & {$y\,/\,\si{\milli\m}$} & {$B\,/\,\si{\milli\tesla}$} \\
+        \midrule
+        7   & -41.5 & 2.754 \\
+        22  & -26.5 & 2.420 \\
+        30  & -18.5 & 2.288 \\
+        45  & -3.5  & 2.199 \\
+        51  & 2.5   & 2.211 \\
+        63  & 14.5  & 2.354 \\
+        79  & 30.5  & 2.688 \\
+        134 & 85.5  & 2.529 \\
+        149 & 100.5 & 2.007 \\
+        155 & 106.5 & 1.789 \\
+        163 & 114.5 & 1.540 \\
+        171 & 122.5 & 1.315 \\
+        179 & 130.5 & 1.128 \\
+        190 & 141.5 & 0.909 \\
+        208 & 159.5 & 0.663 \\
+        \bottomrule
+    \end{tabular}
+\end{table}

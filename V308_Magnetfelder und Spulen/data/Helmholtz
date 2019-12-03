@@ -1,59 +1,63 @@
 Windungszahl je n=100
-mittlerer Spulendurchmesser d=125mm
+mittlerer Spulendurchmesser 2R=125mm
 Spulenbreite b=33mm
 
 I = 3.03 A
 U = 3.4 V
-x= 0 entspricht der inneren Spulenkante der linekn Spulenkante
+x= 0 entspricht der inneren Spulenkante der linken Spulenkante
+Wenn wir eine y-Skala haben wollen, die bei y=0 in der Mitte der beiden Spulen ist, muss gelten: y=x+16,5mm-d*0.5
 
 1. Abstand d = 62.5 mm = R
-x in mm     B in mT
-7           4.239
-9           4.231
-10.5        4.234
-12          4.260
-13.5        4.239
-68.5        3.003
-69          2.960
-70          2.891
-75          2.666
-80          2.445
-85          2.219
-90          2.018
-95          1.839
-100         1.662
+y=x+16.5mm-31.25mm=x-14.75mm
+x in mm     B in mT     y in mm
+7           4.239       -7.75
+9           4.231       -5.75
+10.5        4.234       -4.25
+12          4.260       -2.75   %gelb markiert--> hier sollte die Mitte sein. Die Sonde war ja leicht gebogen... dadurch kommt die Verschiebung
+13.5        4.239       -1.25
+68.5        3.003       53.75
+69          2.960       54.25
+70          2.891       55.25
+75          2.666       60.25
+80          2.445       65.25
+85          2.219       70.25
+90          2.018       75.25
+95          1.839       80.25
+100         1.662       85.25
 
 2. Abstand d=104 mm
-x in mm     B in mT
-7           3.091
-16          2.976
-27          2.887
-33.5        2.882
-44          2.945
-54.5        3.081
-108.5       2.639
-115         2.410
-120         2.194
-125         2.031
-130         1.849
-160         1.036
-190         0.615
-230         0.366
+y=x+16.5mm-52mm=x-35.5mm
+x in mm     B in mT     y in mm
+7           3.091       -28.5
+16          2.976       -19.5
+27          2.887       -8.5
+33.5        2.882       -2            %gelb markiert; hier stimmt es in etwa
+44          2.945       8.5
+54.5        3.081       19
+108.5       2.639       73
+115         2.410       79.5
+120         2.194       84.5
+125         2.031       89.5
+130         1.849       94.5
+160         1.036       124.5
+190         0.615       154.5
+230         0.366       194.5
 
 3. Abstand d=130 mm
-x in mm     B in mT
-7           2.754
-22          2.420
-30          2.288
-45          2.199
-51          2.211
-63          2.354
-79          2.688
-134         2.529
-149         2.007
-155         1.789
-163         1.540
-171         1.315
-179         1.128
-190         0.909
-208         0.663
+y=x+16.5mm-65mm=x-48.5mm
+x in mm     B in mT     y in mm
+7           2.754       -41.5
+22          2.420       -26.5
+30          2.288       -18.5
+45          2.199       -3.5
+51          2.211       2.5
+63          2.354       14.5
+79          2.688       30.5
+134         2.529       85.5
+149         2.007       100.5
+155         1.789       106.5
+163         1.540       114.5
+171         1.315       122.5
+179         1.128       130.5
+190         0.909       141.5
+208         0.663       159.5
