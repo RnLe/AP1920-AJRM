@@ -100,3 +100,126 @@ Dabei entsprechen $b$ der Spulenbreite und $d$ dem jeweiligen Abstand der Messre
         \bottomrule
     \end{tabular}
 \end{table}
+
+\subsection{Hysteresekurve}
+    Gemessen wurden wie erläutert der Strom $I$ durch die Spule und das Magnetfeld im Luftspalt der Spule. 
+    Um die Hysteresekurve zu zeichnen, muss die Magnetisierung $B_\text{Fe}$ vom Eisenkern auf das durch die Spule verursachte 
+    Magnetfeld $H$ aufgetragen werden. 
+    Dafür gelten die Zusammenhänge: %hier eventuell Referenzen zu den Formeln einfügen, wenn diese bereits in der Theorie erwähnt wurden, und dann mit gather* die Nummerierung wegmachen
+    \begin{gather}
+        H=\symup{\mu_0}\frac{n}{2\symup{\pi}r} I \\
+        B_\text{mess} = H+B_\text{Fe}
+    \end{gather}
+    \begin{table}
+        \centering
+        \caption{tab:Messwerte der Hysteresekurve.}
+        \label{tab:Hyst} 
+        \begin{tabular}{S[table-format=1.2] S[table-format=1.3],S[table-format=3.0],S[table-format=3.3]}
+            \toprule
+            {$I\,/\,\mathrm{A}$} & {$H\,/\,\mathrm{mT}$} & {$B_\text{mess}\,/\,\mathrm{mT}$} & {$B_\text{Fe}\,/\,\mathrm{mT}$} \\
+            \midrule
+            0.0     & 0.        & 0     & 0.0       \\
+            1.0     & 0.881     & 148   & 147.1     \\
+            2.0     & 1.762     & 335   & 333.2     \\
+            3.0     & 2.644     & 440   & 437.3     \\
+            4.0     & 3.525     & 508   & 504.4     \\
+            5.0     & 4.407     & 561   & 556.5     \\
+            6.0     & 5.288     & 603   & 597.7     \\
+            7.0     & 6.170     & 638   & 631.8     \\
+            8.0     & 7.051     & 668   & 660.9     \\
+            9.0     & 7.933     & 698   & 690.0     \\
+            8.0     & 7.051     & 677   & 669.9     \\
+            7.0     & 6.170     & 656   & 649.8     \\
+            6.0     & 5.288     & 632   & 626.7     \\
+            5.0     & 4.407     & 604   & 599.5     \\
+            4.0     & 3.525     & 569   & 565.4     \\
+            3.0     & 2.644     & 524   & 521.3     \\
+            2.0     & 1.762     & 460   & 458.2     \\
+            1.0     & 0.881     & 332   & 331.1     \\
+            0.0     & 0.        & 128   & 128.0     \\
+            -0.65   & -0.572    &  0    & 0.573    \\
+            -1.0    & -0.881    & -71   & -70.11    \\
+            -2.0    & -1.762    & -252  & -250.2    \\
+            -3.0    & -2.644    & -390  & -387.3    \\
+            -4.0    & -3.525    & -482  & -478.4    \\
+            -5.0    & -4.407    & -546  & -541.5    \\
+            -6.0    & -5.288    & -594  & -588.7    \\
+            -7.0    & -6.170    & -634  & -627.8    \\
+            -8.0    & -7.051    & -669  & -661.9    \\
+            -9.0    & -7.933    & -698  & -690.0    \\
+            -8.0    & -7.051    & -679  & -671.9    \\
+            -7.0    & -6.170    & -658  & -651.8    \\
+            -6.0    & -5.288    & -635  & -629.7    \\
+            -5.0    & -4.407    & -607  & -602.5    \\
+            -4.0    & -3.525    & -573  & -569.4    \\
+            -3.0    & -2.644    & -529  & -526.3    \\
+            -2.0    & -1.762    & -464  & -462.2    \\
+            -1.0    & -0.881    & -339  & -338.1    \\
+            0.0     & 0.        & -129  & -129.0    \\
+            0.6     & 0.528     & -8    & -8.528    \\
+            0.67    & 0.595     & 0     & -0.595   \\
+            1.0     & 0.881     & 72    & 71.12     \\
+            2.0     & 1.762     & 253   & 251.2     \\
+            3.0     & 2.644     & 390   & 387.3     \\
+            4.0     & 3.525     & 482   & 478.4     \\
+            5.0     & 4.407     & 544   & 539.5     \\
+            6.0     & 5.288     & 592   & 586.7     \\
+            7.0     & 6.170     & 630   & 623.8     \\
+            8.0     & 7.051     & 663   & 655.9     \\
+            9.0     & 7.933     & 693   & 685.0     \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+\subsection{Spulen}
+    \subsubsection{Kurze Spule}
+    \begin{table}
+    \centering
+    \caption{tab:Messwerte der kurzen Spule.}
+    \label{tab:kurzSp}
+        \begin{tabular}{S[table-format=3.0] S[table-format=2.0] S[table-format=2.2]}
+            \toprule
+            {$x\,/\,\mathrm{mm}$} & {$y\,/\,\mathrm{mm}$} & {$B\,/\,\mathrm{mT}$}\\
+            \midrule
+            0   & -96   & 13.71 \\
+            15  & -81   & 16.68 \\
+            30  & -66   & 18.48 \\
+            40  & -56   & 18.81 \\
+            50  & -46   & 18.44 \\
+            60  & -36   & 17.40 \\
+            73  & -23   & 15.02 \\
+            87  & -9    & 11.82 \\
+            100 & 4     & 8.82  \\
+            110 & 14    & 6.90  \\
+            121 & 25    & 5.23  \\
+            135 & 39    & 3.68  \\
+            151 & 55    & 2.52  \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
+
+    \subsubsection{Lange Spule}
+    \begin{table}
+    \centering
+    \caption{tab:Messwerte der langen Spule.}
+    \label{tab:langSp}
+        \begin{tabular}{S[table-format=3.0] S[table-format=2.0] S[table-format=2.2]}
+            \toprule
+            {$x\,/\,\mathrm{mm}$} & {$y\,/\,\mathrm{mm}$} & {$B\,/\,\mathrm{mT}$}\\
+            \midrule
+            0   & -79   & 3.076 \\
+            5   & -74   & 3.051 \\
+            10  & -69   & 3.020 \\
+            15  & -64   & 2.977 \\
+            20  & -59   & 2.916 \\
+            31  & -48   & 2.671 \\
+            39  & -40   & 2.318 \\
+            47  & -32   & 1.775 \\
+            55  & -24   & 1.174 \\
+            64  & -15   & 0.680 \\
+            70  & -9    & 0.501 \\
+            80  & 1     & 0.317 \\
+            100 & 21    & 0.177 \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
