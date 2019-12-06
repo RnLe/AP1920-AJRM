@@ -1,0 +1,14 @@
+\boolfalse {citerequest}\boolfalse {citetracker}\boolfalse {pagetracker}\boolfalse {backtracker}\relax 
+\babel@toc {ngerman}{}
+\contentsline {section}{\numberline {1}Einleitung}{3}{section.1}% 
+\contentsline {section}{\numberline {2}Theorie}{3}{section.2}% 
+\contentsline {section}{\numberline {3}Durchführung}{3}{section.3}% 
+\contentsline {section}{\numberline {4}Messdaten}{3}{section.4}% 
+\contentsline {section}{\numberline {5}Auswertung}{3}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Helmholtzspule}{3}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Hysteresekurve}{3}{subsection.5.2}% 
+\contentsline {subsection}{\numberline {5.3}Spulen}{5}{subsection.5.3}% 
+\contentsline {subsubsection}{\numberline {5.3.1}Kurze Spule}{5}{subsubsection.5.3.1}% 
+\contentsline {subsubsection}{\numberline {5.3.2}Lange Spule}{5}{subsubsection.5.3.2}% 
+\contentsline {section}{\numberline {6}Diskussion}{8}{section.6}% 
+\contentsline {section}{\numberline {7}Anhang: originale Messdaten}{8}{section.7}% 
