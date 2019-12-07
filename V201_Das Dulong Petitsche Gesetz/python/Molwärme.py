@@ -1,6 +1,6 @@
 import numpy as np
 
-C_p=dict(tin=[112.9,113.4,93.1],alum=[98.9,73.5,68.7],copper=103.0)
+C_p=dict(tin=[30.9,30.9,32.0],alum=[24.8,21.1,25.9],copper=24.1)
 alpha=dict(tin=27.0,alum=23.5,copper=16.8)
 kappa=dict(tin=55,alum=75,copper=136)
 V_0=dict(tin=16.3,alum=10.0,copper=7.09)

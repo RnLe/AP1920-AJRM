@@ -1,8 +1,8 @@
 Stoff	Spezifische Wärme
-tin		951.05
-		955.4
-		784.22
-alum	3662.44
-		2721.43
-		2543.45
-copper	1654.0
+tin		0.26
+		0.26
+		0.27
+alum		0.92
+		0.78
+		0.96
+copper	0.38

@@ -1,8 +1,50 @@
 \section{Auswertung}
 \label{sec:Auswertung}
+\subsection{Messdaten}
+\begin{table}
+    \centering
+    \caption{Massen der Messgegenstände.}
+    \label{tab:masses}
+    \begin{tabular}{l S[table-format=3.2]}
+        \toprule
+        {Objekt} & {Masse $m$ in $\si{\gram}$} \\
+        \midrule
+        kleines Becherglas  & 146.18 \\
+        großes Becherglas   & 203.48 \\
+        Dewar-Gefäß         & 850.99 \\
+        \bottomrule
+    \end{tabular}  
+    \vspace{1cm}
+    \caption{Messwerte zur Bestimmung von $c_g m_g$.}
+    \label{tab:cgmg}
+    \begin{tabular}{S S S S S}
+        \toprule
+        $m_x [\si{\gram}] $ & $m_y [\si{\gram}] $ & $T_x [\si{\celsius}] $ & $T_y [\si{\celsius}] $ & $T'_m [\si{\celsius}] $ \\
+        \midrule
+        293.26 & 300.16 & 22.0 & 74.5 & 46.4 \\
+        \bottomrule
+    \end{tabular}   
+    \vspace{1cm}
+    \caption{Messreihen zu Zinn, Aluminium und Kupfer.}
+    \label{tab:values}
+    \begin{tabular}{r c S[table-format=3.0] S[table-format=2.1] S S S}
+        \toprule
+        {k} & {Material} & {$m_\text{K} [\si{\gram}]$} & {$T_\text{k} [\si{\celsius}] $} & {$m_\text{w} [\si{\gram}] $} & {$T_\text{w} [\si{\celsius}] $} & { $T'_\text{m} [\si{\celsius}] $} \\
+        \midrule
+        1.a)      & Zinn      & 203   & 83.3  & 642.76  & 21.8  & 22.9  \\
+          b)      &           &       & 83.1  & 645.94  & 21.6  & 22.7  \\
+          c)      &           &       & 75.8  & 659.46  & 21.3  & 22.3  \\
+        2.a)      & Aluminium & 153   & 87.2  & 654.63  & 21.0  & 24.0  \\
+          b)      &           &       & 82.8  & 649.87  & 21.3  & 23.7  \\
+          c)      &           &       & 75.1  & 669.27  & 21.0  & 23.5  \\
+        3.a)      & Kupfer    & 237   & 89.2  & 654.82  & 20.9  & 22.9  \\
+        \bottomrule
+    \end{tabular}    
+\end{table}
+
 \subsection{Berechnen der spezifischen Wärme und der Molwärme}
 Wir bestimmen zunächst die spezifische Wärme $c_gm_g$ des Dewar-Gefäßes, welche für die weiteren Rechnungen benötigt wird.
-Über die Gleichung \eqref{eqn:dewar}
+Über \eqref{eqn:dewar}
 lässt sich mit den aufgenommenen Messdaten der Wert zu
 \begin{equation} %Vorschlag: (das mache ich auch manchmal handschriftlich) die einheiten hinter den Bruch schreiben, einmal, dann haben wir faktisch nichts falsches, ohne Einheiten, da stehen, aber es dürfte auch übersichtlich/nicht allzu hässlich sein...  
     c_gm_g = \frac{4.18\times300.16(74.5-46.4)-4.18\times293.26(46.4-22)}{46.4-22} \, \si{\joule\per\kelvin} \approx \SI{219.1e3}{\joule\per\kelvin} %da war noch eine Masse einheit unter dem Bruchstrich, wo m.E. keine hingehört... passiert ;) 
@@ -14,29 +56,29 @@ berechnen.
 % \begin{equation}
 %     c_gm_g = \frac{4.18[\si{\joule\per\gram\per\kelvin}]\times300.16[\si{\g}](74.5[\si{\kelvin}]-46.4[\si{\kelvin}])-4.18[\si{\joule\per\gram\per\kelvin}]\times293.26[\si{\g}](46.4[\si{\kelvin}]-22[\si{\kelvin}])}{46.4[\si{\kelvin}]-22[\si{\kelvin}]} \approx 219.1[\si{\joule\per\gram\per\kelvin}].
 % \end{equation}
-Für $c_w$ nehmen wir den Wert $\SI{4.18}{\joule\per\g\per\kelvin}$ an\cite{Versuchsanleitung}. %wir
-Die spezifische Wärme der Messkörper errechnet sich durch Gleichung \eqref{eqn:c_k}.
+Für $c_w$ wird der Wert $\SI{4.18}{\joule\per\g\per\kelvin}$ angenommen\cite{Versuchsanleitung}. %wir
+Die spezifische Wärme der Messkörper errechnet sich durch \eqref{eqn:c_k}.
 Zur Berechnung der molekularen Wärmekapazität bei konstantem Druck muss noch folgende Skalierung vorgenommen werden:
 \begin{equation}
     C_{k,p}=c_k \cdot \frac{m_k}{n_k}=c_k \cdot M_k 
 \end{equation}
-$n_k$ bezeichnet an dieser Stelle die Stoffmenge. Die molare Masse $M$ entnehme man aus Tabelle \ref{tab:eigenschaften}. 
-Da wir alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen haben, können wir $c_k$ für die drei Messkörper berechnen. %wir
+$n_k$ bezeichnet an dieser Stelle die Stoffmenge. Die molare Masse $M$ kann aus Tabelle \ref{tab:eigenschaften} entnommen werden. 
+Da alle notwendigen Werte in Tabelle \ref{tab:values} aufgenommen worden sind, kann $c_k$ für die drei Messkörper berechnet werden. %wir
 \begin{table}
     \centering
     \caption{Spezifische Wärme und Wärmekapazität bei konstantem Druck der Messkörper.}
     \label{tab:c_k-Werte}
     \begin{tabular}{c c | S[table-format=4.2] S[table-format=3.1]}
         \toprule
-        Stoff & Messung & $c_k[\si{\joule\per\g\per\kelvin}]$ & $C_{k,p}[\num{e3}\si{\joule\per\mol\per\kelvin}]$\\
+        Stoff & Messung & $c_k[\si{\joule\per\g\per\kelvin}]$ & $C_{k,p}[\si{\joule\per\mol\per\kelvin}]$\\
         \midrule
-        Zinn        & a) &   951.05 & 112.9   \\
-                    & b) &   955.40 & 113.4   \\
-                    & c) &   784.22 & 93.1   \\
-        Aluminium   & a) &  3662.44 & 98.9   \\
-                    & b) &  2721.43 & 73.5   \\
-                    & c) &  2543.45 & 68.7   \\
-        Kupfer      & a) &  1654.00 & 103.0   \\
+        Zinn        & a) &   0.26 & 30.9   \\
+                    & b) &   0.26 & 30.9   \\
+                    & c) &   0.27 & 32.0   \\
+        Aluminium   & a) &   0.92 & 24.8   \\
+                    & b) &   0.78 & 21.1   \\
+                    & c) &   0.96 & 25.9   \\
+        Kupfer      & a) &   0.38 & 24.1   \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -65,15 +107,29 @@ Der Vollständigkeit halber seien hier ebenfalls die Werte für die hier verwend
     \label{tab:C_k-Werte}
     \begin{tabular}{c c | S[table-format=4.2]}
         \toprule
-        Stoff & Messung & $C_{k,V}[\num{e3}\si{\joule\per\mol\per\kelvin}]$ \\
+        Stoff & Messung & $C_{k,V}[\si{\joule\per\mol\per\kelvin}]$ \\
         \midrule
-        Zinn        & a) & 112.898 \\
-                    & b) & 113.398 \\
-                    & c) &  93.098 \\
-        Aluminium   & a) &  98.899 \\
-                    & b) &  73.499 \\
-                    & c) &  68.699 \\
-        Kupfer      & a) & 102.999 \\
+        Zinn        & a) & 30.9 \\
+                    & b) & 30.9 \\
+                    & c) & 32.0 \\
+        Aluminium   & a) & 24.8 \\
+                    & b) & 21.1 \\
+                    & c) & 25.9 \\
+        Kupfer      & a) & 24.1 \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\subsection{Fehlerrechnung}
+Hier wird nun der Mittelwert $\bar{C_{k,V}}$ und der mittlere Fehler $\increment C_{k,V}$ der $N$ Messwerte für die Molwärme anhand 
+\begin{gather}
+\bar{C_{k,V}}=\frac{1}{N} \sum_{i=1}^N C_{k,V,i} \\
+\increment C_{k,V} = \sqrt{\frac{1}{N-1}\sum_{i=1}^N (C_{k,V,i}-\bar{C_{k,V,i}})^2 }
+\end{gather}
+berechnet.
+Aus offensichtlichen Gründen ergibt dies nur für mehrere Messwerte Sinn, weshalb die Molwärme von Kupfer an dieser Stelle nicht miteinbezogen wird.
+\begin{gather*}
+C_{k,V}=\bar{C_{k,V}} \pm \increment C_{k,V} \\
+C_{k,V,\text{Zinn}} = \SI{31.3(6)e3}{\joule\per\mol\per\kelvin} \\
+C_{k,V,\text{Alu}} = \SI{23.9(25)e3}{\joule\per\mol\per\kelvin} %+-2.5 soll angezeigt werden-->überprüfen!!
+\end{gather*}

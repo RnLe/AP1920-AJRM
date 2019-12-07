@@ -1,43 +1,64 @@
 \section{Diskussion}
 \label{sec:Diskussion}
-Auffallend sind auf den ersten Blick die starken Abweichungen des von dem Dulong--Petit-Gesetz gegebenen Werts $C_V = 3 \symup{R} = \SI{24.9435}{\joule\per\mol\per\kelvin}$
-und den aus dem Experiment berechneten Werten, sowie die von den experimentellen Werten untereinander. 
-Diese liegen im Mittel bei $\bigl< C_V\bigr> = \SI{94.784e3}{\joule\per\mol\per\kelvin} $. 
+%Auffallend sind auf den ersten Blick die starken Abweichungen des von dem Dulong--Petit-Gesetz gegebenen Werts $C_V = 3 \symup{R} = \SI{24.9435}{\joule\per\mol\per\kelvin}$
+%und den aus dem Experiment berechneten Werten, sowie die von den experimentellen Werten untereinander. 
+%Diese liegen im Mittel bei $\bigl< C_V\bigr> = \SI{94.784e3}{\joule\per\mol\per\kelvin} $. 
+Auffallend ist auf den ersten Blick die starke Abweichungen des von dem Dulong--Petit-Gesetz gegebenen Werts $C_V = 3 \symup{R} = \SI{24.9435}{\joule\per\mol\per\kelvin}$
+und dem aus dem Experiment berechneten Wert für Zinn. 
+Deutlich außerhalb des berechneten Fehlerintervalls liegt 3 $3 \symup{R}$. 
 
-Aufgrund dessen, dass alle Messwerte in der gleichen Größenordnung eine Abweichung von dem theoretischen Wert vorweisen, 
-kann davon ausgegangen werden, dass u.a. systematische Fehler vorliegen, die in der Nichtberücksichtigung von 
-weiteren Einflüssen den Messwert in gleicher Form verfälschen. 
-Solche Fehler sind oft schwierig zu quantifizieren und ihre Auswirkungen werden unterschätzt. 
-Deswegen folgt hier nur eine qualitative Abschätzung dieser Art der Messfehler.
+Aufgrund dessen, dass alle Messwerte dieses Materials in der gleichen Größenordnung eine Abweichung von dem 
+theoretischen Wert aufweisen, könnte davon ausgegangen werden, dass u.a. systematische Fehler vorliegen, die in der 
+Nichtberücksichtigung von weiteren Einflüssen den Messwert in gleicher Form verfälschen. 
+Da bei den Messungen von Kupfer und Aluminium keine solche Abweichungen vorliegen, müssen anderweitige Fehlerquellen 
+beziehungsweise Aussagen über die Theorie hinter dem Experiment in Erwägung gezogen werden.
 
-Zur Berechnung der Molwärme wurde angenommen, dass die gesamte Wärmemenge des erhitzten Körpers vom Dewar-Gefäß und dem 
-darin enthaltenen Wasser absorbiert wurde. 
-Vernachlässigt wurden dabei jegliche Austauschprozesse, die sehr wahrscheinlich beim Transport des Metalls vom 
-Wasserbad ins Dewar-Gefäß und über den lose auf das offene Dewar-Gefäß gelegten Plastikdeckel stattfanden. 
-Nimmt man nun an, dass über Genanntes die Wärmemenge $Q_\text{xy}$ verloren gegangen ist, sieht man schnell, dass die 
-spezifische Wärmekapazität $c_k$, welche proportional zu $C_V$ ist, einen größeren Wert annimmt:
-\begin{gather*}
-    Q_1 = c_\text{k}m_\text{k}(T_\text{k}-c_\text{m}) \\
-    Q_\text{mess}=Q_2 + Q_\text{xy}=(c_\text{w}m_\text{w} + c_\text{g}m_\text{g})(T_\text{m}-T_\text{w}) + Q_\text{xy} \\
-    Q_1 = Q_\text{mess} 
-    \Leftrightarrow c_\text{k,mess} = \frac{Q_2+Q_\text{xy}}{m_\text{k}(T_\text{k}-T_\text{m})} > \frac{Q_2}{m_\text{k}(T_\text{k}-T_\text{m})} = c_\text{k,theor.} \\
-    \Rightarrow C_\text{V,mess} > C_\text{V,theor.}
-\end{gather*}
-Eine dermaßen große Abweichung durch genannte Ursachen ist nicht abwegig, da der Plastikdeckel beim Einstellen der 
-Mischtemperatur relativ warm war, was einen Wärmeaustritt indiziert. 
-
-Auch bezüglich statistischer Fehler muss angemerkt werden, dass die Anzahl an hier vorgenommenen Messungen (zwei 
-Metalle dreimal gemessen, ein Metall nur einmal) relativ gering ist und somit ebenfalls eine größere Abweichung provoziert wurde.
-
-Darüber hinaus hat das Thermometer bei Messung der Mischtemperatur teilweise unerwartet die Anzeige geändert, ohne 
+%Aufgrund dessen, dass alle Messwerte dieses Materials in der gleichen Größenordnung eine Abweichung von dem theoretischen Wert aufweisen, 
+%kann davon ausgegangen werden, dass u.a. systematische Fehler vorliegen, die in der Nichtberücksichtigung von 
+%weiteren Einflüssen den Messwert in gleicher Form verfälschen. 
+%Solche Fehler sind oft schwierig zu quantifizieren und ihre Auswirkungen werden unterschätzt. 
+%Deswegen folgt hier nur eine qualitative Abschätzung dieser Art der Messfehler.
+%
+Das Thermometer hat bei Messung der Mischtemperatur teilweise unerwartet die Anzeige geändert, ohne 
 dass die Ursache dafür ersichtlich war. 
 Ob also bei jeder Messung die \glqq richtige\grqq{} Mischtemperatur gemessen wurde, sei dahingestellt. %deutsche Anführungszeichen
 Abweichungen von einigen Dezikelvin sind hier allemal möglich. 
+Dies würde zumindest beim Faktor $(T'_\text{m} - T_\text{w})^{-1}$, der in \eqref{eqn:c_k} verwendet wird, eine prozentual 
+betrachtet signifikante Schwankung der berechneten Werte zur Folge haben, da $T'_\text{m}$ und $T_\text{w}$ relativ nah beieinander liegen.
 
+%Zur Berechnung der Molwärme wurde angenommen, dass die gesamte Wärmemenge des erhitzten Körpers vom Dewar-Gefäß und dem 
+%darin enthaltenen Wasser absorbiert wurde. 
+%Vernachlässigt wurden dabei jegliche Austauschprozesse, die sehr wahrscheinlich beim Transport des Metalls vom 
+%Wasserbad ins Dewar-Gefäß und über den lose auf das offene Dewar-Gefäß gelegten Plastikdeckel stattfanden. 
+%Nimmt man nun an, dass über Genanntes die Wärmemenge $Q_\text{xy}$ verloren gegangen ist, sieht man schnell, dass die 
+%spezifische Wärmekapazität $c_k$, welche proportional zu $C_V$ ist, einen größeren Wert annimmt:
+%\begin{gather*}
+%    Q_1 = c_\text{k}m_\text{k}(T_\text{k}-c_\text{m}) \\
+%    Q_\text{mess}=Q_2 + Q_\text{xy}=(c_\text{w}m_\text{w} + c_\text{g}m_\text{g})(T_\text{m}-T_\text{w}) + Q_\text{xy} \\
+%    Q_1 = Q_\text{mess} 
+%    \Leftrightarrow c_\text{k,mess} = \frac{Q_2+Q_\text{xy}}{m_\text{k}(T_\text{k}-T_\text{m})} > \frac{Q_2}{m_\text{k}(T_\text{k}-T_\text{m})} = c_\text{k,theor.} \\
+%    \Rightarrow C_\text{V,mess} > C_\text{V,theor.}
+%\end{gather*}
+%Eine dermaßen große Abweichung durch genannte Ursachen ist nicht abwegig, da der Plastikdeckel beim Einstellen der 
+%Mischtemperatur relativ warm war, was einen Wärmeaustritt indiziert. 
+%
+Auch bezüglich statistischer Fehler muss angemerkt werden, dass die Anzahl an hier vorgenommenen Messungen (zwei 
+Metalle dreimal gemessen, ein Metall nur einmal) relativ gering ist und somit ebenfalls eine größere Abweichung provoziert wurde.
+
+%Darüber hinaus hat das Thermometer bei Messung der Mischtemperatur teilweise unerwartet die Anzeige geändert, ohne 
+%dass die Ursache dafür ersichtlich war. 
+%Ob also bei jeder Messung die \glqq richtige\grqq{} Mischtemperatur gemessen wurde, sei dahingestellt. %deutsche Anführungszeichen
+%Abweichungen von einigen Dezikelvin sind hier allemal möglich. 
+%
 %Hier noch Bezug nehmen zu Vergleich: klassisch vs quantenmechanisch
-Da, wie erläutert, vergleichsweise große Abweichungen von den erwarteten Ergebnissen durch systematische Messfehler 
-entstanden sind, die zusätzlich sich nur schwerlich quantifizieren lassen können, kann kaum eine stichhaltige 
-Aussage darüber gemacht werden, wie konsistent die Ansätze der klassischen Physik und der Quantenmechanik im Einzelnen sind. 
-Jeglich festzustellen bleibt, dass die aus den Messwerten berechneten molaren Wärmekapazitäten sich in derselben Größenordnung 
-wie $3 \symup{R}$ befinden. 
-
+%Da, wie erläutert, vergleichsweise große Abweichungen von den erwarteten Ergebnissen durch systematische Messfehler 
+%entstanden sind, die zusätzlich sich nur schwerlich quantifizieren lassen können, kann kaum eine stichhaltige 
+%Aussage darüber gemacht werden, wie konsistent die Ansätze der klassischen Physik und der Quantenmechanik im Einzelnen sind. 
+%Jeglich festzustellen bleibt, dass die aus den Messwerten berechneten molaren Wärmekapazitäten sich in derselben Größenordnung 
+%wie $3 \symup{R}$ befinden. 
+Dem gegenüber steht die Tatsache, dass diese Abweichungen ausschließlich bei Zinn zu finden sind. 
+Das von Aluminium gegebene Fehlerintervall würde das Dulong--Petit-Gesetz bestätigen, ebenso der berechnete Wert von 
+Kupfer liegt nahe $3\symup{R}$.
+%hier noch kurz die Proportionalität und den (hoffentlich) daraus resultierenden Fehler erläutern, der sich aus 
+%dem letzten Absatz in der Versuchsanleitung unter Punkt 4 ergibt. (Die tiefe Temperatur wird noch kleiner bei schwereren 
+%Metallen, da w proportional zu m^-1 etc.)

@@ -16,9 +16,10 @@ with open("data/spezifischeWärme.txt", 'w') as f:
         if material is not "copper":
             f.write(f"{material}")
             for i in range(3):
-                c_k[material].append((c_w*m_w[material][i] + c_gm_g)*(T_m[material][i]-T_w[material][i])/m_k[material]*(T_k[material][i] - T_m[material][i]))
+                c_k[material].append((c_w*m_w[material][i] + c_gm_g)*(T_m[material][i]-T_w[material][i])/(m_k[material]*(T_k[material][i] - T_m[material][i]))) 
+                #hier war jeweils eine Klammer zu wenig: (T_k - T_m) wurde nicht dividiert sondern multipliziert
                 f.write(f"\t\t{round(c_k[material][i], 2)}\n")
         else:
             f.write(f"copper\t")
-            c_k[material] = (c_w*m_w[material] + c_gm_g)*(T_m[material]-T_w[material])/m_k[material]*(T_k[material] - T_m[material])
+            c_k[material] = (c_w*m_w[material] + c_gm_g)*(T_m[material]-T_w[material])/(m_k[material]*(T_k[material] - T_m[material]))
             f.write(f"{round(c_k[material], 2)}\n")
