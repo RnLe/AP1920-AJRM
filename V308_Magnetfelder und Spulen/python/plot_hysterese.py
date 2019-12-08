@@ -19,9 +19,11 @@ my_0=4*np.pi*10**(-7)
 n=595
 r=0.135
 #Strom I entspricht den x gespeicherten Werten
+H_Faktor=n*(2*np.pi*r)**(-1)
 B_Faktor=my_0*n*(2*np.pi*r)**(-1)
-H_Spule=B_Faktor*x*10**3 #Faktor e3: Tesla-->mTesla
-B_Magnetisierung=y-H_Spule #y bereits in mT gegeben, deshalb geht diese Subtraktion ohne Umrechnung
+H_Spule=H_Faktor*x
+B_Magnetisierung=(y*10**(-3)*(my_0)**(-1)-H_Spule)*my_0*10**3 
+
 
 plt.plot(H_Spule[0:10],B_Magnetisierung[0:10],'b.',label='1. Kurve')
 plt.plot(H_Spule[10:29],B_Magnetisierung[10:29],'g.',label='2. Kurve')
@@ -36,7 +38,7 @@ plt.plot(H_Spule[37:38],B_Magnetisierung[37:38],'r*') #negative Remanenz
 plt.legend()
 plt.grid()
 
-plt.xlabel(r'$H\,/\,\mathrm{mT}$')
+plt.xlabel(r'$H\,/\,\si{\ampere\per\meter}$')
 plt.ylabel(r'$B\,/\,\mathrm{mT}$')
 plt.savefig('plot_Hysterese.pdf')
 

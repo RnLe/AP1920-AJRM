@@ -1,3 +1,99 @@
 \section{Theorie}
 \label{sec:Theorie}
-Theoretische Grundlagen für dieses Experiment sind das Biot-Savartsche Gesetz, der Hall-Effekt, elektromagnetsiche Induktion und Ferromagnetismus.
+Theoretische Grundlagen für dieses Experiment sind das Biot--Savartsche Gesetz, der Hall-Effekt, elektromagnetsiche Induktion und Ferromagnetismus.
+
+Magnetfelder bilden sich durch bewegte Ladungen, wie beispielsweise durch Strom. 
+Eine Quantifizierung der Feldstärke $\symbf{H}$ wird durch das Biot--Savart-Gesetz 
+\begin{equation}
+\symbf{H}=\frac{I}{4\pi}\int_\Gamma \frac{\symup{d}\symbf{s}\times\symbf{r}}{r^3}
+\label{eqn:biotsavart}
+\end{equation}
+gegeben, bei dem über die Leiterschleife $\Gamma$ integriert wird.
+Für Vakuum und Materialien, deren magnetische Momente aufgrund der Wärmebewegung statistisch verteilt sind, gilt der 
+Zusammenhang 
+\begin{equation}
+\symbf{B}=\symup{\mu_0}\mu_r\symbf{H}
+\end{equation}
+für die magnetische Flussdichte $\symbf{B}$. 
+Dabei sind $\symup{\mu_0}=4\pi \cdot 10^(-7) \, \si{\volt\second\ampere\tothe{-1}\meter\tothe{-1}}$ die Permeabilitätskonstante 
+und $\mu_r$ die materialabhängige relative Permeabilität.
+
+Die Untersuchung des Stoffmagnetismus, wie sie in diesem Versuch unter anderem vorgenommen wird, erfordert die Unterteilung 
+in Para-, Dia- und Ferromagneten. 
+Die relative Permeabilität $\mu_r$ von sowohl Para-, als auch Diamagneten ist eine konstante Zahl. 
+Das bedeutet im Umkehrschluss, dass sich das im Material durch die Stoffeigenschaften zusätzlich ausbildende Magnetfeld, die 
+sogenannte Magnetisierung 
+\begin{equation}
+\symbf{M}=\frac{1}{\symup{\mu_0}}\symbf{B}_\text{Materie}-\symbf{H}_\text{Vakuum}=\symbf{H}_\text{Vakuum}(\symup{\mu_0}-1) \text{,} 
+\label{eqn:Magnetisierung}
+\end{equation}
+parallel zum äußeren Feld $\symbf{H}$ ist. 
+Beim Diamagneten ist die Parallelität vielmehr eine Antiparallelität; das heißt, $\symbf{M}$ hat eine das Feld
+abschwächende Wirkung und der Magnet wird aus Bereichen hoher Feldstärke herausgestoßen. 
+Daraus ergibt sich, dass $\symup{\mu_0}-1 < 0$, also $\symup{\mu_0}<1$ gelten muss. 
+
+Genau entgegengesetzt ist es beim Paramagneten: Hier gilt echte Parallelität, also $\symup{\mu_0}-1 > 0$ beziehungsweise 
+$\symup{\mu_0}> 1$, der Magnet hat eine das Feld verstärkende Wirkung und wird in Gebiete hoher Feldstärke hineingezogen.
+
+Ferromagneten legen ein anderes Verhalten an den Tag: Die relative Permeabilität ist keine Konstante, sondern vielmehr 
+eine komplizierte Funktion des angelegten Feldes $\symbf{H}_\text{Vakuum}$, die von der Geschichte des Materials abhängt. 
+Anhand einer Hysteresekurve, bei der die Magnetisierung $\symbf{M}$ auf das äußere Magnetfeld $\symbf{H}_\text{Vakuum}$ 
+aufgetragen wird, wird das Verhalten solcher Magneten im Folgenden erklärt. 
+%HIER NOCH BILD VON HYSTERESE EINFÜGEN
+
+Ferromagneten besitzen sogenannte \textit{Weiß'sche Bezirke}, in denen die Teilchen das gleiche magnetische Dipolmoment besitzen. 
+Ist der Magnet unmagnetisiert, ist deren Ausrichtung statistisch verteilt und sie kompensieren sich, sodass $\symbf{M}=0$ gilt.
+Wird nun ein äußeres Magnetfeld $\symbf{H}_\text{Vakuum}$ angelegt und gesteigert, richten sich immer mehr Weißsche Bezirke entlang des 
+Feldes aus, wodurch sich diese vergrößern. 
+Dies geschieht bis zu einer Obergrenze, die \textit{Sättigung} des Materials wird erreicht. 
+Wird nun $\symbf{H}_\text{Vakuum}$ wieder verringert und ganz abgeschaltet, bleibt eine Restmagnetisierung übrig, 
+die sogenannte \textit{Remanenz}. 
+Erst bei Anlegen eines entgegengesetzten Magnetfelds verschwindet die Magnetisierung an einem gewissen Punkt. 
+Dieser wird mit der \textit{Koerzitivfeldstärke} betitelt. 
+Derselbe Durchlauf kann nun in anderer Richtung durchgespielt werden: $\symbf{H}_\text{Vakuum}$ wird im negativen 
+maximiert, bis der Ferromagnet in entgegensetzter Richtung seine magnetisische Sättigung erreicht, danach wieder 
+bis ins positive gesteigert, sodass der Magnet die Punkte der Remanenz und Koerzitivfeldstärke nur mit anderem Vorzeichen 
+durchläuft. 
+
+Gemessen werden die Magnetfelder mit einer Hall-Sonde, die auf folgender Funktionsweise beruht:
+Die stromdurchflossene Messspitze wird in das entsprechende Magnetfeld gehalten. 
+Da Magnetfelder auf bewegte Ladungen die Lorentzkraft $F_L$ ausüben, werden die Ladungsträger alle in die gleiche Richtung
+abgelenkt. Dies passiert solange, bis sich die Lorentzkraft mit der elektrischen Kraft kompensiert, die sich gleichnamige 
+Ladungen abstoßen lässt. Es hat sich eine stabile Ladungskonfiguration ausgebildet, zwischen der sich die \textit{Hall-Spannung} 
+messen lässt. Daraus lässt sich dann das zu messende Magnetfeld berechnen. Die Hall-Sonde zeigt den sich ergebenden Wert 
+für die magnetische Flussdichte $\symbf{B}$ an. 
+Es gibt verschiedene Modelle von Sonden, transversale und longitudinale. Diese unterscheiden sich alleinig durch die 
+Orientierung der Messspitze. Die Wahl des Modells hängt also nur von der Geometrie der Messung ab und hat keiner tiefergehende Bedeutung.
+
+Ergänzend zu dem Biot-Savart'schen Gesetz seien hier noch einige Magnetfeldinstallationen vorgestellt, die für das Experiment 
+von Bedeutung sind.
+
+Mithilfe \eqref{eqn:biotsavart} ergibt sich für einen stromdurchflossenen Drahtring mit Radius $R$ auf seiner durch den Kreismittelpunkt 
+gehenden Symmetrieachse (der Parameter $x$ sei im Kreismittelpunkt Null)
+\begin{equation}
+    \lvert\symbf{B}_\text{Ring}(x)\rvert = B_\text{Ring}(x) = \frac{\symup{\mu_0 I}}{2} \frac{R^2}{(R^2 + x^2)^{\frac{3}{2}}}.
+    \label{eqn:ring}
+\end{equation}
+Werden zwei Drahtringe bei $x=\sfrac{d}{2}$ und $x=\sfrac{-d}{2}$ positioniert und in gleicher Richtung mit Strom durchflossen,
+gilt gemäß des Superpositionsprinzips: 
+\begin{equation}
+    B_d(x)=B_\text{Ring}(x-\frac{d}{2}) + B_\text{Ring}(x+\frac{d}{2})
+    \label{eqn:2ringe}
+\end{equation}
+
+Das B-Feld innerhalb einer langen Spule ist nahezu homogen, sofern die Länge $l$ sehr viel größer als der Radius $R$ ist. 
+Die Magnetfeldlinien innerhalb verlaufen parallel zur Symmetrieachse und bilden außerhalb einen großen 
+Bogen vom Ende zum Anfang der Spule, sodass geschlossene Feldlinien durch die Spule laufen.
+Innerhalb der Spule gilt abgesehen von Randeffekten 
+\begin{equation}
+    B_\text{Sp} = \mu_r \symup{\mu_0} \frac{n}{l} I
+    \label{eqn:langespule}
+\end{equation}
+für die Flussdichte mit der Windungszahl $n$ und dem Strom $I$. 
+Wird die lange Spule zu einem Kreis gebogen, entsteht eine Toroidspule, außerhalb der das Magnetfeld Null ist und bei der 
+die Randeffekte verschwinden. 
+Für die Flussdichte gilt mit \eqref{eqn:langespule} und durch Ersetzung der Länge $l$ durch den Umfang des Toroiden des Radius $r_T$:
+\begin{equation}
+    B_T=\mu_r \symup{\mu_0} \frac{n}{2 \pi r_T} I
+    \label{eqn:toroid}
+\end{equation}
