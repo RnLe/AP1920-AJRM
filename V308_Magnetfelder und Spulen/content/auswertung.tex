@@ -100,19 +100,22 @@ Dabei entsprechen $b$ der Spulenbreite und $d$ dem jeweiligen Abstand der Messre
 Mithilfe vonn Ausdruck \eqref{eqn:2ringe} können die Daten in \ref{fig:1mess}, \ref{fig:2mess} und \ref{fig:3mess}  mit dem zu erwartenden Verlauf der Flussdichte vergeglichen werden.
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{.../Plots/plot1.pdf}
+    %\includegraphics[width=\textwidth]{.../Plots/plot1.pdf}    %es muss kein Verzeichnis nach oben gegangen werden, da das Ausführungsverzeichnis von der make-Datei bestimmt wird
+                                                                %bzw. von der main.tex-Datei, wenn man lualatex verwendet
+                                                                %außerdem wären es nur 2 Punkte, statt 3 :)
+    \includegraphics[width=\textwidth]{Plots/plot1.pdf}
     \caption{1. Messung.}
     \label{fig:1mess}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{.../Plots/plot2.pdf}
+    \includegraphics[width=\textwidth]{Plots/plot2.pdf}
     \caption{2. Messung.}
     \label{fig:2mess}
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{.../Plots/plot3.pdf}
+    \includegraphics[width=\textwidth]{Plots/plot3.pdf}
     \caption{3. Messung.}
     \label{fig:3mess}
 \end{figure}
@@ -194,7 +197,7 @@ Mithilfe vonn Ausdruck \eqref{eqn:2ringe} können die Daten in \ref{fig:1mess}, 
     \end{table}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{.../Plots/plot_Hysterese.pdf}
+    \includegraphics[width=\textwidth]{Plots/plot_Hysterese.pdf}
     \caption{Messwerte der Hysteresekurve.}
     \label{fig:hyst}
 \end{figure}
@@ -228,7 +231,7 @@ Mithilfe vonn Ausdruck \eqref{eqn:2ringe} können die Daten in \ref{fig:1mess}, 
     \end{table}
     \begin{figure}
         \centering
-        \includegraphics[width=\textwidth]{.../Plots/plot_kurzSp.pdf}
+        \includegraphics[width=\textwidth]{Plots/plot_kurzSp.pdf}
         \caption{Kurze Spule.}
         \label{fig:kurz}
     \end{figure}
@@ -262,7 +265,7 @@ Mithilfe vonn Ausdruck \eqref{eqn:2ringe} können die Daten in \ref{fig:1mess}, 
     Sie sollte ca. bei 15cm liegen... 
     \begin{figure}
         \centering
-        \includegraphics[width=\textwidth]{.../Plots/plot_langSp.pdf}
+        \includegraphics[width=\textwidth]{Plots/plot_langSp.pdf}
         \caption{Lange Spule.}
         \label{fig:lang}
     \end{figure}
