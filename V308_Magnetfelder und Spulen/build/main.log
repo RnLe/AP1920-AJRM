@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  8 DEC 2019 14:46
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  9 DEC 2019 16:52
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.125 seconds
+luaotfload | main : initialization completed in 0.122 seconds
 (./header.tex (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1832,21 +1832,21 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 14.40152pt on input line 14.
+(Font)              scaled to size 14.40152pt on input line 15.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 10.00107pt on input line 14.
+(Font)              scaled to size 10.00107pt on input line 15.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.00075pt on input line 14.
+(Font)              scaled to size 7.00075pt on input line 15.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 14.39845pt on input line 14.
+(Font)              scaled to size 14.39845pt on input line 15.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 9.99893pt on input line 14.
+(Font)              scaled to size 9.99893pt on input line 15.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 6.99925pt on input line 14.
+(Font)              scaled to size 6.99925pt on input line 15.
  [1
 
 {/home/rene/.local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-Package tocbasic Info: character protrusion at toc deactivated on input line 15.
+Package tocbasic Info: character protrusion at toc deactivated on input line 16.
  (./build/main.toc)
 \tf@toc=\write5
 
@@ -1854,7 +1854,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 15.
  [2
 
 ] (./content/einleitung.tex) (./content/theorie.tex
-<plot_Hysterese.pdf, id=47, 417.7206pt x 258.0049pt>
+<plot_Hysterese.pdf, id=57, 417.7206pt x 258.0049pt>
 File: plot_Hysterese.pdf Graphic file (type pdf)
 <use plot_Hysterese.pdf>
 Package luatex.def Info: plot_Hysterese.pdf  used on input line 55.
@@ -1873,16 +1873,11 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.34343pt on input line 100.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 3.81676pt on input line 100.
-) (./content/durchfuehrung.tex) (./content/auswertung.tex
+) (./content/durchfuehrung.tex [5]) (./content/auswertung.tex [6]
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.00053pt on input line 26.
+(Font)              scaled to size 5.00053pt on input line 27.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 4.99947pt on input line 26.
-
-Overfull \hbox (3.0441pt too wide) detected at line 32
- 
- []
-
+(Font)              scaled to size 4.99947pt on input line 27.
 
 Overfull \hbox (3.0441pt too wide) detected at line 33
  
@@ -1904,7 +1899,7 @@ Overfull \hbox (3.0441pt too wide) detected at line 36
  []
 
 
-Overfull \hbox (3.0441pt too wide) detected at line 57
+Overfull \hbox (3.0441pt too wide) detected at line 37
  
  []
 
@@ -1914,7 +1909,7 @@ Overfull \hbox (3.0441pt too wide) detected at line 58
  []
 
 
-Overfull \hbox (3.0441pt too wide) detected at line 82
+Overfull \hbox (3.0441pt too wide) detected at line 59
  
  []
 
@@ -1928,32 +1923,27 @@ Overfull \hbox (3.0441pt too wide) detected at line 84
  
  []
 
-<Plots/plot1.pdf, id=102, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (3.0441pt too wide) detected at line 85
+ 
+ []
+
+<Plots/plot1.pdf, id=127, 417.7206pt x 258.0049pt>
 File: Plots/plot1.pdf Graphic file (type pdf)
 <use Plots/plot1.pdf>
-Package luatex.def Info: Plots/plot1.pdf  used on input line 106.
+Package luatex.def Info: Plots/plot1.pdf  used on input line 107.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-<Plots/plot2.pdf, id=103, 417.7206pt x 258.0049pt>
+<Plots/plot2.pdf, id=128, 417.7206pt x 258.0049pt>
 File: Plots/plot2.pdf Graphic file (type pdf)
 <use Plots/plot2.pdf>
-Package luatex.def Info: Plots/plot2.pdf  used on input line 112.
+Package luatex.def Info: Plots/plot2.pdf  used on input line 113.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-<Plots/plot3.pdf, id=104, 417.7206pt x 258.0049pt>
+<Plots/plot3.pdf, id=129, 417.7206pt x 258.0049pt>
 File: Plots/plot3.pdf Graphic file (type pdf)
 <use Plots/plot3.pdf>
-Package luatex.def Info: Plots/plot3.pdf  used on input line 118.
+Package luatex.def Info: Plots/plot3.pdf  used on input line 119.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-[5] [6] [7<./Plots/plot1.pdf>] [8<./Plots/plot2.pdf><./Plots/plot3.pdf>]
-Overfull \hbox (7.78pt too wide) detected at line 165
- 
- []
-
-
-Overfull \hbox (7.78pt too wide) detected at line 165
- 
- []
-
-
+[7] [8] [9<./Plots/plot1.pdf>] [10<./Plots/plot2.pdf><./Plots/plot3.pdf>]
 Overfull \hbox (7.78pt too wide) detected at line 166
  
  []
@@ -1964,21 +1954,6 @@ Overfull \hbox (7.78pt too wide) detected at line 166
  []
 
 
-Overfull \hbox (2.78pt too wide) detected at line 166
- 
- []
-
-
-Overfull \hbox (2.78pt too wide) detected at line 166
- 
- []
-
-
-Overfull \hbox (2.78pt too wide) detected at line 166
- 
- []
-
-
 Overfull \hbox (7.78pt too wide) detected at line 167
  
  []
@@ -1989,17 +1964,17 @@ Overfull \hbox (7.78pt too wide) detected at line 167
  []
 
 
-Overfull \hbox (7.78pt too wide) detected at line 167
+Overfull \hbox (2.78pt too wide) detected at line 167
  
  []
 
 
-Overfull \hbox (7.78pt too wide) detected at line 167
+Overfull \hbox (2.78pt too wide) detected at line 167
  
  []
 
 
-Overfull \hbox (7.78pt too wide) detected at line 167
+Overfull \hbox (2.78pt too wide) detected at line 167
  
  []
 
@@ -2394,19 +2369,39 @@ Overfull \hbox (7.78pt too wide) detected at line 183
  []
 
 
-LaTeX Warning: Float too large for page by 38.65802pt on input line 197.
+Overfull \hbox (7.78pt too wide) detected at line 183
+ 
+ []
 
-<Plots/plot_Hysterese.pdf, id=188, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (7.78pt too wide) detected at line 183
+ 
+ []
+
+
+Overfull \hbox (7.78pt too wide) detected at line 184
+ 
+ []
+
+
+Overfull \hbox (7.78pt too wide) detected at line 184
+ 
+ []
+
+
+Overfull \hbox (7.78pt too wide) detected at line 184
+ 
+ []
+
+
+LaTeX Warning: Float too large for page by 38.65802pt on input line 198.
+
+<Plots/plot_Hysterese.pdf, id=208, 417.7206pt x 258.0049pt>
 File: Plots/plot_Hysterese.pdf Graphic file (type pdf)
 <use Plots/plot_Hysterese.pdf>
-Package luatex.def Info: Plots/plot_Hysterese.pdf  used on input line 200.
+Package luatex.def Info: Plots/plot_Hysterese.pdf  used on input line 201.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-[9<./Plots/plot_Hysterese.pdf>] [10]
-Overfull \hbox (8.5191pt too wide) detected at line 216
- 
- []
-
-
+[11<./Plots/plot_Hysterese.pdf>] [12]
 Overfull \hbox (8.5191pt too wide) detected at line 217
  
  []
@@ -2437,26 +2432,21 @@ Overfull \hbox (8.5191pt too wide) detected at line 222
  []
 
 
-Overfull \hbox (3.0441pt too wide) detected at line 223
+Overfull \hbox (8.5191pt too wide) detected at line 223
  
  []
 
-<Plots/plot_kurzSp.pdf, id=234, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (3.0441pt too wide) detected at line 224
+ 
+ []
+
+<Plots/plot_kurzSp.pdf, id=255, 417.7206pt x 258.0049pt>
 File: Plots/plot_kurzSp.pdf Graphic file (type pdf)
 <use Plots/plot_kurzSp.pdf>
-Package luatex.def Info: Plots/plot_kurzSp.pdf  used on input line 234.
+Package luatex.def Info: Plots/plot_kurzSp.pdf  used on input line 235.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-[11]
-Overfull \hbox (8.5191pt too wide) detected at line 248
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 248
- 
- []
-
-
+[13]
 Overfull \hbox (8.5191pt too wide) detected at line 249
  
  []
@@ -2547,12 +2537,17 @@ Overfull \hbox (5.475pt too wide) detected at line 257
  []
 
 
-Overfull \hbox (3.0441pt too wide) detected at line 258
+Overfull \hbox (8.5191pt too wide) detected at line 258
  
  []
 
 
 Overfull \hbox (5.475pt too wide) detected at line 258
+ 
+ []
+
+
+Overfull \hbox (3.0441pt too wide) detected at line 259
  
  []
 
@@ -2566,44 +2561,69 @@ Overfull \hbox (5.475pt too wide) detected at line 260
  
  []
 
-<Plots/plot_langSp.pdf, id=241, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (5.475pt too wide) detected at line 261
+ 
+ []
+
+<Plots/plot_langSp.pdf, id=261, 417.7206pt x 258.0049pt>
 File: Plots/plot_langSp.pdf Graphic file (type pdf)
 <use Plots/plot_langSp.pdf>
-Package luatex.def Info: Plots/plot_langSp.pdf  used on input line 268.
+Package luatex.def Info: Plots/plot_langSp.pdf  used on input line 269.
 (luatex.def)             Requested size: 418.25555pt x 258.33495pt.
-) (./content/diskussion.tex [12<./Plots/plot_kurzSp.pdf>] [13<./Plots/plot_langSp.pdf>]) (./content/anhang.tex)
+) (./content/diskussion.tex [14<./Plots/plot_kurzSp.pdf>] [15<./Plots/plot_langSp.pdf>]) (./content/anhang.tex
+<content/Data2_pic.pdf, id=308, 597.53633pt x 845.04684pt>
+File: content/Data2_pic.pdf Graphic file (type pdf)
+<use content/Data2_pic.pdf>
+Package luatex.def Info: content/Data2_pic.pdf  used on input line 6.
+(luatex.def)             Requested size: 418.25555pt x 591.50298pt.
 
-LaTeX Warning: Empty bibliography on input line 32.
 
-[14]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 34.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 34.
+LaTeX Warning: Float too large for page by 17.70271pt on input line 9.
+
+[16] [17<./content/Data2_pic.pdf>]
+<content/data1.pdf, id=320, 597.23125pt x 845.1575pt>
+File: content/data1.pdf Graphic file (type pdf)
+<use content/data1.pdf>
+Package luatex.def Info: content/data1.pdf  used on input line 13.
+(luatex.def)             Requested size: 418.25555pt x 591.88994pt.
+
+
+LaTeX Warning: Float too large for page by 18.08968pt on input line 16.
+
+)
+
+LaTeX Warning: Empty bibliography on input line 31.
+
+[18<./content/data1.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 33.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 33.
  (./build/main.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 34.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 34.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 33.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 33.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: A673579B7755A216C9C64B602F9858D1;9878.
+(rerunfilecheck)             Checksum: 16403A5A76660210E52EBBA5967CE254;12370.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F6732975D1358936F093A8BCC2EFD304;962.
+(rerunfilecheck)             Checksum: 0B938C2C2F52A2BEDCFB8BA85EE70F17;1362.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 53216 strings out of 494291
- 125003,1977958 words of node,token memory allocated
- 759 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 46 attribute, 80 glue_spec, 25 attribute_list, 2 write nodes
-   avail lists: 1:8,2:10833,3:985,4:67,5:593,6:37,7:6018,8:52,9:2679,10:22,11:405
- 55659 multiletter control sequences out of 65536+600000
- 326 fonts using 124762487 bytes
+ 53248 strings out of 494291
+ 125002,1977958 words of node,token memory allocated
+ 764 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 2 glue, 4 kern, 1 glyph, 46 attribute, 81 glue_spec, 25 attribute_list, 2 write nodes
+   avail lists: 1:9,2:10830,3:993,4:63,5:592,6:33,7:6292,8:54,9:2679,10:27,11:598
+ 55674 multiletter control sequences out of 65536+600000
+ 326 fonts using 124763039 bytes
  88i,24n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-</home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (14 pages, 136026 bytes).
+</home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (18 pages, 1856945 bytes).
 
-PDF statistics: 399 PDF objects out of 1000 (max. 8388607)
- 286 compressed objects within 3 object streams
- 50 named destinations out of 1000 (max. 131072)
- 104 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 460 PDF objects out of 1000 (max. 8388607)
+ 334 compressed objects within 4 object streams
+ 61 named destinations out of 1000 (max. 131072)
+ 144 words of extra memory for PDF output out of 10000 (max. 100000000)
 

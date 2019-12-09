@@ -29,11 +29,11 @@ plt.plot(H_Spule[0:10],B_Magnetisierung[0:10],'b.',label='1. Kurve')
 plt.plot(H_Spule[10:29],B_Magnetisierung[10:29],'g.',label='2. Kurve')
 plt.plot(H_Spule[30:50],B_Magnetisierung[30:50],'c.',label='3. Kurve')
 plt.plot(H_Spule[9:10],B_Magnetisierung[9:10],'r*',label='Sättigung')
-plt.plot(H_Spule[18:19],B_Magnetisierung[18:19],'r*',label='Remanenz')
-plt.plot(H_Spule[19:20],B_Magnetisierung[19:20],'r*',label='Koerzitivkraft')
+plt.plot(H_Spule[18:19],B_Magnetisierung[18:19],'k*',label='Remanenz')
+plt.plot(H_Spule[19:20],B_Magnetisierung[19:20],'y*',label='Koerzitivkraft')
 plt.plot(H_Spule[28:29],B_Magnetisierung[28:29],'r*') #negative Sättigung
-plt.plot(H_Spule[39:40],B_Magnetisierung[39:40],'r*') #positive Koerzitivkraft
-plt.plot(H_Spule[37:38],B_Magnetisierung[37:38],'r*') #negative Remanenz
+plt.plot(H_Spule[37:38],B_Magnetisierung[37:38],'k*') #negative Remanenz
+plt.plot(H_Spule[39:40],B_Magnetisierung[39:40],'y*') #positive Koerzitivkraft
 
 plt.legend()
 plt.grid()

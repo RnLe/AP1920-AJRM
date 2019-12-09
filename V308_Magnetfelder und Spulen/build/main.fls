@@ -512,6 +512,10 @@ INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/anhang.tex
 INPUT ./content/anhang.tex
+INPUT ./content/Data2_pic.pdf
+INPUT ./content/Data2_pic.pdf
+INPUT ./content/data1.pdf
+INPUT ./content/data1.pdf
 INPUT build/main.aux
 INPUT build/main.run.xml
 OUTPUT build/main.run.xml
