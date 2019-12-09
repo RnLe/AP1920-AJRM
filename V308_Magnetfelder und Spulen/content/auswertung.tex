@@ -110,15 +110,19 @@ Mithilfe von Ausdruck \eqref{eqn:2ringe} können die Daten in Abb. \ref{fig:1mes
 \end{figure}
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{Plots/plot2.pdf}
-    \caption{2. Messung.}
-    \label{fig:2mess}
-\end{figure}
-\begin{figure}
-    \centering
-    \includegraphics[width=\textwidth]{Plots/plot3.pdf}
-    \caption{3. Messung.}
-    \label{fig:3mess}
+    \begin{subfigure}{0.48/textwidth}
+        \centering
+        \includegraphics[max width=1.1\linewidth]{Plots/plot2.pdf}
+        \caption{2. Messung.}
+        \label{fig:2mess}
+    \end{subfigure}
+    \begin{subfigure}{{0.48\textwidth}}
+        \centering
+        \includegraphics[max width=1.1\linewidth]{Plots/plot3.pdf}
+        \caption{3. Messung.}
+        \label{fig:3mess}
+    \end{subfigure}
+    \caption{2. und 3. Messung.}
 \end{figure}
 \pagebreak
 \subsection{Hysteresekurve}
@@ -205,7 +209,11 @@ Mithilfe von Ausdruck \eqref{eqn:2ringe} können die Daten in Abb. \ref{fig:1mes
 \pagebreak
 
 \subsection{Spulen}
+    Die in den Tabellen \ref{tab:kurzSp} und \ref{tab:langSp} ebenfalls aufgeführten $y$-Werte entsprechen einer der $x$-Achse gegenüber verschobenen Achse, sodass
+    bei $y=0$ am Anfang der Spule liegt. Das Spuleninnere liegt bei $y<0$.
     \subsubsection{Kurze Spule}
+    Verwendet wurde eine Spule mit der Windungszahl $n=3400$, der Länge $l=\SI{8.9}{\centi\meter}$ und dem Durchmesser
+    $d=\SI{11.0}{\centi\meter}$. Ein Strom von $I=\SI{0.61}{\ampere}$ wurde angelegt. 
     \begin{table}
     \centering
     \caption{Messwerte der kurzen Spule.}
@@ -238,6 +246,13 @@ Mithilfe von Ausdruck \eqref{eqn:2ringe} können die Daten in Abb. \ref{fig:1mes
     \end{figure}
     \pagebreak
     \subsubsection{Lange Spule}
+    Die benutzte Spule hat eine Windungszahl von $n=300$ und einen Durchmesser von $d=\SI{41}{\milli\m}$. 
+    Der Strom lag bei $I=\SI{1.35}{\ampere}$. Da weder die Länge der Spule in der Versuchsanleitung aufgeführt ist, noch 
+    die Länge bei der Versuchsdurchführung von den Experimentierenden aufgenommen wurde, kann der theoretisch zu erwartende 
+    Wert der Magnetfeldstärke im Spuleninneren an dieser Stelle nicht berechnet werden. 
+    Aus den Messdaten ergibt sich anhand von \eqref{eqn:langespule} eine Länge von etwa $\SI{15}{\centi\m}$, was in Augen 
+    der Verfasser ein realistischer 
+    Wert für die Spule zu sein scheint.
     \begin{table}
     \centering
     \caption{Messwerte der langen Spule.}

@@ -1,4 +1,4 @@
-\section{Theorie}
+\section{Theorie\footnote{Unter Verwendung der Quellen \cite{demtroeder}, \cite{Versuchsanleitung}, \cite{griffiths}.}}
 \label{sec:Theorie}
 Theoretische Grundlagen für dieses Experiment sind das Biot--Savartsche Gesetz, der Hall-Effekt, elektromagnetsiche Induktion und Ferromagnetismus.
 %so, ich hoffe ich vergesse nicht, dir eine Sprachnachricht zu schicken, dass ich das hier sehr kleinlch gemacht habe. auch, weil ich deine Notizen im letzten Versuch z.großenT. sehr hilfreich gefunden habe
@@ -11,7 +11,9 @@ Eine Quantifizierung der Feldstärke $\symbf{H}$ wird durch das Biot--Savart-Ges
 \end{equation}
 gegeben, bei dem über 
 %die Leiterschleife | muss ja nicht zwingend eine Schleife, bzw. ein geschlossener Weg sein
-den Leiter $\Gamma$ integriert wird. % oder einfach Leiterverlauf, oder Leiterweg.. kp. man sollte ja eigentlich wissen, dass Gamma ein linearer Verlauf ist
+%den Leiter 
+die Leiterschleife $\Gamma$ integriert wird. % oder einfach Leiterverlauf, oder Leiterweg.. kp. man sollte ja eigentlich wissen, dass Gamma ein linearer Verlauf ist
+%@R:Doch, es sind immer geschlossene Leiterschleifen. In der "Praxis" beim Rechnen hatten wir auch oft "geschlossene" Leiterschleifen, die sich im Unendlichen wieder geschlossen haben... hat Kierfeld immer wieder betont, hat glaub ich was mit divB=0 zu tun... das B-Feld Linien geschlossen sein müssen
 Für das Vakuum und Materialien, deren magnetische Momente aufgrund der Wärmebewegung statistisch verteilt sind, gilt der %'das' Vakuum, da Einzahl und bestimmt
 Zusammenhang 
 \begin{equation}
@@ -20,6 +22,7 @@ Zusammenhang
 für die magnetische Flussdichte $\symbf{B}$. 
 Dabei sind $\symup{\mu_0}=4\symup{\pi} \cdot 10^{(-7)} \, \si{\volt\second\ampere\tothe{-1}\meter\tothe{-1}}$ die Permeabilitätskonstante 
 und $\mu_r$ die materialabhängige, relative Permeabilität. %Kommasetzung bei Adjektiven, die sich auf dasselbe Nomen beziehen. Ansonsten bezöge sich das erste auf das zweite Adjektiv und wäre damit ein Adverb
+%@R:Da relative Permeabilität ein Name ist inkl. Adjektiv und sich das "materialabhängig" auf den ganzen Namen bezieht, hatte ich das Komma weggelassen... hätte gedacht, dass das dann richtig ist... aber ist auch nicht so wichtig, können wir in Ruhe drüber reden, Katharina wird das bestimmt nicht so wichtig finden
 
 Die Untersuchung des Stoffmagnetismus, wie sie in diesem Versuch unter anderem vorgenommen wird, erfordert die Unterteilung 
 in Para-, Dia- und Ferromagneten. 
@@ -29,21 +32,21 @@ Das bedeutet
 , dass sich das im Material durch die Stoffeigenschaften zusätzlich ausbildende Magnetfeld, die 
 sogenannte Magnetisierung 
 \begin{equation}
-\symbf{M}=\frac{1}{\symup{\mu_0}}\symbf{B}_\text{Materie}-\symbf{H}_\text{Vakuum}=\symbf{H}_\text{Vakuum}(\symup{\mu_0}-1) \text{,} 
+\symbf{M}=\frac{1}{\symup{\mu_0}}\symbf{B}_\text{Materie}-\symbf{H}_\text{Vakuum}=\symbf{H}_\text{Vakuum}(\symup{\mu_r}-1) \text{,} 
 \label{eqn:Magnetisierung}
 \end{equation}
 parallel zum äußeren Feld $\symbf{H}$ ist. 
 Beim Diamagneten ist die Parallelität vielmehr eine Antiparallelität; das heißt, $\symbf{M}$ hat eine das Feld
 abschwächende Wirkung und der Magnet wird aus Bereichen hoher Feldstärke herausgestoßen. 
-Daraus ergibt sich, dass $\symup{\mu_0}-1 < 0$, also $\symup{\mu_0}<1$ gelten muss. 
+Daraus ergibt sich, dass $\symup{\mu_r}-1 < 0$, also $\symup{\mu_r}<1$ gelten muss. 
 
-Genau entgegengesetzt ist es beim Paramagneten: Hier gilt echte Parallelität, also $\symup{\mu_0}-1 > 0$ beziehungsweise 
-$\symup{\mu_0}> 1$, der Magnet hat eine das Feld verstärkende Wirkung und wird in Gebiete hoher Feldstärke hineingezogen.
+Genau entgegengesetzt ist es beim Paramagneten: Hier gilt echte Parallelität, also $\symup{\mu_r}-1 > 0$ beziehungsweise 
+$\symup{\mu_r}> 1$, der Magnet hat eine das Feld verstärkende Wirkung und wird in Gebiete hoher Feldstärke hineingezogen.
 
 Ferromagneten 
 %legen ein anderes Verhalten an den Tag | ich glaube es ist ein wenig umgangsprachlich (und vllt. nicht wissenschaftlich), Metaphern zu verwenden :P
-hingegen verhalten sich deutlich anders
-: Die relative Permeabilität ist keine Konstante, sondern vielmehr 
+hingegen verhalten sich deutlich anders:
+Die relative Permeabilität ist keine Konstante, sondern vielmehr 
 eine komplizierte Funktion des angelegten Feldes $\symbf{H}_\text{Vakuum}$, die %von der Geschichte des Materials abhängt.
 davon abhängt, in welchen Zuständen das Material welcher Magnetfeldstärke ausgesetzt war, und ist damit \textit{zustandsabhängig}. %zwar ist hier zweimal das Wort Zustand, aber es folgt ja das Adjektiv aus der vorigen Erklärung. ich glaube dann passt das
 Anhand einer Hysteresekurve, bei der die Magnetisierung $\symbf{M}$ auf das äußere Magnetfeld $\symbf{H}_\text{Vakuum}$ 
@@ -59,7 +62,10 @@ aufgetragen wird, wird das Verhalten solcher Magneten im Folgenden erklärt.
 \FloatBarrier
 
 Ferromagneten besitzen sogenannte \textit{Weiß'sche Bezirke}, in denen die Teilchen das gleiche magnetische Dipolmoment besitzen. 
-Ist der Magnet unmagnetisiert, ist deren Ausrichtung statistisch verteilt und sie kompensieren sich, sodass $\symbf{M}=0$ gilt. %statistisch verteit klingt echt cool. aber kann man dazu angeben, welche Art von Verteilung oder versteht man darunter einfach schon eine gleichmäßige Verteilung? *te*
+Ist der Magnet unmagnetisiert, ist deren Ausrichtung statistisch verteilt, 
+also isotrop, 
+%@R:statistisch verteilt bedeutet hier isotrop, in alle Richtungen gleich
+und sie kompensieren sich, sodass $\symbf{M}=0$ gilt. %statistisch verteit klingt echt cool. aber kann man dazu angeben, welche Art von Verteilung oder versteht man darunter einfach schon eine gleichmäßige Verteilung? *te*
 Wird nun ein äußeres Magnetfeld $\symbf{H}_\text{Vakuum}$ angelegt, richten sich bei steigender Magnetfeldstärke immer mehr Weiß'sche Bezirke entlang des 
 Feldes aus, wodurch sich diese vergrößern. 
 Dies geschieht bis zu einer Obergrenze; die \textit{Sättigung} des Materials wird erreicht. 
@@ -68,6 +74,7 @@ das äußere Magnetfeld wieder entfernt, bleibt eine Restmagnetisierung übrig,
 die sogenannte \textit{Remanenz}. 
 Erst bei Anlegen eines entgegengesetzten Magnetfeldes verschwindet die Magnetisierung. 
 Die dafür notwendige Feldstärke ist die \textit{Koerzitivfeldstärke}. %kann man auch Erregung schreiben? *te*
+%@R: keine Ahnung.. du meinst anstelle Feldstärke? ich glaube, ich würde es lassen :D
 Dasselbe kann nun in die andere Richtung durchlaufen werden: $\symbf{H}_\text{Vakuum}$ wird im Negativen 
 maximiert, bis der Ferromagnet in entgegensetzter Richtung seine magnetisische Sättigung erreicht, danach wieder 
 bis ins Positive gesteigert, sodass der Magnet die Punkte der Remanenz und Koerzitivfeldstärke mit anderem Vorzeichen 
