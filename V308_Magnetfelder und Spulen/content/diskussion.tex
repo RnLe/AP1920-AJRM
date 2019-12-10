@@ -1,2 +1,40 @@
 \section{Diskussion}
 \label{sec:Diskussion}
+\subsection{Allgemeines}
+Bei den Messungen mit der Hall-Sonde, die selbst ausgerichtet werden muss, hat das Messgerät bei abgeschalteter Stromquelle ab und an dennoch ein magnetisches Feld gemessen.
+Der Verdacht lag zunächst auf umliegende Geräte, die eingeschaltet waren. Dies war aber nicht die Ursache.
+Auch die Nachbarn haben einmal ihre Stromquelle abgestellt und das Gerät zeigte dennoch einen Messwert an - obwohl die Sonde z.b. von der Spule wegbewegt wurde.
+Es ist schwer zu sagen, inwieweit dieser systematische Fehler die Messwerte verfälscht. Das gemessene Feld war um die $\SI{70}{\milli\tesla}$ groß.
+Für die Diskussion und die Auswertung wird dieser Fehler jedoch ignoriert.
+
+\subsection{Kurze und lange Spule}
+Für die folgenden Erwartungswerte wird mit der Magnetischen Feldkonstante \\
+$\mu_0 \approx 4\pi\cdot\SI{e-7}{\newton\per\square\ampere}$ gerechnet.\cite{taschenbuch}
+\subsubsection{Lange Spule}
+Das Ausrichten der longitudinalen Sonde mit dem Stativ ist nicht sehr genau. Da die Spule per Hand auf dem Holzlineal herumgeschoben werden muss, 
+wird alles nach Augenmaß ausgerichtet. Das ist bei dem verwendeten Messgerät und der Beschaffungen der Spulen aber vermutlich weitgehend ausreichend.
+Unklar ist, wo die longitudinale Sonde das magnetische Feld misst. Aus Abb. \ref{fig:lang} ist zu erkennen, dass die Messwerte der langen Spule nicht aufhören zu steigen, je weiter 
+die Sonde in die Spule geschoben wird. Allerdings müssen hier auch die Randeffekte betrachtet werden. Am Spulenende fächern sich die Feldlinien trichterförmig auf.
+Das erklärt widerum den weiteren Anstieg des Feldes.
+Nach \ref{eqn:langespule} haben wir einen Erwartungswert von $B_{lS} = \SI{3.393}{\milli\tesla}$, wenn wir für $\mu_r$ von Kupfer einen Wert von $0,9999936 = 1 − 6.4\cdot \SI{e-6}{}$ annehmen\cite{taschenbuch}
+und von einer Spulenlänge von $\SI{15}{\centi\m}$ ausgehen.
+Die Abweichung zum Messwert $\SI{3.076}{\milli\tesla}$, welcher $\SI{8}{\centi\m}$ innerhalb der Spule gemessen wurde, lässt sich mit den oben genannten Randeffekten erklären.
+Es ist auch erkennbar, dass das Feld zunächst relativ konstant bleibt, bis es dann zur Spulenöffnung hin stark abfällt. Auch dies macht die Randeffekte deutlich.
+\subsubsection{Kurze Spule}
+Die Kurze Spule weist in der Theorie keine Homogenität in ihrer Mitte auf. Aus Abb. \ref{fig:kurz} ist deutlich zu sehen, dass es nur einen Punkt gibt, an dem das magnetische Feld am stärksten ist, 
+im Gegensatz zu einer langen Spule, bei der es ein längerer Abschnitt wäre. Die Homogenität im inneren einer Spule ist nur bei ausreichender Länge annähernd nachweisbar, sodass in diesem Fall die Randeffekte überwiegen.
+Der Erwartungswert ist nach \ref{eqn:langespule}, $B_{kS} \approx \SI{29.28}{\milli\tesla}$, der gemessene Wert jedoch $\SI{18.81}{\milli\tesla}$. Dies ist bei einer Länge von nur $\SI{8.9}{\centi\m}$ zu erwarten.
+\subsection{Helmholtz-Spulenpaar}
+Die Besonderheit des Helmholtz-Spulenpaares ist die näherungsweise Homogenität zwischen den beiden Spulen, wenn der Abstand dem Radius entspricht. In Abb. \ref{fig:1mess} ist diese Eigenschaft sehr gut zu erkennen.
+Nach \ref{eqn:2ringe} liegt der Erwartungswert bei
+\begin{equation*}
+    \frac{1,256\cdot\SI{e-6}{}\cdot0,0625²\cdot3.03}{2\cdot(2\cdot0,0625²)^\frac{3}{2}}\cdot2\cdot200 \approx 0,004305
+\end{equation*}
+in Tesla, bzw. $\SI{4.305}{\milli\tesla}$. Dieser Wert liegt sehr nah an dem gemessenen Wert von $\SI{4.239}{\milli\tesla}$. Außerhalb des Spulenpaares treten wieder Randeffekte auf, sodass das Feld wie auch bei den anderen Spulen
+schnell stark abfällt.
+Bei den anderen Abständen der beiden Spulen ist das magnetische Feld immer noch näherungsweise homogen, nun aber in der Mitte ein wenig schwächer. Es zeichnen sich 2 Extremstellen ab, welche
+sich jeweils gleich verhalten wie die Extremalstelle der kurzen Spule.
+
+\subsection{Toroidspule mit Eisenkern}
+Die Messpunkte müssen in Abb. \ref{fig:hyst} nicht verbunden werden, um die Hysteresekurve deutlich zu machen. Es sind alle charakteristischen Punkte dieser Kurve ablesbar und entsprechen den
+Erwartungen. Die Werte errechnen sich aus \ref{eqn:HystereseE} und sind gegenübergestellt in Tabelle \ref{tab:Hyst}.
