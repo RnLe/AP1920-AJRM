@@ -1,0 +1,9 @@
+L_x,R_x=Wert 19
+f=100Hz
+(R_3+R_4=1000 Ohm)
+Potentiometer relativer Fehler: +-0.5%
+
+L_2 in mH   R_2 in Ohm  R_3 in Ohm  R_4 in Ohm
+14.6        332.0       255         745
+14.6        500.0       185         815
+14.6        664         145         855

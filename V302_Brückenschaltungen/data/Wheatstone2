@@ -1,0 +1,8 @@
+R_x=Wert 11
+(R_3+R_4=1000 Ohm)
+Potentiometer relativer Fehler: +-0.5%
+
+R_2 in Ohm  R_3 in Ohm  R_4 in Ohm
+500.0       497         503
+332.0       598         402
+1000        330         670

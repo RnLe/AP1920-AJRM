@@ -1,0 +1,9 @@
+C_x=Wert 1
+f=40kHz
+(R_3+R_4=1000 Ohm)
+Potentiometer relativer Fehler: +-0.5%
+
+C_2 in nF  R_3 in Ohm   R_4 in Ohm
+450         408         592
+597         487         513 
+992         611         389

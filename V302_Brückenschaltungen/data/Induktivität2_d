@@ -1,0 +1,6 @@
+L_x,R_x=Wert 19
+f=40.2kHz
+Potentiometer relativer Fehler: +-0.5%
+
+C_4 in nF   R_2 in Ohm  R_3 in Ohm  R_4 in Ohm
+750         664         57          270
