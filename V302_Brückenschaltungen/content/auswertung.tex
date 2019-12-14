@@ -138,7 +138,61 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
             1           & 114 & 1 & 5.00 & 0.04 \\
             2           & 113 & 1 & 3.31 & 0.03 \\
             3           & 113 & 1 & 2.48 & 0.02 \\
-            4 (Maxwell) & 140 & 6 & 28.4 & 1.0  \\ %Was soll das?? Warum ist der Wer einfach mal um eine Zehnerpotenz größer??
+            4 (Maxwell) & 140 & 6 & 28.4 & 1.0  \\ %Was soll das?? Warum ist der Wert einfach mal um eine Zehnerpotenz größer?? Hab alles nochmal nachgerechnet und keine Fehler gefunden...
             \bottomrule
         \end{tabular}
     \end{table}
+
+\subsection{Frequenzabhängigkeit der Brückenspannung einer Wien-Robinson-Brücke} 
+%ich finde nur was zu dem Erfinder Wien... über Robinson habe ich nichts rausfinden können. Keine Ahnung, welchen Bindestrich man dann verwenden soll
+Bei dieser Messung wurden ein Kondensator mit einer Kapazität von $C=\SI{660}{\nano\farad}$ und zwei ohmschen Widerstände 
+$R=\SI{400}{\ohm}$ und $R'=\SI{500.0}{\ohm}$ verwendet und eine praktisch frequenzunabhängige Speisespannung von
+$U_\text{Sp}=\SI{4.0}{\volt}$ gemessen.
+Für das Minimum der zu messenden Brückenspannung ergab sich eine Frequenz von $f_0=\SI{613.0}{\hertz}$. 
+Berechnet man diese mit den gegebenen Referenzwerten der Bauteile, erhält man einen Wert von 
+\begin{equation}
+    f_{0\text{,rechn}}=\frac{1}{2 \symup{\pi} RC}=\SI{603}{\hertz} 
+\end{equation}
+\begin{table}
+    \centering
+    \caption{Messwerte der Wien-Robinson-Brücke.}
+    \label{tab:wien}
+    \begin{tabular}{S[table-format=3.1] S[table-format=1.4] S[table-format=3.0] S[table-format=1.4]}
+        \toprule
+        {$f \:/\: \si{\hertz}$} & {$\Omega = \sfrac{f}{f_0}$} & {$U_\text{Br} \:/\: \si{\milli\volt}$} & {$\sfrac{U_\text{Br}}{U_\text{Sp}}$} \\
+        \midrule
+        213.0   & 0.3475 & 460    & 0.12   \\
+        263.0   & 0.4290 & 360    & 0.09   \\
+        313.0   & 0.5106 & 290    & 0.073  \\
+        363.0   & 0.5922 & 230    & 0.058  \\
+        413.0   & 0.6737 & 175    & 0.044  \\
+        463.0   & 0.7553 & 122    & 0.031  \\
+        513.0   & 0.8369 & 80     & 0.020  \\
+        563.0   & 0.9184 & 38     & 0.0095 \\
+        573.0   & 0.9347 & 32     & 0.0080 \\
+        583.0   & 0.9511 & 24     & 0.0060 \\
+        593.0   & 0.9674 & 16     & 0.0040 \\
+        603.0   & 0.9837 & 10     & 0.0025 \\
+        613.0   & 1.000  & 6      & 0.0015 \\
+        623.0   & 1.016  & 10     & 0.0025 \\
+        633.0   & 1.033  & 20     & 0.0050 \\
+        643.0   & 1.049  & 30     & 0.0075 \\
+        653.0   & 1.065  & 36     & 0.0090 \\
+        663.0   & 1.082  & 40     & 0.010  \\
+        713.0   & 1.163  & 67     & 0.017  \\
+        763.0   & 1.245  & 95     & 0.024  \\
+        813.0   & 1.326  & 125    & 0.031  \\
+        863.0   & 1.408  & 148    & 0.037  \\
+        913.0   & 1.489  & 170    & 0.043  \\
+        963.0   & 1.571  & 190    & 0.048  \\
+        1013.0  & 1.653  & 215    & 0.054  \\
+    \end{tabular}
+\end{table}
+Die Messwerte sowie die erwartete Kurve sind, wie in der Versuchsanleitung beschrieben, in \ref{fig:wien} aufgetragen.
+\begin{figure}
+    \centering
+    \includegraphics[width=\textwidth]{plot_wien.pdf}
+    \caption{Messkurve der Wien-Robinson-Brücke.}
+    \label{fig:wien}
+\end{figure}
+
