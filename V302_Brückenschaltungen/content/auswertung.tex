@@ -85,6 +85,9 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
             \bottomrule 
         \end{tabular}
     \end{table}
+    Da sich bei der Durchführung dieser Messung mit einer RC-Kombination Schwierigkeiten auftaten, muss an dieser Stelle 
+    auf eine Auswertung diesbezüglich verzichtet werden. 
+    Die Praktikumsaufsicht war damit einverstanden.
 
 \subsection{Messung mit der Induktivitätsmess- und der Maxwell-Brücke}
     Bei Messung der verlustbehafteten Induktivität (Wert 19) mit der Induktivitätsmessbrücke wurde eine Frequenz 
@@ -195,4 +198,23 @@ Die Messwerte sowie die erwartete Kurve sind, wie in der Versuchsanleitung besch
     \caption{Messkurve der Wien-Robinson-Brücke.}
     \label{fig:wien}
 \end{figure}
+
+\subsection{Klirrfaktor-Messung}
+Zur Berechnung des Klirrfaktors $k$ des Generators wird vereinfachend angenommen, dass ausschließlich Oberwellen der 
+zweiten Oberwelle ausschlaggebend sind. 
+So vereinfacht sich die Berechnung von $n$ Oberwellen zu 
+\begin{equation}
+    k=\frac{\sqrt{U_2^2 + U_3^2 + \dotsc + U_n^2}}{U} = \frac{U_2}{U}.
+\end{equation}
+Für die Spannung $U$ gilt $U=U_\text{Sp}=\SI{4.0}{\volt}=\text{const}$. 
+Die Amplitude der zweiten Oberwelle ($\Omega = \sfrac{f_2}{f_1} = 2$) berechnet sich über
+\begin{equation}
+    U_2=3 U_\text{Br} \cdot \frac{\sqrt{(\Omega ^2 -1)^2 + 9\Omega ^2}}{\lvert \Omega ^2 -1 \rvert}
+        =3 \cdot \SI{6}{\milli\volt} \cdot \frac{\sqrt{9 + 36}}{3}=3 \sqrt{5} \cdot \SI{6}{\milli\volt} \approx \SI{40}{\milli\volt} .
+\end{equation}
+Hierbei wird der minimale Wert für die Brückenspannung verwendet, da bei dieser ausschließlich Oberwellen für eine Spannung sorgen. 
+mit $U=U_\text{Sp}=\SI{4.0}{\volt}$ ergibt sich der Klirrfaktor:
+\begin{equation}
+    k=\frac{U_2}{U_\text{Sp}}=0.010
+\end{equation}
 
