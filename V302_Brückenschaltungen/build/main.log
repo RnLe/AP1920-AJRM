@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.13)  14 DEC 2019 15:53
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.12.13)  15 DEC 2019 11:51
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -59,7 +59,7 @@ Lua module: luaotfload-tounicode 2019-11-10 3.11 luaotfload submodule / tounicod
 e
 Inserting `luaotfload.rewrite_fontname' at position 6 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.593 seconds
+luaotfload | main : initialization completed in 0.174 seconds
 (./header.tex
 (/home/antoniajb/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.
 cls
@@ -2058,10 +2058,9 @@ Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
 ))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-
-No file main.aux.
-
+ (./main.aux)
 \openout1 = main.aux
+
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 11.
@@ -2082,6 +2081,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 11.
 LaTeX Font Info:    ... okay on input line 11.
+
 
 Package filehook Warning: Macro \InputIfFileExists got redefined after 'filehook
 ' was loaded.
@@ -2260,19 +2260,13 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 p}]
 Package tocbasic Info: character protrusion at toc deactivated on input line 16.
 
+ (./main.toc)
 \tf@toc=\write5
 
 \openout5 = main.toc
  [2
 
-] (./content/einleitung.tex
-
-LaTeX Warning: Reference `sec:Theorie' on page 3 undefined on input line 6.
-
-) (./content/theorie.tex
-
-LaTeX Warning: Reference `eqn:ohm' on page 3 undefined on input line 27.
-
+] (./content/einleitung.tex) (./content/theorie.tex
 [3]
 
 LaTeX Warning: File `Schaltung1.pdf' not found on input line 52.
@@ -2294,52 +2288,46 @@ LaTeX Warning: Citation 'Versuchsanleitung' on page 4 undefined on input line 3.
 
 
 [4] [5]
-
-LaTeX Warning: Reference `tab:kapz' on page 6 undefined on input line 70.
-
-[6]
-LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 165.
-
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 7.63515pt on input line 165.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 5.34457pt on input line 165.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
-(Font)              scaled to size 3.81757pt on input line 165.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 7.63351pt on input line 165.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 5.34343pt on input line 165.
-LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
-(Font)              scaled to size 3.81676pt on input line 165.
-
-Overfull \hbox (5.475pt too wide) detected at line 191
+Overfull \hbox (5.475pt too wide) detected at line 102
  
  []
 
 
-LaTeX Warning: Reference `fig:wien' on page 7 undefined on input line 194.
+LaTeX Warning: Citation 'Versuchsanleitung' on page 6 undefined on input line 11
+5.
 
+[6]
+LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 187.
 
-LaTeX Warning: File `plot_wien.pdf' not found on input line 197.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 7.63515pt on input line 187.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 5.34457pt on input line 187.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
+(Font)              scaled to size 3.81757pt on input line 187.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 7.63351pt on input line 187.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 5.34343pt on input line 187.
+LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
+(Font)              scaled to size 3.81676pt on input line 187.
 
+Overfull \hbox (5.475pt too wide) detected at line 213
+ 
+ []
 
-! Package luatex.def Error: File `plot_wien.pdf' not found: using draft setting
-.
-
-See the luatex.def package documentation for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.197 ...degraphics[width=\textwidth]{plot_wien.pdf}
-                                                  
-? s#
-OK, entering \scrollmode...
-) (./content/diskussion.tex [7] [8] [9]) (./content/anhang.tex)
+[7] [8]
+<content/plot_wien.pdf, id=112, 417.7206pt x 258.0049pt>
+File: content/plot_wien.pdf Graphic file (type pdf)
+<use content/plot_wien.pdf>
+Package luatex.def Info: content/plot_wien.pdf  used on input line 222.
+(luatex.def)             Requested size: 313.69167pt x 193.7512pt.
+) (./content/diskussion.tex [9<./content/plot_wien.pdf>])
+(./content/anhang.tex)
 
 LaTeX Warning: Empty bibliography on input line 27.
 
-[10]
+[10] [11]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./main.aux)
@@ -2350,13 +2338,12 @@ Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Warning: File `main.aux' has changed. Rerun.
 
 Package rerunfilecheck Info: Checksums for `main.aux':
-(rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  CA1D2BA3CC87CF638F1F9FA0B9BE6B6A;12651.
+(rerunfilecheck)             Before: 306E9EC53FD0AF51576A289FF5CA3C6D;12990
+(rerunfilecheck)             After:  4C847221C5C9250BA043CF62BD744A7E;12990.
+Package rerunfilecheck Info: File `main.toc' has not changed.
+(rerunfilecheck)             Checksum: 737B47F85434C75085D6A0EC2D095B75;1472.
 
 LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package biblatex Warning: Please (re)run Biber on the file:
@@ -2369,35 +2356,35 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 54321 strings out of 493856
+ 54304 strings out of 493856
  100000,1977958 words of node,token memory allocated
- 753 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 54 attribute, 75 glue_spec
+ 778 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 54 attribute, 80 glue_spec
 , 29 attribute_list, 2 write nodes
-   avail lists: 1:5,2:6335,3:526,4:44,5:417,6:17,7:4415,8:90,9:1570,10:11,11:341
+   avail lists: 1:5,2:6277,3:509,4:52,5:348,6:33,7:4116,8:87,9:1556,10:25,11:492
 
- 57178 multiletter control sequences out of 65536+600000
- 259 fonts using 98565727 bytes
+ 57175 multiletter control sequences out of 65536+600000
+ 259 fonts using 98566159 bytes
  89i,21n,111p,10081b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman
 5-regular.otf></home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/pub
 lic/lm-math/latinmodern-math.otf></home/antoniajb/.local/texlive/2019/texmf-dist
 /fonts/opentype/public/lm/lmroman8-regular.otf></home/antoniajb/.local/texlive/2
-019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/antoniajb/.l
-ocal/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf>
-</home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/la
-tinmodern-math.otf></home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentyp
-e/public/lm/lmroman10-italic.otf></home/antoniajb/.local/texlive/2019/texmf-dist
-/fonts/opentype/public/lm/lmroman10-bold.otf></home/antoniajb/.local/texlive/201
+019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/antoniajb/.loc
+al/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/
+antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmode
+rn-math.otf></home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/publi
+c/lm-math/latinmodern-math.otf></home/antoniajb/.local/texlive/2019/texmf-dist/f
+onts/opentype/public/lm/lmroman10-italic.otf></home/antoniajb/.local/texlive/201
 9/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/antoniajb/.lo
 cal/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></hom
 e/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bol
 d.otf></home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/l
 mroman12-bold.otf>
-Output written on main.pdf (10 pages, 70579 bytes).
+Output written on main.pdf (11 pages, 91013 bytes).
 
-PDF statistics: 225 PDF objects out of 1000 (max. 8388607)
- 175 compressed objects within 2 object streams
- 48 named destinations out of 1000 (max. 131072)
+PDF statistics: 292 PDF objects out of 1000 (max. 8388607)
+ 227 compressed objects within 3 object streams
+ 51 named destinations out of 1000 (max. 131072)
  136 words of extra memory for PDF output out of 10000 (max. 100000000)
 

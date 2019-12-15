@@ -1,2 +1,42 @@
 \section{Diskussion}
 \label{sec:Diskussion}
+
+Bei Betrachtung der Ergebnisse fällt relativ schnell ins Auge, dass sich für die 
+ohmschen Widerstände ein vergleichsweise eindeutiger Wert bestimmen lässt, wohingegen die kapazitiven und induktiven 
+Widerstände größere Abweichungen aufweisen. 
+Grund dafür könnte die Wahl der Frequenz sein. 
+Für eine optimale Messung befinden sich die Wirk- und Blindwiderstände in der gleichen Größenordnung. 
+Die Blindwiderstände bei der Kapazitätsmessbrücke mit der Kapazität ${C_2\sim \num{5e-7}}$ liegen mit Frequenzen 
+${f \sim 10^4}$ in einer Größenordnung von ${\sim \num{e1}}$. Die ohmschen Widerstände sind in etwa ${\propto \num{5e3}}$. 
+Durch die etwas höhere Wahl der Frequenz als der Referenzierten ist der Einfluss der Streukapazitäten in den 
+Verdrahtungen größer. Da bei jedem Messvorgang unterschiedliche Kapazitäten und Widerstände verwendet worden sind, ist 
+dieser Einfluss jeweils unterschiedlich ausschlaggebend und führt zu teils sehr verschiedenen Abweichungen vom Mittelwert. 
+Zudem ist die der Kapazitätsmessbrücke zugrunde liegende Annahme, dass es sich um einen ohmschen verlustfreien Kondensator 
+handelt, was zu Differenzen zwischen erwartetem und gemessenen Wert führt. 
+
+Die Messung der verlustbehafteten Induktivitäten zeigt große Abweichungen, insbesondere im Vergleich der Induktivitätsmessbrücke 
+und der Maxwell-Brücke. 
+Ebenfalls liegen hier die Blindwiderstände in einer um einen Faktor ${10^2}$ verschobenen Größenordnung im Vergleich zu 
+der der Wirkwiderstände. Daraus resultieren, wie erläutert, größere Auswirkungen der induktiven und kapazitiven Widerstände 
+in den Leitern, die die gemessenen Werte verfälschen können. 
+Die Abweichung, die der aus der Maxwell-Brücke berechnete Wert für die Induktivität aufweist, lässt sich hiermit jedoch kaum
+erklären. 
+Nahe liegt die Vermutung, dass es sich um einen systematischen Messfehler handelt, der sich im Nachhinein nur schwerlich 
+verifizieren lässt -- zumal diese Messung nur einmal, ohne Wiederholung durchgeführt worden ist. 
+Die konsequente Streuung der Messergebnisse der Induktivitätsmessbrücke um einen Mittelwert deutet darauf hin, dass der Messfehler 
+bei der Maxwell-Brücke zu finden ist. 
+Wirklich sicher kann dies jedoch nicht festgemacht werden, da systematische Messfehler die Werte der Induktivitätsmessbrücke
+ebenfalls im gleichen Maße verfälschen könnten. 
+
+Bei der Messung mit der Wien-Robinson-Brücke zur Untersuchung der Frequenzabhängigkeit fällt anhand Abbildung \ref{fig:wien} 
+auf, dass die Messwerte mit etwa gleicher Abweichung unterhalb der zu erwartenden Kurve des Spannungsverhältnisses liegen. 
+Dies deutet auf einen systematischen Fehler hin, der vermutlich in nicht perfekten, verlustfreien Kabeln begründet ist. 
+Die Speisespannung wird direkt am Generator gemessen, wohingegen die Brückenspannung erst mitten im Stromkreis abgegriffen 
+wird. Nicht beachtet werden dabei ohmsche Verluste über die Kabel, über die der Strom bis zur Messstelle erst noch fließt.
+
+Die Differenz der Nullfrequenz vom Messwert ist relativ gering und lässt sich gut über durch statistische Messunsicherheiten 
+bedingte Abweichungen erklären.
+
+Die in \ref{klirr_sub} durchgeführte Klirrfaktor-Berechnung bestätigt die Vermutung, dass sich ein idealer Sinusgenerator 
+von einem realen durch den Gehalt an Oberwellen unterscheidet. 
+Weil ${k \neq 0}$, sind beim Minimum der Brückenspannung noch Wellen messbar, was beim idealen Sinusgenerator nicht der Fall wäre. 

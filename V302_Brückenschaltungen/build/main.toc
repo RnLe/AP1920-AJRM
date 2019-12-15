@@ -12,6 +12,6 @@
 \contentsline {subsection}{\numberline {4.2}Messung mit der Kapazitätsmessbrücke}{5}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Messung mit der Induktivitätsmess- und der Maxwell-Brücke}{6}{subsection.4.3}%
 \contentsline {subsection}{\numberline {4.4}Frequenzabhängigkeit der Brückenspannung einer Wien-Robinson-Brücke}{7}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Klirrfaktor-Messung}{7}{subsection.4.5}%
+\contentsline {subsection}{\numberline {4.5}Klirrfaktor-Messung}{9}{subsection.4.5}%
 \contentsline {section}{\numberline {5}Diskussion}{10}{section.5}%
-\contentsline {section}{\numberline {6}Anhang: originale Messdaten}{10}{section.6}%
+\contentsline {section}{\numberline {6}Anhang: originale Messdaten}{11}{section.6}%

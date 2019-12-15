@@ -1,9 +1,20 @@
 \section{Auswertung}
 \label{sec:Auswertung}
-Gemäß \cite{Versuchsanleitung} wird für die Referenzbauteile ein Fehler von $\pm{0.2\%}$ angenommen. 
-Das verwendete Potentiometer hat eine Toleranz von $\pm{0.5\%}$.
+Gemäß \cite{Versuchsanleitung} wird für die Referenzbauteile, wenn nicht anders erwähnt, ein Fehler von $\pm{0.2\%}$ angenommen. 
+Das verwendete Potentiometer hat eine Toleranz von $\pm{0.5\%}$ -- hiermit sind meist die Widerstände $R_3$ und $R_4$ eingestellt worden.
 Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncertainties} durchgeführt worden.
+
+Aus einigen Messungen resultieren mehrere Messergebnisse mit jeweiliger Unsicherheit. Um ein Endresultat der Größe aus der 
+den Messungen zu erhalten, werden diese mittels 
+\begin{gather}
+    \langle x \rangle = \frac{1}{N} \sum_{i=1}^N x_i \\
+    \increment x = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i - \langle x \rangle)^2}
+\end{gather}
+zu einem endgültigen Ergebnis zusammengefasst.
+
+\FloatBarrier
 \subsection{Messung mit der Wheatstone'schen Brücke}
+\FloatBarrier
     \begin{table}
         \centering
         \caption{Messdaten für die Wheatstone'sche Brückenschaltung.}
@@ -37,14 +48,18 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
             Wert 12 & 1 & 393 & 3 \\
                     & 2 & 393 & 3 \\
                     & 3 & 393 & 3 \\
+            Endresultat&   & 393 & 2 \\
             Wert 11 & 1 & 494 & 4 \\
                     & 2 & 494 & 4 \\
                     & 3 & 493 & 4 \\
+            Endresultat&   & 494 & 2 \\
             \bottomrule
         \end{tabular}
     \end{table}
- 
+\FloatBarrier
+
 \subsection{Messung mit der Kapazitätsmessbrücke}
+\FloatBarrier
     Die erste Kapazität (Wert 1) wurde mit einer Frequenz von $f=\SI{40}{\kilo\hertz}$, die zweite (Wert~3) mit $f=\SI{36}{\kilo\hertz}$ gemessen.
     \begin{table}
         \centering
@@ -63,11 +78,12 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
             \bottomrule
         \end{tabular}
     \end{table}
+    \FloatBarrier
     Aus der Abgleichbedingung
     \begin{equation}
         C_x = C_2 \frac{R_4}{R_3}
     \end{equation}
-    resultierende die in \ref{tab:kapz} dargestellten Werte.
+    resultieren die in \ref{tab:kapz} dargestellten Werte.
      \begin{table}
         \centering
         \caption{Messergebnisse der Kapazitätsmessbrücke.}
@@ -78,47 +94,51 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
             \midrule
             Wert 1  & 1 & 653 & 2 \\
                     & 2 & 629 & 2 \\  
-                    & 3 & 632 & 2 \\  
+                    & 3 & 632 & 2 \\ 
+            Endresultat& & 638 & 4 \\ 
             Wert 3  & 1 & 406 & 1 \\  
                     & 2 & 403 & 2 \\ 
-                    & 3 & 440 & 2 \\  
+                    & 3 & 440 & 2 \\ 
+            Endresultat&   & 416 & 17 \\ 
             \bottomrule 
         \end{tabular}
     \end{table}
     Da sich bei der Durchführung dieser Messung mit einer RC-Kombination Schwierigkeiten auftaten, muss an dieser Stelle 
     auf eine Auswertung diesbezüglich verzichtet werden. 
-    Die Praktikumsaufsicht war damit einverstanden.
+    Die Praktikumsaufsicht zeigte sich damit einverstanden.
 
 \subsection{Messung mit der Induktivitätsmess- und der Maxwell-Brücke}
+\FloatBarrier
     Bei Messung der verlustbehafteten Induktivität (Wert 19) mit der Induktivitätsmessbrücke wurde eine Frequenz 
-    von $f=\SI{100}{\hertz}$ benutzt, 
-    bei der mit der Maxwell-Brücke $f=\SI{40.2}{\kilo\hertz}$.
-    Für die Widerstände $R_3$ und $R_4$ wird bei der Maxwell-Brücke eine Toleranz von $\pm{3\%}$ angenommen.  
+    von ${f=\SI{100}{\hertz}}$ benutzt, 
+    bei der mit der Maxwell-Brücke ${f=\SI{40.2}{\kilo\hertz}}$.
+    Für die Widerstände $R_3$ und $R_4$ wird bei der Maxwell-Brücke eine Toleranz von $\pm{3\%}$ angenommen \cite{Versuchsanleitung}.  
     \begin{table}
         \centering
         \caption{Messdaten zur Ermittlung der Induktivität mit Wert 19.}
         \label{tab:indumess}
         \begin{tabular}{c 
-                        S[table-format=2.1] @{${}\pm{}$} S[table-format=1.2] 
-                        S[table-format=3.0] @{${}\pm{}$} S[table-format=1.0] 
-                        S[table-format=3.1] @{${}\pm{}$} S[table-format=1.1] 
-                        S[table-format=3.0] @{${}\pm{}$} S[table-format=1.0]  
-                        S[table-format=3.0] @{${}\pm{}$} S[table-format=1.0]}
+                        c        %S[table-format=2.1] 
+                        c        %S[table-format=3.0] 
+                        c        %S[table-format=3.1] 
+                        c        %S[table-format=3.0]  
+                        c}        %S[table-format=3.0]}
             \toprule
             {Messmethode} 
-            & \multicolumn{2}{c}{$L_2 \:/\: \si{\milli\henry}$} 
-            & \multicolumn{2}{c}{$C_4 \:/\: \si{\nano\farad}$} 
-            & \multicolumn{2}{c}{$R_2 \:/\: \si{\ohm}$} 
-            & \multicolumn{2}{c}{$R_3 \:/\: \si{\ohm}$} 
-            & \multicolumn{2}{c}{$R_4 \:/\: \si{\ohm}$} \\
+            & {$L_2 \:/\: \si{\milli\henry}$} 
+            & {$C_4 \:/\: \si{\nano\farad}$} 
+            & {$R_2 \:/\: \si{\ohm}$} 
+            & {$R_3 \:/\: \si{\ohm}$} 
+            & {$R_4 \:/\: \si{\ohm}$} \\
             \midrule
-            Ind.-Br.    & 14.6 & 0.03 & & & 332.0   & 0.7   & 255 & 1   & 745 & 4 \\
-                        & 14.6 & 0.03 & & & 500.0   & 1.0   & 185 & 1   & 815 & 4 \\
-                        & 14.6 & 0.03 & & & 664     & 1     & 145 & 1   & 855 & 4 \\
-            Maxwell     & & & 750 & 2     & 664     & 1     & 57  & 2   & 270 & 8 \\
+            Ind.-Br.    & $14.6\pm{0.03}$ & & $332.0\pm{0.7}$ & $255\pm{1}$ & $745\pm{4}$ \\
+                        & $14.6\pm{0.03}$ & & $500.0\pm{1.0}$ & $185\pm{1}$ & $815\pm{4}$ \\
+                        & $14.6\pm{0.03}$ & & $664  \pm{1  }$ & $145\pm{1}$ & $855\pm{4}$ \\
+            Maxwell     & & $750\pm{2}$     & $664\pm{1}$     & $57\pm{2}$  & $270\pm{8}$ \\
             \bottomrule
         \end{tabular}
     \end{table}
+    
     Mithilfe der Abgleichbedingungen für die Induktivitätsmessbrücke 
     \begin{align}
         R_x=R_2 \frac{R_3}{R_4}
@@ -134,13 +154,14 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
         \centering
         \caption{Innenwiderstand und Induktivität der verwendeten Spule.}
         \label{tab:R_L_Spule}
-        \begin{tabular}{c S[table-format=3.0] @{${}\pm{}$} S[table-format=1.0] S[table-format=2.2] @{${}\pm{}$} S[table-format=1.2]}
+        \begin{tabular}{c S[table-format=3.0] @{${}\pm{}$} S[table-format=1.1] S[table-format=2.2] @{${}\pm{}$} S[table-format=1.2]}
             \toprule
             {Messung Nr.} & \multicolumn{2}{c}{$R_x \:/\: \si{\ohm}$} & \multicolumn{2}{c}{$L_x \:/\: \si{\milli\henry}$} \\
             \midrule
             1           & 114 & 1 & 5.00 & 0.04 \\
             2           & 113 & 1 & 3.31 & 0.03 \\
             3           & 113 & 1 & 2.48 & 0.02 \\
+            Endresultat & 113 & 0.6& 3.60 & 0.80 \\
             4 (Maxwell) & 140 & 6 & 28.4 & 1.0  \\ %Was soll das?? Warum ist der Wert einfach mal um eine Zehnerpotenz größer?? Hab alles nochmal nachgerechnet und keine Fehler gefunden...
             \bottomrule
         \end{tabular}
@@ -148,13 +169,14 @@ Die Fehlerrechnungen sind jeweils mit iPython 7.8.0 mit dem Paket \textit{uncert
 
 \subsection{Frequenzabhängigkeit der Brückenspannung einer Wien-Robinson-Brücke} 
 %ich finde nur was zu dem Erfinder Wien... über Robinson habe ich nichts rausfinden können. Keine Ahnung, welchen Bindestrich man dann verwenden soll
-Bei dieser Messung wurden ein Kondensator mit einer Kapazität von $C=\SI{660}{\nano\farad}$ und zwei ohmschen Widerstände 
-$R=\SI{400}{\ohm}$ und $R'=\SI{500.0}{\ohm}$ verwendet und eine praktisch frequenzunabhängige Speisespannung von
+\FloatBarrier
+Bei dieser Messung wurden ein Kondensator mit einer Kapazität von $C=\SI{660}{\nano\farad}$ und zwei ohmsche Widerstände 
+$R=\SI{400}{\ohm}$ und $R'=\SI{500.0}{\ohm}$ verwendet und eine konstante, frequenzunabhängige Speisespannung von
 $U_\text{Sp}=\SI{4.0}{\volt}$ gemessen.
-Für das Minimum der zu messenden Brückenspannung ergab sich eine Frequenz von $f_0=\SI{613.0}{\hertz}$. 
+Der Messwert der Frequenz der minimalen Brückenspannung ist ${f_0=\SI{613.0}{\hertz}}$. 
 Berechnet man diese mit den gegebenen Referenzwerten der Bauteile, erhält man einen Wert von 
 \begin{equation}
-    f_{0\text{,rechn}}=\frac{1}{2 \symup{\pi} RC}=\SI{603}{\hertz} 
+    f_{0\text{,rechn}}=\frac{1}{2 \symup{\pi} RC}=\SI{603}{\hertz} .
 \end{equation}
 \begin{table}
     \centering
@@ -191,15 +213,20 @@ Berechnet man diese mit den gegebenen Referenzwerten der Bauteile, erhält man e
         1013.0  & 1.653  & 215    & 0.054  \\
     \end{tabular}
 \end{table}
-Die Messwerte sowie die erwartete Kurve sind, wie in der Versuchsanleitung beschrieben, in \ref{fig:wien} aufgetragen.
+\FloatBarrier
+Die Messwerte sowie die erwartete Kurve 
+% HIER: Bitte noch Referenz zur Theorie mit der Formel zu der erwarteten Kurve einfügen
+sind, wie in der Versuchsanleitung beschrieben, in \ref{fig:wien} aufgetragen.
 \begin{figure}
     \centering
-    \includegraphics[width=\textwidth]{plot_wien.pdf}
+    \includegraphics[width=0.75\textwidth]{content/plot_wien.pdf}
     \caption{Messkurve der Wien-Robinson-Brücke.}
     \label{fig:wien}
 \end{figure}
 
 \subsection{Klirrfaktor-Messung}
+\label{klirr_sub}
+\FloatBarrier
 Zur Berechnung des Klirrfaktors $k$ des Generators wird vereinfachend angenommen, dass ausschließlich Oberwellen der 
 zweiten Oberwelle ausschlaggebend sind. 
 So vereinfacht sich die Berechnung von $n$ Oberwellen zu 
@@ -209,11 +236,11 @@ So vereinfacht sich die Berechnung von $n$ Oberwellen zu
 Für die Spannung $U$ gilt $U=U_\text{Sp}=\SI{4.0}{\volt}=\text{const}$. 
 Die Amplitude der zweiten Oberwelle ($\Omega = \sfrac{f_2}{f_1} = 2$) berechnet sich über
 \begin{equation}
-    U_2=3 U_\text{Br} \cdot \frac{\sqrt{(\Omega ^2 -1)^2 + 9\Omega ^2}}{\lvert \Omega ^2 -1 \rvert}
+    U_2=3 \, U_\text{Br} \cdot \frac{\sqrt{(\Omega ^2 -1)^2 + 9\Omega ^2}}{\lvert \Omega ^2 -1 \rvert}
         =3 \cdot \SI{6}{\milli\volt} \cdot \frac{\sqrt{9 + 36}}{3}=3 \sqrt{5} \cdot \SI{6}{\milli\volt} \approx \SI{40}{\milli\volt} .
 \end{equation}
-Hierbei wird der minimale Wert für die Brückenspannung verwendet, da bei dieser ausschließlich Oberwellen für eine Spannung sorgen. 
-mit $U=U_\text{Sp}=\SI{4.0}{\volt}$ ergibt sich der Klirrfaktor:
+Hierbei wird der minimale Wert für die Brückenspannung verwendet, da bei dieser ausschließlich Oberwellen, in dem Fall also die zweite Oberwelle, für eine Spannung sorgen. 
+Mit $U=U_\text{Sp}=\SI{4.0}{\volt}$ ergibt sich der Klirrfaktor:
 \begin{equation}
     k=\frac{U_2}{U_\text{Sp}}=0.010
 \end{equation}
