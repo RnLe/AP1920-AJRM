@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--This file was written by TinyCAD 3.00.00 develop
+If you wish to view this file go to https://www.tinycad.net to
+download the executable.-->
+<TinyCADSheets>
+	<TinyCAD>
+		<NAME>Sheet 1</NAME>
+		<DETAILS>
+			<Size width='1485' height='1050'/>
+			<GUIDES horiz='7' vert='5'/>
+			<TITLE></TITLE>
+			<AUTHOR></AUTHOR>
+			<REVISION>1.0</REVISION>
+			<DOCNUMBER></DOCNUMBER>
+			<ORGANISATION></ORGANISATION>
+			<SHEETS>1 of 1</SHEETS>
+			<SHOWS>0</SHOWS>
+			<DATE></DATE>
+			<GRID spacing='5.00000' snap='1'/>
+		</DETAILS>
+		<FONT id='0'>
+			<HEIGHT>-13</HEIGHT>
+			<WIDTH>6</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='1'>
+			<HEIGHT>-10</HEIGHT>
+			<WIDTH>0</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='27'>
+			<HEIGHT>-9</HEIGHT>
+			<WIDTH>4</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='31'>
+			<HEIGHT>-11</HEIGHT>
+			<WIDTH>5</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='35'>
+			<HEIGHT>-18</HEIGHT>
+			<WIDTH>9</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='38'>
+			<HEIGHT>-21</HEIGHT>
+			<WIDTH>11</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Calibri</FACENAME>
+		</FONT>
+		<FONT id='39'>
+			<HEIGHT>-11</HEIGHT>
+			<WIDTH>5</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<FONT id='44'>
+			<HEIGHT>-11</HEIGHT>
+			<WIDTH>5</WIDTH>
+			<WEIGHT>400</WEIGHT>
+			<ITALIC>0</ITALIC>
+			<UNDERLINE>0</UNDERLINE>
+			<STRIKEOUT>0</STRIKEOUT>
+			<CHARSET>0</CHARSET>
+			<FACENAME>Arial</FACENAME>
+		</FONT>
+		<STYLE id='2'>
+			<STYLE>0</STYLE>
+			<COLOR>000000</COLOR>
+			<THICKNESS>1</THICKNESS>
+		</STYLE>
+		<FILL id='0'>
+			<INDEX>-1</INDEX>
+			<COLOR>000000</COLOR>
+		</FILL>
+		<FILL id='1'>
+			<INDEX>0</INDEX>
+			<COLOR>000000</COLOR>
+		</FILL>
+		<SYMBOLDEF id='1'>
+			<NAME type='0'>R</NAME>
+			<REF type='0'>R?</REF>
+			<DESCRIPTION>Resistor</DESCRIPTION>
+			<PPP>1</PPP>
+			<GUID></GUID>
+			<REF_POINT power='0' part='0' pos='42.00000,56.00000'/>
+			<REF_POINT power='1' part='0' pos='42.00000,56.00000'/>
+			<TinyCAD>
+				<RECTANGLE a='38.00000,42.00000' b='42.00000,50.00000' style='2' fill='0'/>
+				<PIN pos='40.00000,56.00000' which='0' elec='4' direction='0' part='0' number='1' show='0' length='30' number_pos='0' centre_name='0'></PIN>
+				<PIN pos='40.00000,36.00000' which='0' elec='4' direction='1' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'></PIN>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<SYMBOLDEF id='2'>
+			<NAME type='0'>POT</NAME>
+			<REF type='0'>R?</REF>
+			<DESCRIPTION>Variable Resistor</DESCRIPTION>
+			<PPP>1</PPP>
+			<GUID></GUID>
+			<REF_POINT power='0' part='0' pos='54.00000,54.00000'/>
+			<TinyCAD>
+				<RECTANGLE a='42.00000,40.00000' b='46.00000,48.00000' style='2' fill='0'/>
+				<POLYGON pos='46.00000,44.00000' style='2' fill='0' polygon='0'>
+					<POINT pos='0.00000,0.00000' arc='0'/>
+					<POINT pos='1.00000,1.00000' arc='0'/>
+				</POLYGON>
+				<POLYGON pos='46.00000,43.00000' style='2' fill='0' polygon='0'>
+					<POINT pos='0.00000,1.00000' arc='0'/>
+					<POINT pos='1.00000,0.00000' arc='0'/>
+				</POLYGON>
+				<POLYGON pos='46.00000,44.00000' style='2' fill='0' polygon='0'>
+					<POINT pos='0.00000,0.00000' arc='0'/>
+					<POINT pos='0.00000,0.00000' arc='0'/>
+				</POLYGON>
+				<POLYGON pos='46.00000,44.00000' style='2' fill='0' polygon='0'>
+					<POINT pos='2.00000,0.00000' arc='0'/>
+					<POINT pos='0.00000,0.00000' arc='0'/>
+				</POLYGON>
+				<PIN pos='54.00000,44.00000' which='0' elec='4' direction='2' part='0' number='3' show='0' length='30' number_pos='0' centre_name='0'>adj</PIN>
+				<PIN pos='44.00000,34.00000' which='0' elec='4' direction='1' part='0' number='2' show='0' length='30' number_pos='0' centre_name='0'>a</PIN>
+				<PIN pos='44.00000,54.00000' which='0' elec='4' direction='0' part='0' number='1' show='0' length='30' number_pos='0' centre_name='0'>b</PIN>
+			</TinyCAD>
+		</SYMBOLDEF>
+		<OPTIONS>
+			<GRID>0</GRID>
+			<UNITS>0</UNITS>
+			<COLOR_WIRE>FF0000</COLOR_WIRE>
+			<COLOR_BUS>0000FF</COLOR_BUS>
+			<COLOR_JUNCTION>000000</COLOR_JUNCTION>
+			<COLOR_NOCONNECT>000000</COLOR_NOCONNECT>
+			<COLOR_LABEL>208000</COLOR_LABEL>
+			<COLOR_POWER>000000</COLOR_POWER>
+			<COLOR_PIN>4040C0</COLOR_PIN>
+			<COLOR_HIDDEN_PIN>208020</COLOR_HIDDEN_PIN>
+			<COLOR_BACKGROUND>FFFFFF</COLOR_BACKGROUND>
+			<COLOR_NOTETEXT_FILL>AFFFFF</COLOR_NOTETEXT_FILL>
+			<COLOR_NOTETEXT_LINE>FF0000</COLOR_NOTETEXT_LINE>
+			<COLOR_NOTETEXT_TEXT>FF0000</COLOR_NOTETEXT_TEXT>
+		</OPTIONS>
+		<SYMBOL id='1' pos='40.50000,38.25000' part='0' rotate='0' can_scale='1' show_power='1' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='-7.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='1' show='1' pos='-5.75000,-9.00000'/>
+		</SYMBOL>
+		<WIRE a='48.50000,18.25000' b='58.50000,18.25000'/>
+		<WIRE a='48.50000,18.25000' b='48.50000,10.25000'/>
+		<WIRE a='38.50000,18.25000' b='48.50000,18.25000'/>
+		<ELLIPSE a='14.50000,34.25000' b='22.50000,42.25000' style='2' fill='0'/>
+		<TEXT pos='19.34013,40.80388' direction='3' font='0' color='000000'>S</TEXT>
+		<TEXT pos='16.69648,40.33542' direction='3' font='35' color='000000'>U</TEXT>
+		<WIRE a='18.50000,42.25000' b='18.50000,66.25000'/>
+		<WIRE a='18.50000,66.25000' b='48.50000,66.25000'/>
+		<WIRE a='48.50000,66.25000' b='48.50000,58.25000'/>
+		<WIRE a='48.50000,58.25000' b='38.50000,58.25000'/>
+		<WIRE a='48.50000,58.25000' b='58.50000,58.25000'/>
+		<WIRE a='48.50000,10.25000' b='18.50000,10.25000'/>
+		<WIRE a='18.50000,10.25000' b='18.50000,34.25000'/>
+		<WIRE a='38.50000,38.25000' b='45.50000,38.25000'/>
+		<WIRE a='58.50000,38.25000' b='51.50000,38.25000'/>
+		<POLYGON pos='37.50000,20.65000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.10000' arc='0'/>
+			<POINT pos='1.00000,1.10000' arc='0'/>
+			<POINT pos='2.00000,0.10000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='57.50000,20.65000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.10000' arc='0'/>
+			<POINT pos='1.00000,1.10000' arc='0'/>
+			<POINT pos='2.00000,0.10000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='37.50000,54.65000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.10000' arc='0'/>
+			<POINT pos='1.00000,1.10000' arc='0'/>
+			<POINT pos='2.00000,0.10000' arc='0'/>
+		</POLYGON>
+		<POLYGON pos='57.50000,54.65000' style='2' fill='0' polygon='0'>
+			<POINT pos='0.00000,0.10000' arc='0'/>
+			<POINT pos='1.00000,1.10000' arc='0'/>
+			<POINT pos='2.00000,0.10000' arc='0'/>
+		</POLYGON>
+		<TEXT pos='44.70000,37.95000' direction='3' font='0' color='000000'>A</TEXT>
+		<TEXT pos='50.50000,37.85000' direction='3' font='0' color='000000'>B</TEXT>
+		<TEXT pos='35.50000,39.75000' direction='3' font='0' color='000000'>C</TEXT>
+		<TEXT pos='60.00000,39.75000' direction='3' font='0' color='000000'>D</TEXT>
+		<TEXT pos='47.50000,42.25000' direction='3' font='0' color='000000'>U</TEXT>
+		<ELLIPSE a='44.90000,37.65000' b='46.15000,38.90000' style='2' fill='1'/>
+		<ELLIPSE a='50.80000,37.65000' b='52.05000,38.90000' style='2' fill='1'/>
+		<TEXT pos='49.25000,43.00000' direction='3' font='27' color='000000'>B</TEXT>
+		<TEXT pos='35.25000,21.25000' direction='3' font='31' color='000000'>I</TEXT>
+		<JUNCTION pos='48.50000,18.25000'/>
+		<JUNCTION pos='48.50000,58.25000'/>
+		<TEXT pos='8.50000,7.75000' direction='3' font='38' color='000000'>Allgemeine Brückenschaltung</TEXT>
+		<SYMBOL id='1' pos='100.75000,38.25000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='-7.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='x' show='1' pos='-5.75000,-9.25000'/>
+		</SYMBOL>
+		<WIRE a='108.75000,18.25000' b='118.75000,18.25000'/>
+		<WIRE a='108.75000,18.25000' b='108.75000,10.25000'/>
+		<WIRE a='98.75000,18.25000' b='108.75000,18.25000'/>
+		<ELLIPSE a='74.75000,34.25000' b='82.75000,42.25000' style='2' fill='0'/>
+		<TEXT pos='79.59013,40.80388' direction='3' font='0' color='000000'>S</TEXT>
+		<TEXT pos='76.94648,40.33542' direction='3' font='35' color='000000'>U</TEXT>
+		<WIRE a='78.75000,42.25000' b='78.75000,66.25000'/>
+		<WIRE a='78.75000,66.25000' b='108.75000,66.25000'/>
+		<WIRE a='108.75000,66.25000' b='108.75000,58.25000'/>
+		<WIRE a='108.75000,58.25000' b='98.75000,58.25000'/>
+		<WIRE a='108.75000,58.25000' b='118.75000,58.25000'/>
+		<WIRE a='108.75000,10.25000' b='78.75000,10.25000'/>
+		<WIRE a='78.75000,10.25000' b='78.75000,34.25000'/>
+		<WIRE a='98.75000,38.25000' b='103.75000,38.25000'/>
+		<TEXT pos='105.75000,42.25000' direction='3' font='0' color='000000'>U</TEXT>
+		<ELLIPSE a='103.15000,37.65000' b='104.40000,38.90000' style='2' fill='1'/>
+		<TEXT pos='107.50000,43.00000' direction='3' font='27' color='000000'>B</TEXT>
+		<SYMBOL id='1' pos='100.75000,58.25000' part='0' rotate='0' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='-7.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='2' show='1' pos='-5.75000,-9.25000'/>
+		</SYMBOL>
+		<SYMBOL id='2' pos='120.75000,48.25000' part='0' rotate='4' can_scale='0' show_power='0' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='1.00000,-7.60000'/>
+			<FIELD type='0' description='Name' value='R' show='1' pos='1.00000,-11.00000'/>
+			<FIELD type='3' description='Other' value='3' show='1' pos='2.25000,-9.95000'/>
+			<FIELD type='3' description='Other' value='4' show='1' pos='2.25000,-6.70000'/>
+			<FIELD type='3' description='Other' value='____' show='1' pos='0.00000,-9.80000'/>
+		</SYMBOL>
+		<WIRE a='118.75000,18.25000' b='118.75000,28.25000'/>
+		<WIRE a='118.75000,58.25000' b='118.75000,48.25000'/>
+		<ELLIPSE a='108.15000,37.65000' b='109.40000,38.90000' style='2' fill='1'/>
+		<TEXT pos='69.00000,8.00000' direction='3' font='38' color='000000'>Wheatstonsche Brückenschaltung</TEXT>
+		<JUNCTION pos='108.75000,18.25000'/>
+		<JUNCTION pos='98.75000,38.25000'/>
+		<JUNCTION pos='108.75000,58.25000'/>
+		<SYMBOL id='1' pos='60.50000,38.25000' part='0' rotate='0' can_scale='1' show_power='1' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='1.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='3' show='1' pos='2.25000,-9.00000'/>
+		</SYMBOL>
+		<SYMBOL id='1' pos='40.50000,58.25000' part='0' rotate='0' can_scale='1' show_power='1' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='-7.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='2' show='1' pos='-5.75000,-9.00000'/>
+		</SYMBOL>
+		<JUNCTION pos='38.50000,38.25000'/>
+		<SYMBOL id='1' pos='60.50000,58.25000' part='0' rotate='0' can_scale='1' show_power='1' scale_x='1.00000' scale_y='1.00000'>
+			<FIELD type='0' description='Ref' value='R' show='1' pos='1.00000,-10.00000'/>
+			<FIELD type='0' description='Name' value='4' show='1' pos='2.25000,-9.00000'/>
+		</SYMBOL>
+		<JUNCTION pos='58.50000,38.25000'/>
+		<TEXT pos='35.60000,22.20000' direction='3' font='44' color='000000'>1</TEXT>
+		<TEXT pos='60.25000,21.25000' direction='3' font='31' color='000000'>I</TEXT>
+		<TEXT pos='60.60000,22.20000' direction='3' font='39' color='000000'>3</TEXT>
+		<TEXT pos='35.25000,56.25000' direction='3' font='31' color='000000'>I</TEXT>
+		<TEXT pos='35.60000,57.20000' direction='3' font='39' color='000000'>2</TEXT>
+		<TEXT pos='60.25000,56.25000' direction='3' font='31' color='000000'>I</TEXT>
+		<TEXT pos='60.60000,57.20000' direction='3' font='39' color='000000'>4</TEXT>
+		<ELLIPSE a='82.00000,37.00000' b='82.00000,37.00000' style='2' fill='1'/>
+	</TinyCAD>
+</TinyCADSheets>
