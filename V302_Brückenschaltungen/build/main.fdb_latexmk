@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1576406335 "build/main.bcf" "build/main.bbl" "build/main" 1576406335
-  "build/main.bcf" 1576335326 101714 7de1af2725a2a12b27133ca593c7a30c "lualatex"
-  "lit.bib" 1576266874 245 99089e7ea6b772f7036b7d02aa579035 ""
+["biber build/main"] 1576425316 "build/main.bcf" "build/main.bbl" "build/main" 1576425316
+  "build/main.bcf" 1576407405 101773 2fa2b70427e48e738d8dbb1560adf2fc "lualatex"
+  "lit.bib" 1576407405 245 99089e7ea6b772f7036b7d02aa579035 ""
   (generated)
-  "build/main.blg"
   "build/main.bbl"
+  "build/main.blg"
 ["lualatex"] 1576406344 "main.tex" "build/main.pdf" "main" 1576406344
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm" 1246382020 924 9904cf1d39e9767e7a3622f2a125a565 ""
@@ -256,7 +256,7 @@
   "build/Schaltung1.pdf" 1576186792 135341 10707b8fcdfdda7888fcc62145468ce0 ""
   "build/main.aux" 1576335326 12651 ca1d2ba3cc87cf638f1f9fa0b9be6b6a "lualatex"
   "build/main.bbl" 1576406344 1462 60439f2c5c40cc6dc9d3e239e6909d5d "biber build/main"
-  "build/main.toc" 0 -1 0 "lualatex"
+  "build/main.toc" 1576407405 1472 737b47f85434c75085d6a0ec2d095b75 "lualatex"
   "content/auswertung.tex" 1576401600 11725 8a6540e86a6017f08bb1bc6f8c8a3b6e ""
   "content/durchfuehrung.tex" 1573207683 50 21282d8bb0cc9b2f3316d3739203a5a9 ""
   "content/einleitung.tex" 1576181625 437 576e7cc001253bf048663bd2fabe9c9b ""
@@ -264,8 +264,8 @@
   "header.tex" 1575045313 3876 550838e1bd37d9cffc20a7f060913e6f ""
   "main.tex" 1576264540 529 823f57e9c56c740e20b4f2d255071c8b ""
   (generated)
-  "build/main.pdf"
-  "build/main.aux"
-  "build/main.log"
   "build/main.toc"
   "build/main.bcf"
+  "build/main.aux"
+  "build/main.pdf"
+  "build/main.log"
