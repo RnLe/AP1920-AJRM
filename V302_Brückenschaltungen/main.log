@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  17 DEC 2019 05:57
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  17 DEC 2019 09:47
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -55,7 +55,7 @@ Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multis
 cript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.120 seconds
+luaotfload | main : initialization completed in 0.100 seconds
 (./header.tex
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
@@ -2357,7 +2357,7 @@ c, 64 attribute_list, 2 write nodes
    avail lists: 1:8,2:6277,3:564,4:66,5:347,6:49,7:4117,8:87,9:1556,10:25,11:492
 
  55842 multiletter control sequences out of 65536+600000
- 316 fonts using 120550559 bytes
+ 316 fonts using 120551091 bytes
  88i,21n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'

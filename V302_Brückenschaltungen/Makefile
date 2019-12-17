@@ -6,7 +6,7 @@ all: build/main.pdf
 
  #hier weitere Abhängigkeiten für build/main.pdf deklarieren:
 #build/main.pdf: build/plot.pdf
-build/main.pdf: content/plot_wien.pdf content/Schaltung1.pdf
+#build/main.pdf: content/plot_wien.pdf content/Schaltung1.pdf
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \

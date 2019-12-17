@@ -1,8 +1,19 @@
 [0] Config.pm:304> INFO - This is Biber 2.13
 [0] Config.pm:307> INFO - Logfile is 'build/main.blg'
-[26] biber:315> INFO - === Sun Dec 15, 2019, 16:55:19
+[26] biber:315> INFO - === Tue Dec 17, 2019, 10:04:41
 [42] Biber.pm:375> INFO - Reading 'build/main.bcf'
-[103] Utils.pm:316> ERROR - Error: Found biblatex control file version 3.7, expected version 3.6.
-This means that your biber (2.13) and biblatex (3.14) versions are incompatible.
-See compat matrix in biblatex or biber PDF documentation.
-[103] Biber.pm:114> INFO - ERRORS: 1
+[106] Biber.pm:905> INFO - Found 1 citekeys in bib section 0
+[119] Biber.pm:4196> INFO - Processing section 0
+[120] Utils.pm:75> INFO - Globbing data source 'lit.bib'
+[120] Utils.pm:91> INFO - Globbed data source 'lit.bib' to lit.bib
+[120] Utils.pm:75> INFO - Globbing data source 'programme.bib'
+[120] Utils.pm:91> INFO - Globbed data source 'programme.bib' to programme.bib
+[128] Biber.pm:4373> INFO - Looking for bibtex format file 'lit.bib' for section 0
+[129] bibtex.pm:1462> INFO - LaTeX decoding ...
+[132] bibtex.pm:1281> INFO - Found BibTeX data source 'lit.bib'
+[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'variable = shifted' with 'variable = non-ignorable'
+[144] UCollate.pm:68> INFO - Overriding locale 'de-DE' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[145] Biber.pm:4024> INFO - Sorting list 'nty/global//global/global' of type 'entry' with template 'nty' and locale 'de-DE'
+[145] Biber.pm:4030> INFO - No sort tailoring available for locale 'de-DE'
+[146] bbl.pm:648> INFO - Writing 'build/main.bbl' with encoding 'UTF-8'
+[147] bbl.pm:751> INFO - Output to build/main.bbl
