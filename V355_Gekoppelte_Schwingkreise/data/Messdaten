@@ -1,0 +1,33 @@
+Vorbereitung:
+f_{Eigenfrequenz,real}=33.0 kHz (Phasendifferenz 90°)
+
+5.a)
+R_C=48 Ohm
+50 Ohm --> 48 Ohm
+f=3.37 kHz
+C_K in nF   #Schwingungsmaxima/#Schwebungsperiode
+4.7         hier noch Messwerte von Joshua einfügen
+6.8         hier noch Messwerte von Joshua einfügen
+8.2         hier noch Messwerte von Joshua einfügen
+10.0        hier noch Messwerte von Joshua einfügen
+12.0        hier noch Messwerte von Joshua einfügen
+
+5.b)
+f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
+(Phasendiff. 0°{-} bzw 180°{+})                     -->mit R048Ohm I_exp berechnen. I_theo mit Formel aus Theorie
+33.1            81.3            1.0             110
+33.1            61.1            2.2             118
+33.1            57.1            2.7             113
+33.1            48.7            4.7             123
+33.1            44.7            6.8             130
+33.1            42.8            8.2             110
+33.1            41.4            10.0            122
+33.1            40.2            12.0            120
+
+Generatorspannung: 
+Phasendiff. 180° --> 9.0V
+Phasendiff. 0°   --> 7.2V
+
+L=32.351mH
+C=0.8015nF
+C_Sp=0.037nF
