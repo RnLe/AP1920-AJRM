@@ -1,6 +1,7 @@
 Vorbereitung:
 f_{Eigenfrequenz,real}=33.0 kHz (Phasendifferenz 90°)
 
+C_K Fehler von +/- 20%
 5.a)
 R_C=48 Ohm
 50 Ohm --> 48 Ohm
@@ -14,7 +15,7 @@ C_K in nF   #Schwingungsmaxima/#Schwebungsperiode
 
 5.b)
 f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
-(Phasendiff. 0°{-} bzw 180°{+})                     -->mit R048Ohm I_exp berechnen. I_theo mit Formel aus Theorie
+(Phasendiff. 0°{-} bzw 180°{+})                     -->mit R=48Ohm I_exp berechnen. I_theo mit Formel aus Theorie
 33.1            81.3            1.0             110
 33.1            61.1            2.2             118
 33.1            57.1            2.7             113
