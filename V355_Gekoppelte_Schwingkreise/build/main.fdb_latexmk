@@ -1,10 +1,10 @@
 # Fdb version 3
-["biber build/main"] 1577463372 "build/main.bcf" "build/main.bbl" "build/main" 1577469864
-  "build/main.bcf" 1577469863 101655 921515bcc7f218ea6cc041a0ea15b3dc "lualatex"
+["biber build/main"] 1577463372 "build/main.bcf" "build/main.bbl" "build/main" 1577479688
+  "build/main.bcf" 1577479687 101655 921515bcc7f218ea6cc041a0ea15b3dc "lualatex"
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1577469853 "main.tex" "build/main.pdf" "main" 1577469864
+  "build/main.bbl"
+["lualatex"] 1577479677 "main.tex" "build/main.pdf" "main" 1577479688
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf" 1255129361 111536 ae9d1b331000d544f47e5223081b7b54 ""
@@ -259,23 +259,23 @@
   "/home/antoniajb/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1576263847 411900 22d7ac5cfb601cc6a999f1fa41da460b ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/tex/generic/config/language.dat" 1569228406 6580 66af14fef6de375d894295c7785a5c41 ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt" 1576263110 1399929 ac4b68021233eb8d20207154f18f5df9 ""
-  "build/main.aux" 1577469863 8565 c22eaa8b9ac59824d1988862247908d5 "lualatex"
+  "build/main.aux" 1577479687 8565 d1b0407b9dbba6b70a00433db1f5eba2 "lualatex"
   "build/main.bbl" 1577463374 466 f7f239c736cf01ac6ce7bd829f9b3c7b "biber build/main"
-  "build/main.run.xml" 1577469863 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1577469863 1023 348ac926c9c9c6fb594a326ed4969f78 "lualatex"
+  "build/main.run.xml" 1577479688 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1577479687 1023 348ac926c9c9c6fb594a326ed4969f78 "lualatex"
   "content/anhang.tex" 1573978188 56 4972db9ff30400e8a1eb4982862ca592 ""
   "content/auswertung.tex" 1577006126 597 443e394281710473f1b534c2b04cfcf5 ""
   "content/diskussion.tex" 1577468365 543 fd2b28f7eb7102908de80fd2b12c63ac ""
-  "content/durchfuehrung.tex" 1577469836 2687 7c1fd4f1704aa53576ff76275d97f8a8 ""
+  "content/durchfuehrung.tex" 1577479648 3381 5e1833539506ed631a1f6e063a404b7f ""
   "content/theorie.tex" 1577466223 9545 4368c7599adde9b061793bce2b3c71cc ""
   "header.tex" 1575045313 3876 550838e1bd37d9cffc20a7f060913e6f ""
   "main.tex" 1577006450 507 f0e1ecb65b90504471c358a1988ae0ad ""
   "plots/Platte.jpeg" 1577468019 125834 8bb9f8a02a1b5d7120486024d122d93c ""
   "plots/allg_gekopp_schwingkreis.png" 1577006155 3508 dd21ada5a48111214a4e5f7c78123a0f ""
   (generated)
-  "build/main.aux"
-  "build/main.run.xml"
-  "build/main.log"
-  "build/main.toc"
-  "build/main.bcf"
   "build/main.pdf"
+  "build/main.log"
+  "build/main.bcf"
+  "build/main.run.xml"
+  "build/main.aux"
+  "build/main.toc"

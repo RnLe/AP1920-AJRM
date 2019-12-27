@@ -26,7 +26,7 @@ f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
 33.1            40.2            12.0            120
 
 Generatorspannung: 
-Phasendiff. 180° --> 9.0V
+Phasendiff. 180° --> 9.0V (steht in "6. zu 5c)": sollte prinzipiell unabhängig von der Frequenz sein, ist es aber leider nicht immer... Rest steht in der Versuchsanleitung)
 Phasendiff. 0°   --> 7.2V
 
 L=32.351mH
