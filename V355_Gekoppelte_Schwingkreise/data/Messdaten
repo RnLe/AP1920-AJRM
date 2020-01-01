@@ -1,6 +1,7 @@
 Vorbereitung:
 f_{Eigenfrequenz,real}=33.0 kHz (Phasendifferenz 90°)
 
+C_K Fehler von +/- 20%
 5.a)
 R_C=48 Ohm
 50 Ohm --> 48 Ohm
@@ -14,6 +15,7 @@ C_K in nF   #Schwingungsmaxima/#Schwebungsperiode
 
 5.b)
 f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
+
 (Phasendiff. 0°{-} bzw 180°{+})                     -->mit R048 Ohm I_exp berechnen. I_theo mit Formel aus Theorie
                                                             (mit Faktor 16.6.. bzw. 50/3 multipliziert)
 33.1            81.3            1.0             110         1830
@@ -25,8 +27,8 @@ f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
 33.1            41.4            10.0            122         2030
 33.1            40.2            12.0            120         2000
 
-Generatorspannung:
-Phasendiff. 180° --> 9.0V
+Generatorspannung: 
+Phasendiff. 180° --> 9.0V (steht in "6. zu 5c)": sollte prinzipiell unabhängig von der Frequenz sein, ist es aber leider nicht immer... Rest steht in der Versuchsanleitung)
 Phasendiff. 0°   --> 7.2V
 
 L=32.351mH
