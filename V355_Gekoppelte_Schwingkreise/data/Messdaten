@@ -14,18 +14,18 @@ C_K in nF   #Schwingungsmaxima/#Schwebungsperiode
 12.0        hier noch Messwerte von Joshua einfügen
 
 5.b)
-f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV
+f_{-} in kHz    f_{+} in kHz    C-K in nF       c) U_Amplitude in mV    I2_exp       I2_theo
 
 (Phasendiff. 0°{-} bzw 180°{+})                     -->mit R048 Ohm I_exp berechnen. I_theo mit Formel aus Theorie
                                                             (mit Faktor 16.6.. bzw. 50/3 multipliziert)
-33.1            81.3            1.0             110         1830
-33.1            61.1            2.2             118         1960
-33.1            57.1            2.7             113         1883
-33.1            48.7            4.7             123         2050
-33.1            44.7            6.8             130         2160
-33.1            42.8            8.2             110         1830
-33.1            41.4            10.0            122         2030
-33.1            40.2            12.0            120         2000
+33.1            81.3            1.0             110         1830        0.038       0.047
+33.1            61.1            2.2             118         1960        0.041
+33.1            57.1            2.7             113         1883        0.039
+33.1            48.7            4.7             123         2050        0.043
+33.1            44.7            6.8             130         2160        0.045
+33.1            42.8            8.2             110         1830        0.038
+33.1            41.4            10.0            122         2030        0.042
+33.1            40.2            12.0            120         2000        0.042
 
 Generatorspannung: 
 Phasendiff. 180° --> 9.0V (steht in "6. zu 5c)": sollte prinzipiell unabhängig von der Frequenz sein, ist es aber leider nicht immer... Rest steht in der Versuchsanleitung)
