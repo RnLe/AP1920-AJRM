@@ -86,7 +86,7 @@ Der Summenstrom $I_1 + I_2$ verschwindet und die Ströme schwingen genau gegenph
 Selbsterklärend ist dies die gegenphasige Eigenschwingung. 
 
 Ebenfalls zu betrachten sind sogenannte Schwebungen. 
-In \ref{fig:kap_gekopp} kann eine beobachtet werden, wenn ${\omega _+ \approx \omega _-}$ gilt, was äquivalent zu 
+In \ref{fig:kap_gekopp} kann eine beobachtet werden, wenn ${\omega _+ \approx \omega _-}$ gilt, also 
 ${C_K \gg C}$ ist. 
 Startbedingungen sind, dass einer der beiden Ströme, beispielsweise $I_1$, anfangs von null verschieden ist und der 
 jeweils andere Strom, gemäß dem Beispiel also $I_2$, in Ruhe ist, entsprechend keine Amplitude hat. 
@@ -126,32 +126,42 @@ oszillieren, dass die Amplitude jedoch mit der bei weitem geringeren Frequenz
     \omega _\text{Amplitude} = \frac{\omega _+ - \omega _-}{2} \ll \omega _+
 \end{equation} 
 ebenfalls eine Oszillation aufweist. 
-Die Schwebungsfrequenz ist 
+Das Doppelte der dazugehörigen Frequenz nennt sich Schwebungsfrequenz und ist 
 \begin{equation}
     f_\text{Schwebung}= \frac{\omega _\text{Amplitude}}{\pi}=\frac{\omega _+ - \omega _-}{2 \pi}.
 \end{equation} 
 Sie gibt an, wie schnell die Energie zwischen den beiden Schwingungssystemen hin- und herpendelt. 
+Werden nämlich die Schiwngungen der Amplituden betrachtet -- also die Schwingungen mit $\omega _\text{Amplitude}$ --, 
+ist zu erkennen, dass die von $I_1$ jeweils gegenphasig zu $I_2$ oszilliert. 
+Dies indiziert den besagten Energieaustausch. 
+\FloatBarrier
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\FloatBarrier
-\subsection{Erzwungene Schwingungen}
+\subsection{Erzwungene Schwingungen des gekoppelten Schwingkreises}
 %%%%%%
 %%HIER ein Schaltbild wie in Abb. 4 einfügen
 %%%%%%
-Wird ein Sinusgenerator mit ${\tilde{U}(t)=U_0 \symup{e}^{\symup{i}\omega t}}$ gemäß Abbildung (<HIER: Referenz zum Schaltbild einfügen>) in den Schaltkreis 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{plots/gekop_schw_kreis1.pdf}
+    \caption{Durch einen Sinusgenerator erzwungene Schwingungen mit verlustbehafteten Größen.}
+    \label{fig:gezwung-sinus}
+\end{figure}
+Wird ein Sinusgenerator mit ${\tilde{U}(t)=U_0 \symup{e}^{\symup{i}\omega t}}$ gemäß Abbildung \ref{fig:gezwung-sinus} in den Schaltkreis 
 eingebunden, und werden Verlustwiderstände als ohmsche Widerstände jeweils berücksichtigt, ergeben sich mit den Kirchhoff'schen 
 Gesetzen die Zusammenhänge 
 \begin{gather}
     \tilde{U}=(\frac{1}{\symup{i}\omega C} +  \symup{i} \omega L + \frac{1}{\symup{i}\omega C_K} + R)I_1 - \frac{1}{\symup{i}\omega C_K} I_2 \\
     \text{und} \quad (\symup{i}\omega L + \frac{1}{\symup{i}\omega C} + R+ \frac{1}{\symup{i}\omega C_K}) I_2 - \frac{1}{\symup{i}\omega C_K}I_1 =0 \text{.}
 \end{gather}
-Nach einigen Umformungen kann ein betragsmäßiges Verhältnis von $I_2$ und $\tilde{U}$ aufgestellt werden, wobei die Impedanz ${Z(\omega)}$ mit 
+Nach einigen Umformungen kann ein betragsmäßiges Verhältnis von $I_2$ und $\tilde{U}$ aufgestellt werden, wobei eine Impedanz ${Z(\omega)}$ 
+der Übersicht halber mit 
 \begin{equation*}
     Z(\omega) = \omega L - \frac{1}{\omega} (\frac{1}{C} + \frac{1}{C_K})    
 \end{equation*}
 definiert wird:
 \begin{gather}
-    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert \\ 
+    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert \\  \\
     \text{mit} \quad \Omega = \Biggl(\sqrt{4 \omega ^2 C_K^2 R^2 Z(\omega)^2 + (\frac{1}{\omega C_K} - \omega C_K Z(\omega)^2 + \omega R^2 C_K)^2 }\Biggr)^{-1} .
 \end{gather}
 Dabei stellt $\Omega (\omega)$ den sogenannten Leitwert dar. 
@@ -162,5 +172,6 @@ In diesen Fällen gilt:
     \Omega (\omega _+) &= \frac{1}{R\sqrt{4 + \frac{R^2C_K^2}{LC}}} \approx \frac{1}{2R} \\
     \Omega (\omega _-) &= \frac{1}{R\sqrt{4 + \frac{R^2C_K^2}{LC}(1 + \frac{C}{C_K}})} \approx \frac{1}{2R}  
 \end{align}
-Die Näherungen ergeben sich dadurch, dass Werte der üblichen Größenordnungen für die Widerstände ingesetzt werden.
+Die Näherungen ergeben sich dadurch, dass Werte der üblichen Größenordnungen für die Widerstände eingesetzt werden.
 Daraus wird ersichtlich, dass der zweite Summand unter der Wurzel im Vergleich zur $4$ unbedeutend klein ist. 
+
