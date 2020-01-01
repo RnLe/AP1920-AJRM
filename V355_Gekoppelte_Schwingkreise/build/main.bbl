@@ -16,5 +16,35 @@
   {}
 \endgroup
 
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{gerthsen}{book}{}
+      \name{author}{1}{}{%
+        {{hash=8fe294dd7320c681ff6f5a57199d37d2}{%
+           family={Meschede},
+           familyi={M\bibinitperiod},
+           given={Dieter},
+           giveni={D\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer-Verlag Berlin Heidelberg}%
+      }
+      \strng{namehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{fullhash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{bibnamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authorbibnamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authornamehash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \strng{authorfullhash}{8fe294dd7320c681ff6f5a57199d37d2}
+      \field{sortinit}{M}
+      \field{sortinithash}{2e5c2f51f7fa2d957f3206819bf86dc3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{23}
+      \field{title}{Gerthsen Physik}
+      \field{year}{2006}
+    \endentry
+  \enddatalist
+\endrefsection
 \endinput
 
