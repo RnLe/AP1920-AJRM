@@ -8,7 +8,7 @@ Die Referenzwerte der Bauteile lauten $C=\SI{0.8015}{\nano\farad}$ und $L=\SI{32
 Zudem weist die Spule eine Kapazität von $C_\text{Sp}=\SI{0.037}{\nano\farad}$ auf.
 Der Kondensator mit regelbarer Kapazität wird so eingestellt, dass der zweite Schwingkreis die gleiche Eigenfrequenz besitzt.
 
-Die Anzahl der Maxima/Minima innerhalb einer Schwebeperiode sind in der folgenden Tabelle \ref{tab:schwing_maxima} der regelbaren Kapazität $C_K$ gegenübergestellt.
+Die Anzahl der Maxima/Minima innerhalb einer (halben?) Schwebeperiode sind in der folgenden Tabelle \ref{tab:schwing_maxima} der regelbaren Kapazität $C_K$ gegenübergestellt.
 
 \begin{table}
     \centering
@@ -27,25 +27,41 @@ Die Anzahl der Maxima/Minima innerhalb einer Schwebeperiode sind in der folgende
     \end{tabular}
 \end{table}
 
-
+Im Weiteren werden die beiden Fundamentalschwingungen in Abhängigkeit der Kapazität $C_K$ bestimmt.
+Für die erste Fundamentalschwingung wird bei allen Kapazitäten ein Wert von $f_- = \SI{33.1}{\kilo\hertz}$ gemessen, da der Kondensator an keinem Energieaustausch beteiligt ist.
+Mit einer Phase von $\SI{180}{\degree}$ zwischen den Schwingung der beiden Schwingkreise werden jedoch von $C_K$ abhängige Werte gemessen, welche in \ref{tab:resonanz} aufgelistet sind.
+Hier handelt es sich um die zweite Fundamentalschwingung.
 
 \begin{table}
     \centering
     \caption{Resonanzfrequenzen verschiedener Kondensatoren.}
     \label{tab:resonanz}
-    \begin{tabular}{c c c c}
+    \begin{tabular}{c c c c c}
         \toprule
-        $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $Amplitudenspannung \:/\: \si{\milli\volt}$ \\
+        $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\ampere}$ \\
         \midrule
-        33.1 & 81.3 & 1.0  & 1830 \\
-        33.1 & 61.1 & 2.2  & 1960 \\
-        33.1 & 57.1 & 2.7  & 1883 \\
-        33.1 & 48.7 & 4.7  & 2050 \\
-        33.1 & 44.7 & 6.8  & 2160 \\
-        33.1 & 42.8 & 8.2  & 1830 \\
-        33.1 & 41.4 & 10.0 & 2030 \\
-        33.1 & 40.2 & 12.0 & 2000 \\
+        33.1 & 81.3 & 1.0  & 1830  &  0.038  \\
+        33.1 & 61.1 & 2.2  & 1960  &  0.041  \\
+        33.1 & 57.1 & 2.7  & 1883  &  0.039  \\
+        33.1 & 48.7 & 4.7  & 2050  &  0.043  \\
+        33.1 & 44.7 & 6.8  & 2160  &  0.045  \\
+        33.1 & 42.8 & 8.2  & 1830  &  0.038  \\
+        33.1 & 41.4 & 10.0 & 2030  &  0.042  \\
+        33.1 & 40.2 & 12.0 & 2000  &  0.042  \\
         \bottomrule
     \end{tabular}
 \end{table}
 
+Der Strom $I_2$ wird über einen geringen Widerstand von $\SI{48}{\ohm}$ berechnet.
+Zu erkennen ist die fallende Frequenz mit absteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_k$, was in \eqref{eqn:sub} zu erkennen ist.
+
+Die Frequenz für die erste Fundamentalschwingung errechnet sich aus 
+\begin{equation}
+    \symup{\nu⁻} = \frac{1}{2\pi\sqrt{\frac{CC_k}{2C+C_k}}}
+\end{equation}
+und für die zweite aus
+\begin{equation}
+    \symup{\nu⁺} = \frac{1}{2\pi\sqrt{LC}}
+\end{equation}
+.
+Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mit beachtet.
