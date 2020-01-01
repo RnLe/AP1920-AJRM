@@ -40,7 +40,7 @@ hierfür nach einmaligem zeitlichen Ableiten
 \begin{align}
     \frac{1}{C} \dot{Q}_{C_1} + L \ddot{I}_{L_1} + \frac{1}{C_K} \dot{Q}_{K} \stackrel{\eqref{eqn:strom}}{=} 
     \frac{1}{C} I_1 + L \ddot{I_1} + \frac{1}{C_K} (I_1 - I_2) = 0 \label{eqn:dgl1} \\
-    \frac{1}{C} \dot{Q}_{C_2} + L \ddot{I_2} - \frac{1}{C_K} \dot{Q}_{K} \stackrel{\eqref{eqn:strom}}{=}
+    \frac{1}{C} \dot{Q}_{C_2} + L \ddot{I}_{L_2} - \frac{1}{C_K} \dot{Q}_{K} \stackrel{\eqref{eqn:strom}}{=}
     \frac{1}{C} I_2 + L \ddot{I_2} - \frac{1}{C_K} (I_1 - I_2) = 0 \label{eqn:dgl2}
 \end{align}
 Eine Möglichkeit zur Lösung der beiden gekoppelten Differentialgleichungen besteht darin, \eqref{eqn:dgl1} und \eqref{eqn:dgl2}
@@ -131,13 +131,15 @@ Das Doppelte der dazugehörigen Frequenz nennt sich Schwebungsfrequenz und ist
     f_\text{Schwebung}= \frac{\omega _\text{Amplitude}}{\pi}=\frac{\omega _+ - \omega _-}{2 \pi}.
 \end{equation} 
 Sie gibt an, wie schnell die Energie zwischen den beiden Schwingungssystemen hin- und herpendelt. 
-Werden nämlich die Schiwngungen der Amplituden betrachtet -- also die Schwingungen mit $\omega _\text{Amplitude}$ --, 
+Werden nämlich die Schwingungen der Amplituden betrachtet -- also die mit einer Kreisfrequenz von $\omega _\text{Amplitude}$ --, 
 ist zu erkennen, dass die von $I_1$ jeweils gegenphasig zu $I_2$ oszilliert. 
 Dies indiziert den besagten Energieaustausch. 
 \FloatBarrier
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Erzwungene Schwingungen des gekoppelten Schwingkreises}
+\subsection{Erzwungene Schwingungen}
+\label{subsec:erzwungen}
+\FloatBarrier
 %%%%%%
 %%HIER ein Schaltbild wie in Abb. 4 einfügen
 %%%%%%
@@ -161,8 +163,8 @@ der Übersicht halber mit
 \end{equation*}
 definiert wird:
 \begin{gather}
-    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert \\  \\
-    \text{mit} \quad \Omega = \Biggl(\sqrt{4 \omega ^2 C_K^2 R^2 Z(\omega)^2 + (\frac{1}{\omega C_K} - \omega C_K Z(\omega)^2 + \omega R^2 C_K)^2 }\Biggr)^{-1} .
+    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert \\ 
+    \text{mit} \quad \Omega = \Biggl(\sqrt{4 \omega ^2 C_K^2 R^2 Z(\omega)^2 + \bigl(\frac{1}{\omega C_K} - \omega C_K Z(\omega)^2 + \omega R^2 C_K\bigr)^2 }\Biggr)^{-1} .
 \end{gather}
 Dabei stellt $\Omega (\omega)$ den sogenannten Leitwert dar. 
 Dieser geht jeweils für ${\omega \to 0}$ und ${\omega \to \infty }$ gegen Null und hat zwei Maxima für ${\omega = \omega _+}$ und 
@@ -173,5 +175,24 @@ In diesen Fällen gilt:
     \Omega (\omega _-) &= \frac{1}{R\sqrt{4 + \frac{R^2C_K^2}{LC}(1 + \frac{C}{C_K}})} \approx \frac{1}{2R}  
 \end{align}
 Die Näherungen ergeben sich dadurch, dass Werte der üblichen Größenordnungen für die Widerstände eingesetzt werden.
-Daraus wird ersichtlich, dass der zweite Summand unter der Wurzel im Vergleich zur $4$ unbedeutend klein ist. 
+Daraus wird ersichtlich, dass der zweite Summand unter der Wurzel im Vergleich zur $4$ unbedeutend klein wird. 
 
+Zur in \ref{sec:Durchführung} beschriebenen Vorjustierung seien hier noch kurz erzwungene Schwingungen eines einzelnen 
+Schwingkreises aufgeführt. 
+Dafür wird ein Sinusgenerator in Reihe eines Schwingkreises geschaltet, der mit einer Frequenz $\omega$ antreibt. 
+Hierbei sind die Amplitudenresonanzfunktion \eqref{eqn:ampl_res} und die Phasenverschiebung \eqref{eqn:phi_res} des Stroms 
+durch die erregende Spannung in 
+Abhängigkeit der Frequenz $\omega$ von Interesse. 
+Gemäß \cite{gerthsen} lauten diese 
+\begin{equation}
+    A(\omega)=\frac{U_0}{\sqrt{L^2(\omega _0^2 -\omega^2)^2 +R^2\omega^2}} \text{mit} 
+    \omega _0=\sqrt{\frac{1}{LC}}
+    \label{eqn:ampl_res}
+\end{equation}
+und 
+\begin{equation}
+    \tan \varphi=\frac{R\omega}{L(\omega _0^2 -\omega^2)} .
+    \label{eqn:phi_res}
+\end{equation}
+Die Phasenverschiebung beträgt also genau $\sfrac{\pi}{2}$, wenn der Sinusgenerator mit der Eigenfrequenz -- auch 
+Resonanzfrequenz -- den Schwingkreis antreibt. 
