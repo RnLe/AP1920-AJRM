@@ -38,7 +38,7 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
     \label{tab:resonanz}
     \begin{tabular}{c c c c c}
         \toprule
-        $f^- \:/\: \si{\kilo\hertz}$ & $f^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\milli\ampere}$ \\
+        $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\milli\ampere}$ \\
         \midrule
         33.1 & 81.3 & 1.0  & 1830  &  38.12  \\
         33.1 & 61.1 & 2.2  & 1960  &  40.83  \\
@@ -52,37 +52,44 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
     \end{tabular}
 \end{table}
 
+\begin{figure}
+    \centering
+    \includegraphics[width=0.75\textwidth]{plots/Messdaten.pdf}
+    \caption{Die aufgenommenen Messwerte.}
+    \label{fig:messwerte}
+\end{figure}
+
 Der Strom $I_2$ wird über einen Widerstand von $\SI{48}{\ohm}$ berechnet.
 Zu erkennen ist die fallende Frequenz mit ansteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_K$, was in \eqref{eqn:sub} zu erkennen ist.
 
 Die Frequenz für die erste Fundamentalschwingung errechnet sich aus 
 \begin{equation}
     \label{eqn:1st_fund}
-    \symup{f⁺} = \frac{1}{2\pi\sqrt{LC}}
+    f_+ = \frac{1}{2\pi\sqrt{LC}}
 \end{equation}
 und für die zweite aus
 \begin{equation}
     \label{eqn:2nd_fund}
-    \symup{f⁻} = \frac{1}{2\pi\sqrt{\frac{CC_K}{2C+C_K}}}.
+    f_- = \frac{1}{2\pi\sqrt{\frac{CC_K}{2C+C_K}}}.
 \end{equation}
 Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mitbeachtet.
 So ergeben sich für die Gesamtkapazität je 
 \begin{equation}
-    C_{ges}^+ = C + C_{Sp}
+    C_{+, ges} = C + C_{Sp}
 \end{equation}
 und
 \begin{equation}
-    C_{ges}^- = \frac{CC_K}{2C+C_K} + C_{Sp}.
+    C_{-, ges} = \frac{CC_K}{2C+C_K} + C_{Sp}.
 \end{equation}
 
 Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die Werte mit
 \begin{equation}
     \label{eqn:1st_fund_Csp}
-    \symup{f⁺} = \frac{1}{2\pi\sqrt{L(C + C_{Sp})}}
+    f_+ = \frac{1}{2\pi\sqrt{L(C + C_{Sp})}}
 \end{equation}
 \begin{equation}
     \label{eqn:2nd_fund_Csp}
-    \symup{f⁻} = \frac{1}{2\pi\sqrt{L(\dfrac{CC_K}{2C+C_K} + C_{Sp})}}.
+    f_- = \frac{1}{2\pi\sqrt{L(\dfrac{CC_K}{2C+C_K} + C_{Sp})}}.
 \end{equation}
 
 \begin{table}
@@ -91,7 +98,7 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
     \label{tab:theorie}
     \begin{tabular}{c c c c c c c}
         \toprule
-        $f^- \:/\: \si{\kilo\hertz}$ & $f_{theo}^- \:/\: \si{\kilo\hertz}$ & $f^+ \:/\: \si{\kilo\hertz}$ & $f_{theo}^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2 theo} \:/\: \si{\milli\ampere}$ \\
+        $f_- \:/\: \si{\kilo\hertz}$ & $f_{-, theo} \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $f_{+, theo} \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2,theo} \:/\: \si{\milli\ampere}$ \\
         \midrule
         33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  38.12 & 19.06 \\  
         33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  40.83 & 20.41 \\

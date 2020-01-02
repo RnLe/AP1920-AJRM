@@ -1,29 +1,43 @@
 import matplotlib
 import matplotlib.pyplot as plt
 import numpy as np
+from scipy import optimize
 
-N = 8
+import matplotlib as mpl
+mpl.use('pgf')
+import matplotlib.pyplot as plt
+mpl.rcParams.update({
+'font.family': 'serif',
+'text.usetex': True,
+'pgf.rcfonts': False,
+'pgf.texsystem': 'lualatex',
+'pgf.preamble': r'\usepackage{unicode-math}\usepackage{siunitx}',
+})
 
 f_minus = [33.1, 33.1, 33.1, 33.1, 33.1, 33.1, 33.1, 33.1]
 f_plus = [81.3,61.1,57.1,48.7,44.7,42.8,41.4,40.2]
 c_k = [1.0 ,2.2 ,2.7 ,4.7 ,6.8 ,8.2 ,10.0,12.0]
-vol_cur = [0.038,0.041,0.039,0.043,0.045,0.038,0.042,0.042]
-expec = [0.038,0.041,0.039,0.043,0.045,0.038,0.042,0.042]
+cur = [38.12,40.83,39.22,42.70,45.00,38.12,42.29,41.66]
+
+x = np.linspace(1, 12, 200)
 
 fig, ax = plt.subplots()
 ax2 = ax.twinx()
 
-ind = np.arange(N)
-width = 0.15
-p1 = ax.bar(ind, f_minus, width, bottom=0)
-p2 = ax.bar(ind+width, f_plus, width, bottom=0)
-p3 = ax.bar(ind+2*width, c_k, width, bottom=0)
-p4 = ax2.bar(ind+3*width, vol_cur, width, bottom=0, color='r')
 
-ax.set_xticks(ind + width/5)
-ax.set_xticklabels(c_k)
+ax2.plot(c_k, cur, 'g^')
+ax.plot(c_k, f_minus, 'x')
+ax.plot(c_k, f_plus, 'o')
+ax.plot(c_k, f_minus, 'b')
 
-#ax.legend((p1[0], p2[0], p3[0], p4[0], p5[0], ('f-', 'f+', 'Ck', 'I2', 'Itheo')))
-ax.autoscale_view()
+ax.set_xlabel(r'$C_k /$ nF')
+ax.set_ylabel(r'$f /$ kHz', color='orangered')
+ax.tick_params(axis='y', labelcolor='orangered')
+ax2.set_ylabel(r'$I /$ mA', color='g')
+ax2.tick_params(axis='y', labelcolor='g')
 
-plt.show()
+ax.legend(['1. Fundamentalschwingung', '2. Fundamentalschwingung'], loc=2, bbox_to_anchor=(0.5, 0.9))
+ax2.legend([r'Strom $I_2$'])
+
+fig.tight_layout(pad=0, h_pad=1.12, w_pad=1.12)
+plt.savefig('../plots/Messdaten.pdf')

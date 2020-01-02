@@ -483,6 +483,8 @@ INPUT /home/rene/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbol
 INPUT /home/rene/.local/texlive/2019/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT ./content/auswertung.tex
 INPUT ./content/auswertung.tex
+INPUT ./plots/Messdaten.pdf
+INPUT ./plots/Messdaten.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/anhang.tex
