@@ -18,11 +18,11 @@ Die Anzahl der Maxima/Minima innerhalb einer (halben?) Schwebeperiode sind in de
         \toprule
         {$C_K \:/\: \si{\nano\farad}$} & Schwingungsmaxima \\
         \midrule
-        4.7  & \\ 
-        6.8  & \\ 
-        8.2  & \\ 
-        10.0 & \\ 
-        12.0 & \\ 
+        4.7  & 2 \\ 
+        6.8  & 3 \\ 
+        8.2  & 4 \\ 
+        10.0 & 4 \\ 
+        12.0 & 5 \\ 
         \bottomrule
     \end{tabular}
 \end{table}
@@ -40,7 +40,7 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
         \toprule
         $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\ampere}$ \\
         \midrule
-        33.1 & 81.3 & 1.0  & 1830  &  0.038  \\
+        33.1 & 81.3 & 1.0  & 1830  &  0.038  \\ % für Kommentar siehe letzte Tabelle
         33.1 & 61.1 & 2.2  & 1960  &  0.041  \\
         33.1 & 57.1 & 2.7  & 1883  &  0.039  \\
         33.1 & 48.7 & 4.7  & 2050  &  0.043  \\
@@ -52,16 +52,55 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
     \end{tabular}
 \end{table}
 
-Der Strom $I_2$ wird über einen geringen Widerstand von $\SI{48}{\ohm}$ berechnet.
-Zu erkennen ist die fallende Frequenz mit absteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_k$, was in \eqref{eqn:sub} zu erkennen ist.
+Der Strom $I_2$ wird über einen Widerstand von $\SI{48}{\ohm}$ berechnet.
+Zu erkennen ist die fallende Frequenz mit ansteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_K$, was in \eqref{eqn:sub} zu erkennen ist.
 
 Die Frequenz für die erste Fundamentalschwingung errechnet sich aus 
 \begin{equation}
-    \symup{\nu⁻} = \frac{1}{2\pi\sqrt{\frac{CC_k}{2C+C_k}}}
+    \label{eqn:1st_fund}
+    \symup{f⁺} = \frac{1}{2\pi\sqrt{LC}}
 \end{equation}
 und für die zweite aus
 \begin{equation}
-    \symup{\nu⁺} = \frac{1}{2\pi\sqrt{LC}}
+    \label{eqn:2nd_fund}
+    \symup{f⁻} = \frac{1}{2\pi\sqrt{\frac{CC_K}{2C+C_K}}}.
 \end{equation}
-.
-Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mit beachtet.
+Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mitbeachtet.
+So ergeben sich für die Gesamtkapazität je 
+\begin{equation}
+    C_{ges}^+ = C + C_{Sp}
+\end{equation}
+und
+\begin{equation}
+    C_{ges}^- = \frac{CC_K}{2C+C_K} + C_{Sp}.
+\end{equation}
+
+Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die Werte mit
+\begin{equation}
+    \label{eqn:1st_fund_Csp}
+    \symup{f⁺} = \frac{1}{2\pi\sqrt{L(C + C_{Sp})}}
+\end{equation}
+\begin{equation}
+    \label{eqn:2nd_fund_Csp}
+    \symup{f⁻} = \frac{1}{2\pi\sqrt{L\dfrac{CC_K}{2C+C_K} + C_{Sp}}}.
+\end{equation}
+
+\begin{table}
+    \centering
+    \caption{Die erwarteten Theoriewerte.}
+    \label{tab:theorie}
+    \begin{tabular}{c c c c c c c}
+        \toprule
+        $f^- \:/\: \si{\kilo\hertz}$ & $f_{theo}^- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $f_{theo}^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\ampere}$ & $I_{2 theo} \:/\: \si{\ampere}$ \\
+        \midrule
+        33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  0.038 & 0.000118 \\     % hier wäre es sinnvoll, milliampere zu nehmen. ändere ich noch
+        33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  0.041 & 0.000066 \\
+        33.1 & 30.5 & 57.1 & 38.0 & 2.7  &  0.039 & 0.000053 \\
+        33.1 & 30.5 & 48.7 & 35.1 & 4.7  &  0.043 & 0.000035 \\
+        33.1 & 30.5 & 44.7 & 33.7 & 6.8  &  0.045 & 0.000026 \\
+        33.1 & 30.5 & 42.8 & 33.2 & 8.2  &  0.038 & 0.000018 \\
+        33.1 & 30.5 & 41.4 & 32.8 & 10.0 &  0.042 & 0.000017 \\
+        33.1 & 30.5 & 40.2 & 32.4 & 12.0 &  0.042 & 0.000014 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
