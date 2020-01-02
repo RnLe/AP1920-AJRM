@@ -38,16 +38,16 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
     \label{tab:resonanz}
     \begin{tabular}{c c c c c}
         \toprule
-        $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\ampere}$ \\
+        $f^- \:/\: \si{\kilo\hertz}$ & $f^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\milli\ampere}$ \\
         \midrule
-        33.1 & 81.3 & 1.0  & 1830  &  0.038  \\ % für Kommentar siehe letzte Tabelle
-        33.1 & 61.1 & 2.2  & 1960  &  0.041  \\
-        33.1 & 57.1 & 2.7  & 1883  &  0.039  \\
-        33.1 & 48.7 & 4.7  & 2050  &  0.043  \\
-        33.1 & 44.7 & 6.8  & 2160  &  0.045  \\
-        33.1 & 42.8 & 8.2  & 1830  &  0.038  \\
-        33.1 & 41.4 & 10.0 & 2030  &  0.042  \\
-        33.1 & 40.2 & 12.0 & 2000  &  0.042  \\
+        33.1 & 81.3 & 1.0  & 1830  &  38.12  \\
+        33.1 & 61.1 & 2.2  & 1960  &  40.83  \\
+        33.1 & 57.1 & 2.7  & 1883  &  39.22  \\
+        33.1 & 48.7 & 4.7  & 2050  &  42.70  \\
+        33.1 & 44.7 & 6.8  & 2160  &  45.00  \\
+        33.1 & 42.8 & 8.2  & 1830  &  38.12  \\
+        33.1 & 41.4 & 10.0 & 2030  &  42.29  \\
+        33.1 & 40.2 & 12.0 & 2000  &  41.66  \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -82,7 +82,7 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
 \end{equation}
 \begin{equation}
     \label{eqn:2nd_fund_Csp}
-    \symup{f⁻} = \frac{1}{2\pi\sqrt{L\dfrac{CC_K}{2C+C_K} + C_{Sp}}}.
+    \symup{f⁻} = \frac{1}{2\pi\sqrt{L(\dfrac{CC_K}{2C+C_K} + C_{Sp})}}.
 \end{equation}
 
 \begin{table}
@@ -91,16 +91,16 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
     \label{tab:theorie}
     \begin{tabular}{c c c c c c c}
         \toprule
-        $f^- \:/\: \si{\kilo\hertz}$ & $f_{theo}^- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $f_{theo}^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\ampere}$ & $I_{2 theo} \:/\: \si{\ampere}$ \\
+        $f^- \:/\: \si{\kilo\hertz}$ & $f_{theo}^- \:/\: \si{\kilo\hertz}$ & $f^+ \:/\: \si{\kilo\hertz}$ & $f_{theo}^+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2 theo} \:/\: \si{\milli\ampere}$ \\
         \midrule
-        33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  0.038 & 0.000118 \\     % hier wäre es sinnvoll, milliampere zu nehmen. ändere ich noch
-        33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  0.041 & 0.000066 \\
-        33.1 & 30.5 & 57.1 & 38.0 & 2.7  &  0.039 & 0.000053 \\
-        33.1 & 30.5 & 48.7 & 35.1 & 4.7  &  0.043 & 0.000035 \\
-        33.1 & 30.5 & 44.7 & 33.7 & 6.8  &  0.045 & 0.000026 \\
-        33.1 & 30.5 & 42.8 & 33.2 & 8.2  &  0.038 & 0.000018 \\
-        33.1 & 30.5 & 41.4 & 32.8 & 10.0 &  0.042 & 0.000017 \\
-        33.1 & 30.5 & 40.2 & 32.4 & 12.0 &  0.042 & 0.000014 \\
+        33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  38.12 & 19.06 \\  
+        33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  40.83 & 20.41 \\
+        33.1 & 30.5 & 57.1 & 38.0 & 2.7  &  39.22 & 19.61 \\
+        33.1 & 30.5 & 48.7 & 35.1 & 4.7  &  42.70 & 21.35 \\
+        33.1 & 30.5 & 44.7 & 33.7 & 6.8  &  45.00 & 22.49 \\
+        33.1 & 30.5 & 42.8 & 33.2 & 8.2  &  38.12 & 19.05 \\
+        33.1 & 30.5 & 41.4 & 32.8 & 10.0 &  42.29 & 21.12 \\
+        33.1 & 30.5 & 40.2 & 32.4 & 12.0 &  41.66 & 20.81 \\
         \bottomrule
     \end{tabular}
 \end{table}

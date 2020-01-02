@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 1577915045 "build/main.bcf" "build/main.bbl" "build/main" 1577970064
-  "build/main.bcf" 1577970064 99574 7635042408f1f862fbcb1efd6aed5e57 "lualatex"
+["biber build/main"] 1577915045 "build/main.bcf" "build/main.bbl" "build/main" 1577971333
+  "build/main.bcf" 1577971333 99574 7635042408f1f862fbcb1efd6aed5e57 "lualatex"
   "lit.bib" 1577872222 491 99ac4753fdb00913551a341d80dbf851 ""
   "programme.bib" 1576548669 1042 681836d224c758e678e4f1a862d141da ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1577970058 "main.tex" "build/main.pdf" "main" 1577970064
+  "build/main.bbl"
+["lualatex"] 1577971327 "main.tex" "build/main.pdf" "main" 1577971333
   "/home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -255,12 +255,12 @@
   "/home/rene/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1573211945 411895 dcf20d4df0ee0691ffecb6e957a11d92 ""
   "/home/rene/.local/texlive/2019/texmf-var/tex/generic/config/language.dat" 1569509573 6580 d952dc01ea4e95da347d58f8f5cca2b3 ""
   "/home/rene/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt" 1569509614 1382709 66b7d17885fe43d96728700992f669ae ""
-  "build/main.aux" 1577970064 11577 d189f0c76a35808565a2f4c0d3af4033 "lualatex"
+  "build/main.aux" 1577971333 11577 d189f0c76a35808565a2f4c0d3af4033 "lualatex"
   "build/main.bbl" 1577915046 8818 ba960d69e7d073ef98c6963996948d7c "biber build/main"
-  "build/main.run.xml" 1577970064 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1577970064 1109 913db3f95e33f3e2dc1b4fdd8b167014 "lualatex"
+  "build/main.run.xml" 1577971333 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1577971333 1109 913db3f95e33f3e2dc1b4fdd8b167014 "lualatex"
   "content/anhang.tex" 1576548669 56 4972db9ff30400e8a1eb4982862ca592 ""
-  "content/auswertung.tex" 1577970054 4756 6b4fe12a1f20c3588680e907662c282e ""
+  "content/auswertung.tex" 1577971323 4646 20a95d8ad6ac9e1116e25e1a8dafaaa6 ""
   "content/diskussion.tex" 1577872222 543 fd2b28f7eb7102908de80fd2b12c63ac ""
   "content/durchfuehrung.tex" 1577902389 3963 168835beb9698a3aa065855b63df41ef ""
   "content/theorie.tex" 1577902389 11115 c454a0eaeb182ea5bb40725471099e89 ""
@@ -272,9 +272,9 @@
   "plots/gekop_schw_kreis2.pdf" 1577872222 187469 3ddd08a8da5220659c991d7e84872ebe ""
   "plots/gekop_schw_kreis3.pdf" 1577872222 189105 6b70857cc5eff0ec18d8016a6d7557da ""
   (generated)
+  "build/main.bcf"
+  "build/main.run.xml"
+  "build/main.pdf"
   "build/main.toc"
   "build/main.aux"
   "build/main.log"
-  "build/main.bcf"
-  "build/main.pdf"
-  "build/main.run.xml"
