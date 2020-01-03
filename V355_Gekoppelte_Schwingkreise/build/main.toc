@@ -9,6 +9,12 @@
 \contentsline {subsection}{\numberline {2.2}Messprogramm}{8}{subsection.2.2}% 
 \contentsline {section}{\numberline {3}Auswertung}{10}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Vorbereitung}{10}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Fundamentalschwingungen und Ströme}{10}{subsection.3.2}% 
 \contentsline {section}{\numberline {4}Diskussion}{13}{section.4}% 
-\contentsline {section}{\numberline {5}Anhang: originale Messdaten}{13}{section.5}% 
-\contentsline {section}{\nonumberline Literatur}{13}{section*.11}% 
+\contentsline {subsection}{\numberline {4.1}Vorbereitung}{13}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {4.2}Schwebung}{13}{subsection.4.2}% 
+\contentsline {subsection}{\numberline {4.3}Resonanzfrequenzen}{14}{subsection.4.3}% 
+\contentsline {subsection}{\numberline {4.4}Ströme}{15}{subsection.4.4}% 
+\contentsline {subsection}{\numberline {4.5}Abschluss}{15}{subsection.4.5}% 
+\contentsline {section}{\numberline {5}Anhang: originale Messdaten}{15}{section.5}% 
+\contentsline {section}{\nonumberline Literatur}{15}{section*.13}% 

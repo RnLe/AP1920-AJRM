@@ -8,7 +8,7 @@ Die Referenzwerte der Bauteile lauten $C=\SI{0.8015}{\nano\farad}$ und $L=\SI{32
 Zudem weist die Spule eine Kapazität von $C_\text{Sp}=\SI{0.037}{\nano\farad}$ auf.
 Der Kondensator mit regelbarer Kapazität wird so eingestellt, dass der zweite Schwingkreis die gleiche Eigenfrequenz besitzt.
 
-Die Anzahl der Maxima/Minima innerhalb einer (halben?) Schwebeperiode sind in der folgenden Tabelle \ref{tab:schwing_maxima} der regelbaren Kapazität $C_K$ gegenübergestellt.
+Die Anzahl der Maxima/Minima innerhalb einer Schwebeperiode sind in der folgenden Tabelle \ref{tab:schwing_maxima} der regelbaren Kapazität $C_K$ gegenübergestellt.
 
 \begin{table}
     \centering
@@ -27,10 +27,11 @@ Die Anzahl der Maxima/Minima innerhalb einer (halben?) Schwebeperiode sind in de
     \end{tabular}
 \end{table}
 
+\subsection{Fundamentalschwingungen und Ströme}
 Im Weiteren werden die beiden Fundamentalschwingungen in Abhängigkeit der Kapazität $C_K$ bestimmt.
-Für die erste Fundamentalschwingung wird bei allen Kapazitäten ein Wert von $f_- = \SI{33.1}{\kilo\hertz}$ gemessen, da der Kondensator an keinem Energieaustausch beteiligt ist.
+Für die erste Fundamentalschwingung wird bei allen Kapazitäten ein Wert von $f_- = \SI{33.1}{\kilo\hertz}$ gemessen.
 Mit einer Phase von $\SI{180}{\degree}$ zwischen den Schwingung der beiden Schwingkreise werden jedoch von $C_K$ abhängige Werte gemessen, welche in \ref{tab:resonanz} aufgelistet sind.
-Hier handelt es sich um die zweite Fundamentalschwingung.
+Hierbei handelt es sich um die zweite Fundamentalschwingung.
 
 \begin{table}
     \centering
@@ -54,12 +55,12 @@ Hier handelt es sich um die zweite Fundamentalschwingung.
 
 \begin{figure}
     \centering
-    \includegraphics[width=0.75\textwidth]{plots/Messdaten.pdf}
+    \includegraphics[width=0.85\textwidth]{plots/Messdaten.pdf}
     \caption{Die aufgenommenen Messwerte.}
     \label{fig:messwerte}
 \end{figure}
 
-Der Strom $I_2$ wird über einen Widerstand von $\SI{48}{\ohm}$ berechnet.
+Der Strom $I_2$ wird über den Widerstand $R = \SI{48}{\ohm}$ berechnet.
 Zu erkennen ist die fallende Frequenz mit ansteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_K$, was in \eqref{eqn:sub} zu erkennen ist.
 
 Die Frequenz für die erste Fundamentalschwingung errechnet sich aus 
@@ -70,7 +71,7 @@ Die Frequenz für die erste Fundamentalschwingung errechnet sich aus
 und für die zweite aus
 \begin{equation}
     \label{eqn:2nd_fund}
-    f_- = \frac{1}{2\pi\sqrt{\frac{CC_K}{2C+C_K}}}.
+    f_- = \frac{1}{2\pi\sqrt{L\frac{CC_K}{2C+C_K}}}.
 \end{equation}
 Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mitbeachtet.
 So ergeben sich für die Gesamtkapazität je 
@@ -89,7 +90,7 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
 \end{equation}
 \begin{equation}
     \label{eqn:2nd_fund_Csp}
-    f_- = \frac{1}{2\pi\sqrt{L(\dfrac{CC_K}{2C+C_K} + C_{Sp})}}.
+    f_- = \frac{1}{2\pi\sqrt{L\Bigl(\dfrac{CC_K}{2C+C_K} + C_{Sp}\Bigr)}}.
 \end{equation}
 
 \begin{table}
@@ -100,14 +101,16 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
         \toprule
         $f_- \:/\: \si{\kilo\hertz}$ & $f_{-, theo} \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $f_{+, theo} \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2,theo} \:/\: \si{\milli\ampere}$ \\
         \midrule
-        33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  38.12 & 19.06 \\  
-        33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  40.83 & 20.41 \\
-        33.1 & 30.5 & 57.1 & 38.0 & 2.7  &  39.22 & 19.61 \\
-        33.1 & 30.5 & 48.7 & 35.1 & 4.7  &  42.70 & 21.35 \\
-        33.1 & 30.5 & 44.7 & 33.7 & 6.8  &  45.00 & 22.49 \\
-        33.1 & 30.5 & 42.8 & 33.2 & 8.2  &  38.12 & 19.05 \\
-        33.1 & 30.5 & 41.4 & 32.8 & 10.0 &  42.29 & 21.12 \\
-        33.1 & 30.5 & 40.2 & 32.4 & 12.0 &  41.66 & 20.81 \\
+        33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  38.125 & 38.124 \\  
+        33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  40.833 & 40.830 \\
+        33.1 & 30.5 & 57.1 & 38.0 & 2.7  &  39.229 & 39.225 \\
+        33.1 & 30.5 & 48.7 & 35.1 & 4.7  &  42.708 & 42.696 \\
+        33.1 & 30.5 & 44.7 & 33.7 & 6.8  &  45.000 & 44.974 \\
+        33.1 & 30.5 & 42.8 & 33.2 & 8.2  &  38.125 & 38.093 \\
+        33.1 & 30.5 & 41.4 & 32.8 & 10.0 &  42.291 & 42.241 \\
+        33.1 & 30.5 & 40.2 & 32.4 & 12.0 &  41.666 & 41.595 \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\pagebreak

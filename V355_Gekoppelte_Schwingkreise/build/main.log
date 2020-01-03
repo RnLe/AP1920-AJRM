@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  2 JAN 2020 16:43
+This is LuaTeX, Version 1.10.0 (TeX Live 2019)  (format=lualatex 2019.9.26)  3 JAN 2020 13:15
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -38,7 +38,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 Inserting `luaotfload.aux.set_xheight' at position 4 in `luaotfload.patch_font'.
 Lua module: luaotfload-multiscript 2019-09-13 3.00 luaotfload submodule / multiscript
 Inserting `luaotfload.rewrite_fontname' at position 5 in `luaotfload.patch_font'.
-luaotfload | main : initialization completed in 0.130 seconds
+luaotfload | main : initialization completed in 0.103 seconds
 (./header.tex (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrartcl.cls
 Document Class: scrartcl 2019/02/01 v3.26b KOMA-Script document class (article)
 (/home/rene/.local/texlive/2019/texmf-dist/tex/latex/koma-script/scrkbase.sty
@@ -1854,7 +1854,7 @@ Package tocbasic Info: character protrusion at toc deactivated on input line 16.
  [2
 
 ] (./content/theorie.tex
-<plots/allg_gekopp_schwingkreis.png, id=49, 715.17188pt x 407.27156pt>
+<plots/allg_gekopp_schwingkreis.png, id=61, 715.17188pt x 407.27156pt>
 File: plots/allg_gekopp_schwingkreis.png Graphic file (type png)
 <use plots/allg_gekopp_schwingkreis.png>
 Package luatex.def Info: plots/allg_gekopp_schwingkreis.png  used on input line 16.
@@ -1873,24 +1873,24 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 3.81676pt on input line 35.
  [3<./plots/allg_gekopp_schwingkreis.png>] [4]
-<plots/gekop_schw_kreis1.pdf, id=107, 845.0772pt x 597.55244pt>
+<plots/gekop_schw_kreis1.pdf, id=119, 845.0772pt x 597.55244pt>
 File: plots/gekop_schw_kreis1.pdf Graphic file (type pdf)
 <use plots/gekop_schw_kreis1.pdf>
-Package luatex.def Info: plots/gekop_schw_kreis1.pdf  used on input line 148.
+Package luatex.def Info: plots/gekop_schw_kreis1.pdf  used on input line 149.
 (luatex.def)             Requested size: 313.69167pt x 221.81125pt.
  [5] [6<./plots/gekop_schw_kreis1.pdf>]) (./content/durchfuehrung.tex
-<plots/Platte.jpeg, id=145, 1359.0775pt x 1399.2275pt>
+<plots/Platte.jpeg, id=157, 1359.0775pt x 1399.2275pt>
 File: plots/Platte.jpeg Graphic file (type jpg)
 <use plots/Platte.jpeg>
 Package luatex.def Info: plots/Platte.jpeg  used on input line 8.
 (luatex.def)             Requested size: 209.12778pt x 215.29808pt.
  [7]
-<plots/gekop_schw_kreis2.pdf, id=159, 597.55244pt x 845.0772pt>
+<plots/gekop_schw_kreis2.pdf, id=171, 597.55244pt x 845.0772pt>
 File: plots/gekop_schw_kreis2.pdf Graphic file (type pdf)
 <use plots/gekop_schw_kreis2.pdf>
 Package luatex.def Info: plots/gekop_schw_kreis2.pdf  used on input line 26.
 (luatex.def)             Requested size: 209.12778pt x 295.75566pt.
-<plots/gekop_schw_kreis3.pdf, id=162, 845.0772pt x 597.55244pt>
+<plots/gekop_schw_kreis3.pdf, id=174, 845.0772pt x 597.55244pt>
 File: plots/gekop_schw_kreis3.pdf Graphic file (type pdf)
 <use plots/gekop_schw_kreis3.pdf>
 Package luatex.def Info: plots/gekop_schw_kreis3.pdf  used on input line 44.
@@ -1901,45 +1901,57 @@ Overfull \hbox (18.07332pt too wide) in paragraph at lines 61--65
  []
 
 ) (./content/auswertung.tex
-<plots/Messdaten.pdf, id=189, 417.7206pt x 258.0049pt>
+<plots/Messdaten.pdf, id=201, 417.7206pt x 258.0049pt>
 File: plots/Messdaten.pdf Graphic file (type pdf)
 <use plots/Messdaten.pdf>
-Package luatex.def Info: plots/Messdaten.pdf  used on input line 57.
-(luatex.def)             Requested size: 313.69167pt x 193.7512pt.
+Package luatex.def Info: plots/Messdaten.pdf  used on input line 58.
+(luatex.def)             Requested size: 355.51976pt x 219.5847pt.
  [10] [11<./plots/Messdaten.pdf>]
-Overfull \hbox (2.0151pt too wide) in paragraph at lines 99--113
+Overfull \hbox (2.0151pt too wide) in paragraph at lines 100--114
  [][] 
  []
 
-) (./content/diskussion.tex) (./content/anhang.tex) [12] [13]
+) [12] (./content/diskussion.tex
+<plots/Lissajous_90Grad.jpeg, id=262, 1204.5pt x 1287.81125pt>
+File: plots/Lissajous_90Grad.jpeg Graphic file (type jpg)
+<use plots/Lissajous_90Grad.jpeg>
+Package luatex.def Info: plots/Lissajous_90Grad.jpeg  used on input line 13.
+(luatex.def)             Requested size: 313.69167pt x 335.3929pt.
+ [13<./plots/Lissajous_90Grad.jpeg>]
+<plots/Messdaten_und_Theorie.pdf, id=270, 417.7206pt x 258.0049pt>
+File: plots/Messdaten_und_Theorie.pdf Graphic file (type pdf)
+<use plots/Messdaten_und_Theorie.pdf>
+Package luatex.def Info: plots/Messdaten_und_Theorie.pdf  used on input line 27.
+(luatex.def)             Requested size: 355.51976pt x 219.5847pt.
+ [14<./plots/Messdaten_und_Theorie.pdf>]) (./content/anhang.tex) [15] [16]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 29.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 29.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 29.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 29.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 5B26FFAC61D419190A6C53F7C4B686F9;11825.
+(rerunfilecheck)             Checksum: 1E44C914AEFD4715068096B76F6BBD7C;15053.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: 59FE8B3E3CD20EB72F8F3E3EB27CCCBB;1109.
+(rerunfilecheck)             Checksum: B3417710B75800314FBA99B524E0837A;1607.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 53255 strings out of 494291
+ 53289 strings out of 494291
  100000,1977958 words of node,token memory allocated
- 905 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 4 sub_mlist, 1 glyph, 90 attribute, 79 glue_spec, 47 attribute_list, 2 write, 2 pdf_action nodes
-   avail lists: 1:8,2:1368,3:150,4:48,5:275,6:29,7:3731,8:61,9:631,10:16,11:334
- 55745 multiletter control sequences out of 65536+600000
- 260 fonts using 98696303 bytes
+ 899 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 4 sub_mlist, 1 glyph, 88 attribute, 79 glue_spec, 46 attribute_list, 2 write, 2 pdf_action nodes
+   avail lists: 1:8,2:1402,3:165,4:66,5:275,6:41,7:3703,8:61,9:631,10:17,11:330
+ 55762 multiletter control sequences out of 65536+600000
+ 260 fonts using 98696735 bytes
  88i,15n,109p,9101b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 </home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/rene/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (13 pages, 793613 bytes).
+Output written on main.pdf (16 pages, 941648 bytes).
 
-PDF statistics: 380 PDF objects out of 1000 (max. 8388607)
- 290 compressed objects within 3 object streams
- 80 named destinations out of 1000 (max. 131072)
- 112 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 473 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 91 named destinations out of 1000 (max. 131072)
+ 160 words of extra memory for PDF output out of 10000 (max. 100000000)
 

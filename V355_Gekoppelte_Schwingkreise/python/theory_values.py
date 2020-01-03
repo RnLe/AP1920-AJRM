@@ -35,6 +35,10 @@ I2_theo = vol_180/(2*R)
 for vol in U_minus:
     I2.append(vol/R)
 
+varianz = 0
+mittelwert = 0
+
+
 print("f_plus_theo = ")
 for val in f_plus_theo:
     print(val)
@@ -45,7 +49,7 @@ for val in f_minus_theo:
 #print(f_minus_theo)
 print("\nI2_minus_theo = ")
 for val in I2_minus_theo:
-    print(val*1000)
+    print(2*val*1000)
 #print(I2_minus_theo)
 print("\nI2 = ")
 for val in I2:

@@ -487,6 +487,10 @@ INPUT ./plots/Messdaten.pdf
 INPUT ./plots/Messdaten.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
+INPUT ./plots/Lissajous_90Grad.jpeg
+INPUT ./plots/Lissajous_90Grad.jpeg
+INPUT ./plots/Messdaten_und_Theorie.pdf
+INPUT ./plots/Messdaten_und_Theorie.pdf
 INPUT ./content/anhang.tex
 INPUT ./content/anhang.tex
 INPUT /home/rene/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/lmromancaps10-regular.luc
