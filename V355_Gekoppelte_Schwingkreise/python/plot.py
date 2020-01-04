@@ -30,13 +30,13 @@ ax.plot(c_k, f_minus, 'x')
 ax.plot(c_k, f_plus, 'o')
 ax.plot(c_k, f_minus, 'b')
 
-ax.set_xlabel(r'$C_k /$ nF')
+ax.set_xlabel(r'$C_K /$ nF')
 ax.set_ylabel(r'$f /$ kHz', color='blue')
 ax.tick_params(axis='y', labelcolor='orangered')
 ax2.set_ylabel(r'$I /$ mA', color='g')
 ax2.tick_params(axis='y', labelcolor='g')
 
-ax.legend([r'$f_-$', r'$f_+$'], loc=2, bbox_to_anchor=(0.5, 0.9))
+ax.legend([r'$f_+$', r'$f_-$'], loc=2, bbox_to_anchor=(0.5, 0.9))
 ax2.legend([r'$I_2$'])
 
 plt.xticks(c_k, c_k)

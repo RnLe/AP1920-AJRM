@@ -29,9 +29,12 @@ Die Anzahl der Maxima/Minima innerhalb einer Schwebeperiode sind in der folgende
 
 \subsection{Fundamentalschwingungen und Ströme}
 Im Weiteren werden die beiden Fundamentalschwingungen in Abhängigkeit der Kapazität $C_K$ bestimmt.
-Für die erste Fundamentalschwingung wird bei allen Kapazitäten ein Wert von $f_- = \SI{33.1}{\kilo\hertz}$ gemessen.
-Mit einer Phase von $\SI{180}{\degree}$ zwischen den Schwingung der beiden Schwingkreise werden jedoch von $C_K$ abhängige Werte gemessen, welche in \ref{tab:resonanz} aufgelistet sind.
-Hierbei handelt es sich um die zweite Fundamentalschwingung.
+Für die erste Fundamentalschwingung wird bei allen Kapazitäten ein Wert von $f_+ = \SI{33.1}{\kilo\hertz}$ gemessen.
+Mit einem Phasenunterschied von $\SI{180}{\degree}$ zwischen den Schwingungen der beiden Schwingkreise werden %jedoch
+hingegen %jedoch klang so wertend... hingegen etwas sachlicher. 
+%...keine Ahnung, ob ich das in ein paar Tagen auch noch so sehe :P
+von $C_K$ abhängige Werte gemessen, welche in \ref{tab:resonanz} aufgelistet sind.
+Hierbei handelt es sich um die zweite Fundamentalschwingung ${(I_1 - I_2)}$.
 
 \begin{table}
     \centering
@@ -39,7 +42,7 @@ Hierbei handelt es sich um die zweite Fundamentalschwingung.
     \label{tab:resonanz}
     \begin{tabular}{c c c c c}
         \toprule
-        $f_- \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\milli\ampere}$ \\
+        $f_+ \:/\: \si{\kilo\hertz}$ & $f_- \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & Amplitudenspannung $\:/\: \si{\milli\volt}$ & Strom $I_2 \:/\: \si{\milli\ampere}$ \\
         \midrule
         33.1 & 81.3 & 1.0  & 1830  &  38.12  \\
         33.1 & 61.1 & 2.2  & 1960  &  40.83  \\
@@ -53,7 +56,7 @@ Hierbei handelt es sich um die zweite Fundamentalschwingung.
     \end{tabular}
 \end{table}
 
-\begin{figure}
+\begin{figure} %k im Index groß schreiben
     \centering
     \includegraphics[width=0.85\textwidth]{plots/Messdaten.pdf}
     \caption{Die aufgenommenen Messwerte.}
@@ -61,6 +64,7 @@ Hierbei handelt es sich um die zweite Fundamentalschwingung.
 \end{figure}
 
 Der Strom $I_2$ wird über den Widerstand $R = \SI{48}{\ohm}$ berechnet.
+
 Zu erkennen ist die fallende Frequenz mit ansteigender Kapazität. Dies liegt an der rückstellenden Kraft der Kopplung über den Kondensator $C_K$, was in \eqref{eqn:sub} zu erkennen ist.
 
 Die Frequenz für die erste Fundamentalschwingung errechnet sich aus 
@@ -71,26 +75,26 @@ Die Frequenz für die erste Fundamentalschwingung errechnet sich aus
 und für die zweite aus
 \begin{equation}
     \label{eqn:2nd_fund}
-    f_- = \frac{1}{2\pi\sqrt{L\frac{CC_K}{2C+C_K}}}.
+    f_- = \frac{1}{2\pi\sqrt{L\frac{CC_K}{2C+C_K}}}\:.
 \end{equation}
-Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen mitbeachtet.
+Um die Theoriewerte genau bestimmen zu können, werden die geringen Kapazitäten der beiden Spulen ebenfalls berücksichtigt.
 So ergeben sich für die Gesamtkapazität je 
-\begin{equation}
-    C_{+, ges} = C + C_{Sp}
+\begin{equation} %Buchstaben von Wörtern im Index mit \text aufrecht schreiben -->hier Sp, theo und ges... bei K haben wir es jetzt nicht gemacht, bei einzelnen Buchstaben ist es, glaube ich, nicht so stringent
+    C_{+, \text{ges}} = C + C_\text{Sp}
 \end{equation}
 und
 \begin{equation}
-    C_{-, ges} = \frac{CC_K}{2C+C_K} + C_{Sp}.
+    C_{-, \text{ges}} = \frac{CC_K}{2C+C_K} + C_\text{Sp}.
 \end{equation}
 
-Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die Werte mit
+Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die Werte über
 \begin{equation}
     \label{eqn:1st_fund_Csp}
-    f_+ = \frac{1}{2\pi\sqrt{L(C + C_{Sp})}}
+    f_+ = \frac{1}{2\pi\sqrt{L(C + C_\text{Sp})}}
 \end{equation}
 \begin{equation}
     \label{eqn:2nd_fund_Csp}
-    f_- = \frac{1}{2\pi\sqrt{L\Bigl(\dfrac{CC_K}{2C+C_K} + C_{Sp}\Bigr)}}.
+    f_- = \frac{1}{2\pi\sqrt{L\Bigl(\dfrac{CC_K}{2C+C_K} + C_\text{Sp}\Bigr)}}.
 \end{equation}
 
 \begin{table}
@@ -99,7 +103,7 @@ Eingesetzt in \eqref{eqn:1st_fund} und \eqref{eqn:2nd_fund} berechnen sich die W
     \label{tab:theorie}
     \begin{tabular}{c c c c c c c}
         \toprule
-        $f_- \:/\: \si{\kilo\hertz}$ & $f_{-, theo} \:/\: \si{\kilo\hertz}$ & $f_+ \:/\: \si{\kilo\hertz}$ & $f_{+, theo} \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2,theo} \:/\: \si{\milli\ampere}$ \\
+        $f_+ \:/\: \si{\kilo\hertz}$ & $f_{+, \text{theo}} \:/\: \si{\kilo\hertz}$ & $f_- \:/\: \si{\kilo\hertz}$ & $f_{-, \text{theo}} \:/\: \si{\kilo\hertz}$ & $C_K \:/\: \si{\nano\farad}$ & $I_2 \:/\: \si{\milli\ampere}$ & $I_{2,\text{theo}} \:/\: \si{\milli\ampere}$ \\
         \midrule
         33.1 & 30.5 & 81.3 & 47.6 & 1.0  &  38.125 & 38.124 \\  
         33.1 & 30.5 & 61.1 & 39.5 & 2.2  &  40.833 & 40.830 \\

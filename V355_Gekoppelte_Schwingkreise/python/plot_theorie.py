@@ -40,13 +40,13 @@ ax.plot(c_k, f_plus_theo, 'o', color='gold')
 ax.plot(c_k, f_minus_theo, color='cadetblue')
 ax.plot(c_k, f_minus, 'b')
 
-ax.set_xlabel(r'$C_k /$ nF')
+ax.set_xlabel(r'$C_K /$ nF')
 ax.set_ylabel(r'$f /$ kHz', color='blue')
 ax.tick_params(axis='y', labelcolor='orangered')
 ax2.set_ylabel(r'$I /$ mA', color='g')
 ax2.tick_params(axis='y', labelcolor='g')
 
-ax.legend([r'$f_-$', r'$f_{-,theo}$', r'$f_+$', r'$f_{+,theo}$'], loc=2, bbox_to_anchor=(0.5, 0.9))
+ax.legend([r'$f_+$', r'$f_{+,theo}$', r'$f_-$', r'$f_{-,theo}$'], loc=2, bbox_to_anchor=(0.5, 0.9))
 ax2.legend([r'$I_2$', r'$I_{2,theo}$'])
 
 plt.xticks(c_k, c_k)
