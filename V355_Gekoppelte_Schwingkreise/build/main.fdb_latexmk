@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1578172788 "build/main.bcf" "build/main.bbl" "build/main" 1578173704
-  "build/main.bcf" 1578173703 101839 337e5b5ab8aab73fa1f1f5bf8ede430f "lualatex"
+["biber build/main"] 1578172788 "build/main.bcf" "build/main.bbl" "build/main" 1578174638
+  "build/main.bcf" 1578174638 101839 337e5b5ab8aab73fa1f1f5bf8ede430f "lualatex"
   "lit.bib" 1577869943 491 99ac4753fdb00913551a341d80dbf851 ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1578173690 "main.tex" "build/main.pdf" "main" 1578173704
+  "build/main.bbl"
+["lualatex"] 1578174626 "main.tex" "build/main.pdf" "main" 1578174638
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/antoniajb/.local/texlive/2019/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -261,15 +261,15 @@
   "/home/antoniajb/.local/texlive/2019/texmf-var/luatex-cache/generic/fonts/otl/xitsmath-regular.luc" 1576263847 411900 22d7ac5cfb601cc6a999f1fa41da460b ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/tex/generic/config/language.dat" 1569228406 6580 66af14fef6de375d894295c7785a5c41 ""
   "/home/antoniajb/.local/texlive/2019/texmf-var/web2c/luatex/lualatex.fmt" 1576263110 1399929 ac4b68021233eb8d20207154f18f5df9 ""
-  "build/main.aux" 1578173703 15067 097d51de9e8d335d6153beda19f4c8b7 "lualatex"
+  "build/main.aux" 1578174638 15141 fc55df7169a02a7c8e60a151a83f8e63 "lualatex"
   "build/main.bbl" 1578172790 3475 124bc94165185f88c813e44a19de5355 "biber build/main"
-  "build/main.run.xml" 1578173703 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1578173703 1589 27dc18659bf83a97f5ca3f5a57fae0ab "lualatex"
+  "build/main.run.xml" 1578174638 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1578174638 1589 27dc18659bf83a97f5ca3f5a57fae0ab "lualatex"
   "content/anhang.tex" 1578173675 182 26d33d6c1125f50ff25a65e8fbe207d9 ""
-  "content/auswertung.tex" 1578171663 5270 617d24bb3bc6979302058104f57fae4a ""
+  "content/auswertung.tex" 1578174584 5422 0c12221415106f6907764bad92b190d4 ""
   "content/diskussion.tex" 1578173521 7655 32e25b45d1e75bd2982edd75e3567b42 ""
   "content/durchfuehrung.tex" 1577899091 3963 168835beb9698a3aa065855b63df41ef ""
-  "content/theorie.tex" 1578172721 11142 063a65dc1867ffb08e901d32dac3192e ""
+  "content/theorie.tex" 1578174459 11213 64718a229c7b337402de01a7f007884c ""
   "header.tex" 1575045313 3876 550838e1bd37d9cffc20a7f060913e6f ""
   "main.tex" 1578172770 555 31cef9eadf64a50f28d610c13e168699 ""
   "plots/Lissajous_90Grad.jpeg" 1578055527 122781 9066a638cfd61bf8e184573785fd2c15 ""
@@ -282,9 +282,9 @@
   "plots/gekop_schw_kreis2.pdf" 1577868942 187469 3ddd08a8da5220659c991d7e84872ebe ""
   "plots/gekop_schw_kreis3.pdf" 1577869038 189105 6b70857cc5eff0ec18d8016a6d7557da ""
   (generated)
-  "build/main.pdf"
-  "build/main.toc"
   "build/main.log"
+  "build/main.aux"
   "build/main.bcf"
   "build/main.run.xml"
-  "build/main.aux"
+  "build/main.pdf"
+  "build/main.toc"

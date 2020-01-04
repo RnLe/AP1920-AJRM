@@ -163,10 +163,13 @@ der Übersicht halber mit
     Z(\omega) = \omega L - \frac{1}{\omega} (\frac{1}{C} + \frac{1}{C_K})    
 \end{equation*}
 definiert wird:
-\begin{gather}
-    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert \\ 
+\begin{equation}
+    \lvert I_2 \rvert = \lvert \Omega \rvert \lvert \tilde{U} \rvert 
+    \label{eqn:wichtig}
+\end{equation}
+\begin{equation}
     \text{mit} \quad \Omega = \Biggl(\sqrt{4 \omega ^2 C_K^2 R^2 Z(\omega)^2 + \bigl(\frac{1}{\omega C_K} - \omega C_K Z(\omega)^2 + \omega R^2 C_K\bigr)^2 }\Biggr)^{-1} .
-\end{gather}
+\end{equation}
 Dabei stellt $\Omega (\omega)$ den sogenannten Leitwert dar. 
 Dieser geht jeweils für ${\omega \to 0}$ und ${\omega \to \infty }$ gegen Null und hat zwei Maxima für ${\omega = \omega _+}$ und 
 ${\omega = \omega _-}$. 
@@ -186,13 +189,13 @@ durch die erregende Spannung in
 Abhängigkeit der Frequenz $\omega$ von Interesse. 
 Gemäß \cite{gerthsen} lauten diese 
 \begin{equation}
-    A(\omega)=\frac{U_0}{\sqrt{L^2(\omega _0^2 -\omega^2)^2 +R^2\omega^2}} \text{mit} 
+    A(\omega)=\frac{U_0}{\sqrt{L^2(\omega _0^2 -\omega^2)^2 +R^2\omega^2}} \quad \text{mit} \quad 
     \omega _0=\sqrt{\frac{1}{LC}}
     \label{eqn:ampl_res}
 \end{equation}
 und 
 \begin{equation}
-    \tan \varphi=\frac{R\omega}{L(\omega _0^2 -\omega^2)} .
+    \tan \varphi=\frac{R\omega}{L(\omega _0^2 -\omega^2)}\: .
     \label{eqn:phi_res}
 \end{equation}
 Die Phasenverschiebung beträgt also genau $\sfrac{\pi}{2}$, wenn der Sinusgenerator mit der Eigenfrequenz -- auch 
