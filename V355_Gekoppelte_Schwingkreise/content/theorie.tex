@@ -4,7 +4,7 @@
 \subsection{Einleitung}
 Ziel dieses Experiments ist es, gekoppelte Schwingkreise genauer zu untersuchen. 
 Konkret soll hier das Verhalten der Energieverteilung auf die gekoppelten Systeme, sowie der Einfluss eines schwingenden 
-Erregers auf den Schwingkreis ergründet werden.
+Erregers auf den Schwingkreis beobachtet werden.
 Da elektromagnetische Schwingsysteme bei weitem einfacher zu vermessen sind als mechanische, werden die 
 Messungen an ebensolchen durchgeführt. 
 Die daraus gewonnen Erkenntnisse lassen sich problemlos auf andere gekoppelte Schwingsysteme übertragen. 
@@ -17,21 +17,20 @@ Die daraus gewonnen Erkenntnisse lassen sich problemlos auf andere gekoppelte Sc
     \caption{Schaltbild eines kapazitiv gekoppelten Schwingkreises.}
     \label{fig:kap_gekopp}
 \end{figure}
-Die in \ref{fig:kap_gekopp} gezeigten Schwingkreise sind über einen Kondensator der Kapazität $C_K$ gekoppelt, wie es 
-später auch im Experiment der Fall sein wird. 
+Die in Abbildung \ref{fig:kap_gekopp} gezeigten Schwingkreise sind über einen Kondensator der Kapazität $C_K$ gekoppelt. 
 Gemäß der Knotenregel (1. Kirchhoff'sches Gesetz) gilt die Beziehung
 \begin{equation}
     I_1 = I_2 + I_K .
     \label{eqn:strom}
 \end{equation}
-Über die Maschenregel folgt für die über den Kondensatoren und Spulen abfallenden Spannungen 
+Aus der Maschenregel folgen für die über den Kondensatoren und Spulen abfallenden Spannungen die Gleichungen 
 \begin{align} %oder align, wenn gather nicht klappt 
     U_{C_1} + U_K = U_{L_1} 
     \label{eqn:masche1} \\
-    U_{C_2} = U_{L_2} + U_K  
+    U_{C_2} = U_{L_2} + U_K .
     \label{eqn:masche2} 
 \end{align}
-aus.
+
 Mit der Definition der Kapazität ${C=\sfrac{Q}{U}}$, der Induktionsspannung ${U=- L \dot{I}}$ und \eqref{eqn:strom} folgt 
 hierfür nach einmaligem zeitlichen Ableiten 
 \begin{equation}
@@ -43,8 +42,8 @@ hierfür nach einmaligem zeitlichen Ableiten
     \frac{1}{C} \dot{Q}_{C_2} + L \ddot{I}_{L_2} - \frac{1}{C_K} \dot{Q}_{K} \stackrel{\eqref{eqn:strom}}{=}
     \frac{1}{C} I_2 + L \ddot{I_2} - \frac{1}{C_K} (I_1 - I_2) = 0 \label{eqn:dgl2}
 \end{align}
-Eine Möglichkeit zur Lösung der beiden gekoppelten Differentialgleichungen besteht darin, \eqref{eqn:dgl1} und \eqref{eqn:dgl2}
-zu addieren und subtrahieren. So erhält man zwei voneinander entkoppelte Gleichungen der Variablen ${I_1 + I_2}$ und ${I_1 - I_2}$, 
+Eine mögliche Lösung der beiden gekoppelten Differentialgleichungen besteht darin, \eqref{eqn:dgl1} und \eqref{eqn:dgl2}
+zu addieren und zu subtrahieren. So erhält man zwei voneinander entkoppelte Gleichungen der Variablen ${I_1 + I_2}$ und ${I_1 - I_2}$, 
 die einfach mit einem harmonischen Ansatz gelöst werden können:
 \begin{align}
     L (\ddot{I_1} + \ddot{I_2}) + \frac{1}{C} (I_1+I_2)=0 \label{eqn:prettydgl1} \\
@@ -80,13 +79,13 @@ Beginnt das System mit zwei gleichen Strömen ${I_1=I_2}$ zu schwingen, so gilt 
 $I_1$ und $I_2$ mit der Frequenz ${f_+= \sfrac{\omega _+}{2\pi}}$, die ein einzelner LC-Kreis ebenfalls hätte, schwingt und gemäß 
 \eqref{eqn:strom} kein Strom durch den Kopplungskondensator fließt. 
 Dies ist die gleichphasige Normalschwingung -- die Ströme sind stets in Phase.
-Wird das Gegenteil betrachtet, starten die Ströme $I_1=-I_2$ genau entgegengesetzt, oszilliert 
+Wird das Gegenteil betrachtet, starten die Ströme $I_1=-I_2$ genau entgegengesetzt. Somit oszilliert 
 das System in der zweiten Eigenmode mit ${f_-=\sfrac{\omega _-}{2\pi} > f_+}$. 
 Der Summenstrom $I_1 + I_2$ verschwindet und die Ströme schwingen genau gegenphasig. 
-Selbsterklärend ist dies die gegenphasige Eigenschwingung. 
+%Selbsterklärend ist dies die gegenphasige Eigenschwingung. 
 
 Ebenfalls zu betrachten sind sogenannte Schwebungen. 
-In \ref{fig:kap_gekopp} kann eine beobachtet werden, wenn ${\omega _+ \approx \omega _-}$ gilt, also 
+In Abbildung \ref{fig:kap_gekopp} kann solch eine beobachtet werden, wenn ${\omega _+ \approx \omega _-}$ gilt, also 
 ${C_K \gg C}$ ist. 
 Startbedingungen sind, dass einer der beiden Ströme, beispielsweise $I_1$, anfangs von null verschieden ist und der 
 jeweils andere Strom, gemäß dem Beispiel also $I_2$, in Ruhe ist, entsprechend keine Amplitude hat. 
@@ -111,7 +110,7 @@ und den Additionstheoremen
     \cos x + \cos(y + \pi) &= \cos x - \cos y = 2 \cos(\frac{x+y}{2} + \frac{\pi}{2}) \cos(\frac{x-y}{2} - \frac{\pi}{2}) \\
         &=-2  \sin(\frac{x+y}{2}) \sin(\frac{x-y}{2})
 \end{align}
-lassen sich \ref{eqn:ii1} und \ref{eqn:ii2} zu 
+lassen sich \eqref{eqn:ii1} und \eqref{eqn:ii2} zu 
 \begin{gather}
     I_1 (t)= A_+ \cos(\frac{\omega _+ + \omega _-}{2}t +\tilde{\varphi}_+) \cos(\frac{\omega _+ - \omega _-}{2}t -\tilde{\varphi}_+) \\
     I_2 (t)=-A_+ \sin(\frac{\omega _+ + \omega _-}{2}t +\tilde{\varphi}_+) \sin(\frac{\omega _+ - \omega _-}{2}t -\tilde{\varphi}_+)
@@ -121,7 +120,7 @@ Es ist zu erkennen, dass die Ströme mit der Frequenz
 \begin{equation}
     \omega _\text{Schwingung} = \frac{\omega _+ + \omega _-}{2} \approx \omega _+
 \end{equation}
-oszillieren, dass die Amplitude jedoch mit der bei weitem geringeren Frequenz 
+oszillieren, die Amplitude jedoch mit der weit geringeren Frequenz 
 \begin{equation}
     \omega _\text{Amplitude} = \frac{\omega _+ - \omega _-}{2} \ll \omega _+
 \end{equation} 
@@ -181,7 +180,7 @@ In diesen Fällen gilt:
 Die Näherungen ergeben sich dadurch, dass Werte der üblichen Größenordnungen für die Widerstände eingesetzt werden.
 Daraus wird ersichtlich, dass der zweite Summand unter der Wurzel im Vergleich zur $4$ unbedeutend klein wird. 
 
-Zur in \ref{sec:Durchführung} beschriebenen Vorjustierung seien hier noch kurz erzwungene Schwingungen eines einzelnen 
+Zur in Abschnitt \ref{sec:Durchführung} beschriebenen Vorjustierung seien hier noch kurz erzwungene Schwingungen eines einzelnen 
 Schwingkreises aufgeführt. 
 Dafür wird ein Sinusgenerator in Reihe eines Schwingkreises geschaltet, der mit einer Frequenz $\omega$ antreibt. 
 Hierbei sind die Amplitudenresonanzfunktion \eqref{eqn:ampl_res} und die Phasenverschiebung \eqref{eqn:phi_res} des Stroms 
@@ -200,3 +199,5 @@ und
 \end{equation}
 Die Phasenverschiebung beträgt also genau $\sfrac{\pi}{2}$, wenn der Sinusgenerator mit der Eigenfrequenz -- auch 
 Resonanzfrequenz -- den Schwingkreis antreibt. 
+
+\pagebreak
