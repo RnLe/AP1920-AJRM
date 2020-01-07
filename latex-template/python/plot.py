@@ -1,6 +1,17 @@
 import matplotlib.pyplot as plt
 import numpy as np
 
+import matplotlib as mpl
+mpl.use('pgf')
+import matplotlib.pyplot as plt
+mpl.rcParams.update({
+'font.family': 'serif',
+'text.usetex': True,
+'pgf.rcfonts': False,
+'pgf.texsystem': 'lualatex',
+'pgf.preamble': r'\usepackage{unicode-math}\usepackage{siunitx}',
+})
+
 x = np.linspace(0, 10, 1000)
 y = x ** np.sin(x)
 
