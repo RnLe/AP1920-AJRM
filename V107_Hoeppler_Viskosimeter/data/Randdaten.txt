@@ -1,0 +1,15 @@
+Durchmesser kleine Kugel:   15.6  mm
+            große  Kugel:   15.76 mm
+Masse   kleine Kugel:   4.4531 g
+        große  Kugel:   4.9528 g
+Temperaturen:
+23.5
+31.5
+35
+39
+42
+46
+51
+55
+60
+64
