@@ -1,0 +1,5 @@
+kritische Reynoldszahl einer kreisförmigen Röhre Re_c = 2300 (Quelle: Demtröder)
+wichtig hierbei: das sind ungefähre Werte... Werte innerhalb 2300-2700 sind üblich für die Röhre 
+Falls du auf die reynoldszahl bezug nehmen willst (bzw ich sehe gerade, dass das auch gefordert ist) 
+innerhalb der auswertung -- dem wert 2300 liegt der durchmesser 
+(nicht der radius o.ä.) als charakteristische Länge zugrunde. 
