@@ -13,3 +13,6 @@ Temperaturen:
 55
 60
 64
+
+Mittelwert der Viskosität (aus der Messung mit der kleinen Kugel): (1.173219 +/- 0.013712) *10^-3 Pa s
+Gerätekonstante große Kugel (1.4984678723241853e-08 +- 3.3706257564216015e-09) Pa m^3 kg^-1
