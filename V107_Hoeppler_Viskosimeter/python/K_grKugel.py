@@ -1,6 +1,17 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
+import matplotlib as mpl
+mpl.use('pgf')
+import matplotlib.pyplot as plt
+mpl.rcParams.update({
+'font.family': 'serif',
+'text.usetex': True,
+'pgf.rcfonts': False,
+'pgf.texsystem': 'lualatex',
+'pgf.preamble': r'\usepackage{unicode-math}\usepackage{siunitx}',
+})
+
 time = np.genfromtxt("../data/Ave_Temp_großeKugel.csv",delimiter=",",unpack=True,usecols=0)
 Temp = np.genfromtxt("../data/Temp.csv",delimiter=",",unpack=True,usecols=0)
 m=4.9528*10**(-3)
@@ -54,4 +65,5 @@ plt.plot(
 plt.legend(loc="best")
 
 #Es gibt keine Probleme beim Durchlaufen des Programms, bis auf bei savefig... keine Ahnung warum.
-#plt.savefig('plot_2.pdf')
+# fix: es fehlte wieder die Einbindung der tex-header [RL]
+plt.savefig('../plots/plot_2.pdf')
