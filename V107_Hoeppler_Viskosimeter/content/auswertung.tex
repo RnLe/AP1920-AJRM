@@ -45,11 +45,11 @@ Es errechnet sich eine gemittelte Fallzeit von
 \end{equation*}
 
 Über Gleichung \eqref{eqn:exp_visk} lässt sich dann mit gegebener Gerätekonstante \\
-$K_{kl} = \SI{0.07640e-6}{\pascal\meter\cubed\per\kilo\gram}$ die Viskosität berechnen zu
+$K_{kl} = \SI{0.07640e-6}{\pascal\meter\cubed\per\kilo\gram}$ die Viskosität berechnen zu \\
 $\eta_{kl} = \SI{1173\pm13e-6}{\kilo\gram\per\meter\per\second}$. 
 
 \subsubsection{Große Kugel, dynamische Temperatur}
-Für die große Kugel werden ebenfalls zehn Messwerte aufgenommen. Im Anschluss wird die Temperatur um wenige Grade erhöht und die Messungen wiederholt.
+Für die große Kugel werden ebenfalls zehn Messwerte aufgenommen. Im Anschluss wird die Temperatur um wenige Grade erhöht und die Messungen werden wiederholt.
 Es folgen insgesamt neun Temperaturerhöhungen, wodurch 100 Messwerte für die große Kugel aufgenommen werden.
 
 
@@ -86,7 +86,7 @@ Im Weiteren wird die Viskosität des Wassers bei veränderter Temperatur ermitte
     \label{fig:mittl_fall_gr}
 \end{figure}
 
-Ein Vergleich mit der Literatur\cite{taschenbuch} zeigt, dass die Werte in einem plausiblen Bereich liegen.\footnote{Für einen genaueren Vergleich wurde eine Ausgleichsfunktion der Form $(a * 1/(x-b)) + c$ mit $a = 49737, b = -26, c = -93$ über 13 Literaturwerte gelegt.}
+Ein Vergleich mit der Literatur\cite{taschenbuch} zeigt, dass die Messwerte in der erwarteten Größenordnung liegen.\footnote{Für einen genaueren Vergleich wurde eine Ausgleichsfunktion der Form $(a * (\sfrac{1}{x-b})) + c$ mit $a = 49737, b = -26, c = -93$ über 13 Literaturwerte gelegt.}
 
 \begin{table}[h]
     \centering
@@ -120,12 +120,12 @@ Ein Vergleich mit der Literatur\cite{taschenbuch} zeigt, dass die Werte in einem
 
 \FloatBarrier
 \subsection{Reynoldszahl}
-Die Reynoldszahl gibt Aufschluss darüber, ob eine Ströumung turbulent oder laminar ist. Wie in der Theorie bereits erwähnt gibt es die kritische Reynoldszahl,
-welche Aufschluss darüber gibt, ob eine Strömung ihren Zustand zwischen den genannten Eigenschaften ändert.
+Die Reynoldszahl gibt Aufschluss darüber, ob eine Ströumung turbulent oder laminar ist. Wie in der Theorie bereits erwähnt gibt es eine kritische Reynoldszahl,
+welche Aufschluss darüber gibt, ob eine Strömung ihren Zustand zwischen den genannten Eigenschaften ändert beziehungsweise beibehält, und wie stabil eine laminare Ströumg ist, wenn diese vorliegt.
 Für die in diesem Versuch verwendete Apparatur ist $\symup{R_{crit}} \approx 2300$.\cite{taschenbuch}
-Zunächst werden die Fallgeschwindigkeiten bestimmt, um die Reynoldszahl über \eqref{eqn:reynold} auszurechnen. Dafür wird eine Falldistanz von $x = \SI{100}{\milli\meter}$ verwendet.
-Es ergibt sich $v_{kl} = \SI{8.09\pm0.09}{\milli\meter\per\second}$.
-Für die charakteristische Länge $L$ werden die Durchmesser der Glaskugeln verwendet. Aus \eqref{eqn:reynold} errechnen sich die Reynoldszahlen zu 
+Zunächst werden die Fallgeschwindigkeiten bestimmt, um die Reynoldszahl anschließend über \eqref{eqn:reynold} auszurechnen. Dafür wird eine Falldistanz von $x = \SI{100}{\milli\meter}$ verwendet.
+Für die kleine Kugel ergibt sich $v_{kl} = \SI{8.09\pm0.09}{\milli\meter\per\second}$.
+Weiter werden für die charakteristische Länge $L$ die Durchmesser der Glaskugeln verwendet. Aus \eqref{eqn:reynold} errechnet sich die Reynoldszahl zu 
 $R_{kl} = 107.4\pm2.4$. Die Werte der großen Kugel sind in der nachstehenden Tabelle aufgeführt.
 
 \begin{table}[h]
@@ -212,7 +212,8 @@ $R_{kl} = 107.4\pm2.4$. Die Werte der großen Kugel sind in der nachstehenden Ta
 \FloatBarrier
 \subsection{Andrade'sche Gleichung}
 Mit \eqref{eqn:andrade} wird die Viskosität temperaturabhängig dargestellt. Um eine Gerade zu erhalten wird die Gleichung in die Form
-$\text{ln}(\eta) = \text{ln}(A) + B \cdot \sfrac{1}{T}$ gebracht. Mit einer Ausgleichsgeraden ergeben sich die Werte zu $A = (2.7\pm0.6)\cdot10^{-6}$ und $B = 1932\pm75$.
+$\text{ln}(\eta) = \text{ln}(A) + B \cdot \sfrac{1}{T}$ gebracht. Unter Verwendung der Funktion \texttt{polyfit} aus Python 3.7.3 wird eine Ausgleichsgerade erstellt, womit sich die Werte zu $A = (2.7\pm0.6)\cdot10^{-6}$ und $B = 1932\pm75$ ergeben.
+Die Unsicherheiten werden aus den diagonalen Elementen der Kovarianzmatrix entnommen.
 
 \begin{figure}[!h]
     \centering

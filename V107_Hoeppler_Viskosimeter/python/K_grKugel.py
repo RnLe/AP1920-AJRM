@@ -56,6 +56,7 @@ params, covariance_matrix = curve_fit(func_lin, Temp_hoch_minus_eins, unp.nomina
 
 errors = np.sqrt(np.diag(covariance_matrix))
 print(covariance_matrix)
+print(np.diag(covariance_matrix))
 #Ausgabe der Koeffizienten der 'linearen' Funktion: ln(eta)=ln(A) + B*(1/T)
 #a entspricht B, b entspricht ln(A)
 for name, value, error in zip('ab', params, errors):
