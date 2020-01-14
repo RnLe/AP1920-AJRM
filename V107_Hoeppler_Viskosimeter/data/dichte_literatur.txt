@@ -1,0 +1,11 @@
+# Dichte von destiliertem Wasser bei den im Versuch gemessenen Temperaturen (aufsteigend) in kg/m³
+997.538
+995.341
+994.032
+992.594
+991.436
+989.791
+987.581
+985.695
+983.199
+981.095

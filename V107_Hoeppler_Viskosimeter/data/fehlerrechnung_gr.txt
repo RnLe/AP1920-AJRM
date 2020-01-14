@@ -9,3 +9,7 @@ Temperatur	Arithmetisches Mittel	Standardabweichung
 55.0		45.809			0.255
 60.0		43.047			0.314
 64.0		40.338			0.122
+
+Kleine Kugel
+Temperatur	Arithmetisches Mittel	Standardabweichung
+23.5		12.355			0.137
