@@ -19,7 +19,7 @@ Kästchen auf der Zeitachse  t in 10^-3s     Kästchen auf der Spannungsachse
                                             und dann auf MAXLADUNGKOND.jpg nachgeschaut, wie weit die untere Zackenspitze von dem Nullzustand des Kondensators entfernt ist (der Ladung bei U_C=0 quasi...)
                                             das waren etwa 0.4 Kästchen. Die habe ich noch darauf addiert. 
 
-Frequenz beim Auf-/Entladen beträgt hier 244.1Hz (oder 244.7Hz??)
+Frequenz beim Auf-/Entladen beträgt hier 244.1Hz (oder 244.7Hz??..ist auch nicht so wichtig)
 Eine Periode entspricht genau 4 Kästchen. 
 T=1/f = 4.097*10^-3 s
-=> 1 Kästchen = 1/(4f) = 1.024 * 10^-3 s
+=> 1 Kästchen = 1/(4f) = T/4 = 1.024 * 10^-3 s
