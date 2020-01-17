@@ -8,3 +8,32 @@ zusätzliche verluste an den kabeln erklären, aber so... ich schaue mal...
 
 \subsection{Integrieren der Generatorspannung}
 
+Bei allen drei Spannungen kann sehr gut die Phasenverschiebung um $\sfrac{\pi}{2}$ beobachtet werden, die wenn überhaupt 
+nur minimal kleiner ist. 
+Dies ist kohärent mit der Theorie, da nur für eine unendlich große Frequenz eine solche Phasendifferenz bewerkstelligt 
+werden kann. Eine im mathematischen Sinne unendlich große Frequenz ist selbstredend in der Praxis nur näherungsweise zu 
+realisieren. 
+
+Bereits bei der Durchführung fällt auf, dass die Skala der Kondensatorspannung stark vergrößert werden muss, um Amplituden 
+vergleichbarer Größenordnung auf dem Oszilloskop beobachten zu können. 
+Dies rührt daher, dass bei hoher Frequenz ein vergleichsweise sehr kleiner Anteil der Spannung beim Kondensator ankommt, 
+wie in der Theorie ausführlich erklärt wird. 
+
+Somit entspricht die integrierte Sinusschwingung in \ref{fig:int_sinus} den Erwartungen.
+Ein wenig komplizierter wird es bei den anderen beiden Schwingungen, logische Erklärungen lassen sich dennoch dafür finden: 
+Hervorgehoben sei nochmal die Tatsache, dass die Spannung aufgrund der hohen Frequenz nur im geringen Maße zum Kondensator 
+durchkommt: Der Kondensator lädt sich langsam auf, aber noch lange, bevor er einen vollständig geladenen Zustand erreichen 
+kann, springt die treibende Spannung wieder um, sodass der Kondensator langsam wieder die Ladung verliert, die er 
+eben erst aufgebaut hat. 
+
+Unter Berücksichtigung dieses Vorgangs können die unterschiedlichen Spannungsverläufe der Rechtecks- und Dreiecksschwingungen 
+in \ref{fig:rechtdrei} \subref{fig:int_rechteck} und \subref{fig:int_dreieck} erklärt werden:
+Der Kondensator würde sich in \subref{fig:int_rechteck} vollständig aufladen und so die gleiche Struktur wie die generierte 
+Rechtecksspannung aufweisen, wenn er genügend Zeit pro Periode hätte. Da er diese nicht hat, ist nur der bloße lineare
+Anstieg der Spannung zu sehen, und es entsteht ein dreieckiger Schwingungsverlauf beim Kondensator. 
+Genauso bei der Dreiecksschwingung: Der Kondensator reagiert nur zeitverzögert und im geringen Maße auf die linear verlaufende 
+Dreiecksspannung, sodass die Kondensatorspannung \glqq abgerundete Ecken \grqq{} dort hat, wo die Dreiecksschwingung nicht 
+differenzierbar ist. 
+
+Die möglicherweise vorerst überraschende Unterschiedlichkeit der Spannungsverläufe lassen sich somit problemlos mit den 
+theoretischen Grundlagen vereinbaren. 
