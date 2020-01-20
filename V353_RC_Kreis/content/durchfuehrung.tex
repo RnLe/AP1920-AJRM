@@ -1,2 +1,41 @@
 \section{Durchführung}
 \label{sec:Durchführung}
+
+\subsection{Einleitung}
+Ziel der Durchführung ist es, die charakteristischen Eigenschaften eines RC-Gliedes zu messen und mit Hilfe eines Oszilloskops
+zu visualisieren. Hierbei werden neben dem Auf- und Entladevorgang des Kondensators auch die frequenzabhängigen Amplituden und
+Phasenverschiebungen gemessen.
+
+\subsection{Allgemeiner Aufbau}
+Das zu messende Schaltelement ist eine Serienschaltung aus einem Widerstand und einem Kondensator.
+Als Messtechnik dient ein Oszilloskop im Verbund mit einem Sinusspannungsgenerator, über den sowohl die Spannung, wie Frequenz 
+als auch die Art des erzeugten Signals eingestellt werden kann. Mögliche Einstellungen sind Sinus-, Rechteck-, Dreieck- und gepulste Rechteckspannung.
+
+Der Ausgang des Generators wird über ein T-Stück zum einen mit dem RC-Kreis verbunden, zum anderen auf einen Kanal des Oszilloskops gelegt.
+Der andere Kanal wird parallel zum Kondensator geschaltet. Für genaue Messungen und statische Bilder wird der Triggerausgang des Generators 
+mit dem externen Triggereingang des Oszilloskops verbunden, wodurch insgesamt vier Kabel notwendig sind.
+
+\subsection{Messungen}
+\subsubsection{Zeitkonstante}
+Um die Zeitkonstante des RC-Kreises bestimmen zu können, ist nur die Darstellung des parallelgeschalteten Kanals notwendig.
+Hierfür wird eine Rechteckspannung auf $\approx \SI{250}{\hertz}$ eingestellt und die Spannungskurve am Oszilloskop abgelesen.
+Dabei zeichnen sich die charakteristischen Auflade- und Entladekurven des Kondensators ab, über dessen zeitabhängigen Amplituden dann die Zeitkonstante bestimmt werden kann.
+
+\subsubsection{Frequenzabhängige Messungen}
+Es werden sowohl die Größen der Amplituden, als auch die Phasenunterschiede der Kondensatorspannung in Abhängigkit von der Frequenz gemessen.
+Der zweite Kanal gibt die Generatorspannung wieder und dient als visueller Vergleich zu der Spannung des RC-Kreises auf dem ersten Kanal.
+Die Messreihe wird in circa 20 Messwerte auf je drei Größenordnungen aufgeteilt; beginnend bei etwa $\SI{15}{\hertz}$ bis $\SI{150}{\hertz}$ über $\SI{150}{\hertz}$ bis $\SI{600}{\hertz}$, bis zum Bereich
+$\SI{600}{\hertz}$ bis $\SI{2100}{\hertz}$.
+Um sich eine Kalibrierung zu sparen, reicht es, wenn die Kästchen auf dem Oszilloskop abgelesen werden, um Amplituden- und Phasenverschiebungen
+bezüglich der Generatorspannung abzulesen. Für die Phasenverschiebung wird entsprechend pro Messung die Anzahl der Kästchen für eine halbe Periode
+abgelesen und als Nenner für die Periodendauer in Kästchen der RC-Spannung verwendet. Hieraus ergibt sich ein Verhältnis in Pi und ist damit bereits die zu bestimmende Phasenverschiebung.
+Für die Amplituden wird zu Beginn einmalig die der Generatorspannung abgelesen und im Anschluss die Amplituden der RC-Spannung
+als Verhältnis dagegengemessen. Wichtig hierbei ist, dass die Auflösung der Spannung für beide Kanäle während aller Messungen
+nicht verändert wird.
+
+\subsubsection{Integratorspannung}
+Um zu zeigen, dass ein RC-Kreis unter bestimmten Bedingungen auch als Integrator dienen kann, wird für die Sinus- und Dreieckspannung
+eine Frequenz von $\approx \SI{5600}{\hertz}$ eingestellt und die Spannungen am Oszilloskop dargestellt. Wenn das Oszilloskop keine Screenshot-Funktion besitzt,
+wird das Bild abfotografiert.
+Für die Rechteckspannung empfiehlt sich eine Frequenz von etwa $\SI{650}{\hertz}$, um zu sehen, dass eine Dreieckspannung daraus entsteht, und somit die Ableitung
+der Ursprungsspannung darstellt.

@@ -1,11 +1,15 @@
+pythons := $(wildcard **/*plot*.py)						# get all python files with the name 'plot' in it to create targets
+pdfs := $(patsubst %.py, %.pdf, $(pythons))				# create targets from python files by replacing .py with .pdf
+pdfs := $(patsubst python/%, plots/%, $(pdfs))			# create targets from python files by replacing .py with .pdf
+
 all: build/main.pdf
 
-# hier Python-Skripte:
-#build/plot.pdf: plot.py matplotlibrc header-matplotlib.tex | build
-#	TEXINPUTS=$$(pwd): python plot.py
+.SECONDEXPANSION:
+$(pdfs): $$(patsubst plots%, python%, $$(basename $$@)).py matplotlibrc header-matplotlib.tex | build
+	TEXINPUTS=$$(pwd): python $<
+	touch $@
 
-# hier weitere Abhängigkeiten für build/main.pdf deklarieren:
-#build/main.pdf: build/plot.pdf
+build/main.pdf: $(pdfs)
 
 build/main.pdf: FORCE | build
 	  TEXINPUTS=build: \
