@@ -3,14 +3,21 @@
 
 \subsection{Anregung durch eine Rechteckspannung}
 
-muss ich mir noch überlegen, wieso tau KLEiner ist als der theoretische wert... wenn er größer wäre, könnte man das über 
-zusätzliche verluste an den kabeln erklären, aber so... ich schaue mal... 
+Der theoretisch zu erwartende Wert für die Zeitkonstante ist $\tau _\text{theo}=\SI{1.405(56)}{\milli\second}$, der aus dem 
+ersten Teil des Experiments ermittelte ${\tau _\text{exp}=\SI{0.82(1)}{\milli\second}}$. 
+Da der experimentelle Wert deutlich außerhalb des Fehlerintervalls von $\tau _\text{theo}$ liegt, kann an dieser Stelle 
+nicht von einer statistischen Abweichung ausgegangen werden. 
+Der Fehler kann auch nicht an nicht berücksichtigten Innenwiderständen der Geräte oder an ohmschen Verlusten der Kabel 
+liegen. 
+Wahrscheinlicher ist ein systematischer Messfehler, der sich im Nachhinein nur schwerlich zu finden lässt. 
+Möglichkeiten könnten überdrehte -- und deshalb keine richtig skalierenden -- Knöpfe am Oszilloskop sein, sodass alle 
+abgelesenen Spannungswerte um einen Faktor verschieden von der tatsächlich angelegten Spannung sind. 
 
 \subsection{Integrieren der Generatorspannung}
 
 Bei allen drei Spannungen kann sehr gut die Phasenverschiebung um $\sfrac{\pi}{2}$ beobachtet werden, die wenn überhaupt 
 nur minimal kleiner ist. 
-Dies ist kohärent mit der Theorie, da nur für eine unendlich große Frequenz eine solche Phasendifferenz bewerkstelligt 
+Dies ist konsistent mit der Theorie, da nur für eine unendlich große Frequenz eine solche Phasendifferenz bewerkstelligt 
 werden kann. Eine im mathematischen Sinne unendlich große Frequenz ist selbstredend in der Praxis nur näherungsweise zu 
 realisieren. 
 
@@ -19,21 +26,27 @@ vergleichbarer Größenordnung auf dem Oszilloskop beobachten zu können.
 Dies rührt daher, dass bei hoher Frequenz ein vergleichsweise sehr kleiner Anteil der Spannung beim Kondensator ankommt, 
 wie in der Theorie ausführlich erklärt wird. 
 
-Somit entspricht die integrierte Sinusschwingung in \ref{fig:int_sinus} den Erwartungen.
-Ein wenig komplizierter wird es bei den anderen beiden Schwingungen, logische Erklärungen lassen sich dennoch dafür finden: 
-Hervorgehoben sei nochmal die Tatsache, dass die Spannung aufgrund der hohen Frequenz nur im geringen Maße zum Kondensator 
-durchkommt: Der Kondensator lädt sich langsam auf, aber noch lange, bevor er einen vollständig geladenen Zustand erreichen 
-kann, springt die treibende Spannung wieder um, sodass der Kondensator langsam wieder die Ladung verliert, die er 
-eben erst aufgebaut hat. 
+\begin{figure}
+\centering
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{plots/erwart_int1.pdf}
+    \label{fig:erw1}
+\end{subfigure}
+\begin{subfigure}{0.48\textwidth}
+    \centering
+    \includegraphics[height=5cm]{plots/erwart_int2.pdf}
+    \label{fig:erw2}
+\end{subfigure}
+\caption{Die Spannungskurven und ihre zugehörigen Integrale.}
+\label{fig:int}
+\end{figure}
 
-Unter Berücksichtigung dieses Vorgangs können die unterschiedlichen Spannungsverläufe der Rechtecks- und Dreiecksschwingungen 
-in \ref{fig:rechtdrei} \subref{fig:int_rechteck} und \subref{fig:int_dreieck} erklärt werden:
-Der Kondensator würde sich in \subref{fig:int_rechteck} vollständig aufladen und so die gleiche Struktur wie die generierte 
-Rechtecksspannung aufweisen, wenn er genügend Zeit pro Periode hätte. Da er diese nicht hat, ist nur der bloße lineare
-Anstieg der Spannung zu sehen, und es entsteht ein dreieckiger Schwingungsverlauf beim Kondensator. 
-Genauso bei der Dreiecksschwingung: Der Kondensator reagiert nur zeitverzögert und im geringen Maße auf die linear verlaufende 
-Dreiecksspannung, sodass die Kondensatorspannung \glqq abgerundete Ecken \grqq{} dort hat, wo die Dreiecksschwingung nicht 
-differenzierbar ist. 
+Um die Bilder vom Oszilloskop gut vergleichen zu können, sind in \ref{fig:int}  
+die jeweiligen Spannungsarten mit zugehörigen Funktionsgraphen abgebildet, deren Ableitung die Spannungskurve ergibt. 
+Der Übersicht halber wird an dieser Stelle auf eine explizite Darstellung der Funktionsdefinitionen von Dreiecks- und Rechteckskurven 
+und deren Integrationen verzichtet. Sie bestehen aus trivialen linearen stückweise stetigen beziehungsweise differenzierbaren 
+Funktionen. 
 
-Die möglicherweise vorerst überraschende Unterschiedlichkeit der Spannungsverläufe lassen sich somit problemlos mit den 
-theoretischen Grundlagen vereinbaren. 
+Wie durch einen Vergleich der Abbildungen klar ersichtlich ist, entsprechen die theoretischen Überlegungen bezüglich der 
+integrierenden Eigenschaft eines RC-Kreises den experimentellen Beobachtungen. 
