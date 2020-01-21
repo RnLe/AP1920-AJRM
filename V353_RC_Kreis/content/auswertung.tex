@@ -55,7 +55,8 @@ Zeit $t$ hergestellt werden.
     \end{tabular}
 \end{table}
 
-In Tabelle \ref{tab:Aaa} sind die entsprechenden Messwerte aufgeführt, die für die folgende Ausgleichsrechnung verwendet werden. 
+In Tabelle 1 %\ref{tab:Aaa} ich habe wirklich keine Ahnung, warum die Referenz hier nicht funktioniert
+ sind die entsprechenden Messwerte aufgeführt, die für die folgende Ausgleichsrechnung verwendet werden. 
 Wie in \ref{sub:AufUndAb} geschildert, verhält sich die Spannung eines Kondensators beim Entladen gemäß 
 \begin{equation}
     U_C(t)=U_0 \exp(-\frac{1}{RC}(t-B))\:.
@@ -90,8 +91,7 @@ mit der entsprechenden Achsenskalierung aufgetragen.
     \label{fig:ausgl_gr_A}
 \end{figure}
 
-Dem aus dem Experiment bestimmten Wert für die Zeitkonstante $\tau$ kann der theoretisch zu erwartende Wert gegenüber 
-gestellt werden. 
+Dem aus dem Experiment bestimmten Wert für die Zeitkonstante $\tau$ kann der theoretisch zu erwartende Wert gegenübergestellt werden. 
 Die Referenzbauteile haben die Kenngrößen ${R=\SI{15.058(600)}{\kilo\ohm}}$ und ${C=\SI{93.3}{\nano\farad}}$. 
 Daraus ergibt sich die theoretische Zeitkonstante zu $\tau _\text{theo}=\SI{1.405(56)}{\milli\second}$.
 
@@ -101,13 +101,28 @@ Daraus ergibt sich die theoretische Zeitkonstante zu $\tau _\text{theo}=\SI{1.40
  
 %Der Generator hatte eine Spannung von 2.7 Volt
 
+Die Messungen der Amplituden und Phasenverschiebungen werden parallel aufgenommen. Für jede Frequenz ergibt sich also ein Wertepaar.
+Das Oszilloskop wird so kalibriert, dass ein vertikales Kästchen $= \SI{1}{\volt}$ entspricht. Die Auflösung der Zeitachse ist irrelevant, da nur die Verhältnisse von Bedeutung sind.
+Die Amplitude der Generatorspannung liegt bei allen Messwerten bei $\SI{2.7}{\volt}$, also $2.7$ Kästchen, wie in Abbildung \ref{fig:methodik} zu sehen ist.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{plots/beispiel_Messung.jpg}
+    \caption{Methodik der Messwertaufnahme.}
+    \label{fig:methodik}
+\end{figure}
+
+Für die Phasenverschiebung wird das Verhältnis der horizontalen Linien bestimmt, wobei Orange die Generatorspannung darstellt. Durch diese Methode ergibt sich direkt ein Wert als Bruchteil von $\pi$.
+Entsprechend werden für die Amplituden die vertikalen Linien verglichen.
+Für die in \ref{sec:durch_freq} beschriebenen Messungen der drei Größenordnungen ergeben sich die Werte in den Tabellen \ref{tab:BbbCcc1} und \ref{tab:BbbCcc23}.
+
 \begin{table}
     \centering
     \caption{Messung in der kleinsten Größenordnung.}
     \label{tab:BbbCcc1}
     \begin{tabular}{S[table-format=3.2] S[table-format=1.2] S[table-format=1.3]}
         \toprule
-        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \phi\:/\:\symup{\pi}$} \\
+        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \varphi\:/\:\symup{\pi}$} \\
         \midrule
         15.25 & 2.50 & 0.035 \\
         20.50 & 2.50 & 0.037 \\
@@ -139,7 +154,7 @@ Daraus ergibt sich die theoretische Zeitkonstante zu $\tau _\text{theo}=\SI{1.40
     \label{tab:BbbCcc23}
     \begin{tabular}{S[table-format=3.1] S[table-format=1.2] S[table-format=1.3]}
         \toprule
-        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \phi\:/\:\symup{\pi}$} \\
+        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \varphi\:/\:\symup{\pi}$} \\
         \midrule
         184.8 & 1.82 & 0.243 \\
         216.8 & 1.68 & 0.265 \\
@@ -160,7 +175,7 @@ Daraus ergibt sich die theoretische Zeitkonstante zu $\tau _\text{theo}=\SI{1.40
     $\qquad \qquad$
     \begin{tabular}{S[table-format=4.0] S[table-format=1.2] S[table-format=1.3]}
         \toprule
-        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \phi\:/\:\symup{\pi}$} \\
+        {$f\:/\:\si{\hertz}$} & {$U\:/\:\si{\volt}$} & {$\increment \varphi\:/\:\symup{\pi}$} \\
         \midrule
         699  & 0.68 & 0.400 \\
         791  & 0.60 & 0.413 \\
@@ -183,6 +198,17 @@ Daraus ergibt sich die theoretische Zeitkonstante zu $\tau _\text{theo}=\SI{1.40
 \end{table}
 
 \FloatBarrier
+
+Als Referenzwert wird noch eine Messung bei $\approx \SI{5700}{\hertz}$ abgelesen, welche am Ende der Tabelle \ref{tab:BbbCcc23} abzulesen ist.
+In Abbildung \ref{fig:mess_b_c} sind die Messwerte eingetragen und der exponentielle Verlauf dargestellt.
+Hierbei wird die Y-Achse für die Phasenverschiebung als $\Delta\varphi\:/\:\pi$ gewertet.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{plots/plot_b_c.pdf}
+    \caption{Messwerte der Amplituden und Phasenverschiebungen.}
+    \label{fig:mess_b_c}
+\end{figure}
 
 \subsection{Der RC-Kreis als Integrator}
 

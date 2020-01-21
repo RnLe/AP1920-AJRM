@@ -13,6 +13,16 @@ Wahrscheinlicher ist ein systematischer Messfehler, der sich im Nachhinein nur s
 Möglichkeiten könnten überdrehte -- und deshalb keine richtig skalierenden -- Knöpfe am Oszilloskop sein, sodass alle 
 abgelesenen Spannungswerte um einen Faktor verschieden von der tatsächlich angelegten Spannung sind. 
 
+\subsubsection{Frequenzabhängigkeit}
+Vor allem bei Frequenzen im höheren Bereich ist es hilfreich, den externen Trigger des Oszilloskops zu nutzen, um zeitaufwändige Kalibrierungen zu vermeiden.
+In Abbildung \ref{fig:mess_b_c} sind die drei Größenordnungen der Frequenzsprünge sehr gut erkennbar. Auch lässt sich der exponentielle Verlauf beider Messkurven
+sehr gut ablesen. Die Größe der Amplitude konvergiert mit steigender Frequenz gegen null, was zu erwarten ist und aus Gleichung \eqref{eqn:ampl_omega} bereits hervorgeht.
+Die Phasenverschiebung konvergiert erwartungsgemäß gegen $\sfrac{\pi}{2}$, was an der Natur des Arkustangens liegt.
+Mit den gegebenen Werten $R = \SI{15.058}{\kilo\ohm}$ und $C = \SI{93.3}{\nano\farad}$ errechnet sich nach Gleichung \eqref{eqn:phas_diff_omega} für $f = \SI{2112}{\hertz}$ eine Phasenverschiebung
+von $arctan(15058\cdot93.3\cdot10^{-9}\cdot2112\cdot2\pi) \approx 1.517$. Im Vergleich: $\sfrac{\pi}{2} \approx 1.57$. Der tatsächliche Messwert bei dieser Frequenz liegt bei 
+$\symup{\Delta\varphi} \approx 1.357$. Eine mögliche Erklärung für die kleine Differenz zwischen dem erwarteten und dem gemessenen Wert sind innere Widerstände
+der Messtechnik und des Generators. Zudem können die Angaben der Bauteile von den wahren Werten abweichen.
+
 \subsection{Integrieren der Generatorspannung}
 
 Bei allen drei Spannungen kann sehr gut die Phasenverschiebung um $\sfrac{\pi}{2}$ beobachtet werden, die wenn überhaupt 
