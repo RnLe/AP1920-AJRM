@@ -1,0 +1,42 @@
+Abstand Schwerpunkt-Drehachse[cm] = 1
+
+
+Unterkörper
+-----------
+Beine
+-----
+Abstand von Drehachse[cm] = 1.25
+
+Länge Beine[cm] = 13
+Durchmesser Unterschenkel[cm] = 1.6 , Oberschenkel[cm] = 1.8
+
+Länge Füße[cm] = 4.2
+Durchmesser Füße[cm] = 1.4
+
+Becken
+------
+Durchmesser[cm] = 4
+Höhe[cm] = 3.3
+
+
+Oberkörper
+---------------
+Arme
+----
+Abstand von Drehachse[cm] = 3
+
+Länge Arme[cm] = 10
+Durchmesser Unterarm[cm] = 1.5 , Oberarm[cm] = 1.5
+
+Länge Hand[cm] = 3
+Durchmesser Hand[cm] = 1.5
+
+Torso
+-----
+Kugel über Becken Durchmesser[cm] = 2.8 , Höhe[cm] = 1.8
+
+Torso Breite[cm] = 4 , Höhe[cm] = 5 , Tiefe[cm] = 4.7
+
+Kopf
+----
+Kegelstumpf Höhe[cm] = 5 , DurchmesserMax[cm] = 3.8 , DurchmesserMin[cm] = 2.8
