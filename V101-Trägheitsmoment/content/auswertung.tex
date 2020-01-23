@@ -173,8 +173,8 @@ In \ref{tab:mittelSchwing} berechnet sich der Messfehler ebenfalls über \eqref{
         \toprule
         & {T$\:/\:\si{\second}$} \\     % werden Messgrößen kursiv geschrieben? (hier das T)
         \midrule
-        Zylinder$_\text{gross}$  & $\SI{2.25(5)}{}$ \\
-        Zylinder$_\text{klein}$  & $\SI{1.16(6)}{}$ \\
+        großer Zylinder  & $\SI{2.25(5)}{}$ \\
+        kleiner Zylinder  & $\SI{1.16(6)}{}$ \\
         Holzfigur Pose 1  & $\SI{0.40(2)}{}$ \\
         Holzfigur Pose 2  & $\SI{0.91(2)}{}$ \\
         \bottomrule
@@ -223,8 +223,13 @@ Wird hingegen die gemittelte Periode und die Winkelrichtgröße inklusive der Me
 \end{equation}
 das Trägheitsmoment zu berechnen, ergibt sich 
 \begin{equation}
-    I_\text{kl,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{6.44(55)}{\kilo\gram\centi\meter\squared}\:.
+    I'_\text{kl,T}=T^2\frac{D}{4\symup{\pi}^2}-I_\text{D}=\SI{6.44(55)}{\kilo\gram\centi\meter\squared}\:.
 \end{equation}
+
+Von diesem Wert müsste eigentlich noch das Trägheitsmoment der Drillachse von ${I_\text{D}=\SI{2.49(14)e-3}{\kilo\gram\meter\squared}}$ 
+abgezogen werden. Da sich für diesen Fall jedoch ein negativer Wert für den kleinen Zylinder ergeben würde und dies sehr 
+unphysikalisch ist, kannes sich hierbei nur um einen Messfehler handeln, auf den nochmal ausführlicher in der Diskussion 
+eingegangen wird. 
 
 \FloatBarrier
 \subsubsection{Der große Zylinder}
@@ -262,10 +267,119 @@ Symmetrieachse des Zylinders steht und deshalb eine etwas abgewandelte, in der T
     m_\text{Zyl}=m_\text{ges}\frac{d_\text{Zyl}^2h_\text{Zyl}}{d_\text{Zyl}^2h_\text{Zyl}+d_\text{Halt}^2h_\text{Halt}}=\SI{1524.9}{\gram} \\
     m_\text{Halt} = m_\text{ges}-m_\text{Zyl}=\SI{0.7}{\gram} \\
     I_\text{gr,geo}=m_\text{Zyl} \Bigl( \frac{d_\text{Zyl}^2}{16} + \frac{h_\text{Zyl}^2}{12} \Bigr) 
-        +\frac{1}{2}m_\text{Halt}\frac{d_\text{Halt}^2}{4}=\SI{30.75}{\kilo\gram\centi\meter\squared}\:.
+        +\frac{1}{2}m_\text{Halt}\frac{d_\text{Halt}^2}{4}=\SI{30.75}{\kilo\gram\centi\meter\squared}
 \end{gather}
 
-\begin{equation}
-    I_\text{gr,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{24.24\pm2.32}{\kilo\gram\centi\meter\squared}\:.
-\end{equation}
+\begin{gather}
+    I'_\text{gr,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{24.24\pm2.32}{\kilo\gram\centi\meter\squared} 
+\end{gather}
 
+Auch hier ergibt sich nach Abzug des Eigenträgheitsmoments ein negativer, unphysikalischer Wert für das Trägheitsmoment, 
+dessen mögliche Ursachen im folgenden Kapitel diskussiert werden. 
+
+\FloatBarrier
+\subsubsection{Die Holzpuppe in der ersten Pose}
+
+Zuerst wird das sich aus der Periodendauer ergebende Trägheitsmoment wie bei den Zylindern berechnet: 
+\begin{gather}
+    I'_\text{P1,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{0.77(10)}{\kilo\gram\centi\meter\squared} \\
+    I_\text{P1,T}=I'_\text{P1,T}-I_\text{D} <0 
+\end{gather}
+
+Nun wird anhand geometrischer Annäherungen das Trägheitsmoment bestimmt:
+Die Masse der Puppe beläuft sich auf einen Wert von ${m=\SI{116.29}{\gram}}$. 
+Die Beine werden als je zwei Zylinder -- Ober- und Unterschenkel -- mit einem Abstand von etwa 
+${a_\text{Beine}=\SI{1.25}{\centi\meter}}$ zwischen Dreh- und Symmetrieachse angenähert.  
+
+\begin{gather}
+    l_\text{Ober}=\SI{6.0}{\centi\meter} \quad \quad
+    l_\text{Unter}=\SI{7.0}{\centi\meter} \\
+    d_\text{Ober}=\SI{1.8}{\centi\meter} \quad \quad     
+    d_\text{Unter}=\SI{1.6}{\centi\meter} \\ 
+    V_\text{Ober}=\SI{15.3}{\centi\meter\tothe{3}} \quad \quad
+    V_\text{Unter}=\SI{14.1}{\centi\meter\tothe{3}} 
+\end{gather}
+
+Die Füße werden als zwei liegende, entlang der Symmetrieachse durchgeschnitte Zylinder betrachtet, die den gleichen 
+Abstand zur Drehachse wie die Beine haben: ${a_\text{Füße}=a_\text{Beine}}$. 
+
+\begin{gather}
+    l_\text{Fuß}=\SI{4.2}{\centi\meter} \quad \quad 
+    R_\text{Fuß}=\SI{0.7}{\centi\meter} \\
+    V_\text{Fuß}=\SI{6.5}{\centi\meter\tothe{3}}
+\end{gather}
+
+Die Symmetrieachse des Beckens, des Torsos und des kugelförmige Verbindungsstück, sowie des Kopf falle mit der Drehachse 
+zusammen. 
+Das Becken wird als aufrecht stehender Zylinder angesehen:
+
+\begin{gather}
+    R_\text{Becken}=\SI{2.0}{\centi\meter} \quad \quad 
+    h_\text{Becken}=\SI{3.3}{\centi\meter} \\
+    V_\text{Becken}=\SI{41.5}{\centi\meter\tothe{3}}
+\end{gather}
+
+Zwischen dem als Quader angesehenen Torso und dem Becken befindet sich eine Kugel, die oben und unten jeweils um die 
+gleiche Differenz abgeschnitten ist. 
+
+\begin{gather}
+    b_\text{Torso}=\SI{4.0}{\centi\meter} \quad \quad 
+    h_\text{Torso}=\SI{5.0}{\centi\meter} \\
+    t_\text{Torso}=\SI{4.7}{\centi\meter} \quad \quad 
+    V_\text{Torso}=\SI{94}{\centi\meter\tothe{3}} \\
+    R_\text{Kugel}=\SI{1.4}{\centi\meter} \quad \quad 
+    h_\text{Kugel}=\SI{1.8}{\centi\meter} \\
+\end{gather}
+\begin{align}
+    V_\text{Kugel}&=\int_{r=0}^R \int_{\varphi=0}^{2\symup{\pi}} \int_{\vartheta=\arccos{\frac{h}{2R}}}^{\symup{\pi}-\arccos{\frac{h}{2R}}} 
+        r^2\sin{\vartheta} \, \symup{d}\vartheta \, \symup{d}\varphi \, \symup{d}r 
+        + 2\cdot\frac{1}{3} X_\text{Grundfläche} Y_\text{Höhe} \\
+        &= \frac{1}{3}R^3 2\frac{h}{2R} 2\symup{\pi} 
+            + 2\cdot\frac{1}{3} (\symup{\pi} (R^2-\Bigl(\frac{h}{2}\Bigr)^2)) \frac{h}{2} \\
+        &= \frac{2}{3}\symup{\pi}hR^2 + \frac{1}{3}\symup{\pi}h(R^2-\frac{h^2}{4}) = \symup{\pi}h(R^2-\frac{h^2}{12}) \\
+        &= \SI{9.6}{\centi\meter\tothe{3}}
+\end{align}
+
+Der längliche Kopf wird als umgedrehter Kegelstumpf genähert. 
+
+\begin{gather}
+    h_\text{Kopf}=\SI{5.0}{\centi\meter} \quad \quad
+    R_\text{oben}=\SI{1.9}{\centi\meter} \quad \quad 
+    R_\text{unten}=\SI{1.4}{\centi\meter} 
+\end{gather}
+\begin{align}
+    V_\text{Kopf}&=V_\text{ges}-V_\text{diff} \\
+        &= \frac{1}{3} \frac{h}{R_\text{o}-R_\text{u}} \symup{\pi} R_\text{o}^2 - \frac{1}{3}(\frac{hR_\text{o}}{R_\text{o}-R_\text{u}}-h)\symup{\pi}R_\text{u}^2 \\
+        &= \SI{9.1}{\centi\meter\tothe{3}}
+\end{align}
+
+Die zylinderförmigen Arme haben einen durchschnittlichen Abstand von ${a_\text{Arme}=\SI{3.0}{\centi\meter}}$ zur Drehachse. 
+
+\begin{gather}
+    l_\text{Ober}=\SI{5.5}{\centi\meter} \quad \quad 
+    l_\text{Unter}=\SI{4.5}{\centi\meter} \quad \quad 
+    l_\text{Hand}=\SI{3.0}{\centi\meter} \\
+    R_\text{Ober}=\SI{0.75}{\centi\meter} \quad \quad 
+    R_\text{Unter}=\SI{0.75}{\centi\meter} \quad \quad 
+    R_\text{Hand}=\SI{0.75}{\centi\meter} \\
+    V_\text{Ober}=\SI{9.7}{\centi\meter\tothe{3}} \quad \quad 
+    V_\text{Unter}=\SI{8.0}{\centi\meter\tothe{3}}\quad \quad 
+    V_\text{Hand}=\SI{5.3}{\centi\meter\tothe{3}}
+\end{gather}
+
+So, es ist zu spät, ich kann jetzt das nicht noch fertig machen. Werde erst morgen Abend wieder dazu kommen. 
+Weiteres Vorgehen wäre jetzt:
+Teilmassen der Gliedmaßen/Körperteile bestimmen mittels Dreisatz und dann die zugehörigen Trägheitsmomente ggf. mit Satz 
+von Steiner. 
+Kann ich auch machen, wenn du dich vorher schon daran setzt, kannst du dich ja an Pose 2 machen oder so...  
+ich glaube, wenn das ein und dieselbe Person macht, ist es einfacher, den Überblick zu behalten, was man sich wo wie gedacht hat :) 
+Frohes Schaffen!
+
+\FloatBarrier
+\subsubsection{Die Holzpuppe in der zweiten Pose}
+
+Der sich aus der Periodendauer ergebende Trägheitsmoment ist: 
+\begin{gather}
+    I'_\text{P2,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{4.0(4)}{\kilo\gram\centi\meter\squared} \\
+    I_\text{P2,T}=I'_\text{P2,T}-I_\text{D} <0 
+\end{gather}
