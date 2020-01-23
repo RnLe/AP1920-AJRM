@@ -33,10 +33,11 @@ Sie berechnet sich, wie aus der Theorie zu entnehmen ist, über
     \end{tabular}
 \end{table}
 
-Somit ergibt sich als experimenteller Wert ${D=\SI{18.9(5)e-3}{\newton\meter}}$ für die Winkelrichtgröße. 
-Der Fehler des Mittelwerts berechnet sich über 
+Somit ergibt sich als experimenteller Wert ${D=\SI{18.9\pm1.6e-3}{\newton\meter}}$ für die Winkelrichtgröße. 
+Die Abweichung der Größe berechnet sich über 
 \begin{equation}
-    \increment D = \sqrt{\frac{1}{N(N-1)}\sum_{i=1}^N (D_i-\bar{D})}
+    \increment D = \sqrt{\frac{1}{N-1}\sum_{i=1}^N (D_i-\bar{D})^2}
+    \label{eqn:fehler}
 \end{equation}
 mit dem arithmetischen Mittel $\bar{D}$. 
 
@@ -105,7 +106,47 @@ bestimmen.
 \end{figure}
 
 \FloatBarrier
-\subsection{nächste section}
+\subsection{Trägheitsmomente verschiedener Körper}
+
+In den Tabellen \ref{tab:messSchwing} und \ref{tab:mittelSchwing} sind die Messwerte aufgetragen, die zur Bestimmung der 
+Trägheitsmomente zweier verschiedener Zylinder und einer Holzpuppe in zwei unterschiedlichen Posen aufgenommen worden sind. 
+In \ref{tab:mittelSchwing} berechnet sich der Messfehler ebenfalls über \eqref{eqn:fehler}. 
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm]{plots/Zyl_big.jpeg}
+        \caption{Der große Zylinder.}
+        \label{fig:grZyl}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm]{plots/Zyl_small.jpeg}
+        \caption{Der kleine Zylinder.}
+        \label{fig:klZyl}
+    \end{subfigure}
+    \caption{Die verwendeten Zylinder und ihre Drehachsen im Experiment.}
+    \label{fig:Zyl}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm]{plots/figur1.jpeg}
+        \caption{Pose 1.}
+        \label{fig:pos1}
+    \end{subfigure}
+    \begin{subfigure}{0.48\textwidth}
+        \centering
+        \includegraphics[height=5cm]{plots/figur2.jpeg}
+        \caption{Pose 2.}
+        \label{fig:pos2}
+    \end{subfigure}
+    \caption{Die Holzpuppe in zwei verschiedenen Stellungen.}
+    \label{fig:puppe}
+\end{figure}
 
 \begin{table}
     \centering
@@ -113,7 +154,7 @@ bestimmen.
     \label{tab:messSchwing}
     \begin{tabular}{c c c c}
         \toprule
-        {T$_{zyl, gross}\:/\:\si{\second}$} & {T$_{zyl, klein}\:/\:\si{\second}$} & {T$_{pose1}\:/\:\si{\second}$} & {T$_{pose2}\:/\:\si{\second}$} \\
+        {$T_\text{Zyl,groß}\:/\:\si{\second}$} & {$T_\text{Zyl,klein}\:/\:\si{\second}$} & {$T_\text{Pose1}\:/\:\si{\second}$} & {$T_\text{Pose2}\:/\:\si{\second}$} \\
         \midrule
         1.08 & 2.31 & 0.38 & 0.92 \\
         1.27 & 2.23 & 0.41 & 0.89 \\
@@ -126,38 +167,105 @@ bestimmen.
 
 \begin{table}
     \centering
-    \caption{Messwerte zur Bestimmung der Eigenträgheit.}
-    \label{tab:messEigen}
-    \begin{tabular}{c c c}
-        \toprule
-        {T$_{eigen}\:/\:\si{\second}$} & {a$_{m1}\:/\:\si{\centi\meter}$} & {a$_{m2}\:/\:\si{\centi\meter}$} \\
-        \midrule
-        2.50 & 4.5  & 5.5  \\
-        2.93 & 6.5  & 7.5  \\
-        3.21 & 8.5  & 9.5  \\
-        3.83 & 10.5 & 11.5 \\
-        4.16 & 12.5 & 13.5 \\
-        4.70 & 14.5 & 15.5 \\
-        5.27 & 16.5 & 17.5 \\
-        5.79 & 18.5 & 19.5 \\
-        6.27 & 20.5 & 21.5 \\
-        6.78 & 22.5 & 23.5 \\
-        \bottomrule
-    \end{tabular}
-\end{table}
-
-\begin{table}
-    \centering
     \caption{Messunsicherheiten aller Schwingungsdauern.}
     \label{tab:mittelSchwing}
     \begin{tabular}{l c}
         \toprule
         & {T$\:/\:\si{\second}$} \\     % werden Messgrößen kursiv geschrieben? (hier das T)
         \midrule
-        Zylinder$_{gross}$  & 2.25$\pm$0.05 \\
-        Zylinder$_{klein}$  & 1.16$\pm$0.06 \\
-        Holzfigur Pose 1    & 0.40$\pm$0.02 \\
-        Holzfigur Pose 2    & 0.91$\pm$0.02 \\
+        Zylinder$_\text{gross}$  & $\SI{2.25(5)}{}$ \\
+        Zylinder$_\text{klein}$  & $\SI{1.16(6)}{}$ \\
+        Holzfigur Pose 1  & $\SI{0.40(2)}{}$ \\
+        Holzfigur Pose 2  & $\SI{0.91(2)}{}$ \\
         \bottomrule
     \end{tabular}
 \end{table}
+
+\FloatBarrier
+\subsubsection{Der kleine Zylinder}
+
+\begin{table}
+    \centering
+    \caption{Maße des kleinen Zylinders und der zugehörigen Halterung.}
+    \label{tab:kleZyl}
+    \begin{tabular}{c c}
+        \toprule
+        \multicolumn{2}{c}{Zylinder} \\
+        \midrule
+        $m$ & \SI{1119.4}{\gram} \\
+        $h$ & \SI{3.0}{\centi\meter} \\
+        $d$ & \SI{7.45}{\centi\meter} \\
+        \bottomrule
+    \end{tabular}
+    \qquad \qquad 
+    \begin{tabular}{c c}
+        \toprule
+        \multicolumn{2}{c}{Halterung}\\
+        \midrule
+        $h$ & \SI{1.8}{\centi\meter} \\
+        $d$ & \SI{0.6}{\centi\meter} \\
+        \bottomrule
+            \\
+    \end{tabular}
+\end{table}
+
+Das erwartete Trägheitsmoment anhand der geometrischen Abmessungen ist 
+\begin{gather}
+    m_\text{ges}=\SI{1119.4}{\gram}\:, \qquad 
+    m_\text{Zyl}=m_\text{ges}\frac{d_\text{Zyl}^2h_\text{Zyl}}{d_\text{Zyl}^2h_\text{Zyl}+d_\text{Halt}^2h_\text{Halt}}=\SI{1115.1}{\gram} \\
+    m_\text{Halt} = m_\text{ges}-m_\text{Zyl}=\SI{4.3}{\gram} \\
+    I_\text{kl,geo}=\frac{1}{2}m_\text{Zyl}\frac{d_\text{Zyl}^2}{4}+\frac{1}{2}m_\text{Halt}\frac{d_\text{Halt}^2}{4}=\SI{7.74}{\kilo\gram\centi\meter\squared}\:.
+\end{gather}
+
+Wird hingegen die gemittelte Periode und die Winkelrichtgröße inklusive der Messfehler verwendet, um über 
+\begin{equation}
+    T=2\symup{\pi}\sqrt{\frac{I}{D}}
+\end{equation}
+das Trägheitsmoment zu berechnen, ergibt sich 
+\begin{equation}
+    I_\text{kl,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{6.44(55)}{\kilo\gram\centi\meter\squared}\:.
+\end{equation}
+
+\FloatBarrier
+\subsubsection{Der große Zylinder}
+
+Dasselbe Verfahren wird nun für den großen Zylinder angewendet, mit dem Unterschied, dass die Drehachse hier senkrecht zur 
+Symmetrieachse des Zylinders steht und deshalb eine etwas abgewandelte, in der Theorie erläuterte Formel verwendet wird. 
+
+\begin{table}
+    \centering
+    \caption{Maße des großen Zylinders und der zugehörigen Halterung.}
+    \label{tab:groZyl}
+    \begin{tabular}{c c}
+        \toprule
+        \multicolumn{2}{c}{Zylinder}\\
+        \midrule
+        $m$ & \SI{1525.6}{\gram} \\
+        $h$ & \SI{13.95}{\centi\meter} \\
+        $d$ & \SI{7.95}{\centi\meter} \\
+        \bottomrule
+    \end{tabular}
+    \qquad \qquad 
+    \begin{tabular}{c c}
+        \toprule
+        \multicolumn{2}{c}{Halterung}\\
+        \midrule
+        $h$ & \SI{1.4}{\centi\meter} \\
+        $d$ & \SI{0.55}{\centi\meter} \\ 
+        \bottomrule
+            \\
+    \end{tabular}
+\end{table}
+
+\begin{gather}
+    m_\text{ges}=\SI{1525.6}{\gram}\:, \qquad 
+    m_\text{Zyl}=m_\text{ges}\frac{d_\text{Zyl}^2h_\text{Zyl}}{d_\text{Zyl}^2h_\text{Zyl}+d_\text{Halt}^2h_\text{Halt}}=\SI{1524.9}{\gram} \\
+    m_\text{Halt} = m_\text{ges}-m_\text{Zyl}=\SI{0.7}{\gram} \\
+    I_\text{gr,geo}=m_\text{Zyl} \Bigl( \frac{d_\text{Zyl}^2}{16} + \frac{h_\text{Zyl}^2}{12} \Bigr) 
+        +\frac{1}{2}m_\text{Halt}\frac{d_\text{Halt}^2}{4}=\SI{30.75}{\kilo\gram\centi\meter\squared}\:.
+\end{gather}
+
+\begin{equation}
+    I_\text{gr,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{24.24\pm2.32}{\kilo\gram\centi\meter\squared}\:.
+\end{equation}
+
