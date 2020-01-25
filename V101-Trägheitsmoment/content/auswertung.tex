@@ -385,7 +385,7 @@ die Teilmassen der Körperteile bestimmen, woraus im Anschluss das Trägheitsmom
 
 \begin{table}
 \centering
-\caption{Trägheitsmomente der einzelnen Körperteile unter Berücksichtigung des Satz von Steiner.}
+\caption{Trägheitsmomente der einzelnen Körperteile in Pose 1 unter Berücksichtigung des Satz von Steiner.}
 \label{tab:traegh}
 \begin{tabular}{c c S[table-format=3.1]}
     \toprule
@@ -428,3 +428,45 @@ Der sich aus der Periodendauer ergebende Trägheitsmoment ist:
     I'_\text{P2,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{4.0(4)}{\kilo\gram\centi\meter\squared} \\
     I_\text{P2,T}=I'_\text{P2,T}-I_\text{D} <0 
 \end{gather}
+
+Zur geometrischen Berechnung des Trägheitsmoment wird festgestellt, dass die des Torsos, der abgeschnitten Kugel, des 
+Beckens und des Kopfes übernommen werden können. 
+Die Beine und Arme seien nahezu horizontal positioniert und werden mit den gleichen geometrischen Körpern angenähert 
+wie bei der ersten Pose.
+Die Arme sind somit diesmal horizontal ausgerichtete Zylinder, ebenso wie die Hände und die Beine. Die Füße sind vertikal aufgestellte Halbzylinder. 
+Die Abstände vom Schwerpunkt der Zylinder zur Drehachse sind 
+\begin{gather}
+    a_\text{Hand}=\SI{14.2}{\centi\meter}\,,   \quad \quad 
+    a_\text{Unterarm}=\SI{10.4}{\centi\meter}\,,\quad \quad 
+    a_\text{Oberarm}=\SI{5.4}{\centi\meter}\,, \\
+    a_\text{Fuß}=\SI{14.0}{\centi\meter} \,,\quad \quad
+    a_\text{Unterschenkel}=\SI{10.2}{\centi\meter}\,, \quad \quad
+    a_\text{Oberschenkel}=\SI{3.8}{\centi\meter} \,.
+\end{gather}
+
+Daraus ergeben sich die in \ref{tab:traegh2} aufgeführten Werte und ein Trägheitsmoment von 
+\begin{equation}
+    I_\text{geo,Pose2}=\SI{3260.3}{\kilo\gram\centi\meter\squared}
+\end{equation}
+
+\begin{table}
+\centering
+\caption{Trägheitsmomente der einzelnen Körperteile in Pose 2 unter Berücksichtigung des Satz von Steiner.}
+\label{tab:traegh2}
+\begin{tabular}{c c S[table-format=3.1]}
+    \toprule
+    {Körperteil} & {Anzahl} & {$I_i\:/\:\si{\kilo\gram\centi\meter\squared}$} \\
+    \midrule
+    Oberschenkel    & 2 & 102.3 \\
+    Unterschenkel   & 2 & 584.7 \\
+    Fuß             & 2 &   4.2 \\
+    Becken          & 1 &  31.6 \\
+    Torso           & 1 & 113.3 \\
+    Kugel           & 1 &   4.2 \\
+    Kopf            & 1 &  23.2 \\
+    Oberarm         & 2 & 117.7 \\
+    Unterarm        & 2 & 330.0 \\
+    Hand            & 2 & 405.1 \\
+    \bottomrule
+\end{tabular}
+\end{table}

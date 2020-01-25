@@ -1,5 +1,5 @@
 import numpy as np
-
+#Pose 1
 #Damit ich mögliche Fehler später verifizieren kann, schreibe ich gerade ein py programm, was anhand der Geometrie 
 #die Trägheitsmomente bestimmt. 
 
@@ -110,3 +110,54 @@ print("Trägheitsmoment Hand ",I_hand)
 # Trägheitsmoment Oberarm  1.0406250000000001
 # Trägheitsmoment Unterarm  0.84375
 # Trägheitsmoment Hand  0.5625
+
+#Pose 2
+print("Pose2\nTrägheitsmomente von Torso, Becken, Kugel, Kopf bleiben.")
+
+#Beine = Zylinder
+l_oberb=6.0
+l_unterb=7.0
+r_oberb=0.9
+r_unterb=0.8
+m_oberb=5.8
+m_unterb=5.4
+a_oberb=3.8
+a_unterb=10.2
+
+I2_oberb=m_oberb*(r_oberb**2/4+l_oberb**2/12)+m_oberb*a_oberb**2
+I2_unterb=m_unterb*(r_unterb**2/4+l_unterb**2/12)+m_unterb*a_unterb**2
+
+print("Oberbein ", I2_oberb)
+print("Unterbein ", I2_unterb)
+
+#Fuß=halber liegender Zylinder
+l_fuß=4.2
+r_fuß=0.7
+a2_fuß=14.0
+m_fuß=2.5
+
+I2_fuß=(1/4)*m_fuß*r_fuß**2+m_fuß*a_fuß**2
+
+print("Fuß ", I2_fuß)
+
+#Arme&Hände=Zylinder
+l_obar=5.5
+r_obar=0.75
+m_obar=3.7
+l_unar=4.5
+r_unar=0.75
+m_unar=3.0
+l_hand=3.0
+r_hand=0.75
+m_hand=2.0
+a_unar=10.4
+a_obar=5.4
+a_hand=14.2
+
+I2_obar=m_obar*(r_obar**2/4+l_obar**2/12)+m_obar*a_obar**2
+I2_unar=m_unar*(r_unar**2/4+l_unar**2/12)+m_unar*a_unar**2
+I2_hand=m_hand*(r_hand**2/4+l_hand**2/12)+m_hand*a_hand**2
+
+print("Oberarm ", I2_obar)
+print("Unterarm ", I2_unar)
+print("Hand ", I2_hand)
