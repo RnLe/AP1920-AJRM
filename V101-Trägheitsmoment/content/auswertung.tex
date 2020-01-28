@@ -78,7 +78,7 @@ Es besteht ein linearer Zusammenhang zwischen den Quadraten der Periode $T$ und 
 \end{table}
 
 Nun werden diese Werte in einem Diagramm aufgetragen. 
-Mithilfe linearer Regression lässt sich aus dem Y-Achsenabschnitt $b$ der Eigenträgheitsmoment $I_D$ bestimmen. 
+Mithilfe linearer Regression lässt sich aus dem Y-Achsenabschnitt $b$ das Eigenträgheitsmoment $I_D$ bestimmen. 
 Die Steigung $c$ ergibt sich unter Vergleich mit \eqref{eqn:Thoch2} aus
 
 \begin{gather}
@@ -90,7 +90,7 @@ T^2 = \frac{4\symup{\pi}^2}{D}(I_\text{D}+ma^2) \\
 \quad x = a^2 
 \end{gather}
 
-Unter Zuhilfenahme von \textit{Python 3.7.3} wird die lineare Regression durchgeführt, wie in Abbildung \ref{fig:Thoch2} zu sehen ist, und es ergibt sich der y-Achsenabschnitt~${b=\SI{4.42(25)}{\second\squared}}$
+Unter Zuhilfenahme von \texttt{Python 3.7.3} wird die lineare Regression durchgeführt, wie in Abbildung \ref{fig:Thoch2} zu sehen ist, und es ergibt sich der y-Achsenabschnitt~${b=\SI{4.42(25)}{\second\squared}}$
 und eine Steigung von ${c=\SI{396.0\pm4.4}{\kilo\gram\per\joule}}$. 
 Daraus lässt sich das Eigenträgheitsmoment zu 
 \begin{equation}
@@ -228,8 +228,7 @@ das Trägheitsmoment zu berechnen, ergibt sich
 
 Von diesem Wert müsste eigentlich noch das Trägheitsmoment der Drillachse von ${I_\text{D}=\SI{24.9+-1.4}{\kilo\gram\centi\meter\squared}}$ 
 abgezogen werden. Da sich für diesen Fall jedoch ein negativer Wert für den kleinen Zylinder ergeben würde und dies 
-unphysikalisch ist, kann es sich hierbei nur um einen Messfehler handeln, auf den nochmal ausführlicher in der Diskussion 
-eingegangen wird. 
+unphysikalisch ist, kann es sich hierbei nur um einen Messfehler handeln. 
 
 \FloatBarrier
 \subsubsection{Der große Zylinder}
@@ -274,8 +273,7 @@ Symmetrieachse des Zylinders steht und deshalb eine etwas abgewandelte, in der T
     I'_\text{gr,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{24.24\pm2.32}{\kilo\gram\centi\meter\squared} 
 \end{gather}
 
-Auch hier ergibt sich nach Abzug des Eigenträgheitsmoments ein negativer, unphysikalischer Wert für das Trägheitsmoment, 
-dessen mögliche Ursachen in Kapitel \ref{sec:Diskussion} diskussiert werden. 
+Auch hier ergibt sich nach Abzug des Eigenträgheitsmoments ein negativer, unphysikalischer Wert für das Trägheitsmoment. 
 
 \FloatBarrier
 \subsubsection{Die Holzpuppe in der ersten Pose}
@@ -423,7 +421,7 @@ Gesamt-Trägheitsmoment von
 \FloatBarrier
 \subsubsection{Die Holzpuppe in der zweiten Pose}
 
-Der sich aus der Periodendauer ergebende Trägheitsmoment ist: 
+Das sich aus der Periodendauer ergebende Trägheitsmoment ist: 
 \begin{gather}
     I'_\text{P2,T}=T^2\frac{D}{4\symup{\pi}^2}=\SI{4.0(4)}{\kilo\gram\centi\meter\squared} \\
     I_\text{P2,T}=I'_\text{P2,T}-I_\text{D} <0 

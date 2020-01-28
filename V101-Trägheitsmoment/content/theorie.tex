@@ -64,7 +64,44 @@ zu dieser Achse verschoben und mit der Gleichung
 berechnet. Hier entspricht $I_U$ dem ursprünglichen Massenträgheitsmoment und $a$ dem Abstand zur Achse, um die 
 parallel verschoben wird.
 
-\subsection{Trägheitsmoment spezieller Körper}
+\subsection{Winkelrichtgröße}
+Das Direktionsmoment $D$, auch Winkelrichtgröße genannt, entspricht analog der Federkonstanten bei longitudinalen Auslenkungen. Das Moment ist also
+die Proportionalitätskonstante bei einer mechanischen Torsion zwischen dem Drehwinkel $\vec{\varphi}$ und dem Drehmoment $\vec{M}$
+\begin{equation}
+    \label{eqn:FederAnalogie}
+    \vec{M} = D\cdot \vec{\varphi} \qquad , \qquad \vec{F} = k\cdot \vec{s}\:.
+\end{equation}
+Zudem gilt die Beziehung 
+\begin{equation}
+    \label{eqn:DrehKraft}
+    \vec{M} = \vec{F} \times \vec{r}\:,
+\end{equation}
+wobei $\vec{F}$ einer angreifenden Kraft auf den drehbaren Körper bei dem Abstand $\vec{r}$ entspricht.
+
+
+Das Drehmoment $M$ ist bei Spiralfedern eine lineare Funktion der Auslenkung $\varphi$ mit dem Konstanten Vorfaktor $D$.
+Es stellt also eine rücktreibende Kraft dar, die auf den drehbaren Körper wirkt.
+Durch die lineare Natur des Drehmoments entspricht die Dynamik die einer harmonischen Schwingung bei vorhandener Auslenkung.
+Die bei realen Schwingern vorhandene Dämpfung wird für diesen Versuch nicht berücksichtig.
+
+Die ungedämpfte Eigenkreisfrequenz einer harmonischen, longitudinalen Federschwingung wird vorausgesetzt als 
+\begin{equation*}
+    \omega = \frac{2\pi}{T} = \sqrt{\frac{k}{m}}\:.
+\end{equation*}
+
+Durch die in \eqref{eqn:FmaAnalogie} gezeigte Analogie ergibt\footnote{In realen Fällen muss beachtet werden, dass die Drillachse ein eigenes Trägeheitsmoment $I_D$ besitzt, welches für genaue Berechnungen zuerst bestimmt werden muss.} sich dann für $T$
+
+\begin{alignat}{2}
+    &       & \omega    & = \frac{2\pi}{T} = \sqrt{\frac{D}{I}}  \\
+    & \iff  & T         & = 2\pi \sqrt{\frac{I}{D}}\:.
+    \label{eqn:SchwingFeder}
+\end{alignat}
+
+Das Direktionsmoment $D$ wird in einer \textit{statischen Methode} durch Messung der Auslenkung $\varphi$ als Funktion der Kraft $F$ mit \eqref{eqn:DrehKraft} und \eqref{eqn:FederAnalogie}
+berechnet. Ist das Massenträgheitsmoment $I$ bekannt, wird $D$ in einer \textit{dynamischen Methode} durch Messung der Schwingungsdauer $T$ mit \eqref{eqn:SchwingFeder}
+bestimmt.
+
+\subsection{Zusatz: Trägheitsmoment spezieller Körper}
 \label{sub:Trägheitsmoment}
 
 \paragraph{Abgeschnitte Kugel}
@@ -138,40 +175,3 @@ Kegelstumpfs geschlussfolgert werden.
     I_\text{diff}&=\frac{3}{10}m_\text{diff}R_\text{min}^2 \\
     I_\text{Stumpf}&=I_\text{groß}-I_\text{diff}
 \end{align}
-
-\subsection{Winkelrichtgröße}
-Das Direktionsmoment $D$, auch Winkelrichtgröße genannt, entspricht analog der Federkonstanten bei longitudinalen Auslenkungen. Das Moment ist also
-die Proportionalitätskonstante bei einer mechanischen Torsion zwischen dem Drehwinkel $\vec{\varphi}$ und dem Drehmoment $\vec{M}$
-\begin{equation}
-    \label{eqn:FederAnalogie}
-    \vec{M} = D\cdot \vec{\varphi} \qquad , \qquad \vec{F} = k\cdot \vec{s}\:.
-\end{equation}
-Zudem gilt die Beziehung 
-\begin{equation}
-    \label{eqn:DrehKraft}
-    \vec{M} = \vec{F} \times \vec{r}\:,
-\end{equation}
-wobei $\vec{F}$ einer angreifenden Kraft auf den drehbaren Körper bei dem Abstand $\vec{r}$ entspricht.
-
-
-Das Drehmoment $M$ ist bei Spiralfedern eine lineare Funktion der Auslenkung $\varphi$ mit dem Konstanten Vorfaktor $D$.
-Es stellt also eine rücktreibende Kraft dar, die auf den drehbaren Körper wirkt.
-Durch die lineare Natur des Drehmoments entspricht die Dynamik die einer harmonischen Schwingung bei vorhandener Auslenkung.
-Die bei realen Schwingern vorhandene Dämpfung wird für diesen Versuch nicht berücksichtig.
-
-Die ungedämpfte Eigenkreisfrequenz einer harmonischen, longitudinalen Federschwingung wird vorausgesetzt als 
-\begin{equation*}
-    \omega = \frac{2\pi}{T} = \sqrt{\frac{k}{m}}\:.
-\end{equation*}
-
-Durch die in \eqref{eqn:FmaAnalogie} gezeigte Analogie ergibt\footnote{In realen Fällen muss beachtet werden, dass die Drillachse ein eigenes Trägeheitsmoment $I_D$ besitzt, welches für genaue Berechnungen zuerst bestimmt werden muss.} sich dann für $T$
-
-\begin{alignat}{2}
-    &       & \omega    & = \frac{2\pi}{T} = \sqrt{\frac{D}{I}}  \\
-    & \iff  & T         & = 2\pi \sqrt{\frac{I}{D}}\:.
-    \label{eqn:SchwingFeder}
-\end{alignat}
-
-Das Direktionsmoment $D$ wird in einer \textit{statischen Methode} durch Messung der Auslenkung $\varphi$ als Funktion der Kraft $F$ mit \eqref{eqn:DrehKraft} und \eqref{eqn:FederAnalogie}
-berechnet. Ist das Massenträgheitsmoment $I$ bekannt, wird $D$ in einer \textit{dynamischen Methode} durch Messung der Schwingungsdauer $T$ mit \eqref{eqn:SchwingFeder}
-bestimmt. 
