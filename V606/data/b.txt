@@ -1,0 +1,25 @@
+U_A=1V
+Frequenz f=35kHz
+
+ohne Probe:
+    R_BR1= 2.42 Ohm
+    R_BR2= 2.58 Ohm
+    U_BR = 4.50 mV
+
+Dy203:
+    m=14.38g
+    R_BR1= 0.84 Ohm
+    R_BR2= 4.16 Ohm
+    U_BR = 1.15 mV
+
+Nd203:
+    m=9.0g
+    R_BR1= 2.27 Ohm
+    R_BR2= 2.73 Ohm
+    U_BR = 1.45 mV
+
+Gd203:
+    m=14.08g
+    R_BR1= 1.53 Ohm
+    R_BR2= 3.47 Ohm
+    U_BR = 1.35 mV

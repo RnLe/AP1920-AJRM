@@ -1,4 +1,91 @@
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Verwendete Naturkonstanten im Überblick}
 
+
+\subsection{Berechnung der Suszeptibilität paramagnetischer Stoffe}
+
+    Die magnetische Flussdichte $\vec{B}_0$ im Vakuum ist mit der magnetischen Feldstärke $\vec{H}$ durch ${\vec{B}_0=\symup{\mu}_0 \vec{H}}$
+    gegeben. Diese Flussdichte unterscheidet sich von der, wenn ein Material sich im Vakuum befindet. 
+    In einem solchen Fall gilt 
+    \begin{equation*}
+        \vec{B}_\text{M}= \vec{B}_0 + \vec{M} \,.
+    \end{equation*}
+    $\vec{M}$ stellt hierbei die Magnetisierung dar und lässt sich auf das durchschnittliche magnetische Moment der Elementarteilchen 
+    zurückführen, welche multipliziert mit der Anzahl pro Volumeneinheit und der magnetischen Feldkonstante eben die Magnetisierung ergeben.
+    Eine ebenfalls gültige Formel wird durch 
+    \begin{equation*}
+        \vec{M}=\symup{\mu}_0 \chi \vec{H}
+    \end{equation*}
+    ausgedrückt.
+    Die Suszeptibilität $\chi$ ist an dieser Stelle die für einen Stoff charakteristische Größe. 
+
+    Bei Diamagneten liegt der Wertebereich zwischen $-1$ und $0$, sie werden aus einem Bereich höherer Feldstärke rausgedrückt, 
+    Paramagneten mit einer positiven Suszeptibilität werden hineingezogen. 
+
+    Das atomare magnetische Moment, dessen Mittelung die Magnetisierung definiert, hängt eng mit den Drehimpulsen der einzelnen 
+    Elektronen in der Atomhülle zusammen. 
+    Der Drehimpuls des Atomkerns kann -- vor allem bei den in diesem Experiment zu untersuchendnen Stoffen -- vernachlässigt 
+    werden; ausschlaggebend wird er vor allem dann, wenn ein starkes äußeres Magnetfeld vorhanden ist.
+
+    Somit setzt sich der atomare Gesamtdrehimpuls $\vec{J}$ aus dem Bahndrehimpuls $\vex{L}$ und dem Eigendrehimpuls -- dem 
+    Spin -- $\vec{S}$ zusammen:
+    \begin{equation*}
+        \vec{J}=\vec{S}+\vec{L} \,.
+    \end{equation*}
+    
+    Durch Berücksichtigung der Quantisierung bestimmter Größen lässt sich 
+    \begin{equation}   
+        \chi = \frac{\symup{\mu}_0 \symup{\mu} _\text{B}^2 g_J^2 NJ(J+1)}{3\symup{k}T}
+        \label{eqn:chii}
+    \end{equation}
+    für die Suszeptibilität herleiten. 
+    Näherungen werden bei dem gyromagnetischen Verhältnis des freien Elektrons $g_\text{S}$ vorgenommen, welches in einigen Zwischenrechnungen auftaucht und 
+    abgesehen von ein paar Promillen Abweichungen den Wert $2$ annimmt. 
+    Ebenfalls lässt sich die sogenannte Brillouin-Funktion nähern, da im Experiment bei Zimmertemperatur und mit 
+    Magnetfeldern, die nicht größer als $\SI{1}{\tesla}$ sind, gearbeitet wird.
+
+    Der Landé-Faktor $g_J$ wird an dieser Stelle mithilfe 
+    \begin{equation}
+        g_J=\frac{3J(J+1)+s(s+1)-L(L+1)}{2J(J+1)}
+        \label{eqn:lande}
+    \end{equation}
+    gegeben, wobei $S$, $L$ und $J$ die Quantenzahlen der bereits genannten Drehimpulse darstellen, die sich aus der Summe
+    der Quantenzahlen der an der Magnetisierung beteiligten Elektronen ergeben -- die Drehimpulsquantenzahlen der restlichen 
+    Elektronen summieren sich gerade zu Null. 
+
+\subsection{Die Hund'schen Regeln und das Pauli-Prinzip hinsichtlich Seltener-Erd-Verbindungen}
+\label{sub:wauwau}
+
+    Der Landé-Faktor Seltener-Erd-Verbindungen lässt sich mithilfe der Hund'schen Regeln berechnen. 
+    Sie legen fest, welche Quantenzahlen $J$, $L$ und $S$ in Gleichung \eqref{eqn:lande} eingesetzt werden müssen. 
+
+    Seltene Erden haben eine voll besetzte Elektronenhülle bis zur 5p-Schale. Darauf aufbauend befinden sich je nach 
+    Element und Ionisationszustand noch zwei 6s-ELektronen und weitere 4f-Elektronen in der Elektronenhülle. 
+    Die 4f-Elektronen sind die für die Magnetisierung entscheidenden Teilchen -- sie legen die Quantenzahlen fest, 
+    die der anderen Schalen kompensieren sich gegenseitig. 
+
+    Die Hund'schen Regeln sind:
+    \begin{enumerate}
+        \item Der Eigendrehimpuls beziehungsweise der Spin $S$ ist maximal, woraus eine möglichst parallele Orientierung 
+            der einzelnen Elektronenspins resultiert.    
+        \item Der Bahndrehimpuls $L$ ist maximal, also ebenfalls nach Möglichkeit parallel. 
+        \item Wenn eine Unterschale maximal zur Hälfte gefüllt ist, ergibt sich ${J=L-S}$, andernfalls ${J=L+S}$.
+    \end{enumerate}
+    Wichtig zu wissen ist hierbei: 
+    \begin{itemize}
+        \item Der Spin nimmt die Werte $\sfrac{1}{2}$ oder $\sfrac{-1}{2}$ an. 
+        \item Hierbei seien die summierten Werte durch $S=\sum_i s_i$ und $L=\sum_i l_i$ gegeben. 
+        \item Die ausschlaggebende Unterschale ist 4f; das bedeutet, dass die Hauptquantenzahl ${n=4}$ ist.
+        \item Für die Quantenzahlen des Bahndrehimpuls gilt: $l_i \in [0,n-1] \Rightarrow l_i \in [0,3]$ .
+    \end{itemize}
+
+    Ein letzter wichtiger Aspekt für die Bestimmung der Quantenzahlen stellt das Pauli-Prinzip dar. 
+    Es besagt, dass mindestens eine Quantenzahl der Elektronen innerhalb einer Schale paarweise verschieden sein muss. 
+    
+    Mithilfe dieser Gesetzmäßigkeiten können im Nachhinein die Theorie-Werte für die Suszeptibilität der entsprechenden Stoffe bestimmt werden. 
+
+\subsection{Messung der Suszeptibilität}
+
+    
