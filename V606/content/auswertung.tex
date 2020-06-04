@@ -5,10 +5,10 @@
 
 Es werden die drei Elemente Neodymium, Gadolinium und Dysprosium untersucht, von denen jeweils zwei als dreifach positiv geladene 
 Ione mit drei zweifach negativ geladenen Sauerstoff-Ionen ein Molekül bilden. 
-Ebenfalls haben alle drei Elemente zwei 6s-Elektronen und eine bis zur 5p-Schale. Nur hinsichtlich der Anzahl # der 4f-Elektronen unterscheiden sie sich. 
+Ebenfalls haben alle drei Elemente zwei 6s-Elektronen und eine bis zur 5p-Schale. Nur hinsichtlich der Anzahl \# der 4f-Elektronen unterscheiden sie sich. 
 Dies ist auch der Fall, wenn sie im ionisierten Zustand sind: 
 Jeweils zwei 6s-Elektronen und ein 4f-Elektron verschwindet; die Elektronen bis zur 5p-Schale bleiben unverändert. 
-Zur besseren Übersicht werden die Zwischenergebnisse in Tabelle \ref{tab:Theo} zusammengefasst. 
+Zur besseren Übersicht werden die Zwischenergebnisse in Tabelle \ref{tab:Theo1} zusammengefasst. 
 
 Auf der 4f-Schale können sich maximal 14 Elektronen befinden. Dementsprechend wird gemäß den Hund'schen Regeln \ref{sub:wauwau} bei einer Elektronenzahl von inklusive acht 
 die Quantenzahl des Gesamtdrehimpuls durch Addition $L+S$ berechnet, bei einer geringeren Zahl durch Subtraktion $L-S$. 
@@ -17,41 +17,84 @@ Mithilfe der Quantenzahlen wird der Landé-Faktor gemäß Gleichung \eqref{eqn:l
 
     \begin{table}
         \centering
-        \caption{}
-        \label{tab:Theo}
-        \begin{tabular}{l r c c c c}
+        \caption{Bestimmung der Quantenzahlen.}
+        \label{tab:Theo1}
+        \begin{tabular}{l r c c c c c}
             \toprule
-            & & & 
+             & 
             neutral & 
             \multicolumn{4}{c}{ionisiert} \\
-            \cmidrule(lr){4} \cmidrule(lr){5-8}
+            \cmidrule(lr){2-2} \cmidrule(lr){3-7}
             Element &
-            # 4f & 
-            # 4f &
+            \# 4f & 
+            \# 4f &
             $S$ & 
             $L$ & 
-            $J$ \\
+            $J$ &
+            $g_J$ \\
             \midrule
-            Nd &  4 & 3 & $3\cdot\frac{+1}{2}=\frac{3}{2}$                       & $3+2+1=6$             & $\frac{9}{2}$  \\
-            Gd &  8 & 7 & $7\cdot\frac{+1}{2}=\frac{7}{2}$                       & $3+2+1+0=6$           & $\frac{5}{2}$  \\
-            Dy & 10 & 9 & $7\cdot\frac{+1}{2}+2\cdot\frac{-1}{2}=\frac{5}{2}$    & $3+2+3+2+1+0-1-2-3=5$ & $\frac{15}{2}$ \\
+            Nd &  4 & 3 & $3\cdot\sfrac{+1}{2}=\sfrac{3}{2}$                       & 6 & $\sfrac{9}{2}$  & 0.727 \\
+            Gd &  8 & 7 & $7\cdot\sfrac{+1}{2}=\sfrac{7}{2}$                       & 0 & $\sfrac{-7}{2}$ & 2.400 \\
+            Dy & 10 & 9 & $7\cdot\sfrac{+1}{2}+2\cdot\sfrac{-1}{2}=\frac{5}{2}$    & 5 & $\sfrac{15}{2}$ & 1.333 \\
             \bottomrule
         \end{tabular}
     \end{table}
 
+Zur Berechnung des theoretisch zu erwartenden Werts der Suszeptibilität $\chi$ wird ebenfalls die Anzahl der atomaren magnetischen 
+Dipolmomente pro Volumeneinheit benötigt. 
+Hierfür wird die molare Masse zu 
+\begin{equation*}
+    M_\text{Molekül}=3M_\text{O}+2M_\text{SE}
+\end{equation*}
+bestimmt mit der molaren Masse des Sauerstoff und des jeweiligen Seltenen-Erd-Metalls. 
+Je Molekül gibt es also zwei magnetische atomare Dipolmomente, deren Größe mithilfe der in Tabelle \ref{tab:Theo1} vorgegeben werden.
+
+Die Stoffmenge der vorliegenden Proben ist 
+\begin{equation*}
+    n_\text{Molekül}=\frac{m}{M_\text{Molekül}}
+\end{equation*}
+mit der Masse $m$. 
+Sie gibt die Anzahl der Teilchen in Mol an, die in der Probe enthalten sind. 
+Dementsprechend berechnet sich die Anzahl der Moleküle pro Volumen durch Division der Stoffmenge mit dem Volumen. 
+Multipliziert man dies mit zwei, erigbt sich die Anzahl der Mole der positiv geladenen Seltenen-Erd-Ionen:
+\begin{equation*}
+    n_\text{Ione}=2\cdot\frac{n_\text{Molekül}}{V_\text{Molekül}}=2\cdot \frac{n_\text{Molekül}\rho}{m}
+\end{equation*}
+Die Dichte $\rho$ steht im Experiment bereits zur Verfügung und muss nicht extra aufgenommen werden. 
+Die Anzahl $N$ der Teilchen ohne Einheiten pro Volumeneinheit wird durch Multiplikation der Avogadro-Konstante $\symup{N}_\text{A}$ erreicht.
+\begin{equation*}
+    N=n_\text{Ione}\cdot \symup{N}_\text{A}=\frac{2\symup{N}_\text{A}\rho}{M_\text{Molekül}}
+\end{equation*}
+Die entsprechenden Daten dazu werden in Tabelle \ref{tab:Theo2} dargestellt. 
+Die Werte für die Molare Masse sind \cite[610]{kohlrausch} entnommen.
+Die des Sauerstoffs ist $M_\text{O}=\SI{15.9994}{\gram\per\mole}$
+
     \begin{table}
         \centering
         \caption{}
-        \label{tab:}
-        \begin{tabular}{l S[table-format=2.2] S[table-format=1.2]}
+        \label{tab:Theo2}
+        \begin{tabular}{l c c S[table-format=2.2] S[table-format=1.2] c}
             \toprule
             Element & 
+            $M_\text{SE}\,/\,\si{\gram\per\mole}$ &
+            $M_\text{Mol}\,/\,\si{\gram\per\mole}$ &
             $m\,/\,\si{\gram}$ & 
-            $\rho\,/\,\si{\gram\per\cubic\centi\meter}$ \\
+            $\rho\,/\,\si{\gram\per\cubic\centi\meter}$ &
+            $N\,/\,\SI{e22}{\per\cubic\centi\meter}$ \\
             \midrule
-            Nd & \num{9.0}   & \num{7.24} \\
-            Gd & \num{14.08} & \num{7.40} \\
-            Dy & \num{14.38} & \num{7.8}  \\
+            Nd & 144.22 & 336.44 & 9.0   & 7.24 & 2.592 \\
+            Gd & 157.25 & 362.50 & 14.08 & 7.40 & 2.459 \\
+            Dy & 162.50 & 373.00 & 14.38 & 7.8  & 2.519 \\
             \bottomrule
         \end{tabular}
     \end{table}
+
+Gemäß Gleichung \eqref{eqn:chii} ist die Suszeptibilität temperaturabhängig. 
+Der Versuch ist bei Raumtemperatur und Sommerwetter durchgeführt worden. 
+Die Temperatur wird deshalb mit ${T\approx(\num{273.15}+\num{23.85})\si{\kelvin}=\SI{297}{\kelvin}}$ abgeschätzt.
+Daraus ergeben sich für die Suszeptibilität folgende Werte:
+\begin{align*}
+    \chi _\text{Nd}=\num{2.98104118e-09} \\
+    \chi _\text{Gd}=\num{1.08873279e-08} \\
+    \chi _\text{Dy}=\num{2.50790125e-08} 
+\end{align*}

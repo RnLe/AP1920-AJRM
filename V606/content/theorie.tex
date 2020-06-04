@@ -3,6 +3,34 @@
 
 \subsection{Verwendete Naturkonstanten im Überblick}
 
+Die in Tabelle \ref{tab:NatKonst} zusammengestellten Naturkonstanten sind \cite{scipy} entnommen. 
+Das Bohr'sche Magneton ist über 
+\begin{equation*}
+    \symup{\mu}_\text{B}=\frac{\symup{e\hbar}}{2\symup{h}}=\frac{\symup{eh}}{4\symup{h\pi}}
+\end{equation*}
+definiert.
+
+    \begin{table}
+        \centering
+        \caption{Für das Protokoll benötigte Naturkonstanten auf einen Blick.}
+        \label{tab:NatKonst}
+        \begin{tabular}{l c c c}
+            \toprule
+            Naturkonstante &
+            Formelzeichen &
+            Wert &
+            Einheit \\
+            \midrule
+            Elementarladung                 & $\symup{e}          $   & $\num{1.602176634e-19}$   & \si{\coulomb} \\
+            Planck'sches Wirkungsquantum    & $\symup{h}            $ & $\num{6.62607015e-34}$    & \si{\joule\second} \\
+            Boltzmann-Konstante             & $\symup{k}_\text{B}   $ & $\num{1.380649e-23}$      & \si{\joule\per\kelvin} \\
+            Magnetische Permeabilität       & $\symup{\mu}_0        $ & $\num{1.2566370614e-06}$  & \si{\newton\per\ampere\squared} \\
+            Masse eines Elektrons           & $\symup{m_e}          $ & $\num{9.1093837015e-31}$  & \si{\kilo\gram} \\
+            Avogadro-Konstante              & $\symup{N}_\text{A}   $ & $\num{6.02214076e+23}$    & \si{\per\mole} \\
+            Bohr'sches Magneton             & $\symup{\mu}_\text{B} $ & $\num{9.2740100784e-24}$  & \si{\joule\per\tesla} \\
+            \bottomrule
+        \end{tabular}
+    \end{table}
 
 \subsection{Berechnung der Suszeptibilität paramagnetischer Stoffe}
 
@@ -29,7 +57,7 @@
     Der Drehimpuls des Atomkerns kann -- vor allem bei den in diesem Experiment zu untersuchendnen Stoffen -- vernachlässigt 
     werden; ausschlaggebend wird er vor allem dann, wenn ein starkes äußeres Magnetfeld vorhanden ist.
 
-    Somit setzt sich der atomare Gesamtdrehimpuls $\vec{J}$ aus dem Bahndrehimpuls $\vex{L}$ und dem Eigendrehimpuls -- dem 
+    Somit setzt sich der atomare Gesamtdrehimpuls $\vec{J}$ aus dem Bahndrehimpuls $\vec{L}$ und dem Eigendrehimpuls -- dem 
     Spin -- $\vec{S}$ zusammen:
     \begin{equation*}
         \vec{J}=\vec{S}+\vec{L} \,.
