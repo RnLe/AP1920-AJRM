@@ -27,7 +27,7 @@ M=np.array([144.22,157.25,162.50]) # Molare Masse in g/mol aus Kohlrausch, S. 61
 M_Sauerstoff=15.9994
 
 M_Molekuel=3*M_Sauerstoff+2*M # Molare Masse der Molekülverbindung
-N=2*n_A[0]*rho/M_Molekuel # Anzahl Ione pro Volumen
+N=2*n_A[0]*rho/M_Molekuel # Anzahl Ione pro Volumen in 1/cm^3
 
 #Lande-Faktor --> Achtung, Köpfe runter, das Flugzeug landet
 g_J=(3*J*(J+1)+S*(S+1)-L*(L+1))/(2*J*(J+1))
@@ -38,5 +38,5 @@ for i in range(3):
 
 # Berechnung der Suszeptibilität theoretisch:
 T=297
-chi=mu_0[0]*mu_B**2*g_J**2*N*J*(J+1)/(3*k_B[0]*T)
+chi=mu_0[0]*mu_B**2*g_J**2*N*10**6*J*(J+1)/(3*k_B[0]*T)
 print("Und die theoretischen Werte für die Suszeptibilität bei einer Temperatur von 297 Kelvin siiiiind:\n",chi)
