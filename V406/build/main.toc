@@ -8,8 +8,8 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Einschub: Nahfeld und Fernfeld}{4}{subsubsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.4}Amplituden-Funktion}{5}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Doppelspalt}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Umrechnung von Abstandsmessung zum Abstrahlwinkel}{7}{subsection.2.6}%
-\contentsline {section}{\numberline {3}Durchführung}{8}{section.3}%
+\contentsline {subsection}{\numberline {2.6}Umrechnung der Abstandsmessung zum Abstrahlwinkel}{7}{subsection.2.6}%
+\contentsline {section}{\numberline {3}Durchführung}{7}{section.3}%
 \contentsline {section}{\numberline {4}Auswertung}{9}{section.4}%
 \contentsline {section}{\numberline {5}Diskussion}{9}{section.5}%
 \contentsline {section}{Anhang: Messdaten}{10}{section*.9}%
