@@ -1,11 +1,11 @@
 # Fdb version 3
-["biber build/main"] 1591628387 "build/main.bcf" "build/main.bbl" "build/main" 1591629065
-  "build/main.bcf" 1591629062 101773 2fa2b70427e48e738d8dbb1560adf2fc "lualatex"
+["biber build/main"] 1591628387 "build/main.bcf" "build/main.bbl" "build/main" 1591643215
+  "build/main.bcf" 1591643213 101773 2fa2b70427e48e738d8dbb1560adf2fc "lualatex"
   "lit.bib" 1591444471 2140 5daf96c6fcccae43b96348e3bd726b7a ""
   (generated)
   "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1591629041 "main.tex" "build/main.pdf" "main" 1591629065
+["lualatex"] 1591643183 "main.tex" "build/main.pdf" "main" 1591643215
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf" 1255129361 118828 4d461c73423fe2666dad2ff0dfc3ca68 ""
@@ -305,15 +305,15 @@
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/fonts/otl/xitsmath-regular.luc" 1590391851 411897 3b805ddc297c0555c6d6dcc6b405e798 ""
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-lookup-cache.luc" 1591455728 8855 2562a7ab7e464df0a075c67b20a5b048 ""
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-names.luc" 1590359576 1126375 b88698c32d2c521aa4d382d2afb280ea ""
-  "build/main.aux" 1591629062 11154 1aecd79bc17d752b52dfe829f33aca4c "lualatex"
+  "build/main.aux" 1591643213 12393 7d4a86be8f97e8943967c8f3b2e80dc4 "lualatex"
   "build/main.bbl" 1591628391 1434 03d09b0cc244ff51f7dd102bc80c78ac "biber build/main"
-  "build/main.run.xml" 1591629062 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1591629062 1230 abb629a13fe9a7f752bac15a3ec88fad "lualatex"
+  "build/main.run.xml" 1591643213 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1591643213 1319 c8e28d1921929ae3eae89a6b54eba6fd "lualatex"
   "content/anhang.tex" 1591443382 161 850a18f3172dd443f06629024de05bae ""
-  "content/auswertung.tex" 1591443382 46 2fd02d84270cf081493477d6589bef38 ""
+  "content/auswertung.tex" 1591643111 3543 c31a91624c2dd14960892aeac949483e ""
   "content/diskussion.tex" 1591443382 46 b645f8c3f8866563218b38c096971926 ""
   "content/durchfuehrung.tex" 1591628956 2203 c64fb1e130e6aa9936e717e410a6c188 ""
-  "content/theorie.tex" 1591629016 8638 460562f10f47b75e81495d52962a4507 ""
+  "content/theorie.tex" 1591642993 8348 e14277c4a48ff4d063684d14906e4d56 ""
   "content/zielsetzung.tex" 1591551697 361 eaaa8654b386423d783a3711daba86d5 ""
   "header.tex" 1591443382 4098 ae49eefe29c8a22f1d4dce9d88f60e6e ""
   "main.tex" 1591444000 500 c66dd3ddc34c22f046b9cb461742e4fe ""
@@ -325,10 +325,11 @@
   "plots/Zylinderwellen.png" 1591549829 110775 43755e421d2e0049998d9d797a53fb8d ""
   "plots/tatVersuchsaufbau.jpg" 1591455476 2597616 4fa21cdf77096b742e06e9b85394ff43 ""
   "plots/x_to_angle.png" 1591628817 7511 9650400980ebbbbb50f58f27927d1b47 ""
+  "python/EinzelspaltFit.pdf" 1591643143 8375 7dac0cf08554c60bec73006f81a7705c ""
   (generated)
+  "build/main.log"
   "build/main.run.xml"
+  "build/main.toc"
+  "build/main.pdf"
   "build/main.aux"
   "build/main.bcf"
-  "build/main.toc"
-  "build/main.log"
-  "build/main.pdf"
