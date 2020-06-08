@@ -1,0 +1,67 @@
+Hallo liebe Leute,
+da ich euch dieses Semester betreuen werde, und es nicht bei jedem Protokoll einzeln schreiben will, hier mal eine allgmeine Info.
+
+Nur weil wir Corona bedingt zu Hause sind, ist dies kein Grund, die Protokolle teilweise nur hinzuklatschen. Im Gegenteil, dadurch, dass ihr ''nur'' zu Hause seid, ist ein Anspruch auf ordentliche Protokolle wohl zu erwarten, oder?
+
+Da ein paar von euch letztes Jahr anscheinend nie gelernt haben, wie man ein Protokoll schreibt, ist unten ein langer Text zum durchlesen.
+Diese Nachricht ist nicht an alle gerichtet, da auch einige von euch echt gute Protokolle schreiben. Jedoch solltet ihr es ernst nehmen, dass ihr nur EINEN Versuch zur Korrektur habt. Wenn diesselben Fehler wieder auftreten, die man im zweiten Jahr nicht erwartet, dann seid ihr durchgefallen.
+Bei Fragen schreibt mir doch sehr gerne eine e-Mail. Ich beiße nicht. Lieber 7332 Fragen stellen, und ein gutes Protokoll abgeben anstelle von hingeklatschten Dingen.
+
+Verzeiht meinen Ton, aber es ist wirklich nicht viel verlangt.
+
+
+LEITFADEN
+Es gibt viele unterschiedliche Arten ein Protokoll
+zu schreiben. Bei aller Individualität sollten aber
+alle Protokolle ein paar Gemeinsamkeiten
+aufweisen. Dieser Leitfaden soll zeigen, welche
+Mindestanforderungen erfüllt werden sollten.
+Schrifttypen, Tabellenüberschriften und ähnliches
+ist natürlich eine Frage des Stils, die jedem selbst
+überlassen ist. Es ist wichtig, dass auf
+physikalische Korrektheit geachtet wird, die
+Berechnungen der Ergebnisse nachvollziehbar sind
+und die Diagramme aussagekräftigt.
+Es wird gewünscht, nur die genutzten Formeln zu
+nummerieren. Formeln sollen in Sätze
+eingegliedert und mit Satzzeichen versehen
+werden. Tabellen sind mit Überschriften und
+Grafiken sind mit Unterschriften zu versehen. Das
+Protokoll soll ohne Anleitung zu verstehen sein.
+
+1 Zielsetzung
+Hier soll kurz das Ziel oder die Motivation genannt werden, was mit dem Versuch erreicht
+wird bzw. erreicht werden soll.
+2 Theorie
+In der Theorie sollten die wichtigsten Formeln und ggfs. Ihr Ursprung erklärt werden. Die
+Theorie sollte auf das Notwendigste reduziert werden und keine Herleitungen beinhalten.
+3 Durchführung
+Hier soll die tatsächliche Durchführung und der Aufbau dargestellt und erklärt werden.
+Entscheidend ist hierbei, was wirklich gemacht wurde und nicht, was in der Anleitung
+steht.
+4 Auswertung
+Hier sollen in einer strukturierten Reihenfolge eure Ergebnisse bestimmt werden. Dazu
+werden die in der Theorie aufgeführten Formeln genutzt, und die Ergebnisse meist grafisch
+dargestellt.
+Hierbei ist wichtig, dass ein Diagramm in den Text eingebunden sein sollte, und eine
+gut erkennbare Größe hat. Es ist wichtig auf eine richtige und sinnvolle Skalierung zu
+achten, sowie auf eine Achsenbeschriftung mit passender Masseinheit. Entscheidet man
+sich für eine Bildunterschrift, so sollte diese aussagekräftig sein. Messpunkte werden nicht
+verbunden. Theoriewerte und Ausgleichsdaten werden als Kurven dargestellt. Nutzt man
+eine Regression, so sollen alle bestimmten Parameter mit ihrer Unsicherheit im Protokoll
+dargestellt werden.
+Bestimmt man ein Ergebnis rechnerisch, so ist eine nachvollziehbare Fehlerrechnung
+anzugeben. Die Ergebnisse sollen sinnvoll gerundet werden (zwei bis drei signifikante
+Stellen).
+5 Diskussion
+Hier soll der Versuch kurz zusammengefasst werden, und die wesentlichen Ergebnisse
+darstellen. Wenn möglich sollten danach die Theoriewerte aufgelistet, und mit den ermit-
+telten Werten verglichen werden. Anhand der Abweichung soll Stellung zur Messmethode
+genommen werden. Hierbei sollen ggfs. die relevanten Fehlerquellen diskutiert werden. In
+der Literatur sollten eure Quellen in wissenschaftlicher Art und Weise auflistet sein und
+an DER Stelle, an der sie verwendet werden, zitiert. Was nicht erwünscht ist, ist eine
+Formulierung wie ”Alle Graphiken sind aus .....”.
+
+
+
+Mit liebsten Grüßen, Elcin Akay
