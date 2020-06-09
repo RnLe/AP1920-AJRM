@@ -19,6 +19,22 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{DoppelspaltWiki}{online}{}
+      \field{sortinit}{D}
+      \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
+      \field{labeltitlesource}{title}
+      \field{title}{Doppelspaltexperiment}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Doppelspaltexperiment
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Doppelspaltexperiment
+      \endverb
+    \endentry
     \entry{Versuchsanleitung}{manual}{}
       \name{author}{1}{}{%
         {{hash=2821a70f99517ac7757c95300d43e95c}{%
@@ -39,6 +55,45 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuch V406: Beugung am Spalt}
       \field{year}{2020}
+    \endentry
+    \entry{scipy}{software}{}
+      \true{moreauthor}
+      \true{morelabelname}
+      \name{author}{3}{}{%
+        {{hash=4b3d26f886661aa723985bcfd835ba18}{%
+           family={Jones},
+           familyi={J\bibinitperiod},
+           given={Eric},
+           giveni={E\bibinitperiod}}}%
+        {{hash=d500f4849030f34359cdb3e1513acf83}{%
+           family={Oliphant},
+           familyi={O\bibinitperiod},
+           given={Travis\bibnamedelima E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=3d6efaaa3d9682e20787eb06ff70a3d7}{%
+           family={Peterson},
+           familyi={P\bibinitperiod},
+           given={Pearu},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{fullhash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{bibnamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authorbibnamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authornamehash}{c2d4b138ebed3e173fcb667b68477029}
+      \strng{authorfullhash}{c2d4b138ebed3e173fcb667b68477029}
+      \field{sortinit}{J}
+      \field{sortinithash}{c45040a764d616897e7f5b30174d7b92}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{{SciPy}: Open source scientific tools for {Python}}
+      \field{version}{0.16.0}
+      \verb{urlraw}
+      \verb http://www.scipy.org/
+      \endverb
+      \verb{url}
+      \verb http://www.scipy.org/
+      \endverb
     \endentry
   \enddatalist
 \endrefsection

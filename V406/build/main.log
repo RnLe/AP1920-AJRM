@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  8 JUN 2020 21:06
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  9 JUN 2020 18:08
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1617,18 +1617,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--11
 
  []
 
-<plots/Huygens.png, id=55, 937.25156pt x 587.94656pt>
+<plots/Huygens.png, id=69, 937.25156pt x 587.94656pt>
 File: plots/Huygens.png Graphic file (type png)
 <use plots/Huygens.png>
 Package luatex.def Info: plots/Huygens.png  used on input line 22.
 (luatex.def)             Requested size: 94.10686pt x 59.03134pt.
-<plots/Zylinderwellen.png, id=56, 603.0028pt x 603.75563pt>
+<plots/Zylinderwellen.png, id=70, 603.0028pt x 603.75563pt>
 File: plots/Zylinderwellen.png Graphic file (type png)
 <use plots/Zylinderwellen.png>
 Package luatex.def Info: plots/Zylinderwellen.png  used on input line 28.
 (luatex.def)             Requested size: 94.10686pt x 94.21681pt.
 [3<./plots/Huygens.png><./plots/Zylinderwellen.png>]
-<plots/Wave_Diffraction_4Lambda_Slit.png, id=68, 702.625pt x 566.115pt>
+<plots/Wave_Diffraction_4Lambda_Slit.png, id=82, 702.625pt x 566.115pt>
 File: plots/Wave_Diffraction_4Lambda_Slit.png Graphic file (type png)
 <use plots/Wave_Diffraction_4Lambda_Slit.png>
 Package luatex.def Info: plots/Wave_Diffraction_4Lambda_Slit.png  used on input line 49.
@@ -1645,184 +1645,54 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 8.99904pt on input line 53.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 53.
-<plots/Fresnel_Fraunhofer.png, id=73, 1021.56656pt x 435.87843pt>
+<plots/Fresnel_Fraunhofer.png, id=87, 1021.56656pt x 435.87843pt>
 File: plots/Fresnel_Fraunhofer.png Graphic file (type png)
 <use plots/Fresnel_Fraunhofer.png>
 Package luatex.def Info: plots/Fresnel_Fraunhofer.png  used on input line 61.
 (luatex.def)             Requested size: 334.60571pt x 142.76286pt.
  [4<./plots/Wave_Diffraction_4Lambda_Slit.png>]
-<plots/Beugung Einzelspalt.png, id=94, 635.37375pt x 451.6875pt>
+<plots/Beugung Einzelspalt.png, id=106, 635.37375pt x 451.6875pt>
 File: plots/Beugung Einzelspalt.png Graphic file (type png)
 <use plots/Beugung Einzelspalt.png>
 Package luatex.def Info: plots/Beugung Einzelspalt.png  used on input line 78.
 (luatex.def)             Requested size: 334.60571pt x 237.87694pt.
  [5<./plots/Fresnel_Fraunhofer.png><./plots/Beugung Einzelspalt.png>] [6]
-<plots/x_to_angle.png, id=128, 348.55219pt x 253.69781pt>
+<plots/Doppelspalt.png, id=139, 1066.7353pt x 682.04813pt>
+File: plots/Doppelspalt.png Graphic file (type png)
+<use plots/Doppelspalt.png>
+Package luatex.def Info: plots/Doppelspalt.png  used on input line 167.
+(luatex.def)             Requested size: 376.42744pt x 240.67697pt.
+ [7<./plots/Doppelspalt.png>]
+<plots/x_to_angle.png, id=157, 348.55219pt x 253.69781pt>
 File: plots/x_to_angle.png Graphic file (type png)
 <use plots/x_to_angle.png>
-Package luatex.def Info: plots/x_to_angle.png  used on input line 168.
+Package luatex.def Info: plots/x_to_angle.png  used on input line 206.
 (luatex.def)             Requested size: 334.60571pt x 243.55875pt.
-) (./content/durchfuehrung.tex
-<plots/Versuchsaufbau.png, id=129, 962.84718pt x 439.6425pt>
+) (./content/durchfuehrung.tex [8]
+<plots/Versuchsaufbau.png, id=169, 962.84718pt x 439.6425pt>
 File: plots/Versuchsaufbau.png Graphic file (type png)
 <use plots/Versuchsaufbau.png>
 Package luatex.def Info: plots/Versuchsaufbau.png  used on input line 10.
 (luatex.def)             Requested size: 418.25555pt x 190.9746pt.
- [7<./plots/x_to_angle.png>]
+ [9<./plots/x_to_angle.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 17--25
 
  []
 
 
 warning  (file plots/tatVersuchsaufbau.jpg) (readjpg): Exif resolution 71dpi x 71dpi differs from the input resolution 72dpi x 72dpi
-<plots/tatVersuchsaufbau.jpg, id=141, 4690.42479pt x 2544.7183pt>
+<plots/tatVersuchsaufbau.jpg, id=179, 4690.42479pt x 2544.7183pt>
 File: plots/tatVersuchsaufbau.jpg Graphic file (type jpg)
 <use plots/tatVersuchsaufbau.jpg>
 Package luatex.def Info: plots/tatVersuchsaufbau.jpg  used on input line 28.
 (luatex.def)             Requested size: 418.25555pt x 226.91798pt.
-) (./content/auswertung.tex [8<./plots/Versuchsaufbau.png>]
-<python/EinzelspaltFit.pdf, id=150, 417.7206pt x 258.0049pt>
-File: python/EinzelspaltFit.pdf Graphic file (type pdf)
-<use python/EinzelspaltFit.pdf>
-Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 6.
-(luatex.def)             Requested size: 376.42744pt x 232.49751pt.
-
-Overfull \hbox (5.475pt too wide) detected at line 21
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 22
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 23
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 24
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 24
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 25
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 25
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 25
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 26
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 26
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 26
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 27
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 27
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 27
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 28
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 28
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 28
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 29
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 29
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 29
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 30
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 30
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 30
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 31
- 
- []
-
-
+) (./content/auswertung.tex [10<./plots/Versuchsaufbau.png>]
 Overfull \hbox (5.475pt too wide) detected at line 31
  
  []
 
 
 Overfull \hbox (5.475pt too wide) detected at line 32
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 32
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 33
  
  []
 
@@ -1848,6 +1718,16 @@ Overfull \hbox (5.475pt too wide) detected at line 35
 
 
 Overfull \hbox (5.475pt too wide) detected at line 35
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 35
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 36
  
  []
 
@@ -1867,474 +1747,633 @@ Overfull \hbox (5.475pt too wide) detected at line 37
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 52
+Overfull \hbox (5.475pt too wide) detected at line 37
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 52
+Overfull \hbox (5.475pt too wide) detected at line 37
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 52
+Overfull \hbox (5.475pt too wide) detected at line 38
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 52
+Overfull \hbox (5.475pt too wide) detected at line 38
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 53
+Overfull \hbox (5.475pt too wide) detected at line 38
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 53
+Overfull \hbox (5.475pt too wide) detected at line 39
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 53
+Overfull \hbox (5.475pt too wide) detected at line 39
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 53
+Overfull \hbox (5.475pt too wide) detected at line 39
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 54
+Overfull \hbox (5.475pt too wide) detected at line 40
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 54
+Overfull \hbox (5.475pt too wide) detected at line 40
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 54
+Overfull \hbox (5.475pt too wide) detected at line 40
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 54
+Overfull \hbox (5.475pt too wide) detected at line 41
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (5.475pt too wide) detected at line 41
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (5.475pt too wide) detected at line 42
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (5.475pt too wide) detected at line 42
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (5.475pt too wide) detected at line 43
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 55
+Overfull \hbox (5.475pt too wide) detected at line 43
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 56
+Overfull \hbox (5.475pt too wide) detected at line 44
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 56
+Overfull \hbox (5.475pt too wide) detected at line 44
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 56
+Overfull \hbox (5.475pt too wide) detected at line 45
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 56
+Overfull \hbox (5.475pt too wide) detected at line 45
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 56
+Overfull \hbox (5.475pt too wide) detected at line 46
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 57
+Overfull \hbox (5.475pt too wide) detected at line 46
  
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 57
+Overfull \hbox (5.475pt too wide) detected at line 47
  
  []
 
-
-Overfull \hbox (5.475pt too wide) detected at line 57
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 57
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 57
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 57
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 58
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 59
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 60
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 61
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 62
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 63
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 63
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 63
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 63
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 63
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 64
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 64
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 64
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 64
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 64
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 65
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 65
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 65
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 65
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 65
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 66
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 66
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 66
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 66
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 66
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 67
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 67
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 67
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 67
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 67
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 68
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 68
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 68
- 
- []
-
-) (./content/diskussion.tex [9<./plots/tatVersuchsaufbau.jpg
+[11<./plots/tatVersuchsaufbau.jpg
 warning  (readjpg): Exif resolution 71dpi x 71dpi differs from the input resolution 72dpi x 72dpi
->] [10<./python/EinzelspaltFit.pdf>]) (./content/anhang.tex [11]) [12]
+>]
+Overfull \hbox (5.475pt too wide) detected at line 86
+ 
+ []
+
+<python/EinzelspaltFit.pdf, id=201, 417.7206pt x 258.0049pt>
+File: python/EinzelspaltFit.pdf Graphic file (type pdf)
+<use python/EinzelspaltFit.pdf>
+Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 98.
+(luatex.def)             Requested size: 376.42744pt x 232.49751pt.
+[12]
+Overfull \hbox (5.475pt too wide) detected at line 117
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 138
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 139
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 140
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 141
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 142
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 142
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 142
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 142
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 142
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 143
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 144
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 145
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 146
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 147
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 147
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 147
+ 
+ []
+
+<python/DoppelspaltFit.pdf, id=218, 417.7206pt x 258.0049pt>
+File: python/DoppelspaltFit.pdf Graphic file (type pdf)
+<use python/DoppelspaltFit.pdf>
+Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 157.
+(luatex.def)             Requested size: 376.42744pt x 232.49751pt.
+) (./content/diskussion.tex [13<./python/EinzelspaltFit.pdf>] [14<./python/DoppelspaltFit.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 10--17
+
+ []
+
+[15]
+Underfull \hbox (badness 10000) in paragraph at lines 39--43
+
+ []
+
+) (./content/anhang.tex [16]
+<plots/Daten.jpeg, id=277, 881.2925pt x 1232.605pt>
+File: plots/Daten.jpeg Graphic file (type jpg)
+<use plots/Daten.jpeg>
+Package luatex.def Info: plots/Daten.jpeg  used on input line 7.
+(luatex.def)             Requested size: 292.7776pt x 409.48807pt.
+)
+Overfull \hbox (30.4873pt too wide) in paragraph at lines 26--26
+[]\TU/lmr/m/it/10.95 Dop-pel-spalt-ex-pe-ri-ment\TU/lmr/m/n/10.95 . \TU/lmr/m/sc/10.95 url\TU/lmr/m/n/10.95 : []$\TU/lmtt/m/n/10.95 https : / / de . wikipedia . org / wiki / Doppelspaltexperiment$[]
+ []
+
+[17<./plots/Daten.jpeg>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 28.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
  (./build/main.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 7D4A86BE8F97E8943967C8F3B2E80DC4;12393.
+(rerunfilecheck)             Checksum: A7936D3B5773D02F7EE0903BAC96EA16;17848.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: C8E28D1921929AE3EAE89A6B54EBA6FD;1319.
+(rerunfilecheck)             Checksum: 3A6E405D9047C17D9B829D41471F59D9;1929.
 Package logreq Info: Writing requests to 'main.run.xml'.
 
 \openout1 = main.run.xml
 )
 
 Here is how much of LuaTeX's memory you used:
- 45325 strings out of 480883
+ 45420 strings out of 480883
  100000,1977958 words of node,token memory allocated
- 898 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 10 glue, 4 kern, 1 glyph, 72 attribute, 81 glue_spec, 38 attribute_list, 2 write nodes
-   avail lists: 1:3,2:9851,3:629,4:52,5:2280,6:33,7:5153,8:95,9:2304,10:15,11:309
- 61450 multiletter control sequences out of 65536+600000
- 186 fonts using 67624795 bytes
+ 1065 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 10 glue, 4 kern, 1 glyph, 126 attribute, 82 glue_spec, 65 attribute_list, 2 write nodes
+   avail lists: 1:3,2:6118,3:699,4:68,5:1356,6:54,7:3901,8:95,9:1420,10:21,11:365
+ 61495 multiletter control sequences out of 65536+600000
+ 187 fonts using 67754795 bytes
  85i,17n,114p,10117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
-
-warning  (pdf backend): unreferenced destination with name 'Hfootnote.4'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-</home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (12 pages, 3063373 bytes).
+</home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (17 pages, 3379911 bytes).
 
-PDF statistics: 334 PDF objects out of 1000 (max. 8388607)
- 246 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 131072)
- 136 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 466 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 87 named destinations out of 1000 (max. 131072)
+ 192 words of extra memory for PDF output out of 10000 (max. 100000000)
 

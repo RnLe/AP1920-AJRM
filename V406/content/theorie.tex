@@ -59,10 +59,10 @@ Im zweiten Fall liegen Lichtquelle und Beobachtungspunkt $P$ im endlichen und es
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{plots/Fresnel_Fraunhofer.png}
-    \caption{Fresnel- (links) und Fraunhofer-Beugung (rechts) an einem Einzelspalt.\protect\footnotemark}
+    \caption{Fresnel- (links) und Fraunhofer-Beugung (rechts) an einem Einzelspalt.\protect\footnotemark[2]}
     \label{fig:fresnelFraunhofer}
 \end{figure}
-\footnotetext{Abbildung angelehnt an Versuchsanleitung.\cite{Versuchsanleitung}}
+\footnotetext[2]{Abbildung angelehnt an Versuchsanleitung.\cite{Versuchsanleitung}}
 
 \subsection{Amplituden-Funktion}
 Der Phasenunterschied $\delta$ zweier paralleler Lichtstrahlen steht in geometrischer Beziehung zum Entstehungspunkt auf der Spaltebene. (s. Abb. \ref{fig:BeugSpalt})
@@ -147,9 +147,47 @@ Wird ein zusammenfassender Ausdruck $\gamma := \frac{\pi b \sin{\varphi}}{\lambd
 \end{equation}
 mit $\gamma := \gamma(\varphi)$.
 
+Gemessen wird die nicht-negative Lichtintensität $I(\varphi)$, welche näherungsweise quadratisch mit der Amplitude wächst.
+\begin{equation}
+  I(\varphi) \propto B(\varphi)^2 = A_0^2b^2\frac{\sin^2{\gamma}}{\gamma^2}
+  \label{eqn:I}
+\end{equation}
+
 \subsection{Doppelspalt}
+Die Beugungsfigur des Doppelspalts ist eine multiplikative Überlagerung der beiden Einzelspalte.
+Die Intensitätsverteilung der Figur ist gegeben durch eine zusätzliche Cosinus-Verteilung\cite{Versuchsanleitung}
+\begin{equation}
+  I(\varphi) \propto B(\varphi)^2 = 4A_0^2cos^2{(\frac{\gamma s}{b})}\frac{\sin^2{\gamma}}{\gamma^2}
+  \label{eqn:doppelspalt}
+\end{equation}
+mit der zusätzlichen Größe $s$ als Gangunterschied; also dem Abstand der beiden Spalte.
+
+\begin{figure}
+  \centering
+  \includegraphics[width=.9\textwidth]{plots/Doppelspalt.png}
+  \caption{Schematische Darstellung eines Doppelspalts.\cite{DoppelspaltWiki}}
+  \label{fig:schemDoppel}
+\end{figure}
 
 \subsection{Fouriertransformation}
+Die Amplituden-Funktion $B(\varphi)$ kann als Fourier-Transformierte aufgefasst werden.
+Wird nun der Ansatz
+\begin{equation}
+  B(\eta) = \int_{0}^{b}A_0e^{ix\eta}
+\end{equation}
+gelöst, ergibt sich
+\begin{equation}
+  B(\eta) = \frac{2A_0}{\eta}e^{\frac{i\eta b}{2}}\sin{\frac{2\eta}{b}} \:.
+\end{equation}
+Wird nun der Realteil separiert und $\eta := \dfrac{2\pi \sin{\varphi}}{b}$ gewählt, ist das Ergebnis die ursprüngliche Funktion aus \eqref{eqn:doppelspalt}.
+\begin{equation}
+  Re(e^{\frac{i\eta b}{2}}) = \cos{\frac{\eta b}{2}}
+\end{equation}
+\begin{equation}
+  B(\eta) = 2A_0b\:\cos{(\frac{\eta b}{2})}\:\:\frac{\sin{\frac{2\eta}{b}}}{\frac{2\eta}{b}}
+  \label{eqn:fastDoppel}
+\end{equation}
+Die Gleichung \eqref{eqn:fastDoppel} kann nun mit $\gamma = \frac{2\eta}{b}$ in \eqref{eqn:doppelspalt} überführt werden.
 
 \subsection{Umrechnung der Abstandsmessung zum Abstrahlwinkel}
 Gemessen wird die absolute Position $x$ des Sensors mit unbekanntem Winkel $\varphi$ zur optischen Achse.

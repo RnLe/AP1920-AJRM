@@ -2185,6 +2185,10 @@
   <bcf:section number="0">
     <bcf:citekey order="1">Versuchsanleitung</bcf:citekey>
     <bcf:citekey order="2">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="3">DoppelspaltWiki</bcf:citekey>
+    <bcf:citekey order="4">DoppelspaltWiki</bcf:citekey>
+    <bcf:citekey order="5">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="6">scipy</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

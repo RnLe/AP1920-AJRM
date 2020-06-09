@@ -499,6 +499,9 @@ INPUT /home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmr
 INPUT ./plots/Beugung Einzelspalt.png
 INPUT ./plots/Beugung Einzelspalt.png
 INPUT ./plots/Beugung Einzelspalt.png
+INPUT ./plots/Doppelspalt.png
+INPUT ./plots/Doppelspalt.png
+INPUT ./plots/Doppelspalt.png
 INPUT ./plots/x_to_angle.png
 INPUT ./plots/x_to_angle.png
 INPUT ./plots/x_to_angle.png
@@ -527,10 +530,17 @@ INPUT ./content/auswertung.tex
 INPUT ./python/EinzelspaltFit.pdf
 INPUT ./python/EinzelspaltFit.pdf
 INPUT ./python/EinzelspaltFit.pdf
+INPUT ./python/DoppelspaltFit.pdf
+INPUT ./python/DoppelspaltFit.pdf
+INPUT ./python/DoppelspaltFit.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT ./content/anhang.tex
 INPUT ./content/anhang.tex
+INPUT ./plots/Daten.jpeg
+INPUT ./plots/Daten.jpeg
+INPUT ./plots/Daten.jpeg
+INPUT /home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmromancaps10-regular.luc
 INPUT build/main.aux
 INPUT build/main.aux
 INPUT build/main.toc
