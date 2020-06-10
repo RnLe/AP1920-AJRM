@@ -20,13 +20,13 @@ Bei einem langen, schmalen Spalt entstehen durch diese Eigenschaft Zylinderwelle
     \begin{subfigure}{.5\textwidth}
       \centering
       \includegraphics[width=.45\textwidth]{plots/Huygens.png}
-    \caption{Überlagerung von Kugelwellen an einem Einzelspalt.}
+    \caption{Überlagerung von Kugelwellen an einem Einzelspalt.\cite{HuygensWiki}}
     \label{fig:huygens}
     \end{subfigure}%
     \begin{subfigure}{.5\textwidth}
       \centering
       \includegraphics[width=.45\linewidth]{plots/Zylinderwellen.png}
-      \caption{Zylinderwellen am Einzelspalt.}
+      \caption{Zylinderwellen am Einzelspalt.\cite{BeugungWiki}}
       \label{fig:zylinder}
     \end{subfigure}
     \label{fig:huygenZylinder}
@@ -47,26 +47,26 @@ Da die Winkelunterschiede in einem Nahfeld zu groß werden, entsteht keine oder 
 \begin{figure}
     \centering
     \includegraphics[width=0.9\textwidth]{plots/Wave_Diffraction_4Lambda_Slit.png}
-    \caption{Beugung ebener Welle am Einzelspalt mit $b = 4\lambda$.\protect\footnotemark}        % Kommentar für selbst: Sehr nützlich, um Fußnoten in Bildunterschriften hinzuzufügen. Das protect sorgt dafür, dass die Fußnote auf derselben Seite erscheint.
+    \caption{Beugung ebener Welle am Einzelspalt mit $b = 4\lambda$.\protect\footnotemark\:\cite{OptischerspaltWiki}}        % Kommentar für selbst: Sehr nützlich, um Fußnoten in Bildunterschriften hinzuzufügen. Das protect sorgt dafür, dass die Fußnote auf derselben Seite erscheint.
     \label{fig:waveDiff}
 \end{figure}
-\footnotetext{$b := $ Spaltbreite und $\lambda := $ Wellenlänge der ebenen Wellen.}
+\footnotetext{$b\:\hat{=} $ Spaltbreite und $\lambda\:\hat{=} $ Wellenlänge der ebenen Wellen.}
 
-Dieser Grenzfall kann ausgeschlossen werden, indem entweder eine Lichtquelle aus dem unendlichen verwendet wird, oder der Abstand zwischen Spalt und Schirm hinreichend groß gewählt wird. (s. Abb. \ref{fig:fresnelFraunhofer})
-Im ersten Fall wird eine Linse verwendet, um die von der Spaltöffnung ausgehenden, parallelen Lichtstrahlen mit gleichem Abstrahlwinkel auf einen Beobachtungspunkt $P$ zu fokussieren. Die Lichtfront kommt hierbei aus dem unendlichen.
-Im zweiten Fall liegen Lichtquelle und Beobachtungspunkt $P$ im endlichen und es gilt $b << d : \varphi_1 \approx \varphi_2$.\:\footnote{$d := $Abstand Spalt-Beobachtungspunkt.}
+Dieser Grenzfall kann ausgeschlossen werden, indem entweder eine Lichtquelle aus dem Unendlichen verwendet wird, oder der Abstand zwischen Spalt und Schirm hinreichend groß gewählt wird (s. Abb. \ref{fig:fresnelFraunhofer}).
+Im ersten Fall wird eine Linse verwendet, um die von der Spaltöffnung ausgehenden, parallelen Lichtstrahlen mit gleichem Abstrahlwinkel auf einen Beobachtungspunkt $P$ zu fokussieren. Die Lichtfront kommt hierbei aus dem Unendlichen.
+Im zweiten Fall liegen Lichtquelle und Beobachtungspunkt $P$ im Endlichen und es gilt $b \ll d : \varphi_1 \approx \varphi_2$.\:\footnote{$d\:\hat{=} $Abstand Spalt-Beobachtungspunkt.}
 
 \begin{figure}
     \centering
     \includegraphics[width=0.8\textwidth]{plots/Fresnel_Fraunhofer.png}
-    \caption{Fresnel- (links) und Fraunhofer-Beugung (rechts) an einem Einzelspalt.\protect\footnotemark[2]}
+    \caption{Fresnel- (links) und Fraunhofer-Beugung (rechts) an einem Einzelspalt.\protect\footnotemark}
     \label{fig:fresnelFraunhofer}
 \end{figure}
-\footnotetext[2]{Abbildung angelehnt an Versuchsanleitung.\cite{Versuchsanleitung}}
 
 \subsection{Amplituden-Funktion}
-Der Phasenunterschied $\delta$ zweier paralleler Lichtstrahlen steht in geometrischer Beziehung zum Entstehungspunkt auf der Spaltebene. (s. Abb. \ref{fig:BeugSpalt})
+Der Phasenunterschied $\delta$ zweier paralleler Lichtstrahlen steht in geometrischer Beziehung zum Entstehungspunkt auf der Spaltebene (s. Abb. \ref{fig:BeugSpalt}).
 Die absolute Länge $s$ der Phasendifferenz zu einem gleichzeitig entstehenden Lichtstrahl mit Abstand $x$ ist mit einem Abstrahlwinkel von $\varphi$
+\footnotetext{Abbildung angelehnt an Versuchsanleitung.\cite{Versuchsanleitung}}
 
 \begin{equation}
   s = x\sin{\varphi} \:.
@@ -76,7 +76,7 @@ Die absolute Länge $s$ der Phasendifferenz zu einem gleichzeitig entstehenden L
 \begin{figure}
   \centering
   \includegraphics[width=0.8\textwidth]{plots/Beugung Einzelspalt.png}
-  \caption{Geometrische Betrachtung der Beugung am Spalt.}
+  \caption{Geometrische Betrachtung der Beugung am Spalt.\cite{Versuchsanleitung}}
   \label{fig:BeugSpalt}
 \end{figure}
 
@@ -89,7 +89,7 @@ Daraus folgt die Phasendifferenz
 
 
 
-Eine Ebene Welle besitzt die Amplituden-Funktion 
+Eine ebene Welle besitzt die Amplituden-Funktion 
 \begin{equation}
   A(z, t) = A_0e^{i(\omega t - kz)} \:.
 \end{equation}
@@ -108,7 +108,7 @@ Es wird über infinitesimale Abstände $dx$ der Lichtstrahlen integriert.
   \label{eqn:B1}
 \end{equation}
 
-Nach einsetzen von \eqref{eqn:s} in \eqref{eqn:delta} und \eqref{eqn:delta}* in \eqref{eqn:B1} folgt
+Nach einsetzen von \eqref{eqn:s} in \eqref{eqn:delta} und \eqref{eqn:delta} in \eqref{eqn:B1} folgt
 \begin{equation*}
   B(z, t, \varphi) = A_0e^{i(\omega t - kz)}\int_0^be^{\frac{i2\pi x \sin{\varphi}}{\lambda}}dx \:.
 \end{equation*}

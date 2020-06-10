@@ -19,6 +19,22 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
+    \entry{BeugungWiki}{online}{}
+      \field{sortinit}{B}
+      \field{sortinithash}{8de16967003c7207dae369d874f1456e}
+      \field{labeltitlesource}{title}
+      \field{title}{Beugung}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Beugung_(Physik)
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Beugung_(Physik)
+      \endverb
+    \endentry
     \entry{DoppelspaltWiki}{online}{}
       \field{sortinit}{D}
       \field{sortinithash}{c438b3d5d027251ba63f5ed538d98af5}
@@ -55,6 +71,22 @@
       \field{labeltitlesource}{title}
       \field{title}{Versuch V406: Beugung am Spalt}
       \field{year}{2020}
+    \endentry
+    \entry{HuygensWiki}{online}{}
+      \field{sortinit}{H}
+      \field{sortinithash}{6db6145dae8dc9e1271a8d556090b50a}
+      \field{labeltitlesource}{title}
+      \field{title}{Huygens'sches Prinzip}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Huygenssches_Prinzip
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Huygenssches_Prinzip
+      \endverb
     \endentry
     \entry{scipy}{software}{}
       \true{moreauthor}
@@ -93,6 +125,22 @@
       \endverb
       \verb{url}
       \verb http://www.scipy.org/
+      \endverb
+    \endentry
+    \entry{OptischerspaltWiki}{online}{}
+      \field{sortinit}{O}
+      \field{sortinithash}{ff8d4eeb5101e3cf3809959b3592d942}
+      \field{labeltitlesource}{title}
+      \field{title}{Optischer Spalt}
+      \field{urlday}{9}
+      \field{urlmonth}{6}
+      \field{urlyear}{2020}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://de.wikipedia.org/wiki/Optischer_Spalt
+      \endverb
+      \verb{url}
+      \verb https://de.wikipedia.org/wiki/Optischer_Spalt
       \endverb
     \endentry
   \enddatalist

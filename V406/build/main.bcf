@@ -2183,12 +2183,20 @@
     <bcf:datasource type="file" datatype="bibtex">programme.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1">Versuchsanleitung</bcf:citekey>
-    <bcf:citekey order="2">Versuchsanleitung</bcf:citekey>
-    <bcf:citekey order="3">DoppelspaltWiki</bcf:citekey>
-    <bcf:citekey order="4">DoppelspaltWiki</bcf:citekey>
-    <bcf:citekey order="5">Versuchsanleitung</bcf:citekey>
-    <bcf:citekey order="6">scipy</bcf:citekey>
+    <bcf:citekey order="1">HuygensWiki</bcf:citekey>
+    <bcf:citekey order="2">HuygensWiki</bcf:citekey>
+    <bcf:citekey order="3">BeugungWiki</bcf:citekey>
+    <bcf:citekey order="4">BeugungWiki</bcf:citekey>
+    <bcf:citekey order="5">OptischerspaltWiki</bcf:citekey>
+    <bcf:citekey order="6">OptischerspaltWiki</bcf:citekey>
+    <bcf:citekey order="7">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="8">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="9">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="10">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="11">DoppelspaltWiki</bcf:citekey>
+    <bcf:citekey order="12">DoppelspaltWiki</bcf:citekey>
+    <bcf:citekey order="13">Versuchsanleitung</bcf:citekey>
+    <bcf:citekey order="14">scipy</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

@@ -8,7 +8,7 @@
 \contentsline {subsubsection}{\numberline {2.3.1}Einschub: Nahfeld und Fernfeld}{4}{subsubsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.4}Amplituden-Funktion}{5}{subsection.2.4}%
 \contentsline {subsection}{\numberline {2.5}Doppelspalt}{7}{subsection.2.5}%
-\contentsline {subsection}{\numberline {2.6}Fouriertransformation}{7}{subsection.2.6}%
+\contentsline {subsection}{\numberline {2.6}Fouriertransformation}{8}{subsection.2.6}%
 \contentsline {subsection}{\numberline {2.7}Umrechnung der Abstandsmessung zum Abstrahlwinkel}{8}{subsection.2.7}%
 \contentsline {section}{\numberline {3}Durchführung}{9}{section.3}%
 \contentsline {section}{\numberline {4}Auswertung}{11}{section.4}%
@@ -21,4 +21,4 @@
 \contentsline {subsection}{\numberline {5.4}Eignung der Theorie}{16}{subsection.5.4}%
 \contentsline {subsection}{\numberline {5.5}Fazit}{16}{subsection.5.5}%
 \contentsline {section}{Anhang: Messdaten}{17}{section*.17}%
-\contentsline {section}{\nonumberline Literatur}{17}{section*.19}%
+\contentsline {section}{\nonumberline Literatur}{18}{section*.19}%
