@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  9 JUN 2020 22:09
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  10 JUN 2020 07:46
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1682,11 +1682,6 @@ File: plots/tatVersuchsaufbau.jpg Graphic file (type jpg)
 Package luatex.def Info: plots/tatVersuchsaufbau.jpg  used on input line 29.
 (luatex.def)             Requested size: 418.25555pt x 226.91798pt.
 ) (./content/auswertung.tex [10<./plots/Versuchsaufbau.png>]
-Overfull \hbox (5.475pt too wide) detected at line 31
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 32
  
  []
@@ -1702,16 +1697,6 @@ Overfull \hbox (5.475pt too wide) detected at line 34
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 34
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 35
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 35
  
  []
@@ -1793,6 +1778,11 @@ Overfull \hbox (5.475pt too wide) detected at line 40
 
 
 Overfull \hbox (5.475pt too wide) detected at line 40
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 41
  
  []
 
@@ -1861,24 +1851,34 @@ Overfull \hbox (5.475pt too wide) detected at line 47
  
  []
 
-[11<./plots/tatVersuchsaufbau.jpg
-warning  (readjpg): Exif resolution 71dpi x 71dpi differs from the input resolution 72dpi x 72dpi
->]
-Overfull \hbox (5.475pt too wide) detected at line 86
+
+Overfull \hbox (5.475pt too wide) detected at line 47
  
  []
 
-<python/EinzelspaltFit.pdf, id=216, 417.7206pt x 258.0049pt>
+
+Overfull \hbox (5.475pt too wide) detected at line 48
+ 
+ []
+
+[11<./plots/tatVersuchsaufbau.jpg
+warning  (readjpg): Exif resolution 71dpi x 71dpi differs from the input resolution 72dpi x 72dpi
+>]
+Overfull \hbox (5.475pt too wide) detected at line 87
+ 
+ []
+
+<python/EinzelspaltFit.pdf, id=218, 417.7206pt x 258.0049pt>
 File: python/EinzelspaltFit.pdf Graphic file (type pdf)
 <use python/EinzelspaltFit.pdf>
 Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 98.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
-[12]
+
 Overfull \hbox (5.475pt too wide) detected at line 117
  
  []
 
-
+[12]
 Overfull \hbox (5.475pt too wide) detected at line 131
  
  []
@@ -2308,7 +2308,7 @@ Overfull \hbox (5.475pt too wide) detected at line 147
  
  []
 
-<python/DoppelspaltFit.pdf, id=233, 417.7206pt x 258.0049pt>
+<python/DoppelspaltFit.pdf, id=235, 417.7206pt x 258.0049pt>
 File: python/DoppelspaltFit.pdf Graphic file (type pdf)
 <use python/DoppelspaltFit.pdf>
 Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 157.
@@ -2324,7 +2324,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 39--43
  []
 
 ) (./content/anhang.tex [16]
-<plots/Daten.jpeg, id=293, 881.2925pt x 1232.605pt>
+<plots/Daten.jpeg, id=295, 881.2925pt x 1232.605pt>
 File: plots/Daten.jpeg Graphic file (type jpg)
 <use plots/Daten.jpeg>
 Package luatex.def Info: plots/Daten.jpeg  used on input line 7.
@@ -2341,7 +2341,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 3656A6741C03838215D544645699B2F5;18674.
+(rerunfilecheck)             Checksum: 9BCE7AC3F8544731B889E00373545895;18768.
 Package rerunfilecheck Info: File `main.toc' has not changed.
 (rerunfilecheck)             Checksum: BD03EFE5E66B276422AE8E61710394E6;1929.
 Package logreq Info: Writing requests to 'main.run.xml'.
@@ -2350,12 +2350,12 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45431 strings out of 480883
+ 45432 strings out of 480883
  100000,1977958 words of node,token memory allocated
  1103 words of node memory still in use:
    7 hlist, 2 vlist, 2 rule, 1 dir, 12 glue, 4 kern, 1 glyph, 132 attribute, 82 glue_spec, 68 attribute_list, 2 write, 1 pdf_action nodes
-   avail lists: 1:3,2:6118,3:699,4:72,5:1356,6:63,7:3904,8:95,9:1420,10:21,11:365
- 61501 multiletter control sequences out of 65536+600000
+   avail lists: 1:3,2:6381,3:699,4:72,5:1459,6:63,7:4097,8:95,9:1538,10:21,11:358
+ 61502 multiletter control sequences out of 65536+600000
  187 fonts using 67755079 bytes
  85i,17n,114p,10117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
 
@@ -2367,10 +2367,10 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
 </home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (18 pages, 3382814 bytes).
+Output written on main.pdf (18 pages, 3382703 bytes).
 
-PDF statistics: 489 PDF objects out of 1000 (max. 8388607)
- 374 compressed objects within 4 object streams
+PDF statistics: 491 PDF objects out of 1000 (max. 8388607)
+ 376 compressed objects within 4 object streams
  92 named destinations out of 1000 (max. 131072)
  192 words of extra memory for PDF output out of 10000 (max. 100000000)
 

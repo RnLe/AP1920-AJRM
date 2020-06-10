@@ -1,11 +1,12 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 Ziel der Auswertung ist das Bestimmen der Spaltbreite $b_i$ und ein anschließender Vergleich mit der Herstellerangabe.
-Für den Versuch werden alle zur Verfügung stehenden Randdaten dokumentiert.
+Für den Versuch werden alle zur Verfügung stehenden Randdaten in Tabelle \ref{tab:rand} dokumentiert.
 
 \begin{table}
     \centering
     \caption{Kenndaten der Versuchsdurchführung.}
+    \label{tab:rand}
     \begin{tabular}{c c c c c c c}
         \toprule
         & $s\:/\:\si{\milli\meter}$ & $b_i\:/\:\si{\milli\meter}$ & $\lambda\:/\:\si{\nano\meter}$ & $d\:/\:\si{\milli\meter}$ & $I_d\:/\:\si{\micro\ampere}$ \\
@@ -70,7 +71,7 @@ und
 \end{equation}
 Die variablen Parameter der Funktion sind $x_0$, $a$, $b_{par, 1}$, und $c$, wobei $x_0$ das Intensitätsmaximum, $a$ das $A_0$ aus \eqref{eqn:I}, $b_{par, 1}$ die Spaltbreite und $c$ der Dunkelstrom
 $I_d$ ist.
-Das fitten mit der Funktion mit \texttt{curve\_fit}\cite{scipy} liefert die Werte in Tabelle \ref{tab:parEinzel}.
+Die Ausgleichsrechnung mit der Funktion mit \texttt{curve\_fit}\cite{scipy} liefert die Werte in Tabelle \ref{tab:parEinzel}.
 
 \begin{table}
     \centering
@@ -86,12 +87,11 @@ Das fitten mit der Funktion mit \texttt{curve\_fit}\cite{scipy} liefert die Wert
         Einzelspalt & 0.1395&0.0004 & 0.02495&0.00007 & 0.81&0.01 & 11.727&0.006 \\
     \end{tabular}
 \end{table}
-Verschiedene Formen der Funktion im Programmcode und verschiedene Startwerte für die Parameter liefern stets die gleichen Ergebnisse mit Abweichungen im Promille-Bereich.
 Der Vergleich der Herstellerangabe mit dem errechneten Wert für die Spaltbreite ist um den Faktor 3 verschieden mit $b_{par, 1} \approx \SI{0.025}{\milli\meter}$
 \begin{equation}
-    \frac{b_{par, 1}}{b_1} = \frac{\SI{0.025}{\milli\meter}}{\SI{0.075}{\milli\meter}} = 3\:.
+    \frac{b_{par, 1}}{b_1} = \frac{\SI{0.025}{\milli\meter}}{\SI{0.075}{\milli\meter}} = \frac{1}{3}\:.
 \end{equation}
-Der relative Fehler von $b_{par, 1}$ ist $\approx 0.28\%$.
+Die relative Messunsicherheit von $b_{par, 1}$ ist $\approx 0.28\%$.
 
 \begin{figure}
     \centering
@@ -163,7 +163,7 @@ Die Herstellerangabe zur Spaltbreite $b_2 = \SI{0.15}{\milli\meter}$ ist dem erm
 um den Faktor 2 verschieden.
 
 \begin{equation}
-    \frac{b_{par, 2}}{b_2} = \frac{\SI{0.075}{\milli\meter}}{\SI{0.15}{\milli\meter}} = 2
+    \frac{b_{par, 2}}{b_2} = \frac{\SI{0.075}{\milli\meter}}{\SI{0.15}{\milli\meter}} = \frac{1}{2}
 \end{equation}
 
-Der relative Fehler von $b_{par, 2}$ ist $\approx 0.5\%$.
+Die relative Messunsicherheit von $b_{par, 2}$ ist $\approx 0.5\%$.

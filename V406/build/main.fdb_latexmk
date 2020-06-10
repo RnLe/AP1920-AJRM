@@ -1,12 +1,12 @@
 # Fdb version 3
-["biber build/main"] 1591732859 "build/main.bcf" "build/main.bbl" "build/main" 1591733397
-  "build/main.bcf" 1591733393 102448 07eed7ae61653e405c777b0a10baaef2 "lualatex"
+["biber build/main"] 1591732859 "build/main.bcf" "build/main.bbl" "build/main" 1591768046
+  "build/main.bcf" 1591768045 102448 07eed7ae61653e405c777b0a10baaef2 "lualatex"
   "lit.bib" 1591732033 2707 ff85b268bc517a243d29043306b52c02 ""
   "programme.bib" 1591443382 1042 681836d224c758e678e4f1a862d141da ""
   (generated)
-  "build/main.bbl"
   "build/main.blg"
-["lualatex"] 1591733363 "main.tex" "build/main.pdf" "main" 1591733397
+  "build/main.bbl"
+["lualatex"] 1591768015 "main.tex" "build/main.pdf" "main" 1591768046
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf" 1429396570 733736 0b8cd5044567d896491fd777c12d5cda ""
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf" 1255129361 64684 15a2082c8e31f411875a86ea2d29a0ee ""
   "/home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf" 1255129361 111240 0af0b64d6d3df41bead3f9de314afbd4 ""
@@ -309,15 +309,15 @@
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/fonts/otl/xitsmath-regular.luc" 1590391851 411897 3b805ddc297c0555c6d6dcc6b405e798 ""
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-lookup-cache.luc" 1591455728 8855 2562a7ab7e464df0a075c67b20a5b048 ""
   "/home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/names/luaotfload-names.luc" 1590359576 1126375 b88698c32d2c521aa4d382d2afb280ea ""
-  "build/main.aux" 1591733393 18674 3656a6741c03838215d544645699b2f5 "lualatex"
+  "build/main.aux" 1591768045 18768 9bce7ac3f8544731b889e00373545895 "lualatex"
   "build/main.bbl" 1591732863 4964 293cc13a4692d32aae397fd98bc01b2e "biber build/main"
-  "build/main.run.xml" 1591733393 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
-  "build/main.toc" 1591733393 1929 bd03efe5e66b276422ae8e61710394e6 "lualatex"
+  "build/main.run.xml" 1591768045 2396 e189e87700d890de7fc36228f7e6118b "lualatex"
+  "build/main.toc" 1591768045 1929 bd03efe5e66b276422ae8e61710394e6 "lualatex"
   "content/anhang.tex" 1591732979 314 e9a704a3cbb6a3a168dfde6b17536c07 ""
-  "content/auswertung.tex" 1591714911 8021 59327ed8f44193c62c6d366b7519e5a2 ""
-  "content/diskussion.tex" 1591718860 5447 5595695de81775f5deb13034eb3f6699 ""
+  "content/auswertung.tex" 1591767708 7948 b3376fe8fe95f7d2ddfb7295a203c30c ""
+  "content/diskussion.tex" 1591767970 5461 3b3972b4405be3c036cc7c52eec475e7 ""
   "content/durchfuehrung.tex" 1591733122 2239 a12c3108d639b08e35425c03b723c1f1 ""
-  "content/theorie.tex" 1591733326 10203 0ba0df9feaf3051f0597b5b402de7060 ""
+  "content/theorie.tex" 1591767340 10199 63ea9e65bc3fd32a685e7e3ea30d9cf2 ""
   "content/zielsetzung.tex" 1591731522 361 da06c7829649b520261d7d808fe2162a ""
   "header.tex" 1591443382 4098 ae49eefe29c8a22f1d4dce9d88f60e6e ""
   "main.tex" 1591444000 500 c66dd3ddc34c22f046b9cb461742e4fe ""
@@ -334,9 +334,9 @@
   "python/DoppelspaltFit.pdf" 1591708136 10315 e0f56d063ad7f91af29bc6bc2a8f3aec ""
   "python/EinzelspaltFit.pdf" 1591708182 10314 60525a30c0f950faa0c1b48faf4448f1 ""
   (generated)
-  "build/main.aux"
   "build/main.log"
-  "build/main.run.xml"
   "build/main.bcf"
-  "build/main.toc"
+  "build/main.run.xml"
   "build/main.pdf"
+  "build/main.toc"
+  "build/main.aux"
