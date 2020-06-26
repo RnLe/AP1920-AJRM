@@ -22,3 +22,9 @@ Z = I/(e*N)
 print(Z)
 print(error(Z))
 print()
+
+N,t=sympy.var('N t')
+N_t=N/t
+print(N_t)
+print(error(N_t))
+print()
