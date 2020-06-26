@@ -1,4 +1,71 @@
 \section{Theorie}
 \label{sec:Theorie}
 
+\subsection{Radioaktiver Zerfall durch Kernrekationen mit Neutronen}
 
+Zur Herstelellung instabiler und damit radioaktiver Nuklide werden Atome eines stabilen Elements mit Neutronen beschossen. 
+Der Vorteil von Neutronen ist, dass sie nicht geladen sind und somit nicht die Coulomb-Barriere überwinden müssen, die nur 
+für geladene Teilchen einen bemerkenswerten Unterschied macht. 
+Der Kern nimmt bei Reaktion das Neutron auf und die kinetische Energie wird fast vollständig auf alle vorhandenen Nukelonen 
+verteilt. Der Kern befindet sich damit im angeregten Zustand -- für eine Zeitspanne von etwa $\SI{e-16}{\second}$. 
+Dann geht er nämlich unter Emission eines $\gamma$-Quants wieder in seinen Grundzustand über und der vorher stabile 
+Atomkern hat sich in einen instabilen umgewandelt durch das gestiegene Verhältnis von Neutronenzahl zur Kernladungszahl. 
+An dieser Stelle beginnt der radioaktive Zerfall, der hier untersucht werden soll. 
+Ein Neutron des Nukleon wandelt sich unter Emission eines Elektrons und eines Elektron-Antineutrinos in ein Proton um, 
+ein Kern einer um eins höheren Ordnungszahl entsteht. 
+Die Reaktion sieht im Allgemeinen so
+\begin{equation*}
+    \ce{^m_zA + ^1_0n -> ^{m+1}_zA* -> ^{m+1}_zA -> ^{m+1}_{z+1}A + e- + \bar{\symup{\nu}}_e}
+\end{equation*}
+aus, wobei das Sternchen * den angeregten Zustand des Kerns indiziert.
+Überschüssige Energie beziehungsweise Massedifferenzen werden in Bewegungsenergie der Kerne und die Bildung Antineutrinos $\bar{\symup{\nu}}_e}$ 
+gemäß der Masse-Energie-Beziehung nach Einstein $\Delta E=\Delta m c^2$ ineinander umgewandelt.
+
+\subsection{Wirkungsquerschnitt}
+
+Der Wirkungsquerschnitt $\sigma$ ist ein Maß dafür, wie wahrscheinlich ein Stoß von zwei Teilchen ist. 
+Eine andere Umschreibung für den Wirkungsquerschnitt wäre, dass sie die Fläche darstellt, die ein Nukleon haben müsste, 
+damit der Beschuss eines Neutrons auf die Fläche jedes Mal zu einem Einfang führt. 
+Ist die Geschwindigkeit des kollidierenden Teilchens eher groß, können Interferenz- und Streueffekte vernachlässigt werden
+und der Wirkungsquerschnitt kann anschaulich als die Fläche angesehen werden, die anteilmäßig von den Nukleonen eingenommen wird. 
+Je zahlreicher und größer die Nukleonen sind, umso mehr nehmen sie prozentual an Fläche und somit an Stoßfläche ein. 
+Ist hingegen die Geschwindigkeit eher gering, sorgen Streueffekte des Teilchens an den Nukleonen dafür, dass die Wahrscheinlichkeit 
+eines Stoßes sehr viel größer wird, als es die geometrische Betrachtung glauben machen würde. 
+
+Diese Unterscheidung nach der Geschwindigkeit $v$ kann auf die Wellenlänge $\lambda$ mithilfe der De-Broglie-Beziehung
+\begin{equation*}
+    \lambda = \frac{\symup{h}}{m_\text{n}v}
+\end{equation*}
+übertragen werden, wobei $m_\text{n}$ die Masse eines Neutrons ist und das Planck'sche Wirkungsquantum durch ${\symup{h}=\SI{6.62607004e-34}{\joule\second}}$ \cite{scipy} gegeben ist. 
+So kann jedem Neutron mit einer bestimmten Wellenlänge eine Geschwindigkeit zugeordnet werden. 
+Zur Einordnung der Größe wird hier der Kernradius verwendet; ist die Wellenlänge sehr viel kleiner als der Kernradius ($\approx \SI{e-12}{\centi\meter}$), 
+können die Streueffekte vernächlässigt werden und die geometrische Betrachtung des Wirkungsquerschnitts genügt. 
+
+Die Absorption wird genau dann maximal -- Stichwort Resonanzabsorption --, wenn die Energie des Neutrons gerade der Energiedifferenz 
+der zwei Niveaus des Atomkerns entspricht. Mithilfe einer harmonischen Annäherung und mit quantenmechanischen Annahmen begründet 
+sich die sogenannte Breit-Wigner-Formel; diese sagt eine umgekehrte Proportionalität des Wirkungsquerschnitts und damit der 
+Absorption der Strahlung zur Energie beziehungsweise Geschwindigkeit des Neutrons voraus
+\begin{equation*}
+    \sigma \propto \frac{1}{\sqrt{E}} \propto \frac{1}{v} \,,
+\end{equation*}
+was sich mit den vorangestellten Überlegungen deckt. 
+Für eine hohe Reaktanz sollte die Energie der Neutronen somit eher gering gehalten werden.
+
+\subsection{Erzeugung niederenergetischer Neutronen}
+
+Neutronen haben eine begrenzte Lebensdauer, weshalb sie ebenfalls direkt vor der Messung hergestellt werden müssen. 
+Die Reaktion 
+\begin{equation*}
+    \ce{^9_4Be + ^4_2 \alpha -> ^{12}_6C+^1_0n}
+\end{equation*}
+wird hier verwendet. 
+Zerfallende $\ce{^{226}Ra$-Kerne emittieren die $\alpha$-Teilchen, die auf $\ce{^9Be}$-Kerne gelenkt werden. 
+Die darauffolgende Kernrekation sorgt für die Produktion von freien Neutronen und die Umwandlung der Nuklide in $\ce{^{12}C$-Kerne. 
+
+Da die Neutronen an dem Punkt noch eine Energie von maximal $\SI{13.7}{\mega\electronvolt}$ aufweisen, müssen sie 
+entsprechend gebremst werden, um die für das Experiment günstige niedrige Geschwindigkeit zu erreichen. 
+Deshalb wird die Neutronenquelle mit Paraffin ummantelt. Die darin enthaltenen leichten Wasserstoffkerne sorgen für einen 
+möglichst großen Energieübertrag, wenn die Neutronen elastisch mit ihnen zusammenstoßen. 
+Die Stöße finden solange statt, bis sich die Energie gleichmäßg auf die Teilchen verteilt und die Neutronen damit
+die mittlere Energie der sie umgebenden Moleküle annehmen. Dies entspricht bei einer Temperatur von ${T=\SI{}{}}$ 
+einer Energie von $E=\SI{}$
