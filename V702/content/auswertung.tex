@@ -34,7 +34,7 @@ für die Anzahl der Impulse, die durch den Untergrund bestimmt sind, und
 für die entsprechende Impulsrate.
 Der Mittelwert und die experimentelle Messunsicherheit berechnen sich hier über 
 \begin{equation*}
-    \bar{x}=\sum_{i=1}^N x_i \quad \text{und}
+    \bar{x}=\frac{1}{N}\sum_{i=1}^N x_i \quad \text{und}
 \end{equation*}
 \begin{equation*}
     \Delta x = \sqrt{\frac{1}{N-1} \sum_{i=1}^N (x_i-\bar{x})^2}
@@ -42,13 +42,90 @@ Der Mittelwert und die experimentelle Messunsicherheit berechnen sich hier über
 
 \subsection{Vanadium}
 
+In Tabelle \ref{tab:MessV} werden die benötigten Daten zur Auswertung des Zerfalls von Vanadium aufgeführt. 
+Im ersten Schritt wird der aus der ersten Messung ermittelte Wert für den Untergrund bezogen auf $\SI{30}{\second}$ (nicht auf $\SI{300}{\second}$) $\bar{N}_\text{U}=139\cdot \sfrac{30}{300}\approx 14$ von den Messwerten des Zerfalls von Vanadium abgezogen. 
+Das ergibt die hier mit $N_\text{V}$ bezeichnete Messreihe. 
+Der Fehler der Impulse ist poisson-verteilt, weshalb sich ein Fehler von $\Delta N_\text{V}=\sqrt{N_\text{V}}$ ergibt. 
+Die verwendete Messzeit beträgt $\SI{30}{\second}$. 
+
+\begin{table}
+    \centering
+    \caption{Die Zerfallswerte zum Vanadium.}
+    \label{tab:MessV}
+    \begin{tabular}{S[table-format=3.0] S[table-format=3.0] S[table-format=2.0] S[table-format=3.0] S[table-format=2.0] S[table-format=1.0]}
+        \toprule
+        $t\,/\,\si{\second}$ & $N_\text{V}$ & $\Delta N_\text{V}$ & $t\,/\,\si{\second}$ & $N_\text{V}$ & $\Delta N_\text{V}$  \\
+        \midrule
+        30	& 175   & 13 & 690    & 21 & 4 \\
+        60	& 183   & 13 & 720	  & 5  & 2 \\
+        90	& 136   & 11 & 750	  & 14 & 3 \\
+        120 & 145   & 12 & 780	  & 13 & 3 \\
+        150 & 141   & 11 & 810	  & 22 & 4 \\
+        180 & 118   & 10 & 840	  & 11 & 3 \\
+        210 & 103   & 10 & 870	  & 15 & 3 \\
+        240 & 93    & 9  & 900	  & 4  & 2 \\
+        270 & 80    & 8  & 930	  & 3  & 1 \\
+        300 & 86    & 9  & 960	  & 10 & 3 \\
+        330 & 65    & 8  & 990	  & 7  & 2 \\
+        360 & 55    & 7  & 1020	  & 11 & 3 \\
+        390 & 67    & 8  & 1050	  & 7  & 2 \\
+        420 & 32    & 5  & 1080	  & 10 & 3 \\
+        450 & 35    & 5  & 1110	  & 11 & 3 \\
+        480 & 47    & 6  & 1140	  & 3  & 1 \\
+        510 & 42    & 6  & 1170	  & 6  & 2 \\
+        540 & 26    & 5  & 1200	  & 5  & 2 \\
+        570 & 31    & 5  & 1230	  & 6  & 2 \\
+        600 & 18    & 4  & 1260	  & 4  & 2 \\
+        630 & 13    & 3  & 1290	  & 2  & 1 \\
+        660 & 29    & 5  & 1320	  & 3  & 1 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.8\textwidth]{plots/Vanadium_Ausgleich.pdf}
+    \caption{Gemessene Zerfallskurve von Vanadium mit Ausgleichsgerade.}
+    \label{fig:VanadiumMess}
+\end{figure}
+
+\begin{table}
+    \centering
+    \caption{Die sich aus der Ausgleichsrechnung für Vanadium ergebenden Parameter.}
+    \label{tab:paramsVanadium}
+    \begin{tabular}{c c c c}
+        \toprule
+        $m\,/\SI{e-3}{\second\tothe{-1}}$ & $b$ & $\lambda\,/\,\SI{e-3}{\second\tothe{-1}}$ & $\tau\,/\,\si{\second}$ \\
+        \midrule
+        \num{-3.21+-0.11} & \num{5.31+-0.04} & \num{3.21+-0.11} & \num{312+-11} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Da die Messwerte gegen Ende der Messreihe dem Untergrund kaum verschieden sind, ist der berechnete Wert für $\tau = \SI{312\pm11}{\second}$ stark fehlerbehaftet.
+Für eine höhere Genauigkeit wird eine Ausgleichsgerade für lediglich die erste Hälfte der Messwerte berechnet.
+
+\begin{table}
+    \centering
+    \caption{Die sich aus der angepassten Ausgleichsrechnung für Vanadium ergebenden Parameter.}
+    \label{tab:paramsVanadiumNeu}
+    \begin{tabular}{c c c c}
+        \toprule
+        $m\,/\SI{e-3}{\second\tothe{-1}}$ & $b$ & $\lambda\,/\,\SI{e-3}{\second\tothe{-1}}$ & $\tau\,/\,\si{\second}$ \\
+        \midrule
+        \num{-3.94+-0.24} & \num{5.44+-0.09} & \num{3.94+-0.24} & \num{254+-11} \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Der neue Wert $\tau = \SI{254\pm11}{\second}$ ist mit Blick auf Tabelle \ref{tab:MessV} eine plausiblere Näherung der Halbwertszeit.
+In der Literatur\cite{perTable} findet sich ein Wert für $\tau$ von $\SI{3.743}{\minute}$ oder auch $\SI{224.58}{\second}$ für das Isotop $^{52}V$.
+
 \subsection{Rhodium}
 
-In Tabelle werden die benötigten Daten zur Auswertung des Zerfalls von Rhodium aufgeführt. 
-Im ersten Schritt wird der aus der ersten Messung ermittelte Wert für den Untergrund bezogen auf $\SI{15}{\second}$ (nicht auf $\SI{300}{\second}$) $\bar{N}_\text{U}=139\cdot \sfrac{15}{300}\approx 7$ von den Messwerten des Zerfalls von Rhodium abgezogen. 
-Das ergibt die hier mit $N_\text{Rh}$ bezeichnete Messreihe. 
-Der Fehler der Impulse ist poisson-verteilt, weshalb sich ein Fehler von $\Delta N_\text{Rh}=\sqrt{N_\text{Rh}}$ ergibt. 
-Die verwendete Messzeit beträgt hier, wie an den Messwerten zu erkennen ist, $\SI{15}{\second}$. 
+Die Messungen werden analog für Rhodium durchgeführt. Hierbei beträgt das Zeitintervall ebenfalls $\SI{15}{\second}$.
+Nach Abzug des Untergrundes und Ausnutzung der Poisson-Verteilung $\Delta N_\text{Rh}=\sqrt{N_\text{Rh}}$ ergeben sich die nachstehenden Werte in Tabelle \ref{tab:MessRh}.
+
 \begin{table}
     \centering
     \caption{Die Zerfallswerte zum Rhodium.}
@@ -93,14 +170,14 @@ Die Zeit, ab der nur noch der zweite Zerfall ausschlaggebend ist, wird anhand vo
 Für die Messwerte $t>t^*$ wird nun analog zur Gleichung \eqref{eqn:linRegr} eine lineare Ausgleichsgerade mithilfe von 
 \cite{scipy} und \cite{uncertainties} berechnet, die mit der Methode der kleinsten Quadrate rechnet und die Messfehler der Messwerte berücksichtigt. 
 
-Die Geradenparameter der beiden Zerfälle und die sich daraus ergebende Totzeit $\tau$ sind übersichtlich in Tabelle \ref{tab:Denkdirwasaus} zusammengestellt. 
+Die Geradenparameter der beiden Zerfälle und die sich daraus ergebende Halbwertszeit $\tau$ sind in Tabelle \ref{tab:Denkdirwasaus} zusammengestellt. 
 \begin{table}
     \centering
     \caption{Die sich aus der Ausgleichsrechnung für Rhodium ergebenden Parameter.}
     \label{tab:Denkdirwasaus}
     \begin{tabular}{l c c c c}
         \toprule
-         & $m\,/\SI{e-3}{\second\tothe{-1}}$ & $b$ & $\lambda\,/\,\si{\second\tothe{-1}}$ & $\tau\,/\,\si{\second}$ \\
+         & $m\,/\SI{e-3}{\second\tothe{-1}}$ & $b$ & $\lambda\,/\,\SI{e-3}{\second\tothe{-1}}$ & $\tau\,/\,\si{\second}$ \\
         \midrule
         langsam & \num{-2.53+-0.53} & \num{4.28+-0.25} & \num{2.53+-0.53} & \num{270+-60}   \\
         schnell & \num{-17.7+-0.6}  & \num{6.78+-0.07} & \num{17.7+-0.6}  & \num{39.3+-1.4} \\
@@ -126,3 +203,5 @@ Zur Veranschaulichung der Vorgänge bei der Fehlerrechnung und der Größe der M
     \caption{Gesamtdarstellung der beiden Zerfallvorgänge.}
     \label{fig:Rhodium_kombi}
 \end{figure}
+
+Der Literaturvergleich\cite{RhIsotopes} ergibt für den langsamen Zerfall $\tau_{lan} = \SI{260.4}{\second}$ und den schnellen $\tau_{sch} = \SI{42.3}{\second}$.
