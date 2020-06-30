@@ -62,10 +62,10 @@ fit =    y(data[0], *params)
 fit_up = y(data[0], *params_up)
 fit_dw = y(data[0], *params_dw)
 
-# plt.fill_between(data[0], np.exp(fit_up), np.exp(fit_dw), color='lightseagreen', alpha=.25, label=r'$1\sigma$-Intervall')
+plt.fill_between(data[0], np.exp(fit_up), np.exp(fit_dw), color='lightseagreen', alpha=.25, label=r'$1\sigma$-Intervall')
 
 plt.legend()
-plt.savefig("../plots/Vanadium_Ausgleich.pdf")
+plt.savefig("../plots/Vanadium_AusgleichSigma.pdf")
 plt.close()
 
 p = np.polyfit(data[0][:21], np.log(data_minus_null[:21]), 1)
@@ -79,7 +79,7 @@ plt.ylabel(r'$N_\text{V}$')
 plt.grid('.')
 plt.plot(x, np.exp(y(x, *params)), label='Ausgleichsgerade 2')
 plt.legend()
-plt.savefig("../plots/Vanadium_Ausgleich_2.pdf")
+# plt.savefig("../plots/Vanadium_Ausgleich_2.pdf")
 
 print(params)
 print(err)

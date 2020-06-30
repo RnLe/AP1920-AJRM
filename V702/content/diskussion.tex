@@ -1,4 +1,44 @@
 \section{Diskussion}
 \label{sec:Diskussion}
 
+Der Versuch liefert gute Näherungen an die tatsächlichen Halbwertszeiten der Isotope $^{52}V$ und $^{104}Rh$.
+So liegen die Abweichungen für das Vanadium-Isotop bei etwa $13.1\%$ und für das Rhodium-Isotop bei $3.7\%$ und $7.6\%$ für je den langsamen und schnellen Zerfall.
 
+\subsection{Vanadium}
+
+\begin{table}
+    \centering
+    \caption{Abweichungen des Vanadium-Isotops.}
+    \label{tab:abwVan}
+    \begin{tabular}{c c c c}
+        \toprule
+         & Literaturwert $\tau_{V,L}\,/\,\si{\second}$\cite{perTable} & Alle Messwerte $\tau_{V,all}\,/\,\si{\second}$ & Angepasst $\tau_{V}\,/\,\si{\second}$ \\
+        \midrule
+         & $\SI{224.58}{\second}$ & $\SI{312\pm11}{\second}$ & $\SI{254\pm11}{\second}$ \\
+        Abweichungen & - & $38.93\%$ & $13.1\%$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Das Vanadium-Isotop hat eine konstante Halbwertszeit. Wenn die meisten Isotope zerfallen sind, kann über die Zählapparatur jedoch nicht mehr unterschieden werden,
+ob es sich um die Isotop-Zerfälle oder Zerfälle aus Höhenstrahlung und natürlicher Radioaktivität handelt. Der Nulleffekt bildet somit eine untere Grenze der Messgenauigkeit.
+Aus diesem Grund ist es sinnvoll, nur etwa die erste Hälfte der Messwerte zu betrachten und eine lineare Regression für nur diese Werte durchzuführen.
+Ein Vergleich mit dem Literaturwert zeigt, dass die neu gewonnene Näherung deutlich genauer ist und eine Abweichung um den Faktor drei reduziert.
+Eine Gegenüberstellung ist in Tabelle \ref{tababwVan} zu sehen.
+
+\begin{table}
+    \centering
+    \caption{Abweichungen des Rhodium-Isotops.}
+    \label{tab:abwVan}
+    \begin{tabular}{c c c c c}
+        \toprule
+        & \multicolumn{2}{c}{Literaturwerte\cite{RhIsotopes}} & & \\
+        & schnell $\tau_{sch, L}\,/\,\si{\second}$ & langsam $\tau_{lan, L}\,/\,\si{\second}$ & schnell $\tau_{sch}\,/\,\si{\second}$ & langsam $\tau_{lan}\,/\,\si{\second}$ \\
+        \midrule
+        & $\SI{42.3}{\second}$ & $\SI{260.4}{\second}$ & $\SI{39.3\pm1.4}{\second}$ & $\SI{270\pm60}{\second}$ \\
+        Abweichungen & - & - & $3.7\%$ & $7.6\%$ \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{Rhodium}
