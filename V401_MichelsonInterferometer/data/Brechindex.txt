@@ -1,0 +1,9 @@
+Druckunterschied Delta p= 0.8 bar
+b=50 mm
+
+Anzahl Interferenzstreifen: 
+33
+33
+32
+32
+33

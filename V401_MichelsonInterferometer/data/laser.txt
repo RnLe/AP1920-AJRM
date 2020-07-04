@@ -1,0 +1,10 @@
+Übersetzung: 1 : 5.017
+Länge Gasbehälter vgl. Anleitung
+Laser 635 nm
+
+Delta d [mm]        # Interferenzstreifen
+3.72                2256
+1.93                2133
+4.75                3000
+1.75                1135
+3.00                1831

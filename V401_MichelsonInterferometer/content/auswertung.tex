@@ -1,0 +1,81 @@
+\section{Auswertung}
+\label{sec:Auswertung}
+
+\subsection{Arithmetisches Mittel und Messunsicherheit}
+
+Das arithmetische Mittel einer Größe $x$, also das dem unbekannten wahren Wert am nächsten kommende Ergebnis aus einer Messung mit $N$ Messwerten, berechnet sich über 
+\begin{equation}
+    \bar{x}=\frac{1}{N} \sum_i x_i\,.
+    \label{eqn:mittel}
+\end{equation}
+Die Messunsicherheit beläuft sich auf 
+\begin{equation}
+    s_x=\sqrt{\frac{1}{N-1}\sum_i (\bar{x}-x_i)^2}
+    \label{eqn:falsch}
+\end{equation}
+
+\subsection{Wellenlängenbestimmung des Lasers}
+
+Die Werte der ersten Messung sind in Tabelle \ref{tab:lambda} dargestellt. 
+Hierbei sind ebenfalls die mit der Übersetzung skalierten Werte für den Weglängenunterschied aufgeführt, 
+sowie die sich jeweils aus einem Wertepaar ergebenden Werte für die Wellenlänge. 
+
+\begin{table}
+    \centering
+    \caption{Messwerte zur Bestimmung der Wellenlänge, sowie diese selbst.}
+    \label{tab:lambda}
+    \begin{tabular}{c c c c}
+        \toprule
+        $\Delta d_\text{mess}\,/\,\si{\milli\meter}$ & $\Delta d\,/\,\si{\milli\meter}$ & $z$ & $\lambda \,/\,\si{\nano\meter}$ \\
+        \midrule
+        3.72 & 0.741 & 2256 & 657 \\
+        1.93 & 0.385 & 2133 & 361 \\
+        4.75 & 0.947 & 3000 & 631 \\
+        1.75 & 0.349 & 1135 & 615 \\
+        3.00 & 0.598 & 1831 & 653 \\        
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Durch Mittelwertbildung und eine entsprechende Berechnung der Messunsicherheit mit \eqref{eqn:mittel} und \eqref{eqn:falsch} 
+ergibt sich das experimentelle Ergebnis von 
+\begin{equation}
+    \lambda_\text{exp,1} = \SI{583+-126}{\nano\meter} \,. 
+\end{equation}
+Auffällig ist der zweite Messwert, der eine sehr viel geringere Wellenlänge ergibt. Wird dieser Wert nicht in die Berechnung miteinbezogen, 
+beläuft sich das experimentelle Ergebnis auf
+\begin{equation}
+    \lambda_\text{exp,2} = \SI{639+-20}{\nano\meter} \,.
+\end{equation}
+Der theoretisch zu erwartende Wert ist 
+\begin{equation}
+    \lambda_\text{theo}=\SI{635}{\nano\meter}\,.
+\end{equation}
+
+\subsection{Bestimmung des Brechindexes}
+
+Der Druckunterschied zur Umgebung beläuft sich auf etwa $\Delta p=p_0-p=\SI{0.8}{\bar}$, die Länge der Messzelle ist $b=\SI{50}{\milli\meter}$. 
+Die gemessene Anzahl der Interferenzstreifen sowie der sich mit Gleichung \eqref{eqn:Brechi} daraus ergende Brechindex für die Umgebung sind 
+in Tabelle \ref{tab:Brech} aufgeführt. 
+
+\begin{table}
+    \centering
+    \caption{Die Messwerte zur Bestimmung des Brechindexes.}
+    \label{tab:Brech}
+    \begin{tabular}{c c}
+        \toprule
+        $z$ & $n$ \\
+        \midrule
+        33 & 1.00027 \\
+        33 & 1.00027 \\
+        32 & 1.00026 \\
+        32 & 1.00026 \\
+        33 & 1.00027 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+Der experimentelle Wert dieser Messung ergibt sich (wohlgemerkt unter Aufrundung des Messfehlers) zu 
+\begin{equation}
+    n_\text{exp}=\num{1.00026+-0.00001}\,.
+\end{equation}
