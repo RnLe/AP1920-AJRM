@@ -5,19 +5,19 @@
 
 Das arithmetische Mittel einer Größe $x$, also das dem unbekannten wahren Wert am nächsten kommende Ergebnis aus einer Messung mit $N$ Messwerten, berechnet sich über 
 \begin{equation}
-    \bar{x}=\frac{1}{N} \sum_i x_i\,.
+    \bar{x}=\frac{1}{N} \sum_{i=1}^N x_i\,.
     \label{eqn:mittel}
 \end{equation}
 Die Messunsicherheit beläuft sich auf 
 \begin{equation}
-    s_x=\sqrt{\frac{1}{N-1}\sum_i (\bar{x}-x_i)^2}
+    s_x=\sqrt{\frac{1}{N-1}\sum_{i=1}^N (\bar{x}-x_i)^2}
     \label{eqn:falsch}
 \end{equation}
 
 \subsection{Wellenlängenbestimmung des Lasers}
 
 Die Werte der ersten Messung sind in Tabelle \ref{tab:lambda} dargestellt. 
-Hierbei sind ebenfalls die mit der Übersetzung skalierten Werte für den Weglängenunterschied aufgeführt, 
+Hierbei sind ebenfalls die mit der Übersetzung $1:5.017$ skalierten Werte für den Weglängenunterschied aufgeführt, 
 sowie die sich jeweils aus einem Wertepaar ergebenden Werte für die Wellenlänge. 
 
 \begin{table}
@@ -26,7 +26,7 @@ sowie die sich jeweils aus einem Wertepaar ergebenden Werte für die Wellenläng
     \label{tab:lambda}
     \begin{tabular}{c c c c}
         \toprule
-        $\Delta d_\text{mess}\,/\,\si{\milli\meter}$ & $\Delta d\,/\,\si{\milli\meter}$ & $z$ & $\lambda \,/\,\si{\nano\meter}$ \\
+        $\Delta d_\text{mess}\,/\,\si{\milli\meter}$ & $\Delta d_\text{skal.}\,/\,\si{\milli\meter}$ & $z$ & $\lambda \,/\,\si{\nano\meter}$ \\
         \midrule
         3.72 & 0.741 & 2256 & 657 \\
         1.93 & 0.385 & 2133 & 361 \\
@@ -41,20 +41,23 @@ Durch Mittelwertbildung und eine entsprechende Berechnung der Messunsicherheit m
 ergibt sich das experimentelle Ergebnis von 
 \begin{equation}
     \lambda_\text{exp,1} = \SI{583+-126}{\nano\meter} \,. 
+    \label{eqn:bloed}
 \end{equation}
 Auffällig ist der zweite Messwert, der eine sehr viel geringere Wellenlänge ergibt. Wird dieser Wert nicht in die Berechnung miteinbezogen, 
 beläuft sich das experimentelle Ergebnis auf
 \begin{equation}
     \lambda_\text{exp,2} = \SI{639+-20}{\nano\meter} \,.
+    \label{eqn:besser}
 \end{equation}
-Der theoretisch zu erwartende Wert ist 
+Der theoretisch zu erwartende Wert gemäß der Herstellerangabe ist 
 \begin{equation}
     \lambda_\text{theo}=\SI{635}{\nano\meter}\,.
+    \label{eqn:lam_theo}
 \end{equation}
 
 \subsection{Bestimmung des Brechindexes}
 
-Der Druckunterschied zur Umgebung beläuft sich auf etwa $\Delta p=p_0-p=\SI{0.8}{\bar}$, die Länge der Messzelle ist $b=\SI{50}{\milli\meter}$. 
+Der im Experiment hergestellte Druckunterschied zur Umgebung beläuft sich auf etwa $\Delta p=p_0-p=\SI{0.8}{\bar}$, die Länge der Messzelle ist $b=\SI{50}{\milli\meter}$. 
 Die gemessene Anzahl der Interferenzstreifen sowie der sich mit Gleichung \eqref{eqn:Brechi} daraus ergende Brechindex für die Umgebung sind 
 in Tabelle \ref{tab:Brech} aufgeführt. 
 
@@ -78,4 +81,13 @@ in Tabelle \ref{tab:Brech} aufgeführt.
 Der experimentelle Wert dieser Messung ergibt sich (wohlgemerkt unter Aufrundung des Messfehlers) zu 
 \begin{equation}
     n_\text{exp}=\num{1.00026+-0.00001}\,.
+    \label{eqn:n_exp}
 \end{equation}
+Theoretisch zu erwarten bei einer Temperatur von $15\,\mathrm{°C}$ und einem Druck von $\SI{1013.25}{\milli\bar}$ 
+wäre laut \cite{kohlrausch} 
+\begin{equation}
+    n_\text{theo}=\num{1.0002765}\,.
+    \label{eqn:n_theo}
+\end{equation} 
+Da bei der Berechnung des Werts in \eqref{eqn:n_exp} 
+die Temperatur nicht miteingeht, kann dieser Wert trotz der vermutlich höheren Temperatur im Experiment (Raumtemperatur im Sommer) zum Vergleich herangezogen werden. 
