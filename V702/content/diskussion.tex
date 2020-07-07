@@ -24,16 +24,18 @@ Das Vanadium-Isotop hat eine konstante Halbwertszeit. Wenn die meisten Isotope z
 ob es sich um die Isotop-Zerfälle oder Zerfälle aus Höhenstrahlung und natürlicher Radioaktivität handelt. Der Nulleffekt bildet somit eine untere Grenze der Messgenauigkeit.
 Aus diesem Grund ist es sinnvoll, nur etwa die erste Hälfte der Messwerte zu betrachten und eine lineare Regression für nur diese Werte durchzuführen.
 Ein Vergleich mit dem Literaturwert zeigt, dass die neu gewonnene Näherung deutlich genauer ist und eine Abweichung um den Faktor drei reduziert.
-Eine Gegenüberstellung ist in Tabelle \ref{tababwVan} zu sehen.
+Eine Gegenüberstellung ist in Tabelle \ref{tab:abwVan} zu sehen.
+
+\subsection{Rhodium}
 
 \begin{table}
     \centering
     \caption{Abweichungen des Rhodium-Isotops.}
-    \label{tab:abwVan}
+    \label{tab:abwRh}
     \begin{tabular}{c c c c c}
         \toprule
         & \multicolumn{2}{c}{Literaturwerte\cite{RhIsotopes}} & & \\
-        & schnell $\tau_{sch, L}\,/\,\si{\second}$ & langsam $\tau_{lan, L}\,/\,\si{\second}$ & schnell $\tau_{sch}\,/\,\si{\second}$ & langsam $\tau_{lan}\,/\,\si{\second}$ \\
+        & $\tau_{sch, L}\,/\,\si{\second}$ & $\tau_{lan, L}\,/\,\si{\second}$ & $\tau_{sch}\,/\,\si{\second}$ & $\tau_{lan}\,/\,\si{\second}$ \\
         \midrule
         & $\SI{42.3}{\second}$ & $\SI{260.4}{\second}$ & $\SI{39.3\pm1.4}{\second}$ & $\SI{270\pm60}{\second}$ \\
         Abweichungen & - & - & $3.7\%$ & $7.6\%$ \\
@@ -41,4 +43,10 @@ Eine Gegenüberstellung ist in Tabelle \ref{tababwVan} zu sehen.
     \end{tabular}
 \end{table}
 
-\subsection{Rhodium}
+Der schnelle Zerfall des Rhodium-Isotops ist dem Literaturwert nur um $3.7\%$ verschieden und damit gut genähert. Die relative Unsicherheit des Wertes beträgt etwa $3.6\%$.
+Der langsame Zerfall hingegen hat mit $7.6\%$ eine größere Abweichung dem Literaturwert gegenüber. Zudem ist die Messunsicherheit dieser Halbwertszeit mit $22\%$ vergleichsweise hoch.
+Die Hauptursache für diese statistischen Unterschiede ist vor allem der Nulleffekt, der nach dem schnellen Zerfall einen großen Einfluss auf die zweite Messhälfte hat.
+Das Messverhalten ist vergleichbar mit dem des Vanadium-Isotops. \\
+
+Um die Messgenauigkeit zu verbessern können die Proben intensiver oder länger bestrahlt werden, sodass mehr Isotope gebildet werden. Hierdurch wird der statistische Einfluss
+des Nulleffektes reduziert, da zum Ende der Messung noch wesentlich mehr Isotope zerfallen als Strahlung durch die Umgebung gemessen wird.
