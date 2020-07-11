@@ -1,7 +1,0 @@
-# Pose: Aufrecht stehend (siehe Bild)
-# T[s]
-0.38
-0.41
-0.43
-0.39
-0.41

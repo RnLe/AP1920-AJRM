@@ -1,0 +1,8 @@
+# m[g] = 1119.4     h[cm] = 3.0   d[cm] = 7.45
+# Halterung(mittig, rotationssymmetrische Achse): d[cm] = 0.6   h[cm] = 1.8
+# T[s]
+1.08
+1.27
+1.13
+1.18
+1.16

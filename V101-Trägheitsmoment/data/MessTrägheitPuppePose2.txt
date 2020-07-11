@@ -1,8 +1,0 @@
-# Pose: alle vier Gliedmaßen senkrecht in jede Himmelsrichtung (siehe Bild)
-# Breite der Pose: Arme[cm] = 31.3    Beine[cm] = 28.7
-# T[s]
-0.92
-0.89
-0.94
-0.91
-0.91
