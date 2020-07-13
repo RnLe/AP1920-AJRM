@@ -39,7 +39,7 @@ def forImaginary(x, x0, a, b, c, s):
     d_ = np.sqrt(_d**2 + x_**2)
     sin_phi = x_ / d_
     eta = (np.pi * sin_phi) / lam
-    return ((2*a*np.sinc(eta*b)*np.cos(eta*s))**2)*10**6 + c
+    return ((2*a*np.sinc(eta*b/np.pi)*np.cos(eta*s))**2)*10**6 + c
 
 
 params, cov = curve_fit(forImaginary, I2[0], I2[1], p0=[11.077, 0.01, _b, Id, 0.01], bounds=(0, 15))

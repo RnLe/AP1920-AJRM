@@ -233,7 +233,7 @@ Die Ebene ist wie erwartet wellenförmig, jedoch konvergieren die Parameterwerte
 Die weiteren Abbildungen \ref{fig:ls2}, \ref{fig:ls3} und \ref{fig:ls4} zeigen jeweils einen vergrößerten Ausschnitt des Minimums.
 Abbildung \ref{fig:2d} zeigt eine alternative, 2-Dimensionale Darstellung.
 
-%\centering %das war vermutlich der Fehler ;)
+%\centering %das war vermutlich der Fehler ;) RL: jop.
 \begin{figure}
     \centering
     \textbf{Parameterebene Einzelspalt.}\par\medskip
@@ -285,7 +285,6 @@ untersucht werden.
     \label{fig:lsd2s}
 \end{figure}
 
-\centering
 \begin{figure}
     \centering
     \textbf{Parameterebene Doppelspalt - fester Spaltabstand, kleine Intervalle}\par\medskip
@@ -306,13 +305,13 @@ festgehalten und die nächstbeste Kurve berechnet.
 
 \begin{figure}
     \centering
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=.7\textwidth]{python/DoppelspaltFit.pdf}
         \caption{$s \approx \SI{0.022}{\milli\meter}$ mit $a \approx 0.005$, $b \approx 0.047$.}
         \label{fig:lsd3ss}
     \end{subfigure}%
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=.7\linewidth]{python/DoppelspaltFits.pdf}
         \caption{$s = \SI{0.75}{\milli\meter}$ mit $a \approx 0.015$, $b \approx 0.13$}.
@@ -324,18 +323,18 @@ festgehalten und die nächstbeste Kurve berechnet.
 
 \begin{figure}
     \centering
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=.7\textwidth]{python/EinzelspaltFit.pdf}
         \caption{$b \approx 0.025$ mit $a \approx 0.0035$.}
         \label{fig:lsd3ss}
     \end{subfigure}%
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.7\textwidth}
         \centering
         \includegraphics[width=.7\linewidth]{python/EinzelspaltFits.pdf}
         \caption{$b = \SI{0.075}{\milli\meter}$ mit $a \approx 0.004$}.
         \label{fig:lsd3s}
     \end{subfigure}
     \caption{Einzelspalt nach \texttt{curve\_fit} (vgl. Tabelle \ref{tab:parEinzel}) vs. $b = \SI{0.075}{\milli\meter} = const$. Für alle: $x_0 = 11.727$, $I_d = 0.81$.}
-        \label{fig:ggn2}
-    \end{figure}
+    \label{fig:ggn2}
+\end{figure}

@@ -22,23 +22,23 @@ _b = 0.075          # Spaltbreite
 Id = 0.81           # Dunkelstrom
 x0 = 11.727
 
-# def forReal(x, x0, a, b, c):
-#     x_ = abs(x - x0)
-#     d_ = np.sqrt(_d**2 + x_**2)
-#     sin_phi = x_ / d_
-#     eta = (np.pi * b * sin_phi) / lam
-#     return ((a*np.sinc(eta))**2)*10**6 + c
-
-# params, cov = curve_fit(forReal, I2[0], I2[1], p0=[12, 0.001, _b, Id], bounds=(0, 15))
-
-def forReal(x, a):
+def forReal(x, x0, a, b, c):
     x_ = abs(x - x0)
     d_ = np.sqrt(_d**2 + x_**2)
     sin_phi = x_ / d_
-    eta = (np.pi * _b * sin_phi) / lam
-    return ((a*np.sinc(eta))**2)*10**6 + Id
+    eta = (np.pi * b * sin_phi) / lam
+    return ((a*np.sinc(eta/np.pi))**2)*10**6 + c
 
-params, cov = curve_fit(forReal, I2[0], I2[1], p0=[0.001], bounds=(0, 15))
+params, cov = curve_fit(forReal, I2[0], I2[1], p0=[12, 0.001, _b, Id], bounds=(0, 15))
+
+# def forReal(x, a):
+#     x_ = abs(x - x0)
+#     d_ = np.sqrt(_d**2 + x_**2)
+#     sin_phi = x_ / d_
+#     eta = (np.pi * _b * sin_phi) / lam
+#     return ((a*np.sinc(eta/np.pi))**2)*10**6 + Id
+
+# params, cov = curve_fit(forReal, I2[0], I2[1], p0=[0.001], bounds=(0, 15))
 
 uncertainties = np.sqrt(np.diag(cov))
 
