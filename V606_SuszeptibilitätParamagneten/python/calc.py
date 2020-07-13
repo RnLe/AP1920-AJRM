@@ -20,7 +20,7 @@ print("\nBohrsches Magneton: ",mu_B)
 names=["Nd","Gd","Dy"]
 m=np.array([9.0,14.08,14.38]) # Masse
 rho=np.array([7.24,7.40,7.8]) # DIchte
-J=np.array([4.5,-3.5,7.5]) # Gesamtdrehimpuls
+J=np.array([4.5,3.5,7.5]) # Gesamtdrehimpuls
 L=np.array([6,0,5]) # Bahndrehimpuls
 S=np.array([1.5,3.5,2.5]) # Spin
 M=np.array([144.22,157.25,162.50]) # Molare Masse in g/mol aus Kohlrausch, S. 610

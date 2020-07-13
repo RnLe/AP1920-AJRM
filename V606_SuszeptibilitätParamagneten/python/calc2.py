@@ -38,7 +38,7 @@ DeltaR=R_3-R_3_Luft
 #Querschnitt Spule in m^2
 F=86.6*10**(-6)
 
-chi_R=2*DeltaR*F/(R_3*Q_eff)
+chi_R=2*DeltaR*F/(R_3*Q_eff*998)
 
 #Speisespannung in volt
 U_Sp=1
@@ -52,4 +52,4 @@ chi_OU=4*1.5*10**(-5)/U_Sp
 print("Unnötigerweise, aber trotzdem: Die Suszeptibilität ohne Füllung, berechnet mithilfe der Brückenpannung: ",chi_OU)
 
 for i in range(3):
-    print("\n",names[i],":\nChi über R:\t",chi_R[i],"\nChi über U:\t",chi_U[i])
+    print("\n",names[i],":\nQuerschnittsfläche effektiv:\t",Q_eff[i],":\nChi über R:\t",chi_R[i],"\nChi über U:\t",chi_U[i])

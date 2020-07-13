@@ -5,15 +5,20 @@
 
     Es werden die drei Elemente Neodymium, Gadolinium und Dysprosium untersucht, von denen jeweils zwei als dreifach positiv geladene 
     Ione mit drei zweifach negativ geladenen Sauerstoff-Ionen ein Molekül bilden. 
-    Ebenfalls haben alle drei Elemente zwei 6s-Elektronen und eine bis zur 5p-Schale. Nur hinsichtlich der Anzahl \# der 4f-Elektronen unterscheiden sie sich. 
+    Am Beispiel von Neodymium bedeutet dies $\ce{Nd2O3}$ mit den Ionen $\ce{Nd3+}$ und $\ce{O2-}$.
+    Ebenfalls sind alle drei Elemente bis zur 6s-Unterschale vollständig gefüllt, deren Quantenzahlen tragen somit nicht zur Magnetisierung bei. 
+%    haben alle drei Elemente zwei 6s-Elektronen und eine bis zur 5p-Schale. 
+    Hinsichtlich der Anzahl \# der 4f-Elektronen unterscheiden sie sich. 
     Dies ist auch der Fall, wenn sie im ionisierten Zustand sind: 
     Jeweils zwei 6s-Elektronen und ein 4f-Elektron verschwindet; die Elektronen bis zur 5p-Schale bleiben unverändert. 
+    Da die 6s-Unterschale mit zwei Elektronen vollständig gefüllt ist, hat die vollständige Besetzung der Unterschale beziehungsweise 
+    das gänzliche Fehlen von Elektronen in dieser Unterschale keinen Einfluss auf die Berechnung der Gesamtquantenzahlen. 
     Zur besseren Übersicht werden die Zwischenergebnisse in Tabelle \ref{tab:Theo1} zusammengefasst. 
 
     Auf der 4f-Schale können sich maximal 14 Elektronen befinden: 
-    Die Bahndrehimpulsquantenzahl $l$ kann Werte zwischen $-3$ und $3$ annnehmen, also sieben verschiedene Werte sind möglich. 
-    Zusätzlich gibt es für jede Quantenzahl $l$ maximal ein Elektron mit Spin Up und eins mit Spin Down. Daraus resultiert eine maximale Anzahl von vierzehn Elektronen auf dieser Schale. 
-    Dementsprechend wird gemäß den Hund'schen Regeln \ref{sub:wauwau} bei einer Elektronenzahl von inklusive sieben 
+    Die magnetische Quantenzahl des Drehimpulses $l$ kann Werte zwischen $-3$ und $3$ annnehmen, also sind sieben verschiedene Werte möglich. 
+    Zusätzlich gibt es für jede Quantenzahl $l$ maximal ein Elektron mit Spin-Up und eins mit Spin-Down. Daraus resultiert eine maximale Anzahl von vierzehn Elektronen auf dieser Schale. 
+    Dementsprechend wird gemäß der Hund'schen Regeln \ref{sub:wauwau} bei einer Elektronenzahl von mehr als sieben 
     die Quantenzahl des Gesamtdrehimpuls durch Addition $L+S$ berechnet, bei einer geringeren Zahl durch Subtraktion $L-S$. 
 
     Mithilfe der Quantenzahlen wird der Landé-Faktor gemäß Gleichung \eqref{eqn:lande} berechnet. 
@@ -37,7 +42,7 @@
             $g_J$ \\
             \midrule
             Nd &  4 & 3 & $3\cdot\sfrac{1}{2}=\sfrac{3}{2}$                       & 6 & $\sfrac{9}{2}$  & 0.727 \\
-            Gd &  8 & 7 & $7\cdot\sfrac{1}{2}=\sfrac{7}{2}$                       & 0 & $\sfrac{-7}{2}$ & 2.400 \\
+            Gd &  8 & 7 & $7\cdot\sfrac{1}{2}=\sfrac{7}{2}$                       & 0 & $\sfrac{7}{2}$ & 2.000 \\
             Dy & 10 & 9 & $7\cdot\sfrac{1}{2}+2\cdot\sfrac{-1}{2}=\frac{5}{2}$    & 5 & $\sfrac{15}{2}$ & 1.333 \\
             \bottomrule
         \end{tabular}
@@ -62,13 +67,14 @@
     Dementsprechend berechnet sich die Anzahl der Moleküle pro Volumen durch Division der Stoffmenge mit dem Volumen. 
     Zu beachten ist hierbei, dass erneut ein effektives Volumen und somit auch die effektive Querschnittsfläche \eqref{eqn:effQ} verwendet 
     werden muss, da es sich um ein dekomprimiertes Pulver und nicht um einen Ein-Kristall handelt.
-    Multipliziert man dies mit zwei, ergibt sich die Anzahl der Mole der positiv geladenen Seltenen-Erd-Ionen in der gegebenen Probe:
+    Das muss noch mit zwei multipliziert werden, da auf ein Molekül, dessen Stoffmenge bisher betrachtet worden ist, stets zwei Ionen kommen. 
+    Die Anzahl der Mole der positiv geladenen Seltenen-Erd-Ionen in der gegebenen Probe ergibt sich also zu:
     \begin{equation*}
         N_\text{Ione,mol}=2\cdot\frac{n_\text{Molekül}}{V_\text{Probe,eff}}=2\cdot\frac{n_\text{Molekül}}{Q_\text{eff}L}
         =2\cdot\frac{\rho _\text{w} n_\text{Molekül}}{m}\,.
     \end{equation*}
     Die Dichte $\rho _\text{w}$ steht im Experiment bereits zur Verfügung und muss nicht extra aufgenommen werden. 
-    Die Anzahl $N$ der Teilchen ohne Einheiten pro Volumeneinheit wird durch Multiplikation der Avogadro-Konstante $\symup{N}_\text{A}$ erreicht.
+    Die Anzahl $N$ der Teilchen ohne Einheiten pro Volumeneinheit wird durch Multiplikation mit der Avogadro-Konstante $\symup{N}_\text{A}$ erreicht.
     \begin{equation*}
         N=N_\text{Ione,mol}\cdot \symup{N}_\text{A}=\frac{2\symup{N}_\text{A}\rho_\text{w}}{M_\text{Molekül}}
     \end{equation*}
@@ -78,13 +84,13 @@
 
     \begin{table}
         \centering
-        \caption{}
+        \caption{Zwischenergebnisse zur Berechnung der Stoffmenge und des Landé-Faktors.}
         \label{tab:Theo2}
         \begin{tabular}{l c c S[table-format=2.2] S[table-format=1.2] c}
             \toprule
             Element & 
             $M_\text{SE}\,/\,\si{\gram\per\mole}$ &
-            $M_\text{Mol}\,/\,\si{\gram\per\mole}$ &
+            $M_\text{Molekül}\,/\,\si{\gram\per\mole}$ &
             $m\,/\,\si{\gram}$ & 
             $\rho_\text{w}\,/\,\si{\gram\per\cubic\centi\meter}$ &
             $N\,/\,\SI{e28}{\per\cubic\meter}$ \\
@@ -105,15 +111,12 @@
         \label{eqn:chi1}
     \end{equation}
     \begin{equation}
-        \chi _\text{Gd}=\num{10.9e-03} 
+        \chi _\text{Gd}=\num{13.6e-03} 
     \end{equation}
     \begin{equation}
         \chi _\text{Dy}=\num{25.1e-03} 
         \label{eqn:chi3}
     \end{equation}
-        
-        
-
 
 \subsection{Filterkurve des Selektivverstärkers}
 
@@ -146,8 +149,8 @@
             Frequenz $\nu$                  & $\SI{35.00}{\kilo\hertz}$ \\
             Speisespannung $U_\text{Sp}$    & $\SI{1.0}{\volt}$ \\
             Windungszahl $n$                & $\num{250}$ \\
-            Querschnittsfläche Spule $F$          & $\SI{86.6}{\milli\meter\squared}$ \\
-            Spulenlänge $l$                 & $\SI{135}{\milli\meter}$ \\
+            Querschnittsfläche Spule $F$    & $\SI{86.6e-6}{\meter\squared}$ \\
+            Spulenlänge $l$                 & $\SI{135e-3}{\meter}$ \\
             \bottomrule
         \end{tabular}
     \end{table}
@@ -175,13 +178,13 @@
         \centering
         \caption{Die experimentell berechneten Werte für die Suszeptibilität.}
         \label{tab:chii}
-        \begin{tabular}{l c c}
+        \begin{tabular}{l S[table-format=2.2] S[table-format=1.2] S[table-format=2.2] c c}
             \toprule
-            Element & $\chi_1$ &  $\chi_2$ \\
+            Element & $m\,/\,\SI{e-3}{\kilo\gram}$ & $\rho_\text{w}\,/\,\SI{e3}{\kilo\gram\per\cubic\meter}$ & $Q_\text{eff}\,/\,\SI{e-6}{\meter\squared}$ & $\chi_1$ &  $\chi_2$ \\
             \midrule
-            Nd & $\num{5.45e-4}$ & 1.03 \\
-            Gd & $\num{3.32e-4}$ & 3.15 \\
-            Dy & $\num{2.92e-4}$ & 4.82 \\
+            Nd &  9.0  & 7.24 &  9.21 & $\num{5.45e-4}$ & $\num{1.04e-3}$ \\
+            Gd & 14.08 & 7.40 & 14.09 & $\num{3.32e-4}$ & $\num{3.16e-3}$ \\
+            Dy & 14.38 & 7.8  & 13.66 & $\num{2.92e-4}$ & $\num{4.83e-3}$ \\
             \bottomrule
         \end{tabular}
     \end{table}
