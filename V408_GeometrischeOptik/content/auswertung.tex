@@ -10,7 +10,7 @@ und der Position der Schablone. Für alle Messreihen ist die Schablonenposition 
     \caption{Allgemeine Randdaten.}
     \begin{tabular}{c c}
         \toprule
-        {Ursprung $U \:/\: \si{\centi\meter}$} & Höhe der Schablone $h \:/\: \si{\centi\meter}$\\
+        {Ursprung $U \:/\: \si{\centi\meter}$} & Höhe der Schablone $l \:/\: \si{\centi\meter}$\\
         \midrule
         29.4 & 3 \\
     \end{tabular}
@@ -116,3 +116,55 @@ Zusammen ergibt das eine Brennweite von $f = \SI{10.10\pm0.05}{\centi\meter}$. D
 Die Herstellerangabe der verwendeten Linse ist $f_H = \SI{10}{\centi\meter}$. Damit beträgt die Abweichung etwa $1\%$.
 
 \subsection{Auswertung -- Methode von Abbe}
+In der Methode nach Abbe werden die Brennweite und die Lage der Hauptebenen durch eine lineare Regression bestimmt (\texttt{numpy.polyfit}\cite{numpy}). Die durch 
+\begin{equation}
+    \begin{gathered}
+        g' = |A - U|    \\
+        b' = |S - A|    \\
+        V = \frac{l_i}{l}
+    \end{gathered}
+\end{equation}
+bestimmten Werte werden mit $(1+\sfrac{1}{V},g')$ und $(1+V,b')$ je gegeneinander aufgetragen. Der dazugehörige Datensatz wird in Tabelle \ref{tab:mess3} gezeigt.
+
+\begin{table}
+    \centering
+    \caption{Messwerte der dritten Messreihe.}
+    \begin{tabular}{c c c c c c c}
+        \toprule
+        {$S_i \:/\: \si{\centi\meter}$} & {$A \:/\: \si{\centi\meter}$} & {$g_i' \:/\: \si{\centi\meter}$} & {$b_i' \:/\: \si{\centi\meter}$} 
+        & {$(1+\sfrac{1}{V}) \:/\: \si{\centi\meter}$} & {$(1+V) \:/\: \si{\centi\meter}$} & {$l_i \:/\: \si{\centi\meter}$}\\
+        \midrule
+        119.7 &  67.3 & 37.9 &	52.5 &	2.2 & 1.8 & 2.5 \\
+        135.2 &  51.5 & 22.1 &	83.7 &	1.4 & 3.2 & 6.7 \\
+        118.3 &  59.7 & 30.3 &	58.6 &	1.9 & 2.2 & 3.5 \\
+        119.0 &  71.1 & 41.7 &	47.9 &	2.5 & 1.7 & 2.0 \\
+        122.3 &  75.5 & 46.1 &	46.8 &	2.9 & 1.5 & 1.6 \\
+        117.4 &  65.2 & 35.8 &	52.2 &	2.2 & 1.8 & 2.5 \\
+        125.8 &  83.1 & 53.7 &	42.7 &	3.1 & 1.5 & 1.4 \\
+        132.1 &  90.0 & 60.6 &	42.1 &	3.3 & 1.4 & 1.3 \\
+        138.6 &  97.5 & 68.1 &	41.1 &	3.7 & 1.4 & 1.1 \\
+    \end{tabular}
+    \label{tab:mess3}
+\end{table}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.9\textwidth]{python/plotAbbe1.pdf}
+    \caption{Messwerte und Ausgleichsgerade nach Abbe für $g_i'$}
+    \label{fig:lin1}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=.9\textwidth]{python/plotAbbe2.pdf}
+    \caption{Messwerte und Ausgleichsgerade nach Abbe für $b_i'$}
+    \label{fig:lin2}
+\end{figure}
+
+Für die Hauptebene $H$ berechnet sich aus der linearen Regression eine Brennweite von $f_1 = \SI{19.8\pm0.9}{\centi\meter}$ und eine Position von $h = \SI{-7.2\pm2.5}{\centi\meter}$.
+Analog ergibt sich für die Hauptebene $H'$ eine Brennweite $f_2 = \SI{22.7\pm0.5}{\centi\meter}$ und eine Position von $h' = \SI{10.3\pm1.0}{\centi\meter}$.
+Die Brennweiten haben relative Messunsicherheiten von je $f_{1, rel} = 5\%$ und $f_{2, rel} = 2\%$. Daraus ergibt sich eine gemeinsame Brennweite von 
+$f = \SI{21.2\pm0.5}{\centi\meter}$ mit einer relativen Messunsicherheit von etwa $2\%$.
+Für die Hauptebenen zeigen sich relative Unsicherheiten von je $35\%$ und $9.8\%$.
+Die Herstellerangaben der Linsen sind $\SI{10}{\centi\meter}$ für die Sammellinse und $\SI{-10}{\centi\meter}$ für die Zerstreuungslinse. Damit haben die errechneten Werte eine Abweichung
+von ungefähr $6\%$ vom Realwert.

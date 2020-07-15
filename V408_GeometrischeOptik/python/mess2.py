@@ -33,3 +33,14 @@ with open('../data/mess2.txt', 'w') as t:
     t.write(f'\nff = {uff}')
 
 print(uf)
+
+d1 = abs(gn - bf)
+d2 = abs(gf - bn)
+d = np.concatenate([d1, d2])
+dm = np.mean(d)
+
+print(type(d1))
+print(d1)
+print(d2)
+print(d)
+print(dm)
