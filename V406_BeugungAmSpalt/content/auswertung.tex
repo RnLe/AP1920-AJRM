@@ -11,8 +11,8 @@ Für den Versuch werden alle zur Verfügung stehenden Randdaten in Tabelle \ref{
         \toprule
         & $s\:/\:\si{\milli\meter}$ & $b_i\:/\:\si{\milli\meter}$ & $\lambda\:/\:\si{\nano\meter}$ & $d\:/\:\si{\milli\meter}$ & $I_d\:/\:\si{\micro\ampere}$ \\
         \midrule
-        Doppelspalt & 0.75 & 0.150 & 633 & 626.1 & 0.63 \\
         Einzelspalt &      & 0.075 & 633 & 626.1 & 0.70 \\
+        Doppelspalt & 0.75 & 0.150 & 633 & 626.1 & 0.63 \\
         \bottomrule
     \end{tabular}
 \end{table}
@@ -55,7 +55,7 @@ Für die Ausgleichskurve des Einzelspalts wird eine an \ref{eqn:I} angelehnte Fu
     I(\varphi) = (a\frac{\sin{\gamma}}{\gamma})^2 + c
     \label{eqn:Iaus}
 \end{equation}
-verwendet\footnote{In der Diskussion\ref{sec:Erweiterte Diskussion} wird diese Form weiter diskutiert.} mit 
+verwendet\footnote{In der Diskussion \ref{sec:Erweiterte Diskussion} wird diese Form weiter diskutiert.} mit 
 \begin{equation}
     \gamma = \frac{\pi b_{par, 1} \sin\varphi}{\lambda}
     \label{eqn:gamma}
@@ -85,14 +85,11 @@ Die Ausgleichsrechnung mit der Funktion mit \texttt{curve\_fit}\cite{scipy} lief
         \toprule
         & \multicolumn{2}{c}{$a$} & \multicolumn{2}{c}{$b_{par, 1}\:/\:\si{\milli\meter}$} & \multicolumn{2}{c}{$c\:/\:\si{\micro\ampere}$} & \multicolumn{2}{c}{$x_0\:/\:\si{\milli\meter}$} \\
         \midrule
-        Einzelspalt & 0.003481&0.000005 & 0.02495&0.00008 & 0.81&0.01 & 11.727&0.006 \\
+        Einzelspalt & 0.003481&0.000005 & 0.0784&0.0002 & 0.81&0.01 & 11.727&0.006 \\
     \end{tabular}
 \end{table}
-Der Vergleich der Herstellerangabe mit dem errechneten Wert für die Spaltbreite ist um den Faktor 3 verschieden mit $b_{par, 1} \approx \SI{0.025}{\milli\meter}$
-\begin{equation}
-    \frac{b_{par, 1}}{b_1} = \frac{\SI{0.025}{\milli\meter}}{\SI{0.075}{\milli\meter}} = \frac{1}{3}\:.
-\end{equation}
-Die relative Messunsicherheit von $b_{par, 1}$ ist $\approx 0.32\%$.
+Die Herstellerangabe $b_{1} = \SI{0.075}{\milli\meter}$ ist mit dem errechneten Wert für die Spaltbreite um $\Delta b_{par, 1} \approx \SI{0.0034}{\milli\meter}$ und damit um etwa $4.5\%$ verschieden. 
+Die relative Messunsicherheit von $b_{par, 1}$ ist $\approx 2.5\%$.
 
 \begin{figure}
     \centering
@@ -101,22 +98,22 @@ Die relative Messunsicherheit von $b_{par, 1}$ ist $\approx 0.32\%$.
     \label{fig:messEinzel}
 \end{figure}
 
-Der abgeschätzte Wert des Intensitätsmaximums $x_0$ liegt bei $\SI{11.727 \pm 0.008}{\milli\meter}$ mit einer Abweichung von $0.07\%$.
+Der abgeschätzte Wert des Intensitätsmaximums $x_0$ liegt bei $\SI{11.727 \pm 0.008}{\milli\meter}$ mit einer Unsicherheit von $0.07\%$.
 
 \subsection{Doppelspalt}
 \begin{table}
     \centering
     \caption{Parameterwerte des Doppelspalts.}
     \label{tab:parDoppel}
-    \begin{tabular}{c S[table-format=1.5]@{\,\( \pm \)\,}S[table-format=1.5] 
+    \begin{tabular}{S[table-format=1.5]@{\,\( \pm \)\,}S[table-format=1.5] 
         S[table-format=1.4]@{\,\( \pm \)\,}S[table-format=1.4] 
         S[table-format=1.1]@{\,\( \pm \)\,}S[table-format=1.1]
         S[table-format=1.3]@{\,\( \pm \)\,}S[table-format=1.3]
         S[table-format=1.3]@{\,\( \pm \)\,}S[table-format=1.3]}
         \toprule
-        & \multicolumn{2}{c}{$a$} & \multicolumn{2}{c}{$b_{par, 2}\:/\:\si{\milli\meter}$} & \multicolumn{2}{c}{$c\:/\:\si{\micro\ampere}$} & \multicolumn{2}{c}{$x_0\:/\:\si{\milli\meter}$} & \multicolumn{2}{c}{$s\:/\:\si{\milli\meter}$}\\
+        \multicolumn{2}{c}{$a$} & \multicolumn{2}{c}{$b_{par, 2}\:/\:\si{\milli\meter}$} & \multicolumn{2}{c}{$c\:/\:\si{\micro\ampere}$} & \multicolumn{2}{c}{$x_0\:/\:\si{\milli\meter}$} & \multicolumn{2}{c}{$s\:/\:\si{\milli\meter}$}\\
         \midrule
-        Doppelspalt & 0.00454&0.00001 & 0.0470&0.0003 & 0.8&0.1 & 11.077&0.005 & 0.022&0.003\\
+        0.00454&0.00001 & 0.147&0.001 & 0.8&0.1 & 11.077&0.005 & 0.021&0.003\\
     \end{tabular}
 \end{table}
 
@@ -161,20 +158,17 @@ Als Kontrollwert der Parameter für den Doppelspalt eignet sich $x_0 = \SI{11.07
     \label{fig:messDoppel}
 \end{figure}
 
-Die Herstellerangabe zur Spaltbreite $b_2 = \SI{0.15}{\milli\meter}$ ist dem ermittelten Wert $b_{par, 2} = \SI{0.0470 \pm 0.0003}{\milli\meter} \approx \SI{0.05}{\milli\meter}$
-um den Faktor $3$ verschieden.
-
-\begin{equation}
-    \frac{b_{par, 2}}{b_2} = \frac{\SI{0.05}{\milli\meter}}{\SI{0.15}{\milli\meter}} = \frac{1}{3}
-\end{equation}
+Die Herstellerangabe zur Spaltbreite $b_2 = \SI{0.15}{\milli\meter}$ ist dem ermittelten Wert $b_{par, 2} = \SI{0.147 \pm 0.001}{\milli\meter}$
+um ungefähr $\Delta b_{par, 2} = \SI{0.003}{\milli\meter}$ verschieden. Das entspricht einer Abweichung von $2\%$.
 
 Die relative Messunsicherheit von $b_{par, 2}$ ist $\approx 0.6\%$.
 
-Für den Spaltabstand weicht der errechnete Wert $s = \SI{0.022 \pm 0.003}{\milli\meter} \approx \SI{0.02}{\milli\meter}$ um den Faktor $37.5$ von der Herstellerangabe $s_H = \SI{0.75}{\milli\meter}$ ab.
+Für den Spaltabstand weicht der errechnete Wert $s = \SI{0.021 \pm 0.003}{\milli\meter} \approx \SI{0.02}{\milli\meter}$ um den Faktor $35.7$ von der Herstellerangabe $s_H = \SI{0.75}{\milli\meter}$ ab.
 
 \subsection{Erweiterte Auswertung}
-Die großen Abweichungen und die möglichen Ursachen werden in der erweiterten Diskussion \ref{sec:Erweiterte Diskussion} thematisiert.
-Im weiteren Verlauf wird die Methodik der Ausgleichsrechnung sowie alternative Parameter ausgewertet.\\
+Die große Abweichung und die möglichen Ursachen werden in der erweiterten Diskussion \ref{sec:Erweiterte Diskussion} thematisiert.
+Im weiteren Verlauf wird die Methodik der Ausgleichsrechnung sowie alternative Parameter ausgewertet. Der folgende Abschnitt geht also ein wenig über die ursprüngliche
+Thematik hinaus und beleuchtet einen sonst für selbstverständlich angenommenen Aspekt.\\
 
 \subsubsection{Einschub: Methode der kleinsten Quadrate}
 Das Berechnen der optimalen Parameter erfolgt über die \textit{Methode der kleinsten Quadrate}, bei der das Minimum der Fehlerquadratsummen gesucht wird.
@@ -199,15 +193,19 @@ gesucht. Für den Einzelspalt sind das die Parameter $a, b$
 \subsubsection{Parameterebenen}
 Im folgenden werden die Parameter-Wertepaare $[(a_i,b_i)],\:i\in[0,1,..,m]$ als Ebene dargestellt.
 Jedes Wertepaar besitzt eine (positive) Fehlerquadratsumme, sodass die resultierende Ebene nach Minima untersucht werden kann.
-\textbf{Ziel der Ebenendarstellung} ist das Aufdecken möglicher Minima, die nicht unmittelbar nebeneinander liegen.
+
+\textbf{Ziel der Ebenendarstellung} ist das Aufdecken möglicher Minima, die relativ nah beieinander liegen.
 Auf diese Weise wird überprüft, ob es plausible Parameter gibt (näher an den Herstellerangaben), für die die Ausgleichskurve zwar nicht optimal,
 aber dennoch hinreichend genau ist.
-\textbf{Erwartung:} Wellenartige Ebene mit tropfenförmigen Senken, bei denen die Parameter lokal gegen ein Minimum konvergieren.
+
+\textbf{Erwartung:} Wellenartige Ebene mit tropfenförmigen Senken, an denen die Parameter lokal gegen ein Minimum konvergieren. Das Minimum der Fehlerquadratsummen kann analytisch über
+das Nullsetzen der partiellen Ableitungen nach den Parametern, hier $\partial a$ und $\partial b$, bestimmt werden.
+Daher erzeugen periodische Funktionen auch periodische Parameterebenen.
 
 \subsubsection{Einzelspalt}
 Die in Tabelle \ref{tab:parEinzel} berechneten, additiven Konstanten $x_0 = \SI{11.727}{\milli\meter}$ und $I_d = \SI{0.8}{\nano\ampere}$ werden festgesetzt,
-damit die Funktion \eqref{eqn:I} $f:(x,a,b)\mapsto y$ abgesehen von $x$ nur noch von den Parametern $(a,b)$ abhängen.
-Anschließend wird die Fehlerquadratsumme für bestimmte Intervalle $(a_{min}, a_{max})$ und $(b_{min}, b_{max})$ berechnet und in einer Matrix $C = mat(1000, 1000)$ festgehalten.
+damit die Funktion \eqref{eqn:I} $f:(x,a,b)\mapsto y$ abgesehen von $x$ nur noch von den Parametern $(a,b)$ abhängt.
+Anschließend wird die Fehlerquadratsumme für bestimmte Intervalle $(a_{min}, a_{max})$ und $(b_{min}, b_{max})$ berechnet und in einer Matrix $C = mat(1000, 1000)$ eingetragen.
 Jeder Matrixeintrag entspricht einem anderen Parameter-Wertepaar.
 Eine Parameterebene mit weit gefassten Intervallen ist in \ref{fig:ls1} zu sehen.
 Für alle Ebenen ist $n = 1000$ ($n$ Schritte im Intervall).
@@ -220,7 +218,7 @@ Für alle Ebenen ist $n = 1000$ ($n$ Schritte im Intervall).
     \label{fig:ls1}
 \end{figure}
 
-Die Ebene ist wie erwartet wellenförmig, jedoch konvergieren die Parameterwerte nur in einem kleinen Bereich zu einem Minimum, nahe der 0.
+Die Ebene ist wie erwartet wellenförmig, jedoch konvergieren die Parameterwerte nur in einem sehr, sehr kleinen Bereich zu einem Minimum, nahe der Null.
 
 \begin{figure}
     \centering
@@ -274,14 +272,14 @@ untersucht werden.
     \centering
     \textbf{Parameterebene Doppelspalt - fester Spaltabstand}\par\medskip
     \includegraphics[width=.9\textwidth]{python/leastSquaresDoppel2ss.pdf}
-    \caption{$s = \SI{0.75}{\milli\meter}$ (Herstellerangabe),$a = (0.00001, 0.01)$, $b = (0.0001, 1)$.}
+    \caption{$s = \SI{0.75}{\milli\meter}$ (Herstellerangabe), $a = (0.00001, 0.01)$, $b = (0.0001, 1)$.}
     \label{fig:lsd2ss}
 \end{figure}
 \begin{figure}
     \centering
     \textbf{Parameterebene Doppelspalt - bester Fit, dynamische Parameter}\par\medskip
     \includegraphics[width=.9\textwidth]{python/leastSquaresDoppel2s.pdf}
-    \caption{$s = \SI{0.022}{\milli\meter}$,$a = (0.00001, 0.01)$, $b = (0.0001, 1)$.}
+    \caption{$s = \SI{0.022}{\milli\meter}$, $a = (0.00001, 0.01)$, $b = (0.0001, 1)$.}
     \label{fig:lsd2s}
 \end{figure}
 
@@ -289,29 +287,29 @@ untersucht werden.
     \centering
     \textbf{Parameterebene Doppelspalt - fester Spaltabstand, kleine Intervalle}\par\medskip
     \includegraphics[width=.9\textwidth]{python/leastSquaresDoppel3ss.pdf}
-    \caption{$s = \SI{0.75}{\milli\meter}$ (Herstellerangabe),$a = (0.00001, 0.006)$, $b = (0.0001, 0.3)$.}
+    \caption{$s = \SI{0.75}{\milli\meter}$ (Herstellerangabe), $a = (0.00001, 0.006)$, $b = (0.0001, 0.3)$.}
     \label{fig:lsd3ss}
 \end{figure}
 \begin{figure}
     \centering
     \textbf{Parameterebene Doppelspalt - bester Fit, dynamische Parameter, kleine Intervalle}\par\medskip
     \includegraphics[width=.9\textwidth]{python/leastSquaresDoppel3s.pdf}
-    \caption{$s = \SI{0.022}{\milli\meter}$,$a = (0.00001, 0.006)$, $b = (0.0001, 0.3)$.}
+    \caption{$s = \SI{0.022}{\milli\meter}$, $a = (0.00001, 0.006)$, $b = (0.0001, 0.3)$.}
     \label{fig:lsd3s}
 \end{figure}
 
-Zum Vergleich werden einige Ausgleichskurven mit entsprechenden Parameterwerten gegenübergestellt. Dabei wird je ein Parameter als Herstellerangabe
+Zum Vergleich werden zwei Ausgleichskurven mit entsprechenden Parameterwerten gegenübergestellt. Dabei wird je ein Parameter als Herstellerangabe
 festgehalten und die nächstbeste Kurve berechnet.
 
 \begin{figure}
     \centering
-    \begin{subfigure}{.7\textwidth}
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.7\textwidth]{python/DoppelspaltFit.pdf}
-        \caption{$s \approx \SI{0.022}{\milli\meter}$ mit $a \approx 0.005$, $b \approx 0.047$.}
+        \caption{$s \approx \SI{0.022}{\milli\meter}$ mit $a \approx 0.005$, $b \approx 0.147$.}
         \label{fig:lsd3ss}
     \end{subfigure}%
-    \begin{subfigure}{.7\textwidth}
+    \begin{subfigure}{.5\textwidth}
         \centering
         \includegraphics[width=.7\linewidth]{python/DoppelspaltFits.pdf}
         \caption{$s = \SI{0.75}{\milli\meter}$ mit $a \approx 0.015$, $b \approx 0.13$}.
@@ -319,22 +317,4 @@ festgehalten und die nächstbeste Kurve berechnet.
     \end{subfigure}
     \caption{Doppelspalt nach \texttt{curve\_fit} (vgl. Tabelle \ref{tab:parDoppel}) vs. $s = \SI{0.75}{\milli\meter}$. Für alle: $x_0 = 11.077$, $I_d = 0.82$.}
         \label{fig:ggn1}
-    \end{figure}
-
-\begin{figure}
-    \centering
-    \begin{subfigure}{.7\textwidth}
-        \centering
-        \includegraphics[width=.7\textwidth]{python/EinzelspaltFit.pdf}
-        \caption{$b \approx 0.025$ mit $a \approx 0.0035$.}
-        \label{fig:lsd3ss}
-    \end{subfigure}%
-    \begin{subfigure}{.7\textwidth}
-        \centering
-        \includegraphics[width=.7\linewidth]{python/EinzelspaltFits.pdf}
-        \caption{$b = \SI{0.075}{\milli\meter}$ mit $a \approx 0.004$}.
-        \label{fig:lsd3s}
-    \end{subfigure}
-    \caption{Einzelspalt nach \texttt{curve\_fit} (vgl. Tabelle \ref{tab:parEinzel}) vs. $b = \SI{0.075}{\milli\meter} = const$. Für alle: $x_0 = 11.727$, $I_d = 0.81$.}
-    \label{fig:ggn2}
 \end{figure}

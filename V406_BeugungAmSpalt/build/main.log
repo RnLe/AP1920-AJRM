@@ -1,4 +1,4 @@
-This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  13 JUL 2020 10:38
+This is LuaHBTeX, Version 1.12.0 (TeX Live 2020)  (format=lualatex 2020.5.25)  16 JUL 2020 14:35
  restricted system commands enabled.
 **main.tex
 (./main.tex
@@ -1456,18 +1456,6 @@ LaTeX Warning: Label `fig:lsd3ss' multiply defined.
 
 LaTeX Warning: Label `fig:lsd3s' multiply defined.
 
-
-LaTeX Warning: Label `fig:lsd3ss' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:lsd3ss' multiply defined.
-
-
-LaTeX Warning: Label `fig:lsd3s' multiply defined.
-
-
-LaTeX Warning: Label `sub@fig:lsd3s' multiply defined.
-
 )
 \openout1 = main.aux
 
@@ -1636,18 +1624,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 5--12
 
  []
 
-<plots/Huygens.png, id=93, 937.25156pt x 587.94656pt>
+<plots/Huygens.png, id=95, 937.25156pt x 587.94656pt>
 File: plots/Huygens.png Graphic file (type png)
 <use plots/Huygens.png>
 Package luatex.def Info: plots/Huygens.png  used on input line 23.
 (luatex.def)             Requested size: 94.10686pt x 59.03134pt.
-<plots/Zylinderwellen.png, id=96, 603.0028pt x 603.75563pt>
+<plots/Zylinderwellen.png, id=98, 603.0028pt x 603.75563pt>
 File: plots/Zylinderwellen.png Graphic file (type png)
 <use plots/Zylinderwellen.png>
 Package luatex.def Info: plots/Zylinderwellen.png  used on input line 29.
 (luatex.def)             Requested size: 94.10686pt x 94.21681pt.
 [3<./plots/Huygens.png><./plots/Zylinderwellen.png>]
-<plots/Wave_Diffraction_4Lambda_Slit.png, id=113, 702.625pt x 566.115pt>
+<plots/Wave_Diffraction_4Lambda_Slit.png, id=115, 702.625pt x 566.115pt>
 File: plots/Wave_Diffraction_4Lambda_Slit.png Graphic file (type png)
 <use plots/Wave_Diffraction_4Lambda_Slit.png>
 Package luatex.def Info: plots/Wave_Diffraction_4Lambda_Slit.png  used on input line 50.
@@ -1665,37 +1653,37 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.99936pt on input line 54.
  [4<./plots/Wave_Diffraction_4Lambda_Slit.png>]
-<plots/Fresnel_Fraunhofer.png, id=135, 1021.56656pt x 435.87843pt>
+<plots/Fresnel_Fraunhofer.png, id=138, 1021.56656pt x 435.87843pt>
 File: plots/Fresnel_Fraunhofer.png Graphic file (type png)
 <use plots/Fresnel_Fraunhofer.png>
 Package luatex.def Info: plots/Fresnel_Fraunhofer.png  used on input line 62.
 (luatex.def)             Requested size: 334.60571pt x 142.76286pt.
-<plots/Beugung Einzelspalt.png, id=140, 635.37375pt x 451.6875pt>
+<plots/Beugung Einzelspalt.png, id=143, 635.37375pt x 451.6875pt>
 File: plots/Beugung Einzelspalt.png Graphic file (type png)
 <use plots/Beugung Einzelspalt.png>
 Package luatex.def Info: plots/Beugung Einzelspalt.png  used on input line 79.
 (luatex.def)             Requested size: 334.60571pt x 237.87694pt.
  [5<./plots/Fresnel_Fraunhofer.png>] [6<./plots/Beugung Einzelspalt.png>]
-<plots/Doppelspalt.png, id=179, 1066.7353pt x 682.04813pt>
+<plots/Doppelspalt.png, id=183, 1066.7353pt x 682.04813pt>
 File: plots/Doppelspalt.png Graphic file (type png)
 <use plots/Doppelspalt.png>
 Package luatex.def Info: plots/Doppelspalt.png  used on input line 168.
 (luatex.def)             Requested size: 376.42744pt x 240.67697pt.
  [7]
-<plots/x_to_angle.png, id=198, 348.55219pt x 253.69781pt>
+<plots/x_to_angle.png, id=201, 348.55219pt x 253.69781pt>
 File: plots/x_to_angle.png Graphic file (type png)
 <use plots/x_to_angle.png>
 Package luatex.def Info: plots/x_to_angle.png  used on input line 207.
 (luatex.def)             Requested size: 334.60571pt x 243.55875pt.
 ) (./content/durchfuehrung.tex [8<./plots/Doppelspalt.png>]
-<plots/Versuchsaufbau.png, id=209, 962.84718pt x 439.6425pt>
+<plots/Versuchsaufbau.png, id=212, 962.84718pt x 439.6425pt>
 File: plots/Versuchsaufbau.png Graphic file (type png)
 <use plots/Versuchsaufbau.png>
 Package luatex.def Info: plots/Versuchsaufbau.png  used on input line 10.
 (luatex.def)             Requested size: 418.25555pt x 190.9746pt.
  [9<./plots/x_to_angle.png>]
 warning  (file plots/tatVersuchsaufbau.jpg) (readjpg): Exif resolution 71dpi x 71dpi differs from the input resolution 72dpi x 72dpi
-<plots/tatVersuchsaufbau.jpg, id=219, 4690.42479pt x 2544.7183pt>
+<plots/tatVersuchsaufbau.jpg, id=222, 4690.42479pt x 2544.7183pt>
 File: plots/tatVersuchsaufbau.jpg Graphic file (type jpg)
 <use plots/tatVersuchsaufbau.jpg>
 Package luatex.def Info: plots/tatVersuchsaufbau.jpg  used on input line 29.
@@ -1887,19 +1875,74 @@ Overfull \hbox (5.475pt too wide) detected at line 88
  
  []
 
-<python/EinzelspaltFit.pdf, id=246, 417.7206pt x 258.0049pt>
+<python/EinzelspaltFit.pdf, id=249, 417.7206pt x 258.0049pt>
 File: python/EinzelspaltFit.pdf Graphic file (type pdf)
 <use python/EinzelspaltFit.pdf>
-Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 99.
+Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 96.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
+
+Overfull \hbox (5.475pt too wide) detected at line 116
+ 
+ []
+
 [12]
-Overfull \hbox (5.475pt too wide) detected at line 119
+Overfull \hbox (5.475pt too wide) detected at line 130
  
  []
 
 
-Overfull \hbox (36.04593pt too wide) in paragraph at lines 111--121
- [][] 
+Overfull \hbox (5.475pt too wide) detected at line 130
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 130
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 130
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 131
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 132
+ 
  []
 
 
@@ -1919,6 +1962,16 @@ Overfull \hbox (5.475pt too wide) detected at line 133
 
 
 Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 133
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 134
  
  []
 
@@ -1963,6 +2016,21 @@ Overfull \hbox (5.475pt too wide) detected at line 135
  []
 
 
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 135
+ 
+ []
+
+
+Overfull \hbox (5.475pt too wide) detected at line 136
+ 
+ []
+
+
 Overfull \hbox (5.475pt too wide) detected at line 136
  
  []
@@ -2013,6 +2081,11 @@ Overfull \hbox (5.475pt too wide) detected at line 137
  []
 
 
+Overfull \hbox (5.475pt too wide) detected at line 137
+ 
+ []
+
+
 Overfull \hbox (5.475pt too wide) detected at line 138
  
  []
@@ -2128,11 +2201,6 @@ Overfull \hbox (5.475pt too wide) detected at line 141
  []
 
 
-Overfull \hbox (5.475pt too wide) detected at line 141
- 
- []
-
-
 Overfull \hbox (5.475pt too wide) detected at line 142
  
  []
@@ -2154,16 +2222,6 @@ Overfull \hbox (5.475pt too wide) detected at line 142
 
 
 Overfull \hbox (5.475pt too wide) detected at line 142
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 142
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 143
  
  []
 
@@ -2257,183 +2315,87 @@ Overfull \hbox (5.475pt too wide) detected at line 146
  
  []
 
-
-Overfull \hbox (5.475pt too wide) detected at line 146
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 146
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 147
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 147
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 147
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 147
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 147
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 148
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 148
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 148
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 148
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 148
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 149
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 149
- 
- []
-
-
-Overfull \hbox (5.475pt too wide) detected at line 149
- 
- []
-
-<python/DoppelspaltFit.pdf, id=264, 417.7206pt x 258.0049pt>
+<python/DoppelspaltFit.pdf, id=265, 417.7206pt x 258.0049pt>
 File: python/DoppelspaltFit.pdf Graphic file (type pdf)
 <use python/DoppelspaltFit.pdf>
-Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 159.
+Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 156.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 176--178
+Underfull \hbox (badness 10000) in paragraph at lines 169--172
 
  []
 
-[13<./python/EinzelspaltFit.pdf>] [14<./python/DoppelspaltFit.pdf>]
-<python/leastSquares.pdf, id=320, 417.7206pt x 258.0039pt>
+[13<./python/EinzelspaltFit.pdf>] [14<./python/DoppelspaltFit.pdf>] [15]
+<python/leastSquares.pdf, id=328, 417.7206pt x 258.0039pt>
 File: python/leastSquares.pdf Graphic file (type pdf)
 <use python/leastSquares.pdf>
-Package luatex.def Info: python/leastSquares.pdf  used on input line 218.
+Package luatex.def Info: python/leastSquares.pdf  used on input line 216.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
- [15]
 <python/leastSquares2.pdf, id=329, 417.7206pt x 258.0049pt>
 File: python/leastSquares2.pdf Graphic file (type pdf)
 <use python/leastSquares2.pdf>
-Package luatex.def Info: python/leastSquares2.pdf  used on input line 228.
+Package luatex.def Info: python/leastSquares2.pdf  used on input line 226.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
 <python/leastSquares3.pdf, id=334, 417.7206pt x 258.0049pt>
 File: python/leastSquares3.pdf Graphic file (type pdf)
 <use python/leastSquares3.pdf>
-Package luatex.def Info: python/leastSquares3.pdf  used on input line 240.
+Package luatex.def Info: python/leastSquares3.pdf  used on input line 238.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
 <python/leastSquares5.pdf, id=337, 417.7206pt x 258.0039pt>
 File: python/leastSquares5.pdf Graphic file (type pdf)
 <use python/leastSquares5.pdf>
-Package luatex.def Info: python/leastSquares5.pdf  used on input line 248.
+Package luatex.def Info: python/leastSquares5.pdf  used on input line 246.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
 <python/2DPlot.pdf, id=338, 417.7206pt x 258.0049pt>
 File: python/2DPlot.pdf Graphic file (type pdf)
 <use python/2DPlot.pdf>
-Package luatex.def Info: python/2DPlot.pdf  used on input line 257.
+Package luatex.def Info: python/2DPlot.pdf  used on input line 255.
 (luatex.def)             Requested size: 376.42744pt x 232.49751pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 263--266
+Underfull \hbox (badness 10000) in paragraph at lines 261--264
 
  []
 
 <python/leastSquaresDoppel2ss.pdf, id=339, 417.7206pt x 258.0039pt>
 File: python/leastSquaresDoppel2ss.pdf Graphic file (type pdf)
 <use python/leastSquaresDoppel2ss.pdf>
-Package luatex.def Info: python/leastSquaresDoppel2ss.pdf  used on input line 276.
+Package luatex.def Info: python/leastSquaresDoppel2ss.pdf  used on input line 274.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
 <python/leastSquaresDoppel2s.pdf, id=340, 417.7206pt x 258.0039pt>
 File: python/leastSquaresDoppel2s.pdf Graphic file (type pdf)
 <use python/leastSquaresDoppel2s.pdf>
-Package luatex.def Info: python/leastSquaresDoppel2s.pdf  used on input line 283.
+Package luatex.def Info: python/leastSquaresDoppel2s.pdf  used on input line 281.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
 <python/leastSquaresDoppel3ss.pdf, id=341, 417.7206pt x 258.0039pt>
 File: python/leastSquaresDoppel3ss.pdf Graphic file (type pdf)
 <use python/leastSquaresDoppel3ss.pdf>
-Package luatex.def Info: python/leastSquaresDoppel3ss.pdf  used on input line 291.
+Package luatex.def Info: python/leastSquaresDoppel3ss.pdf  used on input line 289.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
 
-Underfull \hbox (badness 2680) in paragraph at lines 292--292
-[][]|$\TU/LatinModernMath(1)/m/n/10 𝑠 = [] []$ \TU/lmr/m/n/10 (Herstellerangabe),$\TU/LatinModernMath(1)/m/n/10 𝑎 = (0.00001, 0.006)$\TU/lmr/m/n/10 , $\TU/LatinModernMath(1)/m/n/10 𝑏 =
+Underfull \hbox (badness 1661) in paragraph at lines 290--290
+[][]|$\TU/LatinModernMath(1)/m/n/10 𝑠 = [] []$ \TU/lmr/m/n/10 (Her-stel-ler-an-ga-be), $\TU/LatinModernMath(1)/m/n/10 𝑎 = (0.00001, 0.006)$\TU/lmr/m/n/10 , $\TU/LatinModernMath(1)/m/n/10 𝑏 =
  []
 
 <python/leastSquaresDoppel3s.pdf, id=342, 417.7206pt x 258.0039pt>
 File: python/leastSquaresDoppel3s.pdf Graphic file (type pdf)
 <use python/leastSquaresDoppel3s.pdf>
-Package luatex.def Info: python/leastSquaresDoppel3s.pdf  used on input line 298.
+Package luatex.def Info: python/leastSquaresDoppel3s.pdf  used on input line 296.
 (luatex.def)             Requested size: 376.42744pt x 232.49661pt.
+[16<./python/leastSquares.pdf>] [17<./python/leastSquares2.pdf><./python/leastSquares3.pdf>] [18<./python/leastSquares5.pdf><./python/2DPlot.pdf>] [19<./python/leastSquaresDoppel2ss.pdf><./python/leastSquaresDoppel2s.pdf>] [20<./python/leastSquaresDoppel3ss.pdf><./python/leastSquaresDoppel3s.pdf>]
 File: python/DoppelspaltFit.pdf Graphic file (type pdf)
 <use python/DoppelspaltFit.pdf>
-Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 310.
-(luatex.def)             Requested size: 204.94342pt x 126.58096pt.
-<python/DoppelspaltFits.pdf, id=343, 417.7206pt x 258.0049pt>
+Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 308.
+(luatex.def)             Requested size: 146.3888pt x 90.41328pt.
+<python/DoppelspaltFits.pdf, id=683, 417.7206pt x 258.0049pt>
 File: python/DoppelspaltFits.pdf Graphic file (type pdf)
 <use python/DoppelspaltFits.pdf>
-Package luatex.def Info: python/DoppelspaltFits.pdf  used on input line 316.
-(luatex.def)             Requested size: 204.94342pt x 126.58096pt.
-
-Overfull \hbox (167.29965pt too wide) in paragraph at lines 308--320
- []$[]$$[]$ 
- []
-
-[16<./python/leastSquares.pdf>] [17<./python/leastSquares2.pdf><./python/leastSquares3.pdf>] [18<./python/leastSquares5.pdf><./python/2DPlot.pdf>] [19<./python/leastSquaresDoppel2ss.pdf><./python/leastSquaresDoppel2s.pdf>] [20<./python/leastSquaresDoppel3ss.pdf><./python/leastSquaresDoppel3s.pdf>]
-File: python/EinzelspaltFit.pdf Graphic file (type pdf)
-<use python/EinzelspaltFit.pdf>
-Package luatex.def Info: python/EinzelspaltFit.pdf  used on input line 328.
-(luatex.def)             Requested size: 204.94342pt x 126.58096pt.
-<python/EinzelspaltFits.pdf, id=686, 417.7206pt x 258.0049pt>
-File: python/EinzelspaltFits.pdf Graphic file (type pdf)
-<use python/EinzelspaltFits.pdf>
-Package luatex.def Info: python/EinzelspaltFits.pdf  used on input line 334.
-(luatex.def)             Requested size: 204.94342pt x 126.58096pt.
-
-Overfull \hbox (167.29965pt too wide) in paragraph at lines 326--338
- []$[]$$[]$ 
- []
-
+Package luatex.def Info: python/DoppelspaltFits.pdf  used on input line 314.
+(luatex.def)             Requested size: 146.3888pt x 90.41328pt.
 ) (./content/diskussion.tex
 Underfull \hbox (badness 10000) in paragraph at lines 10--17
 
  []
 
-[21<./python/DoppelspaltFits.pdf><./python/EinzelspaltFits.pdf>]
 LaTeX Font Info:    Calculating math sizes for size <7.63434> on input line 21.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(2)/m/n' will be
 (Font)              scaled to size 7.63515pt on input line 21.
@@ -2447,79 +2409,73 @@ LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 5.34343pt on input line 21.
 LaTeX Font Info:    Font shape `TU/LatinModernMath(3)/m/n' will be
 (Font)              scaled to size 3.81676pt on input line 21.
-
-Underfull \hbox (badness 10000) in paragraph at lines 39--43
+[21<./python/DoppelspaltFits.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 29--38
 
  []
 
-[22] [23]
-<plots/screen1.png, id=751, 502.87875pt x 201.75375pt>
+[22]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 52.
+<plots/screen1.png, id=724, 511.15968pt x 207.77625pt>
 File: plots/screen1.png Graphic file (type png)
 <use plots/screen1.png>
-Package luatex.def Info: plots/screen1.png  used on input line 73.
-(luatex.def)             Requested size: 376.42744pt x 151.02248pt.
-
-
-Package caption Warning: \label without proper reference on input line 95.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:doppeleinzel' on page 24 undefined on input line 81.
-
+Package luatex.def Info: plots/screen1.png  used on input line 72.
+(luatex.def)             Requested size: 376.42744pt x 153.01013pt.
 File: python/DoppelspaltFit.pdf Graphic file (type pdf)
 <use python/DoppelspaltFit.pdf>
-Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 87.
+Package luatex.def Info: python/DoppelspaltFit.pdf  used on input line 86.
 (luatex.def)             Requested size: 146.3888pt x 90.41328pt.
-<python/DoppelspaltFitEinzel.pdf, id=753, 417.7206pt x 258.0049pt>
+<python/DoppelspaltFitEinzel.pdf, id=726, 417.7206pt x 258.0049pt>
 File: python/DoppelspaltFitEinzel.pdf Graphic file (type pdf)
 <use python/DoppelspaltFitEinzel.pdf>
-Package luatex.def Info: python/DoppelspaltFitEinzel.pdf  used on input line 92.
+Package luatex.def Info: python/DoppelspaltFitEinzel.pdf  used on input line 91.
 (luatex.def)             Requested size: 146.3888pt x 90.41328pt.
+ [23] [24<./plots/screen1.png><./python/DoppelspaltFitEinzel.pdf>]
+Overfull \hbox (5.475pt too wide) detected at line 114
+ 
+ []
+
 
 Overfull \hbox (5.475pt too wide) detected at line 114
  
  []
 
-<plots/screen2.png, id=756, 561.59813pt x 231.86626pt>
+<plots/screen2.png, id=761, 569.12625pt x 248.42813pt>
 File: plots/screen2.png Graphic file (type png)
 <use plots/screen2.png>
 Package luatex.def Info: plots/screen2.png  used on input line 122.
-(luatex.def)             Requested size: 376.42744pt x 155.41325pt.
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 127.
-
-[24<./plots/screen1.png><./python/DoppelspaltFitEinzel.pdf>]
-Underfull \hbox (badness 10000) in paragraph at lines 143--152
-
- []
-
+(luatex.def)             Requested size: 376.42744pt x 164.3194pt.
 [25<./plots/screen2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 153--157
+Underfull \hbox (badness 10000) in paragraph at lines 146--155
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 158--160
+Underfull \hbox (badness 10000) in paragraph at lines 156--160
 
  []
 
 
-Overfull \hbox (44.18835pt too wide) in paragraph at lines 169--173
+LaTeX Warning: Reference `fig:ggn2' on page 26 undefined on input line 161.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 161--163
+
+ []
+
+[26]
+Overfull \hbox (44.18835pt too wide) in paragraph at lines 172--176
 \TU/lmr/bx/n/10.95 Einzelspalt: []$\TU/lmtt/m/n/10.95 https://www.leifiphysik.de/optik/beugung-[]und-[]interferenz/grundwissen/
  []
 
 
-Overfull \hbox (50.12328pt too wide) in paragraph at lines 169--173
+Overfull \hbox (50.12328pt too wide) in paragraph at lines 172--176
 \TU/lmr/bx/n/10.95 Doppelspalt: []$\TU/lmtt/m/n/10.95 https://www.leifiphysik.de/optik/beugung-[]und-[]interferenz/grundwissen/
  []
 
-) (./content/anhang.tex [26] [27]
-<plots/Daten.jpeg, id=813, 881.2925pt x 1232.605pt>
+) (./content/anhang.tex [27]
+<plots/Daten.jpeg, id=795, 881.2925pt x 1232.605pt>
 File: plots/Daten.jpeg Graphic file (type jpg)
 <use plots/Daten.jpeg>
 Package luatex.def Info: plots/Daten.jpeg  used on input line 7.
@@ -2536,9 +2492,9 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 28.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 28.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 28.
 Package rerunfilecheck Info: File `main.aux' has not changed.
-(rerunfilecheck)             Checksum: 73080BBBF398DE7B4C4C4A41D096A61D;30660.
+(rerunfilecheck)             Checksum: 2E6942C0CF79B21CFC0E6E3A27F1FD64;30541.
 Package rerunfilecheck Info: File `main.toc' has not changed.
-(rerunfilecheck)             Checksum: F6F387D62EFE6438E340A0986091714A;2945.
+(rerunfilecheck)             Checksum: A05A343833B2D42341699A4E5F596643;3057.
 
 
 LaTeX Warning: There were undefined references.
@@ -2552,14 +2508,16 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 )
 
 Here is how much of LuaTeX's memory you used:
- 45917 strings out of 480883
+ 45903 strings out of 480883
  100000,1977958 words of node,token memory allocated
- 1207 words of node memory still in use:
-   7 hlist, 2 vlist, 2 rule, 1 dir, 14 glue, 4 kern, 1 glyph, 156 attribute, 82 glue_spec, 80 attribute_list, 2 write, 4 pdf_action nodes
-   avail lists: 1:3,2:6278,3:811,4:104,5:1406,6:89,7:4794,8:95,9:1499,10:27,11:527
- 61833 multiletter control sequences out of 65536+600000
- 297 fonts using 111197143 bytes
+ 1204 words of node memory still in use:
+   7 hlist, 2 vlist, 2 rule, 1 dir, 17 glue, 4 kern, 1 glyph, 148 attribute, 82 glue_spec, 76 attribute_list, 2 write, 4 pdf_action nodes
+   avail lists: 1:3,2:6425,3:816,4:104,5:1478,6:93,7:4494,8:95,9:1543,10:27,11:436
+ 61832 multiletter control sequences out of 65536+600000
+ 298 fonts using 111322099 bytes
  85i,17n,114p,10117b,2933s stack positions out of 5000i,500n,10000p,200000b,100000s
+
+warning  (pdf backend): unreferenced destination with name 'Hfootnote.7'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.6'
 
@@ -2572,11 +2530,11 @@ warning  (pdf backend): unreferenced destination with name 'Hfootnote.3'
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.2'
 
 warning  (pdf backend): unreferenced destination with name 'Hfootnote.1'
-</home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
-Output written on main.pdf (29 pages, 20389427 bytes).
+</home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmromancaps10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmonolt10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman5-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman8-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman6-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman7-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm-math/latinmodern-math.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman9-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-italic.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmmono10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman10-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-regular.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmsans10-bold.otf></home/renele/.local/texlive/2020/texmf-dist/fonts/opentype/public/lm/lmroman12-bold.otf>
+Output written on main.pdf (29 pages, 20385291 bytes).
 
-PDF statistics: 1047 PDF objects out of 1200 (max. 8388607)
- 741 compressed objects within 8 object streams
- 144 named destinations out of 1000 (max. 131072)
- 280 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 1038 PDF objects out of 1200 (max. 8388607)
+ 737 compressed objects within 8 object streams
+ 143 named destinations out of 1000 (max. 131072)
+ 288 words of extra memory for PDF output out of 10000 (max. 100000000)
 
