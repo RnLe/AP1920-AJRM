@@ -111,19 +111,25 @@ Da die besagte Geschwindigkeitskomponente jedoch für das Messen eines Auffänge
 Stößen ebenfalls ein Abflachen und Verbreitern der Kurve. 
 
 \subsection{Regulierung des Dampfdrucks}
+\label{sub:Druck}
 
 Mithilfe der Temperatur des Hg-Gases wird der Druck reguliert, der wiederum die mittlere freie Weglänge beeinflusst. 
 Die mittlere freie Weglänge muss so gewählt sein, dass eine hinreichend große Wahrscheinlichkeit besteht, dass die Elektronen 
 mit den Hg-Atomen zusammenstoßen; gleichzeitig ist wichtig, dass nicht zu viele Stöße stattfinden, da sonst  
 zu viele elastische Stöße stattfinden würden, die wie erwähnt die Kurve abflachen und verfälschen. 
 
-Die mittlere freie Weglänge ist antiproportional zum Druck; der Druck ist wiederum mit der Temperatur über 
+Die mittlere freie Weglänge $\bar{w}$ ist antiproportional zum Druck $p$ gemäß 
+\begin{equation}
+    \bar{w}=\frac{\SI{2.9e-3}{\centi\meter}}{\frac{p}{\si{\milli\bar}}}\:;
+    \label{eqn:Weglänge}
+\end{equation}
+der Druck ist wiederum mit der Temperatur über 
 \begin{equation*}
-    p(T)=\SI{5.5e7}{\milli\bar}\cdot \symup{e}^{\frac{\SI{6876}{\kelvin}}{T}}
+    p(T)=\SI{5.5e7}{\milli\bar}\cdot \symup{e}^{\frac{\SI{-6876}{\kelvin}}{T}}
 \end{equation*}
 verknüpft. 
 Ein idealer Dampfdruck für die verwendete Apparatur ergibt eine mittlere freie Weglänge, die um einen Faktor von etwa 
-$1000$ bis $4000$ kleiner ist als der Abstand zwischen Beschleunigunsanode und Auffängerelektrode $a\approx \SI{1}{\centi\meter}$. 
+$1000$ bis $4000$ kleiner ist als der Abstand zwischen Beschleunigunsanode und Glühkathode $a\approx \SI{1}{\centi\meter}$. 
 Daraus lässt sich die Temperatur ableiten, auf die die evakuierte Röhre geregelt werden muss. 
 
 \subsection{Das Energieschema des Quecksilberatoms}
