@@ -14,22 +14,23 @@
 \contentsline {section}{\numberline {4}Auswertung}{11}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Einzelspalt}{11}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Doppelspalt}{13}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Erweiterte Auswertung}{15}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Erweiterte Auswertung}{13}{subsection.4.3}%
 \contentsline {subsubsection}{\numberline {4.3.1}Einschub: Methode der kleinsten Quadrate}{15}{subsubsection.4.3.1}%
 \contentsline {subsubsection}{\numberline {4.3.2}Parameterebenen}{15}{subsubsection.4.3.2}%
 \contentsline {subsubsection}{\numberline {4.3.3}Einzelspalt}{15}{subsubsection.4.3.3}%
 \contentsline {subsubsection}{\numberline {4.3.4}Doppelspalt}{16}{subsubsection.4.3.4}%
 \contentsline {section}{\numberline {5}Diskussion}{21}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Versuchsaufbau}{21}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Zuverlässigkeit der Vorhersagen und Messungen}{22}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.2}Zuverlässigkeit der Vorhersagen und Messungen}{21}{subsection.5.2}%
 \contentsline {subsection}{\numberline {5.3}Vergleich mit der Herstellerangabe}{22}{subsection.5.3}%
-\contentsline {subsection}{\numberline {5.4}Eignung der Theorie}{23}{subsection.5.4}%
-\contentsline {section}{\numberline {6}Erweiterte Diskussion}{23}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Einzelspalt}{23}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Doppelspalt}{24}{subsection.6.2}%
-\contentsline {subsubsection}{\numberline {6.2.1}Spaltabstand $s$}{25}{subsubsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.3}Parameterebene und Ausgleichsrechnung}{25}{subsection.6.3}%
-\contentsline {subsubsection}{\numberline {6.3.1}Tool zum Testen des Beugungsmusters}{26}{subsubsection.6.3.1}%
-\contentsline {subsection}{\numberline {6.4}Fazit}{27}{subsection.6.4}%
-\contentsline {section}{Anhang: Messdaten}{28}{section*.32}%
-\contentsline {section}{\nonumberline Literatur}{29}{section*.34}%
+\contentsline {subsection}{\numberline {5.4}Eignung der Theorie}{22}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Erweiterte Diskussion}{22}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Fehlerquelle Sinus-Cardinalis aus \texttt {numpy}}{23}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Einzelspalt}{23}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Doppelspalt}{23}{subsection.6.3}%
+\contentsline {subsubsection}{\numberline {6.3.1}Spaltabstand}{25}{subsubsection.6.3.1}%
+\contentsline {subsection}{\numberline {6.4}Parameterebene und Ausgleichsrechnung}{26}{subsection.6.4}%
+\contentsline {subsubsection}{\numberline {6.4.1}Tool zum Testen des Beugungsmusters}{27}{subsubsection.6.4.1}%
+\contentsline {subsection}{\numberline {6.5}Fazit}{27}{subsection.6.5}%
+\contentsline {section}{Anhang: Messdaten}{28}{section*.31}%
+\contentsline {section}{\nonumberline Literatur}{29}{section*.33}%

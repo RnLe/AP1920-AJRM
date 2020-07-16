@@ -11,9 +11,7 @@ from mpl_toolkits.mplot3d import Axes3D
 # statt 20 Perspektiven als pdf abzuspeichern, um eine Vorstellung von der Geometrie zu kriegen.
 # Um die gui nutzen zu können: diese Datei aus einem Verzeichnis öffnen, in dem header-matplotlib.tex und matplotlibrc NICHT sind.
 # zudem -gui hinter die PythonDatei schreiben.
-gui_backend = False
-if len(sys.argv) != 1 and sys.argv[1] == "-gui":
-    gui_backend = True
+gui_backend = False if len(sys.argv) != 1 and sys.argv[1] == "-gui" else True
 
 if (gui_backend): mpl.use('TkAgg')
 else:

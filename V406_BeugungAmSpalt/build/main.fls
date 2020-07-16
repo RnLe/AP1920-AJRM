@@ -565,11 +565,6 @@ INPUT ./python/DoppelspaltFit.pdf
 INPUT ./python/DoppelspaltFits.pdf
 INPUT ./python/DoppelspaltFits.pdf
 INPUT ./python/DoppelspaltFits.pdf
-INPUT ./python/EinzelspaltFit.pdf
-INPUT ./python/EinzelspaltFit.pdf
-INPUT ./python/EinzelspaltFits.pdf
-INPUT ./python/EinzelspaltFits.pdf
-INPUT ./python/EinzelspaltFits.pdf
 INPUT ./content/diskussion.tex
 INPUT ./content/diskussion.tex
 INPUT /home/renele/.local/texlive/2020/texmf-dist/fonts/tfm/public/cm/cmmi7.tfm
@@ -602,6 +597,7 @@ INPUT /home/renele/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symb
 INPUT /home/renele/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam5.tfm
 INPUT /home/renele/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
 INPUT /home/renele/.local/texlive/2020/texmf-dist/fonts/tfm/public/amsfonts/symbols/msbm5.tfm
+INPUT /home/renele/.texlive2020/texmf-var/luatex-cache/generic-dev/fonts/otl/lmmonolt10-bold.luc
 INPUT ./plots/screen1.png
 INPUT ./plots/screen1.png
 INPUT ./plots/screen1.png
