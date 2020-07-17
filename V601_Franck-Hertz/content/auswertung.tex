@@ -2,10 +2,11 @@
 \label{sec:Auswertung}
 
 \subsection{Vorbereitung}
+\label{sub:Vorbereitung}
 
 Die mittlere freie Weglänge wird über Gleichung \eqref{eqn:Weglänge} berechnet und mit dem Abstand zwischen Beschleunigungsanode 
 und Glühkathode $a\approx \SI{1}{\centi\meter}$ verglichen. In Kapitel \ref{sub:Druck} wird ein ideales Verhältnis von etwa $1000$ bis $4000$ vorgeschlagen. 
-Die verwendete Temperatur für die Aufnahme der Franck--Hertz-Kurve ist aus Abbildung REFERENZ ersichtlich. 
+Die verwendete Temperatur für die Aufnahme der Franck--Hertz-Kurve ist aus Abbildung \ref{fig:FrHeMess} ersichtlich. 
 Die Raumtemperatur wird auf $\SI{295}{\kelvin}$ abgeschätzt.
 Die entsprechenden Werte sind in Tabelle \ref{tab:Weglänge} aufgeführt. 
 
@@ -110,5 +111,17 @@ und Runden auf die signifikanten Ziffern eine Anregungsenergie von
 Da das Kontaktpotential ausschließlich eine Verschiebung der Strommaxima bewirkt und für das Berechnen der 
 Anregungsenergie ausschließlich die Spannungsdifferenzen relevant sind, muss das Kontaktpotential nicht beachtet werden. 
 
-Das erste Strommaxima unter Vernachlässigung der Abflachung der Peaks (vergleiche hierzu Kapitel \ref{sec:Theorie}) liegt bei etwa $(5-3.3)\,\si{\volt}=\SI{1.7}{\volt}$, was 
-aufgrund der Skalierung des Picoamperemeters jedoch nicht zu überprüfen ist. 
+Die weiteren elastischen Stöße, die die Elektronen nach einem (oder ein paar wenigen mehr) inelastischen Stößen ausführen, 
+werden nicht beachtet, unter der Annahme, dass dies am Verhältnis der ankommenden und nicht-ankommenden Elektronen an der 
+Auffängerelektrode nichts verändern wird. 
+
+$\Delta E_\text{exp}$ entspricht mit $E=\symup{h}\sfrac{\symup{c}}{\lambda}$ (das Planck'sche Wirkungsquantum ist laut \cite{scipy}
+$\symup{h}=\SI{4.135667662e-15}{\electronvolt\second}$ und die Lichtgeschwindigkeit im Vakuum ist $\symup{c}=\SI{299792458.0}{\meter\per\second}$)
+elektromagnetischer Strahlung der Wellenlänge 
+\begin{equation}
+    \lambda _\text{exp}=\SI{248+-5}{\nano\meter}\,,
+\end{equation}
+die somit kurzwelliger als ultraviolettes Licht ist.
+
+%Das erste Strommaxima unter Vernachlässigung der Abflachung der Peaks (vgl. Kapitel \ref{sec:Theorie}) liegt bei etwa $(5-3.3)\,\si{\volt}=\SI{1.7}{\volt}$, was 
+%aufgrund der Skalierung des Picoamperemeters jedoch nicht zu überprüfen ist. 
