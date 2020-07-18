@@ -27,12 +27,12 @@ U_A,I_A=np.genfromtxt("../data/energie.csv",delimiter=",",unpack=True)
 #
 #plt.clf()
 
-#plt.plot(U_A,I_A,":",color='indianred',label='Messwerte')
-#plt.ylabel(r'$I_\text{A}\,/\,\si{\nano\ampere}$')
-#plt.xlabel(r'$U_\text{A}\,/\,\si{\volt}$')
-#plt.grid(':')
-#plt.legend()
-#plt.savefig("../plots/Energie2.pdf")
+plt.plot(U_A,I_A,".",color='indianred',label='Messwerte', ms=4)
+plt.ylabel(r'$I_\text{A}\,/\,\si{\nano\ampere}$')
+plt.xlabel(r'$U_\text{A}\,/\,\si{\volt}$')
+plt.grid(':')
+plt.legend()
+plt.savefig("../plots/Energie2.pdf")
 
 plt.clf()
 
@@ -50,12 +50,12 @@ for i in range(a):
 #
 #plt.clf()
 
-#plt.plot(U_A,Diff_I,':',color="lightcoral",label="Messwerte")
-#plt.ylabel(r'$(I_\text{A}(U)-I_\text{A}(U+\Delta U))\,/\,\si{\nano\ampere}$')
-#plt.xlabel(r'$U_\text{A}\,/\,\si{\volt}$')
-#plt.grid(':')
-#plt.legend()
-#plt.savefig("../plots/EnergieDiff2.pdf")
+# plt.plot(U_A,Diff_I,'.',color="lightcoral",label="Messwerte")
+# plt.ylabel(r'$(I_\text{A}(U)-I_\text{A}(U+\Delta U))\,/\,\si{\nano\ampere}$')
+# plt.xlabel(r'$U_\text{A}\,/\,\si{\volt}$')
+# plt.grid(':')
+# plt.legend()
+# plt.savefig("../plots/EnergieDiff2.pdf")
 
 
-np.savetxt('../data/energy.txt', np.column_stack([U_A, I_A, Diff_I]), header="U_A \t I_A \t Delta I_A")
+# np.savetxt('../data/energy.txt', np.column_stack([U_A, I_A, Diff_I]), header="U_A \t I_A \t Delta I_A")
