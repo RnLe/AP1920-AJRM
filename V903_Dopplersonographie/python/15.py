@@ -16,12 +16,32 @@ mpl.rcParams.update({
 'pgf.preamble': r'\usepackage{unicode-math}\usepackage{siunitx}',
 })
 
-c0=const.physical_constants["speed of light in vacuum"]
+c=const.physical_constants["speed of light in vacuum"]
 
+theta=np.pi/12
+alpha=np.pi/2-np.arcsin(np.sin(theta)*2/3)
 nu0=2*10**6
 numax=np.array([90,94,135,200,290])
 nustd=np.array([49,61,85,110,146])
 rpm=np.array([2000,2800,3600,4400,5200])
 
-vmax=numax*c[0]/(2*nu0*np.cos(np.pi/12))
-vstd=nustd*c[0]/(2*nu0*np.cos(np.pi/12))
+vmax=numax*c[0]/(2*nu0*np.cos(alpha))
+vstd=nustd*c[0]/(2*nu0*np.cos(alpha))
+
+plt.plot(vmax,numax/np.cos(alpha),"x",color='darkgreen',label=r'$\Delta \nu_\text{max}$')
+plt.plot(vstd,nustd/np.cos(alpha),"x",color='orange',label=r'$\Delta \nu_\text{std}$')
+plt.ylabel(r'$\frac{\Delta \nu}{\cos \alpha}\,/\,\si{\hertz}$')
+plt.xlabel(r'$v_\text{rech}\,/\,\si{\meter\per\second}$')
+plt.grid(':')
+plt.legend()
+plt.savefig("../plots/15_1.pdf")
+
+plt.clf()
+
+plt.plot(rpm,numax/np.cos(alpha),"x",color='darkgreen',label=r'$\Delta \nu_\text{max}$')
+plt.plot(rpm,nustd/np.cos(alpha),"x",color='orange',label=r'$\Delta \nu_\text{std}$')
+plt.ylabel(r'$\frac{\Delta \nu}{\cos \alpha}\,/\,\si{\hertz}$')
+plt.xlabel(r'$v_\text{mess}\,/\,\mathrm{rpm}$')
+plt.grid(':')
+plt.legend()
+plt.savefig("../plots/15_2.pdf")
