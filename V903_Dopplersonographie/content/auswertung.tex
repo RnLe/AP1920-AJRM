@@ -1,3 +1,69 @@
 \section{Auswertung}
 \label{sec:Auswertung}
 
+\subsection{Vorbereitung und technische Daten}
+
+Das verwendete Prisma hat drei verschiedene (Prisma-)Winkel $\theta$, unter denen die Strömung in den Rohren untersucht werden kann. 
+Der daraus resultierende Doppler-Winkel $\alpha$ wird durch 
+\begin{equation*}
+    \alpha=\SI{90}{\degree}-\arcsin (\sin \theta \cdot \frac{c_\text{L}}{c_\text{P}})
+\end{equation*}
+gegeben. Die Kenndaten $c_\text{L}$ und $c_\text{P}$ sind in Tabelle \ref{tab:techDaten} zu finden.
+
+Die Werte für die Winkel sind in Tabelle \ref{tab:Winkel} aufgeführt.
+\begin{table}
+    \centering
+    \caption{Prisma- und Doppler-Winkel.}
+    \label{tab:Winkel}
+    \begin{tabular}{c c}
+        \toprule
+        Prisma-Winkel $\theta \,/\,\si{\degree}$ & Doppler-Winkel $\alpha \,/\,\si{\degree}$ \\
+        \midrule
+        15 & 80.064 \\        
+        30 & 70.529 \\
+        45 & 61.874 \\        
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\begin{table}
+    \centering
+    \caption{Technische Daten.}
+    \label{tab:techDaten}
+    \begin{tabular}
+        \toprule
+        Medium          & Größe                 & Variable      & Wert                                      \\
+        \midrule
+        Flüssigkeit     & Dichte                & $\rho$        & $\SI{1.15}{\gram\per\cubic\centi\meter}$  \\
+                        & Schallgeschwindigkeit & $c_\text{L}$  & $\SI{1800}{\meter\per\second}$            \\
+                        & Viskosität            & $\eta$        & $\SI{12}{\milli\pascal\second}$           \\
+        Prisma          & Schallgeschwindigkeit & $c_\text{P}$  & $\SI{2700}{\meter\per\second}$            \\
+                        & Vorlaufstrecke        & $l$           & $\SI{30.7}{\milli\meter}$                 \\
+        Strömungsrohr   & Innendurchmesser      & $d_\text{i}$  & $\SI{10}{\milli\meter}$                   \\
+                        & Außendurchmesser      & $d_\text{a}$  & $\SI{15}{\milli\meter}$                   \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
+\subsection{1. Messung: Strömungsgeschwindigkeit in Abhängigkeit des Doppler-Winkels}
+
+\begin{table}
+    \centering
+    \caption{Messwerte.}
+    \label{tab:1Mess}
+    \begin{tabular}{c l l c l c l}
+        \toprule
+            & \multicolumn{6}{c}{Prisma-Winkel $\theta$} \\
+        \cmidrule(lr){2-7}
+            & \multicolumn{2}{c}{$\SI{15}{\degree}$} & \multicolumn{2}{c}{$\SI{30}{\degree}$} & \multicolumn{2}{c}{$\SI{45}{\degree}$} \\
+        RPM & $\Delta \nu_\text{max}\,/\,\si{\hertz}$ & $\Delta \nu_\text{mean}\,/\,\si{\hertz}$ & $\Delta \nu_\text{max}\,/\,\si{\hertz}$ & $\Delta \nu_\text{mean}\,/\,\si{\hertz}$ & $\Delta \nu_\text{max}\,/\,\si{\hertz}$ & $\Delta \nu_\text{mean}\,/\,\si{\hertz}$ \\
+        \midrule
+        2000 &  90 &  49 & 120 &  73 & -105 & -61  \\
+        2800 &  94 &  61 & 235 & 134 & -145 & -85  \\
+        3600 & 135 &  85 & 375 & 208 & -220 & -122 \\
+        4400 & 200 & 110 & 555 & 293 & -330 & -165 \\
+        5200 & 290 & 146 & 820 & 415 & -470 & -232 \\
+        \bottomrule
+    \end{tabular}
+\end{table}
+
