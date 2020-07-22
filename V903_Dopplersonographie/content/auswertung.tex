@@ -29,7 +29,8 @@ Der daraus resultierende Doppler-Winkel $\alpha$ wird über
 \end{equation*}
 berechnet. Die Kenndaten $c_\text{L}$ und $c_\text{P}$ sind in Tabelle \ref{tab:techDaten} zu finden.
 
-Die Werte für die Winkel sind in Tabelle \ref{tab:Winkel} aufgeführt.
+Die Werte für die Winkel sind in Tabelle \ref{tab:Winkel} aufgeführt. $\SI{60}{\degree}$ berechnen sich hier über die Addition 
+von $\SI{15}{\degree}$ und $\SI{45}{\degree}$, sodass der Winkel bis zur Rohroberflächennormalen $\SI{60}{\degree}$ ist (vgl. hierfür Abbildung \ref{fig:prisma}). 
 \begin{table}
     \centering
     \caption{Prisma- und Doppler-Winkel.}
@@ -40,7 +41,7 @@ Die Werte für die Winkel sind in Tabelle \ref{tab:Winkel} aufgeführt.
         \midrule
         $\SI{15}{\degree}$ & $\SI{80.064}{\degree}$ \\        
         $\SI{30}{\degree}$ & $\SI{70.529}{\degree}$ \\
-        $\SI{45}{\degree}$ & $\SI{61.874}{\degree}$ \\        
+        $\SI{60}{\degree}$ & $\SI{54.736}{\degree}$ \\        
         \bottomrule
     \end{tabular}
 \end{table}
@@ -55,7 +56,7 @@ Die Werte für die Winkel sind in Tabelle \ref{tab:Winkel} aufgeführt.
         \toprule
             & \multicolumn{3}{c}{$\Delta \nu_\text{max}\,/\,\si{\hertz}$} & \multicolumn{3}{c}{$\Delta \nu_\text{mean}\,/\,\si{\hertz}$} \\
         \cmidrule(lr){2-4} \cmidrule(lr){5-7}
-        rpm & $\SI{15}{\degree}$ & $\SI{30}{\degree}$ & $\SI{45}{\degree}$ & $\SI{15}{\degree}$ & $\SI{30}{\degree}$ & $\SI{45}{\degree}$ \\
+        rpm & $\SI{15}{\degree}$ & $\SI{30}{\degree}$ & $\SI{60}{\degree}$ & $\SI{15}{\degree}$ & $\SI{30}{\degree}$ & $\SI{60}{\degree}$ \\
         \midrule
         2000 &  90 & 120 & -105 &  49 &  73 & -61  \\
         2800 &  94 & 235 & -145 &  61 & 134 & -85  \\
@@ -129,7 +130,7 @@ wird angenommen, dass die Messpunkte in den Graphiken \ref{fig:15}, \ref{fig:30}
         \caption{Theoretisch berechnete Strömungsgeschwindigkeit.}
         \label{fig:theo45}
     \end{subfigure}
-    \caption{Graphiken zum Prisma-Winkel $\theta=\SI{45}{\degree}$.}
+    \caption{Graphiken zum Prisma-Winkel $\theta=\SI{60}{\degree}$.}
     \label{fig:45}
 \end{figure}
 
@@ -140,11 +141,12 @@ und \ref{tab:45percent} zusammengefasst.
 Die Aufträge der Geschwindigkeit und der Intensität gegen die Messtiefe sind entsprechend in den Abbildungen \ref{fig:70vi} 
 und \ref{fig:45vi} zu sehen. 
 
-Das Dopplerprisma, welches eine Vorlaufstrecke von $l=\SI{30.7}{\milli\meter}$ hat entsprechend der Relation für 
+Das Dopplerprisma, welches eine Vorlaufstrecke von $l=\SI{30.7}{\milli\meter}$ hat, hat entsprechend der Relation für 
 Acryl $\SI{4}{\micro\second}\,\widehat{=}\,\SI{10}{\milli\meter}$ eine Eindringstiefe von $\SI{12.3}{\micro\second}$. 
 Entsprechend wird die Messtiefe bei einer Eindringstiefe von $\SI{12.0}{\micro\second}$ gestartet. 
 Bei der Betrachtung der Messwerte ist noch zu beachten, dass die Rohre ebenfalls eine Ausdehnung (Rohrwand)
 von $\SI{5}{\milli\meter}$ haben (vgl. Tabelle \ref{tab:techDaten}). 
+
 Das Rohr hat einen Innendurchmesser von $\SI{10}{\milli\meter}$, dementsprechend hat die Flüssigkeit nach $\SI{4}{\micro\second}\,\widehat{=}\,\SI{6}{\milli\meter}$
 eine Messtiefe von $\SI{6.7}{\milli\meter}$. 
 
@@ -248,7 +250,7 @@ eine Messtiefe von $\SI{6.7}{\milli\meter}$.
     \label{fig:45vi}
 \end{figure}
 
-Wird für die gemittelte Geschwindigkeit jeweils die maximale Geschwindigkeit bei die Berechnung der Reynoldszahl verwendet, 
+Wird für die gemittelte Geschwindigkeit jeweils die maximale Geschwindigkeit bei der Berechnung der Reynoldszahl verwendet, 
 liegt die tatsächliche Reynoldszahl unter diesem Wert. 
 Die Werte für diese obere Schranke sind in Tabelle \ref{tab:Reynoldszahl} aufgeführt. 
 Es ist ersichtlich, dass die Strömungen in den Rohren wirklich laminar sind. 

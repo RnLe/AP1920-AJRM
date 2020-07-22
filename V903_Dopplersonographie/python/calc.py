@@ -9,7 +9,7 @@ import numpy as np
 #h=const.physical_constants["Planck constant"]
 #c=const.physical_constants["speed of light in vacuum"]
 
-theta=np.array([np.pi/12,np.pi/6,np.pi/4])
+theta=np.array([np.pi/12,np.pi/6,np.pi/3])
 c_L=1800 # in m/s
 c_P=2700 # in m/s
 faktor=2/3 # =c_L/c_P

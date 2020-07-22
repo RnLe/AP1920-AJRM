@@ -17,7 +17,7 @@ mpl.rcParams.update({
 })
 
 c=const.physical_constants["speed of light in vacuum"]
-theta=np.pi/4
+theta=np.pi/3
 alpha=np.pi/2-np.arcsin(np.sin(theta)*2/3)
 nu0=2*10**6
 numax=np.array([105,145,220,330,470])
