@@ -75,10 +75,7 @@ Die Zentrifugalpumpe gibt hierbei ihre Umdrehungen pro Zeiteinheit in $\mathrm{r
 proportional zur Strömungsgeschwindigkeit der Flüssigkeit ist. 
 In den Abbildungen \ref{fig:exp15}, \ref{fig:exp30} und \ref{fig:exp45} sind die Frequenzverschiebungen gegen die Umdrehungszahl aufgetragen. 
 In den nebenstehenden Abbildungen \ref{fig:theo15}, \ref{fig:theo30} und \ref{fig:theo45} ist jeweils die Frequenzverschiebung 
-gegen die Strömungsgeschwindigkeit $v$ aufgetragen, die über die Formel 
-\begin{equation*}
-    \Delta \nu=2 \nu_0 \frac{v}{c} \cos \alpha
-\end{equation*}
+gegen die Strömungsgeschwindigkeit $v$ aufgetragen, die über die Formel \eqref{eqn:doppler}
 berechnet wird. Verwendet wird eine $\SI{2}{\mega\hertz}$-Sonde, deshalb ist $\nu_0=\SI{2}{\mega\hertz}$. 
 
 Aufgrund des als proportional angenommenen Zusammenhangs zwischen der Drehzahl der Pumpe und der Strömungsgeschwindigkeit 
@@ -250,24 +247,6 @@ eine Messtiefe von $\SI{6.7}{\milli\meter}$.
     \caption{Die bei $45\,\%$ Pumpleistung aufgenommenen Messpunkte.}
     \label{fig:45vi}
 \end{figure}
-
-Das Strömungsprofil einer Röhre mit Radius $R$ ist gegeben durch 
-\begin{equation}
-    v(r)=v_\text{max}\cdot (1-\frac{r}{R})^{\sfrac{1}{n}}\,,
-    \label{eqn:Geschwindigkeit}
-\end{equation}
-wobei $r$ den Abstand zur Symmetrieachse des Rohrs angibt (also immer $r>0$).
-Ist die Strömung laminar (Reynoldszahl kleiner als etwa 2000), ist die Geschwindigkeitskurve parabelförmig, also $n=2$.
-$n$ ist schwach von der Reynoldszahl abhängig; außerdem hat die Rauheit der Rohrinnenwand Einfluss auf die Größe der Zahl. 
-Für eine sehr große Reynoldszahl $>\num{2e6}$ konvergiert der invertierte Exponent $n$ gegen $n=10$. 
-
-Die Reynoldszahl einer Röhre berechnet sich über 
-\begin{equation}
-    Re=\frac{\rho v d}{\eta}\,,
-\end{equation}
-mit der Dichte $\rho$, der mittleren Geschwindigkeit $v$, der charakteristischen Länge $d$, die bei Rohren auf den Durchmesser festgelegt ist, 
-sowie der dynamischen Viskosität $\eta$. 
-Übersteigt die Reynoldszahl die kritische Reynoldszahl von etwa $2000$, ist die Strömung nicht mehr laminar, sondern turbulent. 
 
 Wird für die gemittelte Geschwindigkeit jeweils die maximale Geschwindigkeit bei die Berechnung der Reynoldszahl verwendet, 
 liegt die tatsächliche Reynoldszahl unter diesem Wert. 
